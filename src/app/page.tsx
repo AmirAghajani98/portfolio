@@ -78,7 +78,7 @@ export default function Home() {
                 className="m-2 p-2 bg-gray-200  rounded-2xl"
               />
             </a>
-            <a href="tel:123-456-7890">
+            <a href="tel:123-456-7890" target={"_blank"}>
               <Image
                 src="/img/6.png"
                 width={50}
