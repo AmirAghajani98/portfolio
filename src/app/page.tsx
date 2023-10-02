@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="w-full bg-black min-h-screen p-10">
-      <div className="flex flex-col-2 mt-6">
-        <div className="w-2/5 text-center">
+      <div className="sm:flex flex-col-2 mt-6">
+        <div className="sm:w-2/5 text-center">
           <h1 className="text-4xl font-medium text-slate-100 font">
             Amir Mohammad Aghajani
           </h1>
@@ -17,10 +17,11 @@ export default function Home() {
               className="m-auto"
             />
           </div>
-          <div className="flex mt-12 justify-center">
+          <div className="flex mt-12 justify-center mr-4">
             <a
               href="https://instagram.com/amiir_aghajani98?igshid=OGQ5ZDc2ODk2ZA=="
               target={"_blank"}
+              className="m-1"
             >
               <Image
                 src="/img/1.png"
@@ -30,67 +31,80 @@ export default function Home() {
                 className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
-            <a href="mailto:amir.aghajani1377@gmail.com" target={"_blank"}>
+            <a
+              href="mailto:amir.aghajani1377@gmail.com"
+              target={"_blank"}
+              className="m-1"
+            >
               <Image
                 src="/img/2.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200  rounded-2xl"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
-            <a href="https://github.com/AmirAghajani98" target={"_blank"}>
+            <a
+              href="https://github.com/AmirAghajani98"
+              target={"_blank"}
+              className="m-1"
+            >
               <Image
                 src="/img/7.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200  rounded-2xl"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
-            <a href="https://gitlab.com/AmirAghajani98" target={"_blank"}>
+            <a
+              href="https://gitlab.com/AmirAghajani98"
+              target={"_blank"}
+              className="m-1"
+            >
               <Image
                 src="/img/8.svg"
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200  rounded-2xl"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
-            <a href="https://t.me/Amr431" target={"_blank"}>
+            <a href="https://t.me/Amr431" target={"_blank"} className="m-1">
               <Image
                 src="/img/4.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200  rounded-2xl"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
             <a
               href="https://www.linkedin.com/in/amir-aghajani/"
               target={"_blank"}
+              className="m-1"
             >
               <Image
                 src="/img/5.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200  rounded-2xl"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
-            <a href="tel:123-456-7890" target={"_blank"}>
+            <a href="tel:123-456-7890" target={"_blank"} className="m-1">
               <Image
                 src="/img/6.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200  rounded-2xl"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
           </div>
         </div>
         <div className="w-1/5"></div>
-        <div className="text-slate-200 w-2/5 text-justify">
+        <div className="text-slate-200 sm:w-2/5 sm:text-justify text-start mt-4">
           <h1 className="text-2xl font-medium">What do I do</h1>
           <ul>
             <li className="my-4 flex">
