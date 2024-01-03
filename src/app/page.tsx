@@ -5,7 +5,7 @@ export default function Home() {
     <main className="w-full bg-black min-h-screen p-10">
       <div className="sm:flex flex-col-2 mt-6">
         <div className="sm:w-2/5 text-center">
-          <h1 className="text-4xl font-medium text-slate-100 font">
+          <h1 className="text-4xl font-bold text-slate-100">
             Amir Mohammad Aghajani
           </h1>
           <div className="m-auto">
@@ -105,9 +105,9 @@ export default function Home() {
         </div>
         <div className="w-1/5"></div>
         <div className="text-slate-200 sm:w-2/5 sm:text-justify text-start mt-4">
-          <h1 className="text-2xl font-medium">What do I do</h1>
+          <h1 className="text-3xl font-semibold">What do I do</h1>
           <ul>
-            <li className="my-4 flex">
+            <li className="my-4 flex text-lg text-slate-300 font-sans">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -124,7 +124,7 @@ export default function Home() {
               </svg>
               Management Of Programming Projects
             </li>
-            <li className="my-4 flex">
+            <li className="my-4 flex text-lg text-slate-300 font-sans">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -141,7 +141,7 @@ export default function Home() {
               </svg>
               Training, Coaching, internship Web Programming
             </li>
-            <li className="my-4 flex">
+            <li className="my-4 flex text-lg text-slate-300 font-sans">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -160,8 +160,8 @@ export default function Home() {
             </li>
           </ul>
           <div className="mt-10">
-            <h1 className="text-2xl font-medium mb-6">About Me</h1>
-            <p>
+            <h1 className="text-3xl font-semibold mb-6">About Me</h1>
+            <p className="text-lg text-slate-300 font-sans">
               I was born in Iran. I received my bachelors degree in business
               administration from QIAU. And I have been programming for two
               years. I like to understand the structure of everything and I
@@ -171,8 +171,8 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-10">
-            <h1 className="text-2xl font-medium mb-4">Skills</h1>
-            <p>
+            <h1 className="text-3xl font-semibold mb-4">Skills</h1>
+            <p className="text-lg text-slate-300 font-sans">
               React-js, Typescript, NextJs, Html, Css, Tailwind-Css,
               Polaris-Shopify, Wordpress, Graphql, SQL, Database, Postgres, git,
               Leadership, Project-Management, Teamwork

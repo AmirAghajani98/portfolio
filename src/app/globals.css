@@ -2,12 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: one;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./font/handmade-memories/Handmade\ Memories.otf")
+      format("embedded-opentype"),
+      url("./font/flying-bird/Flying\ Bird.ttf")
+      format("truetype"),
+     
+}
+     
+
+@font-face {
+  font-family: two;
+  font-style: normal;
+  font-weight: 800;
+  src:
+      url("./font/moose/Moose.ttf")
+      format("truetype"),
+      url("./font/trotes/Trotes.ttf")
+      format("truetype");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  font-family: one ,sans-serif;
 }
-
+h1 , h2, h3, h4,h5,h6{
+  font-family: two ,sans-serif;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
