@@ -5,19 +5,19 @@ export default function Home() {
     <main className="w-full bg-black min-h-screen p-10">
       <div className="sm:flex flex-col-2 mt-6">
         <div className="sm:w-2/5 text-center">
-          <h1 className="text-4xl font-bold text-slate-100">
+          <h1 className="sm:text-5xl text-4xl font-bold text-slate-100">
             Amir Mohammad Aghajani
           </h1>
-          <div className="m-auto">
+          <div className="mx-auto my-20 ">
             <Image
-              src="/img/profile.png"
+              src="/img/amir.jpg"
               width={400}
               height={400}
               alt="Picture of the author"
-              className="m-auto"
+              className="m-auto rounded-full"
             />
           </div>
-          <div className="flex mt-12 justify-center mr-4">
+          <div className="mt-12 justify-center mr-4 hidden sm:flex">
             <a
               href="https://instagram.com/amiir_aghajani98?igshid=OGQ5ZDc2ODk2ZA=="
               target={"_blank"}
@@ -103,11 +103,11 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="w-1/5"></div>
+        <div className="w-[10%]"></div>
         <div className="text-slate-200 sm:w-2/5 sm:text-justify text-start mt-4">
           <h1 className="text-3xl font-semibold">What do I do</h1>
           <ul>
-            <li className="my-4 flex text-lg text-slate-300 font-sans">
+            <li className="my-8 flex text-lg text-slate-300 font-sans">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -124,7 +124,7 @@ export default function Home() {
               </svg>
               Management Of Programming Projects
             </li>
-            <li className="my-4 flex text-lg text-slate-300 font-sans">
+            <li className="my-8 flex text-lg text-slate-300 font-sans">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -141,7 +141,7 @@ export default function Home() {
               </svg>
               Training, Coaching, internship Web Programming
             </li>
-            <li className="my-4 flex text-lg text-slate-300 font-sans">
+            <li className="my-8 flex text-lg text-slate-300 font-sans">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -179,7 +179,91 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </div> <div className="flex mt-12 justify-center mr-4 sm:hidden">
+            <a
+              href="https://instagram.com/amiir_aghajani98?igshid=OGQ5ZDc2ODk2ZA=="
+              target={"_blank"}
+              className="m-1"
+            >
+              <Image
+                src="/img/1.png"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
+              />
+            </a>
+            <a
+              href="mailto:amir.aghajani1377@gmail.com"
+              target={"_blank"}
+              className="m-1"
+            >
+              <Image
+                src="/img/2.png"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
+              />
+            </a>
+            <a
+              href="https://github.com/AmirAghajani98"
+              target={"_blank"}
+              className="m-1"
+            >
+              <Image
+                src="/img/7.png"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
+              />
+            </a>
+            <a
+              href="https://gitlab.com/AmirAghajani98"
+              target={"_blank"}
+              className="m-1"
+            >
+              <Image
+                src="/img/8.svg"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
+              />
+            </a>
+            <a href="https://t.me/Amr431" target={"_blank"} className="m-1">
+              <Image
+                src="/img/4.png"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/amir-aghajani/"
+              target={"_blank"}
+              className="m-1"
+            >
+              <Image
+                src="/img/5.png"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
+              />
+            </a>
+            <a href="tel:123-456-7890" target={"_blank"} className="m-1">
+              <Image
+                src="/img/6.png"
+                width={50}
+                height={50}
+                alt="Picture of the author"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
+              />
+            </a>
+          </div>
     </main>
   );
 }
