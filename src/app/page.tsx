@@ -3,18 +3,21 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="w-full bg-black min-h-screen p-10">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
       <div className="sm:flex flex-col-2 mt-6">
-        <div className="sm:w-2/5 text-center">
+        <div className="sm:w-2/5 text-center m-auto">
           <h1 className="sm:text-5xl text-4xl font-bold text-slate-100">
             Amir Mohammad Aghajani
           </h1>
-          <div className="mx-auto my-20 ">
+          <div className="mx-auto my-20">
             <Image
-              src="/img/amir.jpg"
+              src="/img/profile.png"
               width={400}
               height={400}
               alt="Picture of the author"
-              className="m-auto rounded-full"
+              className="m-auto rounded-full shadow-md shadow-cyan-500/50"
             />
           </div>
           <div className="mt-12 justify-center mr-4 hidden sm:flex">
@@ -103,9 +106,8 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="w-[10%]"></div>
-        <div className="text-slate-200 sm:w-2/5 sm:text-justify text-start mt-4">
-          <h1 className="text-3xl font-semibold">What do I do</h1>
+        <div id="card" className="text-slate-200 sm:w-2/5 sm:text-justify text-start p-8 rounded-3xl m-auto shadow-lg border-y border-slate-400 shadow-slate-400">
+          <h1 className="text-3xl font-semibold mt-4">What do I do</h1>
           <ul>
             <li className="my-8 flex text-lg text-slate-300 font-sans">
               <svg
@@ -159,9 +161,9 @@ export default function Home() {
               Web Programming, Ui designer
             </li>
           </ul>
-          <div className="mt-10">
-            <h1 className="text-3xl font-semibold mb-6">About Me</h1>
-            <p className="text-lg text-slate-300 font-sans">
+          <div className="mt-14">
+            <h1 className="text-3xl font-semibold mb-4">About Me</h1>
+            <p className="text-lg text-slate-300 font-sans leading-9">
               I was born in Iran. I received my bachelors degree in business
               administration from QIAU. And I have been programming for two
               years. I like to understand the structure of everything and I
@@ -170,16 +172,15 @@ export default function Home() {
               constructive person.
             </p>
           </div>
-          <div className="mt-10">
+          <div className="mt-14">
             <h1 className="text-3xl font-semibold mb-4">Skills</h1>
-            <p className="text-lg text-slate-300 font-sans">
+            <p className="text-lg text-slate-300 font-sans leading-9">
               React-js, Typescript, NextJs, Html, Css, Tailwind-Css,
               Polaris-Shopify, Wordpress, Graphql, SQL, Database, Postgres, git,
               Leadership, Project-Management, Teamwork
             </p>
           </div>
-        </div>
-      </div> <div className="flex mt-12 justify-center mr-4 sm:hidden">
+        </div>  <div className="flex mt-12 justify-center mr-4 sm:hidden">
             <a
               href="https://instagram.com/amiir_aghajani98?igshid=OGQ5ZDc2ODk2ZA=="
               target={"_blank"}
@@ -264,6 +265,9 @@ export default function Home() {
               />
             </a>
           </div>
+        <div className="w-[5%]"></div>
+      </div>
+       
     </main>
   );
 }
