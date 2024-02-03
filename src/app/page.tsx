@@ -8,7 +8,7 @@ export default function Home() {
       <div id='stars3'></div>
       <div className="sm:flex flex-col-2 mt-6">
         <div className="sm:w-2/5 text-center m-auto">
-          <h1 className="sm:text-5xl text-4xl font-bold text-slate-100">
+          <h1 className="sm:text-6xl text-4xl font-bold text-slate-100 font-sans">
             Amir Mohammad Aghajani
           </h1>
           <div className="mx-auto my-20">
@@ -106,7 +106,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div id="card" className="text-slate-200 sm:w-2/5 sm:text-justify text-start p-8 rounded-3xl m-auto shadow-lg border-y border-slate-400 shadow-slate-400">
+        <div id="card" className="text-slate-200 sm:w-2/5 sm:text-justify text-start p-8 rounded-3xl m-auto shadow-lg border-y border-slate-400 shadow-slate-700">
           <h1 className="text-3xl font-semibold mt-4">What do I do</h1>
           <ul>
             <li className="my-8 flex text-lg text-slate-300 font-sans">
