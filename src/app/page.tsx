@@ -11,7 +11,7 @@ export default function Home() {
           <h1 className="sm:text-6xl text-4xl font-bold text-slate-100 font-sans">
             Amir Mohammad Aghajani
           </h1>
-          <div className="mx-auto my-20">
+          <div className="mx-auto my-[70px]">
             <Image
               src="/img/profile.png"
               width={400}
@@ -20,88 +20,76 @@ export default function Home() {
               className="m-auto rounded-full shadow-md shadow-cyan-500/50"
             />
           </div>
-          <div className="mt-12 justify-center mr-4 hidden sm:flex">
-            <a
-              href="https://instagram.com/amiir_aghajani98?igshid=OGQ5ZDc2ODk2ZA=="
-              target={"_blank"}
-              className="m-1"
-            >
-              <Image
-                src="/img/1.png"
-                width={50}
-                height={50}
-                alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
-              />
-            </a>
+          <div className=""><h2 className="justify-center text-3xl font-bold hidden sm:flex">Connect with me</h2></div>
+          <div className="mt-8 justify-center mr-4 hidden sm:flex">
             <a
               href="mailto:amir.aghajani1377@gmail.com"
               target={"_blank"}
-              className="m-1"
+              className="mx-3"
             >
               <Image
                 src="/img/2.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
+                className="m-2 p-2 bg-gray-200 rounded-2xl hover:animate-pulse"
               />
             </a>
             <a
               href="https://github.com/AmirAghajani98"
               target={"_blank"}
-              className="m-1"
+              className="mx-3"
             >
               <Image
                 src="/img/7.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
+                className="m-2 p-2 bg-gray-200 rounded-2xl hover:animate-pulse"
               />
             </a>
             <a
               href="https://gitlab.com/AmirAghajani98"
               target={"_blank"}
-              className="m-1"
+              className="mx-3"
             >
               <Image
                 src="/img/8.svg"
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
+                className="m-2 p-2 bg-gray-200 rounded-2xl hover:animate-pulse"
               />
             </a>
-            <a href="https://t.me/Amr431" target={"_blank"} className="m-1">
+            <a href="https://t.me/Amr431" target={"_blank"} className="mx-3">
               <Image
                 src="/img/4.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
+                className="m-2 p-2 bg-gray-200 rounded-2xl hover:animate-pulse"
               />
             </a>
             <a
               href="https://www.linkedin.com/in/amir-aghajani/"
               target={"_blank"}
-              className="m-1"
+              className="mx-3"
             >
               <Image
                 src="/img/5.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
+                className="m-2 p-2 bg-gray-200 rounded-2xl hover:animate-pulse"
               />
             </a>
-            <a href="tel:123-456-7890" target={"_blank"} className="m-1">
+            <a href="tel:123-456-7890" target={"_blank"} className="mx-3">
               <Image
                 src="/img/6.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
+                className="m-2 p-2 bg-gray-200 rounded-2xl hover:animate-pulse"
               />
             </a>
           </div>
@@ -180,24 +168,14 @@ export default function Home() {
               Leadership, Project-Management, Teamwork
             </p>
           </div>
-        </div>  <div className="flex mt-12 justify-center mr-4 sm:hidden">
-            <a
-              href="https://instagram.com/amiir_aghajani98?igshid=OGQ5ZDc2ODk2ZA=="
-              target={"_blank"}
-              className="m-1"
-            >
-              <Image
-                src="/img/1.png"
-                width={50}
-                height={50}
-                alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
-              />
-            </a>
+          <div className="mt-14 sm:hidden">
+            <h1 className="text-3xl font-semibold mb-4 sm:hidden">Connect with me</h1>
+            </div>
+          <div className="flex sm:mt-12 justify-center mr-4 sm:hidden">
             <a
               href="mailto:amir.aghajani1377@gmail.com"
               target={"_blank"}
-              className="m-1"
+              className="m-2"
             >
               <Image
                 src="/img/2.png"
@@ -210,7 +188,7 @@ export default function Home() {
             <a
               href="https://github.com/AmirAghajani98"
               target={"_blank"}
-              className="m-1"
+              className="m-2"
             >
               <Image
                 src="/img/7.png"
@@ -223,7 +201,7 @@ export default function Home() {
             <a
               href="https://gitlab.com/AmirAghajani98"
               target={"_blank"}
-              className="m-1"
+              className="m-2"
             >
               <Image
                 src="/img/8.svg"
@@ -233,7 +211,7 @@ export default function Home() {
                 className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
-            <a href="https://t.me/Amr431" target={"_blank"} className="m-1">
+            <a href="https://t.me/Amr431" target={"_blank"} className="m-2">
               <Image
                 src="/img/4.png"
                 width={50}
@@ -245,7 +223,7 @@ export default function Home() {
             <a
               href="https://www.linkedin.com/in/amir-aghajani/"
               target={"_blank"}
-              className="m-1"
+              className="m-2"
             >
               <Image
                 src="/img/5.png"
@@ -255,7 +233,7 @@ export default function Home() {
                 className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
-            <a href="tel:123-456-7890" target={"_blank"} className="m-1">
+            <a href="tel:123-456-7890" target={"_blank"} className="m-2">
               <Image
                 src="/img/6.png"
                 width={50}
@@ -265,6 +243,8 @@ export default function Home() {
               />
             </a>
           </div>
+        </div>         
+        
         <div className="w-[5%]"></div>
       </div>
        
