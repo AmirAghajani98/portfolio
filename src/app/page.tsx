@@ -169,7 +169,7 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-14 sm:hidden">
-            <h1 className="text-3xl font-semibold mb-4 sm:hidden">Connect with me</h1>
+            <h1 className="text-[26px] font-semibold mb-4 sm:hidden">Connect with me</h1>
             </div>
           <div className="flex sm:mt-12 justify-center mr-4 sm:hidden">
             <a
