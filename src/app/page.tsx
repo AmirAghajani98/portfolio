@@ -83,7 +83,7 @@ export default function Home() {
                 className="m-2 p-2 bg-gray-200 rounded-2xl hover:animate-pulse"
               />
             </a>
-            <a href="tel:123-456-7890" target={"_blank"} className="mx-3">
+            <a href="tel:+989369477625" target={"_blank"} className="mx-3">
               <Image
                 src="/img/6.png"
                 width={50}
