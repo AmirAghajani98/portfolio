@@ -83,7 +83,7 @@ export default function Home() {
                 className="m-2 p-2 bg-gray-200 rounded-2xl hover:animate-pulse"
               />
             </a>
-            <a href="tel:123-456-7890" target={"_blank"} className="mx-3">
+            <a href="tel:+989369477625" target={"_blank"} className="mx-3">
               <Image
                 src="/img/6.png"
                 width={50}
@@ -171,11 +171,11 @@ export default function Home() {
           <div className="mt-14 sm:hidden">
             <h1 className="text-[26px] font-semibold mb-4 sm:hidden">Connect with me</h1>
             </div>
-          <div className="flex sm:mt-12 justify-center mr-4 sm:hidden">
+          <div className="flex mr-6 sm:mt-12 sm:hidden">
             <a
               href="mailto:amir.aghajani1377@gmail.com"
               target={"_blank"}
-              className="m-2"
+              className="m-1.5"
             >
               <Image
                 src="/img/2.png"
@@ -188,7 +188,7 @@ export default function Home() {
             <a
               href="https://github.com/AmirAghajani98"
               target={"_blank"}
-              className="m-2"
+              className="m-1.5"
             >
               <Image
                 src="/img/7.png"
@@ -201,7 +201,7 @@ export default function Home() {
             <a
               href="https://gitlab.com/AmirAghajani98"
               target={"_blank"}
-              className="m-2"
+              className="m-1.5"
             >
               <Image
                 src="/img/8.svg"
@@ -211,7 +211,7 @@ export default function Home() {
                 className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
-            <a href="https://t.me/Amr431" target={"_blank"} className="m-2">
+            <a href="https://t.me/Amr431" target={"_blank"} className="m-1.5">
               <Image
                 src="/img/4.png"
                 width={50}
@@ -223,7 +223,7 @@ export default function Home() {
             <a
               href="https://www.linkedin.com/in/amir-aghajani/"
               target={"_blank"}
-              className="m-2"
+              className="m-1.5"
             >
               <Image
                 src="/img/5.png"
@@ -233,7 +233,7 @@ export default function Home() {
                 className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
-            <a href="tel:123-456-7890" target={"_blank"} className="m-2">
+            <a href="tel:123-456-7890" target={"_blank"} className="m-1.5">
               <Image
                 src="/img/6.png"
                 width={50}
