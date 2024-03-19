@@ -1,5 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import Provider from "./component/Provider";
+import Navbar from "./component/Navbar";
 
 export const metadata: Metadata = {
   title: "Amir Mohammad Aghajnai",
@@ -14,7 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="h-screen sm:overflow-hidden">
-      {children}
+        <Provider>
+          <Navbar />
+          <main>{children}</main>
+        </Provider>
       </body>
     </html>
   );

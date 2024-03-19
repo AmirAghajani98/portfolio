@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="w-full bg-black min-h-screen p-10">
-      <div id='stars'></div>
-      <div id='stars2'></div>
-      <div id='stars3'></div>
-      <div className="sm:flex flex-col-2 mt-6">
+    <main className="w-full bg-slate-400 dark:bg-black min-h-screen p-10">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div className="sm:flex flex-col-2">
         <div className="sm:w-2/5 text-center m-auto">
-          <h1 className="sm:text-6xl text-4xl font-bold text-slate-100 font-sans">
+          <h1 className="sm:text-6xl text-4xl font-bold dark:text-slate-100 text-[#121a23] font-sans">
             Amir Mohammad Aghajani
           </h1>
           <div className="mx-auto my-[70px]">
@@ -17,10 +17,14 @@ export default function Home() {
               width={400}
               height={400}
               alt="Picture of the author"
-              className="m-auto rounded-full shadow-md shadow-cyan-500/50"
+              className="m-auto rounded-full shadow-md shadow-cyan-500/50 z-30"
             />
           </div>
-          <div className=""><h2 className="justify-center text-3xl font-bold hidden sm:flex">Connect with me</h2></div>
+          <div className="dark:text-slate-100 text-[#121a23]">
+            <h2 className="justify-center text-3xl font-bold hidden sm:flex">
+              Connect with me
+            </h2>
+          </div>
           <div className="mt-8 justify-center mr-4 hidden sm:flex">
             <a
               href="mailto:amir.aghajani1377@gmail.com"
@@ -32,7 +36,7 @@ export default function Home() {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl hover:animate-pulse"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
             <a
@@ -45,7 +49,7 @@ export default function Home() {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl hover:animate-pulse"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
             <a
@@ -58,7 +62,7 @@ export default function Home() {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl hover:animate-pulse"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
             <a href="https://t.me/Amr431" target={"_blank"} className="mx-3">
@@ -67,7 +71,7 @@ export default function Home() {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl hover:animate-pulse"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
             <a
@@ -80,7 +84,7 @@ export default function Home() {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl hover:animate-pulse"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
             <a href="tel:+989369477625" target={"_blank"} className="mx-3">
@@ -89,15 +93,15 @@ export default function Home() {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl hover:animate-pulse"
+                className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
           </div>
         </div>
-        <div id="card" className="text-slate-200 sm:w-2/5 sm:text-justify text-start p-8 rounded-3xl m-auto shadow-lg border-y border-slate-400 shadow-slate-700">
+        <div className="dark:text-slate-100 text-[#121a23] dark:bg-[#121a23] bg-slate-500 bg-opacity-30 sm:w-2/5 sm:text-justify text-start p-8 rounded-3xl m-auto shadow-lg shadow-slate-600 border-y border-slate-400 dark:shadow-slate-900">
           <h1 className="text-3xl font-semibold mt-4">What do I do</h1>
-          <ul>
-            <li className="my-8 flex text-lg text-slate-300 font-sans">
+          <ul className="dark:text-slate-300">
+            <li className="my-8 flex text-lg font-sans">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -114,7 +118,7 @@ export default function Home() {
               </svg>
               Management Of Programming Projects
             </li>
-            <li className="my-8 flex text-lg text-slate-300 font-sans">
+            <li className="my-8 flex text-lg font-sans">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -131,7 +135,7 @@ export default function Home() {
               </svg>
               Training, Coaching, internship Web Programming
             </li>
-            <li className="my-8 flex text-lg text-slate-300 font-sans">
+            <li className="my-8 flex text-lg font-sans">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -151,7 +155,7 @@ export default function Home() {
           </ul>
           <div className="mt-14">
             <h1 className="text-3xl font-semibold mb-4">About Me</h1>
-            <p className="text-lg text-slate-300 font-sans leading-9">
+            <p className="text-lg dark:text-slate-300 font-sans leading-9">
               I was born in Iran. I received my bachelors degree in business
               administration from QIAU. And I have been programming for two
               years. I like to understand the structure of everything and I
@@ -162,16 +166,21 @@ export default function Home() {
           </div>
           <div className="mt-14">
             <h1 className="text-3xl font-semibold mb-4">Skills</h1>
-            <p className="text-lg text-slate-300 font-sans leading-9">
+            <p className="text-lg dark:text-slate-300 font-sans leading-9">
               React-js, Typescript, NextJs, Html, Css, Tailwind-Css,
               Polaris-Shopify, Wordpress, Graphql, SQL, Database, Postgres, git,
               Leadership, Project-Management, Teamwork
             </p>
           </div>
-          <div className="mt-14 sm:hidden">
-            <h1 className="text-[26px] font-semibold mb-4 sm:hidden">Connect with me</h1>
-            </div>
-          <div className="flex mr-6 sm:mt-12 sm:hidden">
+          <div
+            id="about"
+            className="mt-14 sm:hidden flex justify-center  dark:text-slate-100 text-[#121a23]"
+          >
+            <h1 className="text-[26px] font-semibold mb-4 sm:hidden">
+              Connect with me
+            </h1>
+          </div>
+          <div className="flex justify-center mr-6 sm:mt-12 sm:hidden">
             <a
               href="mailto:amir.aghajani1377@gmail.com"
               target={"_blank"}
@@ -243,11 +252,10 @@ export default function Home() {
               />
             </a>
           </div>
-        </div>         
-        
+        </div>
+
         <div className="w-[5%]"></div>
       </div>
-       
     </main>
   );
 }
