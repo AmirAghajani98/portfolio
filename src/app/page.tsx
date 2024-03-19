@@ -207,19 +207,8 @@ export default function Home() {
                 className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
             </a>
-            <a
-              href="https://gitlab.com/AmirAghajani98"
-              target={"_blank"}
-              className="m-1.5"
-            >
-              <Image
-                src="/img/8.svg"
-                width={50}
-                height={50}
-                alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
-              />
-            </a>
+            
+         
             <a href="https://t.me/Amr431" target={"_blank"} className="m-1.5">
               <Image
                 src="/img/4.png"
@@ -241,18 +230,8 @@ export default function Home() {
                 alt="Picture of the author"
                 className="m-2 p-2 bg-gray-200 rounded-2xl"
               />
-            </a>
-            <a href="tel:123-456-7890" target={"_blank"} className="m-1.5">
-              <Image
-                src="/img/6.png"
-                width={50}
-                height={50}
-                alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
-              />
-            </a>
-          </div>
-        </div>
+            </a>          </div>
+      </div>
 
         <div className="w-[5%]"></div>
       </div>
