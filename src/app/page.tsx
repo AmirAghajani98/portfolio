@@ -36,7 +36,7 @@ export default function Home() {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
+                className="m-2 p-2 bg-[#121a23] bg-opacity-10 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-20 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
               />
             </a>
             <a
@@ -49,20 +49,7 @@ export default function Home() {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
-              />
-            </a>
-            <a
-              href="https://gitlab.com/AmirAghajani98"
-              target={"_blank"}
-              className="mx-3"
-            >
-              <Image
-                src="/img/8.svg"
-                width={50}
-                height={50}
-                alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
+                className="m-2 p-2 bg-[#121a23] bg-opacity-10 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-20 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
               />
             </a>
             <a href="https://t.me/Amr431" target={"_blank"} className="mx-3">
@@ -71,7 +58,7 @@ export default function Home() {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
+                className="m-2 p-2 bg-[#121a23] bg-opacity-10 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-20 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
               />
             </a>
             <a
@@ -84,21 +71,12 @@ export default function Home() {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
-              />
-            </a>
-            <a href="tel:+989369477625" target={"_blank"} className="mx-3">
-              <Image
-                src="/img/6.png"
-                width={50}
-                height={50}
-                alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
+                className="m-2 p-2 bg-[#121a23] bg-opacity-10 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-20 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
               />
             </a>
           </div>
         </div>
-        <div className="dark:text-slate-100 text-[#121a23] dark:bg-[#121a23] bg-slate-500 bg-opacity-30 sm:w-2/5 sm:text-justify text-start p-8 rounded-3xl m-auto shadow-lg shadow-slate-600 border-y border-slate-400 dark:shadow-slate-900">
+        <div className="dark:text-slate-100 text-[#121a23] dark:bg-[#121a23] bg-slate-500 bg-opacity-30 sm:w-2/5 sm:text-justify text-start p-8 rounded-3xl m-auto shadow-lg shadow-slate-600 border-y border-slate-400 dark:shadow-slate-900 dark:border-slate-700">
           <h1 className="text-3xl font-semibold mt-4">What do I do</h1>
           <ul className="dark:text-slate-300">
             <li className="my-8 flex text-lg font-sans">
@@ -153,7 +131,7 @@ export default function Home() {
               Web Programming, Ui designer
             </li>
           </ul>
-          <div className="mt-14">
+          <div className="mt-14 text-justify">
             <h1 className="text-3xl font-semibold mb-4">About Me</h1>
             <p className="text-lg dark:text-slate-300 font-sans leading-9">
               I was born in Iran. I received my bachelors degree in business
@@ -164,7 +142,7 @@ export default function Home() {
               constructive person.
             </p>
           </div>
-          <div className="mt-14">
+          <div className="mt-14 text-justify">
             <h1 className="text-3xl font-semibold mb-4">Skills</h1>
             <p className="text-lg dark:text-slate-300 font-sans leading-9">
               React-js, Typescript, NextJs, Html, Css, Tailwind-Css,
@@ -172,10 +150,7 @@ export default function Home() {
               Leadership, Project-Management, Teamwork
             </p>
           </div>
-          <div
-            id="about"
-            className="mt-14 sm:hidden flex justify-center  dark:text-slate-100 text-[#121a23]"
-          >
+          <div className="mt-14 sm:hidden flex justify-center dark:text-slate-100 text-[#121a23]">
             <h1 className="text-[26px] font-semibold mb-4 sm:hidden">
               Connect with me
             </h1>
@@ -191,7 +166,7 @@ export default function Home() {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
+                className="m-2 p-2 bg-[#121a23] bg-opacity-10 dark:bg-slate-100 dark:bg-opacity-50 rounded-2xl hover:bg-opacity-20"
               />
             </a>
             <a
@@ -204,18 +179,16 @@ export default function Home() {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
+                className="m-2 p-2 bg-[#121a23] bg-opacity-10 dark:bg-slate-100 dark:bg-opacity-50 rounded-2xl hover:bg-opacity-20"
               />
             </a>
-            
-         
             <a href="https://t.me/Amr431" target={"_blank"} className="m-1.5">
               <Image
                 src="/img/4.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
+                className="m-2 p-2 bg-[#121a23] bg-opacity-10 dark:bg-slate-100 dark:bg-opacity-50 rounded-2xl hover:bg-opacity-20"
               />
             </a>
             <a
@@ -228,11 +201,11 @@ export default function Home() {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="m-2 p-2 bg-gray-200 rounded-2xl"
+                className="m-2 p-2 bg-[#121a23] bg-opacity-10 dark:bg-slate-100 dark:bg-opacity-50 rounded-2xl hover:bg-opacity-20"
               />
-            </a>          </div>
-      </div>
-
+            </a>
+          </div>
+        </div>
         <div className="w-[5%]"></div>
       </div>
     </main>

@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export default function Navbar() {
@@ -12,7 +11,7 @@ export default function Navbar() {
   // };
 
   return (
-    <header className="py-1.5 dark:bg-[#121a23] bg-slate-400 bg-opacity-80 w-full shadow-lg shadow-slate-700">
+    <header className="sm:py-1.5 py-1 dark:bg-[#121a23] bg-slate-400 bg-opacity-80 w-full shadow-lg shadow-slate-700">
       <div className="flex items-center justify-between w-full">
         <div className="flex items-center shrink-0">
           <a aria-current="page" href="/">
