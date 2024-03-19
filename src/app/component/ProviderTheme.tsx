@@ -7,7 +7,7 @@ type Props = {
   children: string | React.JSX.Element | React.JSX.Element[];
 };
 
-const Provider = ({ children }: Props) => {
+const ProviderTheme = ({ children }: Props) => {
   const [mounted, setMounted] = useState<boolean>(false);
 
   useEffect(() => {
@@ -25,4 +25,4 @@ const Provider = ({ children }: Props) => {
   );
 };
 
-export default Provider;
+export default ProviderTheme;

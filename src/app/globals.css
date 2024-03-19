@@ -51,9 +51,6 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-#card {
-  /* background-color: #121a23 !important; */
-}
 #img {
   z-index: 2 !important;
 }
