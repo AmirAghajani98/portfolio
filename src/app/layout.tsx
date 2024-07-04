@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-screen sm:overflow-hidden">
+      <body className="h-auto">
         <ProviderTheme>
           <Navbar />
           <main>{children}</main>

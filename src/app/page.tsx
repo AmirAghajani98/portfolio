@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Projects from "./component/projects";
 
 export default function Home() {
   return (
@@ -208,6 +209,7 @@ export default function Home() {
         </div>
         <div className="w-[5%]"></div>
       </div>
+      <Projects />
     </main>
   );
 }
