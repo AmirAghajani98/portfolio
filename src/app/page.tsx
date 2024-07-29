@@ -32,7 +32,7 @@ export default function Home() {
               className="mx-3"
             >
               <Image
-                src="/img/2.png"
+                src="./img/2.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
@@ -45,7 +45,7 @@ export default function Home() {
               className="mx-3"
             >
               <Image
-                src="/img/7.png"
+                src="./img/7.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
@@ -54,7 +54,7 @@ export default function Home() {
             </a>
             <a href="https://t.me/Amr431" target={"_blank"} className="mx-3">
               <Image
-                src="/img/4.png"
+                src="./img/4.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
@@ -67,7 +67,7 @@ export default function Home() {
               className="mx-3"
             >
               <Image
-                src="/img/5.png"
+                src="./img/5.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
@@ -162,7 +162,7 @@ export default function Home() {
               className="m-1.5"
             >
               <Image
-                src="/img/2.png"
+                src="./img/2.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
@@ -175,7 +175,7 @@ export default function Home() {
               className="m-1.5"
             >
               <Image
-                src="/img/7.png"
+                src="./img/7.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
@@ -184,7 +184,7 @@ export default function Home() {
             </a>
             <a href="https://t.me/Amr431" target={"_blank"} className="m-1.5">
               <Image
-                src="/img/4.png"
+                src="./img/4.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
@@ -197,7 +197,7 @@ export default function Home() {
               className="m-1.5"
             >
               <Image
-                src="/img/5.png"
+                src="./img/5.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
