@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
           <span className="inline-block rounded-lg p-3">
             <div className="inline-flex align-middle justify-center items-center select-none dark:text-slate-100 text-[#121a23]">
               <Image
-                src="/img/amir.jpg"
+                src="./img/amir.jpg"
                 width={300}
                 height={300}
                 alt="Picture of the author"
@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
           <span className="inline-block rounded-lg p-3">
             <div className="inline-flex align-middle justify-center items-center select-none dark:text-slate-100 text-[#121a23]">
               <Image
-                src="/img/amir.jpg"
+                src="./img/amir.jpg"
                 width={300}
                 height={300}
                 alt="Picture of the author"
@@ -47,7 +47,7 @@ const Projects: React.FC = () => {
           <span className="inline-block rounded-lg p-3">
             <div className="inline-flex align-middle justify-center items-center select-none dark:text-slate-100 text-[#121a23]">
               <Image
-                src="/img/amir.jpg"
+                src="./img/amir.jpg"
                 width={300}
                 height={300}
                 alt="Picture of the author"

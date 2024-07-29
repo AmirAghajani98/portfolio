@@ -17,7 +17,7 @@ export default function Navbar() {
           <a aria-current="page" href="/">
             <Image
               className="h-10 w-auto rounded-full sm:mx-8 mx-2"
-              src="/img/alogo.jpg"
+              src="./img/alogo.jpg"
               alt=""
               width={100}
               height={100}
