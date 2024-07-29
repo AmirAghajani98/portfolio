@@ -13,7 +13,7 @@ export default function Home() {
           </h1>
           <div className="mx-auto my-[70px]">
             <Image
-              src="/img/profile.png"
+              src="./img/profile.png"
               width={400}
               height={400}
               alt="Picture of the author"
