@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-auto">
+      <body>
         <ProviderTheme>
           <Navbar />
           <main>{children}</main>
