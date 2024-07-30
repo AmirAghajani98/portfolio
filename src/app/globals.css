@@ -41,8 +41,8 @@ h6 {
   }
 }
 
-body{
-  height:auto;
+body {
+  height: auto;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -55,11 +55,12 @@ body{
 #img {
   z-index: 2 !important;
 }
-html {
+/* html {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-}
+} */
 
 #stars {
+  overflow: hidden;
   width: 1px;
   height: 1px;
   background: transparent;
