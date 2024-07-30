@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="w-full bg-slate-400 dark:bg-black min-h-screen p-10">
+    <main className="w-full bg-slate-400 dark:bg-black overflow-hidden p-10">
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
