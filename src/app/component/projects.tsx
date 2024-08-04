@@ -1,7 +1,28 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 
 const Projects: React.FC = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [modalImageSrc, setModalImageSrc] = useState("");
+
+  const openModal = (src: string) => {
+    setModalImageSrc(src);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+    setModalImageSrc("");
+  };
+
+  const handleOverlayClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (event.target === event.currentTarget) {
+      closeModal();
+    }
+  };
+
   return (
     <div className="bg-slate-400 dark:bg-black min-h-screen my-40">
       <h1 className="text-5xl text-center mx-auto my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-semibold border-b border-slate-500 dark:border-slate-600 w-[50%]">
@@ -11,11 +32,12 @@ const Projects: React.FC = () => {
         <div className="block rounded-xl border dark:border-gray-800 border-gray-400 p-4 sm:px-4 sm:py-8 sm:h-[55%] z-50 dark:bg-[#313b48] bg-slate-500 dark:bg-opacity-70 bg-opacity-60 ">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
-              src="./img/weatherapp.png"
+              src="/img/weatherapp.png"
               width={500}
               height={400}
-              alt="Picture of the author"
-              className="my-2 mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:shadow-md hover:shadow-slate-700"
+              alt="Global Weather App"
+              className="my-2 mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:shadow-md hover:shadow-slate-700 cursor-pointer"
+              onClick={() => openModal("/img/weatherapp.png")}
             />
           </div>
           <h2 className="font-mono sm:text-justify mt-2 sm:w-[90%] mx-auto my-2 font-semibold text-lg dark:text-slate-100 text-[#121a23]">
@@ -31,11 +53,12 @@ const Projects: React.FC = () => {
         <div className="z-50 block rounded-xl border dark:border-gray-800 border-gray-400 p-4 sm:px-4 sm:py-8 sm:h-[55%] dark:bg-[#313b48] bg-slate-500 dark:bg-opacity-70 bg-opacity-60">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
-              src="./img/resume.png"
+              src="/img/resume.png"
               width={500}
               height={400}
-              alt="Picture of the author"
-              className="my-2 mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:bg-opacity-20 hover:shadow-md hover:shadow-slate-700"
+              alt="Resume Template"
+              className="my-2 mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:bg-opacity-20 hover:shadow-md hover:shadow-slate-700 cursor-pointer"
+              onClick={() => openModal("/img/resume.png")}
             />
           </div>
           <h2 className="mt-2 sm:text-justify font-mono sm:w-[90%] mx-auto my-2 font-semibold text-lg dark:text-slate-100 text-[#121a23]">
@@ -51,11 +74,12 @@ const Projects: React.FC = () => {
         <div className="z-50 block rounded-xl border dark:border-gray-800 border-gray-400 py-4 p-4 sm:py-8 sm:h-[55%] dark:bg-[#313b48] bg-slate-500 dark:bg-opacity-70 bg-opacity-60">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
-              src="./img/qazvinjobs.png"
+              src="/img/qazvinjobs.png"
               width={500}
               height={400}
-              alt="Picture of the author"
-              className="my-2 mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:bg-opacity-20 hover:shadow-md hover:shadow-slate-700"
+              alt="Exhibition Event Web App"
+              className="my-2 mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:bg-opacity-20 hover:shadow-md hover:shadow-slate-700 cursor-pointer"
+              onClick={() => openModal("/img/qazvinjobs.png")}
             />
           </div>
           <h2 className="mt-2 sm:text-justify font-mono sm:w-[90%] mx-auto my-2 font-semibold text-lg dark:text-slate-100 text-[#121a23]">
@@ -69,6 +93,29 @@ const Projects: React.FC = () => {
           </p>
         </div>
       </div>
+
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-70 z-50"
+          onClick={handleOverlayClick}
+        >
+          <div className="relative">
+            <span
+              className="absolute top-4 right-4 text-white text-3xl cursor-pointer"
+              onClick={closeModal}
+            >
+              &times;
+            </span>
+            <Image
+              src={modalImageSrc}
+              alt="Full preview"
+              width={800}
+              height={600}
+              className="rounded-lg"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
