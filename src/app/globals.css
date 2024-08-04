@@ -88,6 +88,45 @@ body {
   cursor: pointer;
 }
 
+.slick-prev,
+.slick-next {
+  width: 30px !important;
+  height: 30px !important;
+  background-color: black !important; /* Arrow background color */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #313b48 !important;
+  font-size: 35px !important;
+  opacity: 1 !important;
+}
+
+.slick-slide > div {
+  padding: 0 20px;
+}
+.slick-dots {
+  bottom: -50px !important;
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-dots li button:before {
+  font-size: 15px !important;
+  color: rgb(176, 176, 176) !important;
+  opacity: 0.8;
+}
+
+.slick-dots li.slick-active button:before {
+  color: rgb(255, 255, 255) !important;
+  opacity: 1;
+}
+
 #stars {
   overflow: hidden;
   width: 1px;

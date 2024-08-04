@@ -3,7 +3,7 @@ import Projects from "./component/projects";
 
 export default function Home() {
   return (
-    <main className="w-full bg-slate-400 dark:bg-black overflow-hidden p-10">
+    <main className="w-full bg-slate-400 dark:bg-black overflow-hidden py-10">
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
