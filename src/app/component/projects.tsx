@@ -58,13 +58,18 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <main className="min-h-screen my-40 sm:w-11/12 mx-auto">
+    <main className="min-h-screen sm:w-full mx-auto bg-opacity-90 bg-slate-400 back2 justify-center flex flex-col">
       <h1 className="text-5xl text-center mx-auto my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-semibold border-b border-slate-500 dark:border-slate-600 w-[50%]">
         Projects
       </h1>
-      <Slider autoplaySpeed={4000} autoplay {...settings}>
-        <div className="slider-container m-auto">
-          <div className="block rounded-xl border dark:border-gray-800 border-gray-400 p-4 sm:px-4 sm:py-8 sm:h-[480px] z-50 dark:bg-[#313b48] bg-slate-500 dark:bg-opacity-70 bg-opacity-60 ">
+      <Slider
+        autoplaySpeed={4000}
+        autoplay
+        {...settings}
+        className="w-10/12 my-20 mx-auto "
+      >
+        <div className="slider-container">
+          <div className="z-50 block py-4 p-4 sm:py-8 sm:h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-100 bg-opacity-70 sm:text-justify text-start rounded-3xl mx-auto shadow shadow-slate-500 dark:shadow-slate-900 ">
             <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
               <Image
                 src="/img/weatherapp.png"
@@ -87,7 +92,7 @@ const Projects: React.FC = () => {
           </div>
         </div>
         <div>
-          <div className="z-50 block rounded-xl border dark:border-gray-800 border-gray-400 p-4 sm:px-4 sm:py-8 sm:h-[480px] dark:bg-[#313b48] bg-slate-500 dark:bg-opacity-70 bg-opacity-60">
+          <div className="z-50 block py-4 p-4 sm:py-8 sm:h-[480px] dark:bg-[#313b48]z-10 dark:z-10 dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500  dark:bg-opacity-100 bg-opacity-70 sm:text-justify text-start rounded-3xl mx-auto shadow shadow-slate-500 dark:shadow-slate-900 ">
             <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
               <Image
                 src="/img/resume.png"
@@ -110,7 +115,7 @@ const Projects: React.FC = () => {
           </div>
         </div>
         <div>
-          <div className="z-50 block rounded-xl border dark:border-gray-800 border-gray-400 py-4 p-4 sm:py-8 sm:h-[480px] dark:bg-[#313b48] bg-slate-500 dark:bg-opacity-70 bg-opacity-60">
+          <div className="z-50 block py-4 p-4 sm:py-8 sm:h-[480px] dark:bg-[#313b48]z-10 dark:z-10 dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500  dark:bg-opacity-100 bg-opacity-70 sm:text-justify text-start rounded-3xl mx-auto shadow shadow-slate-500 dark:shadow-slate-900 ">
             <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
               <Image
                 src="/img/qazvinjobs.png"
