@@ -9,7 +9,7 @@ const Intro: React.FC = () => {
     <section>
       <div
         id="home"
-        className="h-screen items-start justify-center flex background"
+        className="h-screen items-start justify-center flex introback"
       >
         <div id="stars" />
         <div id="stars2" />
@@ -20,7 +20,7 @@ const Intro: React.FC = () => {
             <br />
             Amir Mohammad Aghajani
           </h1>
-          <p className="my-20 text-4xl">
+          <p className="my-20 text-3xl sm:text-4xl">
             <span className=""></span>
             <strong className="font-mono dark:text-slate-100 text-[#121a23]">
               <ReactTyped
@@ -37,11 +37,11 @@ const Intro: React.FC = () => {
             </strong>
           </p>
           <div className="mt-40 dark:text-slate-100 text-[#121a23]">
-            <h2 className="justify-center text-3xl font-bold hidden sm:flex font-sans">
+            <h2 className="justify-center text-3xl font-bold sm:flex font-sans">
               Connect with me
             </h2>
           </div>
-          <div className="mt-10 justify-center mr-4 hidden sm:flex">
+          <div className="mt-10 justify-center mr-4 flex">
             <a
               href="mailto:amir.aghajani1377@gmail.com"
               target={"_blank"}
@@ -52,7 +52,7 @@ const Intro: React.FC = () => {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="mx-4 my-2 p-2 bg-[#121a23] bg-opacity-10 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-20 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
+                className="mx-4 my-2 p-2 bg-slate-700 bg-opacity-30 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
               />
             </a>
             <a
@@ -65,7 +65,7 @@ const Intro: React.FC = () => {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="mx-4 my-2 p-2 bg-[#121a23] bg-opacity-10 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-20 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
+                className="mx-4 my-2 p-2 bg-slate-700 bg-opacity-30 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
               />
             </a>
             <a href="https://t.me/Amr431" target={"_blank"} className="mx-3">
@@ -74,7 +74,7 @@ const Intro: React.FC = () => {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="mx-4 my-2 p-2 bg-[#121a23] bg-opacity-10 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-20 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
+                className="mx-4 my-2 p-2 bg-slate-700 bg-opacity-30 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
               />
             </a>
             <a
@@ -87,7 +87,7 @@ const Intro: React.FC = () => {
                 width={50}
                 height={50}
                 alt="Picture of the author"
-                className="mx-4 my-2 p-2 bg-[#121a23] bg-opacity-10 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-20 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
+                className="mx-4 my-2 p-2 bg-slate-700 bg-opacity-30 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
               />
             </a>
           </div>

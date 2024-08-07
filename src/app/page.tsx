@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Intro />
-      <main className="w-full bg-slate-400 py-10 dark:opacity-100 opacity-95 backmain">
+      <main className="w-full py-10 sm:px-0 px-4 dark:opacity-100 opacity-95 backmain ">
         <div className="sm:flex flex-col-2 items-center justify-center h-full">
           <div className="sm:w-2/5 text-center m-auto">
             <div className="mx-auto my-[70px] z-50">
@@ -16,11 +16,18 @@ export default function Home() {
                 width={400}
                 height={400}
                 alt="Picture of the author"
-                className="m-auto rounded-full shadow-md shadow-cyan-500/50 z-50"
+                className="m-auto rounded-full shadow-md sm:block hidden shadow-cyan-500/50 z-50"
               />
             </div>
           </div>
           <div className="z-10 dark:z-10 dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-70 bg-opacity-70 sm:w-2/5 sm:text-justify text-start p-8 rounded-3xl mx-auto shadow-lg shadow-slate-600 border border-slate-400 dark:shadow-slate-900 dark:border-slate-800">
+            <Image
+              src="./img/profile.png"
+              width={400}
+              height={400}
+              alt="Picture of the author"
+              className="m-auto rounded-full mt-8 mb-16 w-60 sm:hidden shadow-md shadow-cyan-500/50 z-50"
+            />
             <h1 className="text-3xl font-semibold mt-4 font-mono">
               What do I do
             </h1>

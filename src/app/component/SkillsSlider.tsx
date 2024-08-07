@@ -29,6 +29,18 @@ const SkillsSlider: React.FC = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: true,
+          rows: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          rows: 2,
+          slidesPerRow: 1,
         },
       },
     ],
@@ -50,9 +62,9 @@ const SkillsSlider: React.FC = () => {
     "../img/npm.svg",
     "../img/postgres.svg",
     "../img/postman.svg",
-    "../img/react.svg",
-    "../img/sass.svg",
     "../img/sqlite.svg",
+    "../img/react.svg",
+    "../img/sass.png",
     "../img/tailwind.svg",
     "../img/trello.svg",
     "../img/vscode.svg",
@@ -62,15 +74,15 @@ const SkillsSlider: React.FC = () => {
   ];
 
   return (
-    <div className="z-50 w-full h-auto mx-auto py-20 bg-slate-500 backmain ">
-      <h1 className="text-5xl text-center mx-auto my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-semibold border-b border-slate-500 dark:border-slate-600 w-[50%]">
+    <div className="z-50 w-full dark:opacity-100 opacity-95  h-auto mx-auto py-20 backmain ">
+      <h1 className="sm:text-5xl text-4xl text-center mx-auto my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-semibold border-b border-slate-500 dark:border-slate-600 w-[50%]">
         skills
       </h1>
       <Slider {...settings} className="w-10/12 m-auto">
         {logos.map((logo, index) => (
           <div
             key={index}
-            className="rounded-full dark:bg-[#676767ce] bg-[#8f8f8fdd] p-5 my-16"
+            className="rounded-full dark:bg-slate-700 bg-slate-500 p-5 sm:my-16 sm:mx-auto mx-auto my-4"
           >
             <Image
               src={logo}

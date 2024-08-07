@@ -41,19 +41,37 @@ h6 {
   }
 }
 .dark .backmain {
-  background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at top, #1b2735 0%, transparent 70%),
+    radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) !important;
 }
-.dark .back2 {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+.backmain {
+  background: radial-gradient(ellipse at top, #778695 0%, transparent 70%),
+    radial-gradient(ellipse at bottom, #778695 0%, #9babc1 100%) !important;
 }
-.dark .background {
+.dark .projectback {
+  background: radial-gradient(ellipse at top, #1b2735 0%, transparent 70%),
+    radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) !important;
+  z-index: 100 !important;
+}
+.projectback {
+  background: radial-gradient(ellipse at top, #778695 0%, transparent 70%),
+    radial-gradient(ellipse at bottom, #778695 0%, #9babc1 100%) !important;
+}
+.dark .introback {
   overflow: hidden;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(
+    ellipse at bottom,
+    #1b2735 0%,
+    #090a0f 100%
+  ) !important;
   height: 100vh;
 }
-.background {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184) /* #94a3b8 */;
+.introback {
+  background: radial-gradient(
+    ellipse at bottom,
+    #778695 0%,
+    #9babc1 100%
+  ) !important;
 }
 
 body {
