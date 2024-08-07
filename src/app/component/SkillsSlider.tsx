@@ -47,35 +47,35 @@ const SkillsSlider: React.FC = () => {
   };
 
   const logos: string[] = [
-    "../img/bootstrap.svg",
-    "../img/css.svg",
-    "../img/eslint.svg",
-    "../img/git.svg",
-    "../img/github.svg",
-    "../img/gitlab.svg",
-    "../img/graphql.svg",
-    "../img/html.svg",
-    "../img/js.svg",
-    "../img/materialui.svg",
-    "../img/mysql.svg",
-    "../img/next.svg",
-    "../img/npm.svg",
-    "../img/postgres.svg",
-    "../img/postman.svg",
-    "../img/sqlite.svg",
-    "../img/react.svg",
-    "../img/sass.png",
-    "../img/tailwind.svg",
-    "../img/trello.svg",
-    "../img/vscode.svg",
-    "../img/ts.svg",
-    "../img/woo.svg",
-    "../img/wordpress.svg",
+    "./img/bootstrap.svg",
+    "./img/css.svg",
+    "./img/eslint.svg",
+    "./img/git.svg",
+    "./img/github.svg",
+    "./img/gitlab.svg",
+    "./img/graphql.svg",
+    "./img/html.svg",
+    "./img/js.svg",
+    "./img/materialui.svg",
+    "./img/mysql.svg",
+    "./img/next.svg",
+    "./img/npm.svg",
+    "./img/postgres.svg",
+    "./img/postman.svg",
+    "./img/sqlite.svg",
+    "./img/react.svg",
+    "./img/sass.png",
+    "./img/tailwind.svg",
+    "./img/trello.svg",
+    "./img/vscode.svg",
+    "./img/ts.svg",
+    "./img/woo.svg",
+    "./img/wordpress.svg",
   ];
 
   return (
     <div className="z-50 w-full dark:opacity-100 opacity-95 h-auto mx-auto py-10 backmain ">
-      <h1 className="sm:text-5xl text-4xl text-center mx-auto my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-semibold border-b border-slate-500 dark:border-slate-600 w-[50%]">
+      <h1 className="sm:text-5xl text-4xl text-center mx-auto my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 w-[50%]">
         skills
       </h1>
       <Slider {...settings} className="sm:w-10/12 m-auto">

@@ -15,7 +15,7 @@ const Intro: React.FC = () => {
         <div id="stars2" />
         <div id="stars3" />
         <div className="w-full text-center">
-          <h1 className="sm:text-6xl my-32 text-4xl font-bold dark:text-slate-100 text-[#121a23] font-sans">
+          <h1 className="sm:text-6xl sm:my-32 my-16 text-4xl font-bold dark:text-slate-100 text-[#121a23] font-sans">
             Hello, I am <br />
             <br />
             Amir Mohammad Aghajani
