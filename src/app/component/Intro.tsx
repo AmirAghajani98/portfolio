@@ -15,7 +15,7 @@ const Intro: React.FC = () => {
         <div id="stars2" />
         <div id="stars3" />
         <div className="w-full text-center">
-          <h1 className="sm:text-6xl sm:my-32 my-16 text-4xl font-bold dark:text-slate-100 text-[#121a23] font-sans">
+          <h1 className="sm:text-6xl sm:my-32 mb-20 mt-8 text-4xl font-bold dark:text-slate-100 text-[#121a23] font-sans">
             Hello, I am <br />
             <br />
             Amir Mohammad Aghajani
@@ -41,7 +41,7 @@ const Intro: React.FC = () => {
               Connect with me
             </h2>
           </div>
-          <div className="mt-10 justify-center flex w-full sm:mx-auto">
+          <div className="sm:mt-10 mt-6 justify-center flex w-full sm:mx-auto">
             <a
               href="mailto:amir.aghajani1377@gmail.com"
               target={"_blank"}
