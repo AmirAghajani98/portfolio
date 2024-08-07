@@ -36,7 +36,7 @@ const SkillsSlider: React.FC = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           rows: 2,
@@ -74,22 +74,22 @@ const SkillsSlider: React.FC = () => {
   ];
 
   return (
-    <div className="z-50 w-full dark:opacity-100 opacity-95  h-auto mx-auto py-20 backmain ">
+    <div className="z-50 w-full dark:opacity-100 opacity-95 h-auto mx-auto py-10 backmain ">
       <h1 className="sm:text-5xl text-4xl text-center mx-auto my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-semibold border-b border-slate-500 dark:border-slate-600 w-[50%]">
         skills
       </h1>
-      <Slider {...settings} className="w-10/12 m-auto">
+      <Slider {...settings} className="sm:w-10/12 m-auto">
         {logos.map((logo, index) => (
           <div
             key={index}
-            className="rounded-full dark:bg-slate-700 bg-slate-500 p-5 sm:my-16 sm:mx-auto mx-auto my-4"
+            className="rounded-full dark:bg-slate-700 bg-slate-500 sm:p-5 py-4 sm:my-16 sm:mx-auto mx-10 my-4"
           >
             <Image
               src={logo}
               alt={`Logo ${index + 1}`}
               width={80}
               height={80}
-              className="m-auto"
+              className="m-auto sm:w-suto w-12"
             />
           </div>
         ))}

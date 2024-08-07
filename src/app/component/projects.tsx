@@ -58,12 +58,12 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <main className="min-h-screen sm:w-full mx-auto opacity-95 bg-slate-400 projectback justify-center flex flex-col">
-      <h1 className="sm:text-5xl text-4xl text-center mx-auto my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-semibold border-b border-slate-500 dark:border-slate-600 w-[50%]">
+    <main className="sm:min-h-screen sm:w-full mx-auto sm:py-10 pb-10 pt-24 opacity-95 bg-slate-400 projectback justify-center flex flex-col">
+      <h1 className="sm:text-5xl text-4xl text-center mx-auto sm:my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-semibold border-b border-slate-500 dark:border-slate-600 w-[50%]">
         Projects
       </h1>
-      <div className="w-10/12 my-20 mx-auto flex gap-16">
-        <div className="sm:w-full z-50 py-4 p-4 sm:py-8 sm:h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-100 bg-opacity-70 sm:text-justify text-start rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900 ">
+      <div className="w-10/12 sm:my-20 mx-auto sm:flex gap-16">
+        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-8 sm:h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-100 bg-opacity-70 sm:text-justify text-start rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900 ">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="/img/weatherapp.png"
@@ -84,7 +84,7 @@ const Projects: React.FC = () => {
             interface.
           </p>
         </div>
-        <div className="sm:w-full z-50  py-4 p-4 sm:py-8 sm:h-[480px] dark:z-10 dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-100 bg-opacity-70 sm:text-justify text-start rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900 ">
+        <div className="my-4 sm:my-auto sm:w-full z-50  py-4 p-4 sm:py-8 sm:h-[480px] dark:z-10 dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-100 bg-opacity-70 sm:text-justify text-start rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900 ">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="/img/resume.png"
@@ -105,7 +105,7 @@ const Projects: React.FC = () => {
             personalize your resume.
           </p>
         </div>
-        <div className="sm:w-full z-50 py-4 p-4 sm:py-8 sm:h-[480px] dark:z-10 dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-100 bg-opacity-70 sm:text-justify text-start rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900 ">
+        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-8 sm:h-[480px] dark:z-10 dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-100 bg-opacity-70 sm:text-justify text-start rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900 ">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="/img/qazvinjobs.png"
