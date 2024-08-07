@@ -11,8 +11,8 @@ export default function Navbar() {
   // };
 
   return (
-    <header className="sm:py-1.5 py-1 dark:bg-[#121a23] bg-slate-400 bg-opacity-80 w-full shadow-lg shadow-slate-700">
-      <div className="flex items-center justify-between w-full">
+    <header className="z-10 opacity-95 sm:py-1.5 py-1 dark:bg-slate-700 bg-slate-500 w-full shadow-sm shadow-slate-700">
+      <div className="flex items-center justify-between w-full ">
         <div className="flex items-center shrink-0">
           <a aria-current="page" href="/">
             <Image
@@ -50,7 +50,7 @@ export default function Navbar() {
             </a>
           </div>
         </div> */}
-        <div className="flex justify-end mx-2 sm:mx-6 rounded-full p-1 bg-slate-400 bg-opacity-70 dark:bg-[#121a23]">
+        <div className="flex justify-end mx-2 sm:mx-6 rounded-full p-1 ">
           <ThemeSwitcher />
         </div>
         {/* <div className="flex items-center mx-2">
