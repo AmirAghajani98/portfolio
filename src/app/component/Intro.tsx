@@ -20,7 +20,7 @@ const Intro: React.FC = () => {
             <br />
             Amir Mohammad Aghajani
           </h1>
-          <p className="sm:my-20 my-10 text-3xl sm:text-4xl">
+          <p className="my-20text-3xl sm:text-4xl">
             <span className=""></span>
             <strong className="font-mono dark:text-slate-100 text-[#121a23]">
               <ReactTyped
@@ -36,7 +36,7 @@ const Intro: React.FC = () => {
               />
             </strong>
           </p>
-          <div className="mt-40 dark:text-slate-100 text-[#121a23]">
+          <div className="sm:mt-40 mt-20 dark:text-slate-100 text-[#121a23]">
             <h2 className="justify-center text-3xl font-bold sm:flex font-sans">
               Connect with me
             </h2>
