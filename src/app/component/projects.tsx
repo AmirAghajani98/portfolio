@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
               height={400}
               alt="Global Weather App"
               className="my-2 mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:shadow-md hover:shadow-slate-700 cursor-pointer"
-              onClick={() => openModal("/img/weatherapp.png")}
+              onClick={() => openModal("./img/weatherapp.png")}
             />
           </div>
           <h2 className="font-mono sm:text-justify mt-2 sm:w-[90%] mx-auto my-2 font-semibold text-lg dark:text-slate-100 text-[#121a23]">
@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
               height={400}
               alt="Resume Template"
               className="my-2 mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:bg-opacity-20 hover:shadow-md hover:shadow-slate-700 cursor-pointer"
-              onClick={() => openModal("/img/resume.png")}
+              onClick={() => openModal("./img/resume.png")}
             />
           </div>
           <h2 className="mt-2 sm:text-justify font-mono sm:w-[90%] mx-auto my-2 font-semibold text-lg dark:text-slate-100 text-[#121a23]">
@@ -79,7 +79,7 @@ const Projects: React.FC = () => {
               height={400}
               alt="Exhibition Event Web App"
               className="my-2 mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:bg-opacity-20 hover:shadow-md hover:shadow-slate-700 cursor-pointer"
-              onClick={() => openModal("/img/qazvinjobs.png")}
+              onClick={() => openModal("./img/qazvinjobs.png")}
             />
           </div>
           <h2 className="mt-2 sm:text-justify font-mono sm:w-[90%] mx-auto my-2 font-semibold text-lg dark:text-slate-100 text-[#121a23]">
