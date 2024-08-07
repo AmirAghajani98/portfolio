@@ -36,7 +36,7 @@ const Intro: React.FC = () => {
               />
             </strong>
           </p>
-          <div className="sm:mt-40 mt-20 dark:text-slate-100 text-[#121a23]">
+          <div className="sm:mt-40 mt-30 dark:text-slate-100 text-[#121a23]">
             <h2 className="justify-center sm:text-3xl text-2xl font-semibold sm:flex font-sans">
               Connect with me
             </h2>
