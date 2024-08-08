@@ -5,6 +5,7 @@ import Slider, { Settings } from "react-slick";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ScrollUpButton from "./ScroolUpButton";
 
 const SkillsSlider: React.FC = () => {
   const settings: Settings = {
@@ -94,6 +95,9 @@ const SkillsSlider: React.FC = () => {
           </div>
         ))}
       </Slider>
+      <div className="w-full text-right absolute">
+        <ScrollUpButton />
+      </div>
     </div>
   );
 };

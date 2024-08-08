@@ -3,6 +3,7 @@ import Intro from "./component/Intro";
 import Projects from "./component/projects";
 import SkillsSlider from "./component/SkillsSlider";
 import Footer from "./component/Footer";
+import ScrollToTopButton from "./component/ScroolUpButton";
 
 export default function Home() {
   return (
