@@ -43,6 +43,32 @@ export default function Navbar() {
             ></Image>
           </a>
         </div>
+        {/* <div className="sm:flex hidden w-2/3">
+          <div className="rounded-md shadow-sm mx-3 dark:bg-slate-500 dark:bg-opacity-40 bg-slate-400 bg-opacity-30 hover:bg-slate-500 hover:bg-opacity-50">
+            <a
+              href="/"
+              className="block px-4 text-center py-1.5 w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-700 hover:bg-opacity-20"
+            >
+              Home
+            </a>
+          </div>
+          <div className="rounded-md shadow-sm z-20 mx-3 dark:bg-slate-500 dark:bg-opacity-40 bg-slate-400 bg-opacity-30 hover:bg-slate-500 hover:bg-opacity-50">
+            <a
+              href="/"
+              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-700 hover:bg-opacity-20"
+            >
+              Projects
+            </a>
+          </div>
+          <div className="rounded-md shadow-sm z-20 mx-3 dark:bg-slate-500 dark:bg-opacity-40 bg-slate-400 bg-opacity-30 hover:bg-slate-500 hover:bg-opacity-50">
+            <a
+              href="/"
+              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-700 hover:bg-opacity-20"
+            >
+              About
+            </a>
+          </div>
+        </div> */}
         <div className="flex justify-end mx-2 sm:mx-6 rounded-full p-1">
           <ThemeSwitcher />
         </div>
