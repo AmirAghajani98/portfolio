@@ -11,9 +11,9 @@ export default function Home() {
       <Intro />
       <main
         id="about"
-        className="w-full py-10 sm:px-0 px-4 dark:opacity-100 opacity-95 backmain "
+        className="w-full py-10 sm:px-0 dark:opacity-100 opacity-95 backmain "
       >
-        <div className="sm:flex flex-col-2 items-center justify-center h-full w-11/12">
+        <div className="sm:flex flex-col-2 items-center justify-center h-full w-10/12 sm:w-11/12 mx-auto">
           <div className="sm:w-2/5 text-center m-auto">
             <div className="mx-auto my-[70px] z-50">
               <Image
