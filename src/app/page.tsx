@@ -3,12 +3,16 @@ import Intro from "./component/Intro";
 import Projects from "./component/projects";
 import SkillsSlider from "./component/SkillsSlider";
 import Footer from "./component/Footer";
+import ScrollToTopButton from "./component/ScroolUpButton";
 
 export default function Home() {
   return (
     <>
       <Intro />
-      <main className="w-full py-10 sm:px-0 px-4 dark:opacity-100 opacity-95 backmain ">
+      <main
+        id="about"
+        className="w-full py-10 sm:px-0 px-4 dark:opacity-100 opacity-95 backmain "
+      >
         <div className="sm:flex flex-col-2 items-center justify-center h-full w-11/12">
           <div className="sm:w-2/5 text-center m-auto">
             <div className="mx-auto my-[70px] z-50">

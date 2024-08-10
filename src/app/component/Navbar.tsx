@@ -2,16 +2,38 @@
 
 import Image from "next/image";
 import { ThemeSwitcher } from "./ThemeSwitcher";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
-  // const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollTop = window.pageYOffset;
 
-  // const toggleMenu = () => {
-  //   setIsOpen(!isOpen);
-  // };
+      if (currentScrollTop > lastScrollTop && currentScrollTop > 50) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+
+      setLastScrollTop(currentScrollTop);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollTop]);
 
   return (
-    <header className="z-10 opacity-95 sm:py-1.5 py-1 dark:bg-slate-700 bg-slate-500 w-full shadow-sm shadow-slate-700">
+    <header
+      className={`z-10 sm:py-1.5 py-1 dark:bg-slate-700 bg-slate-500 w-full shadow-sm shadow-slate-700 transition-transform transform duration-200 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      } sticky top-0`}
+    >
       <div className="flex items-center justify-between w-full ">
         <div className="flex items-center shrink-0">
           <a aria-current="page" href="/">
@@ -24,36 +46,33 @@ export default function Navbar() {
             ></Image>
           </a>
         </div>
-        {/* <div className="sm:flex hidden w-2/3">
-          <div className="rounded-md shadow-sm mx-3 dark:bg-slate-500 dark:bg-opacity-40 bg-slate-400 bg-opacity-30 hover:bg-slate-500 hover:bg-opacity-50">
+        <div className="sm:flex hidden sm:w-11/12">
+          <div className="rounded-md shadow-sm mx-3">
             <a
-              href="/"
-              className="block px-4 text-center py-1.5 w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-700 hover:bg-opacity-20"
-            >
-              Home
-            </a>
-          </div>
-          <div className="rounded-md shadow-sm z-20 mx-3 dark:bg-slate-500 dark:bg-opacity-40 bg-slate-400 bg-opacity-30 hover:bg-slate-500 hover:bg-opacity-50">
-            <a
-              href="/"
-              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-700 hover:bg-opacity-20"
-            >
-              Projects
-            </a>
-          </div>
-          <div className="rounded-md shadow-sm z-20 mx-3 dark:bg-slate-500 dark:bg-opacity-40 bg-slate-400 bg-opacity-30 hover:bg-slate-500 hover:bg-opacity-50">
-            <a
-              href="/"
-              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-700 hover:bg-opacity-20"
+              href="#projects"
+              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 hover:bg-opacity-20"
             >
               About
             </a>
           </div>
-        </div> */}
-        <div className="flex justify-end mx-2 sm:mx-6 rounded-full p-1 ">
-          <ThemeSwitcher />
+          <div className="rounded-md shadow-sm mx-3">
+            <a
+              href="#projects"
+              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 hover:bg-opacity-20"
+            >
+              Projects
+            </a>
+          </div>
+          <div className="rounded-md shadow-sm mx-3">
+            <a
+              href="#skills"
+              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 hover:bg-opacity-20"
+            >
+              Skills
+            </a>
+          </div>
         </div>
-        {/* <div className="flex items-center mx-2">
+        <div className="flex items-center w-full justify-end">
           <button
             onClick={toggleMenu}
             className="sm:hidden text-[#121a23] dark:text-slate-300"
@@ -80,28 +99,31 @@ export default function Navbar() {
         <div
           className={`${
             isOpen ? "bg-opacity-100" : "hidden opacity-0"
-          } absolute top-14 right-0 p-1 border-none dark:bg-[#121a23] bg-slate-500 bg-opacity-30 rounded-b-xl w-24 z-10 shadow-md shadow-slate-700"
+          } sm:hidden absolute top-14 right-0 p-1 border-none dark:bg-slate-700 dark:bg-opacity-60 bg-slate-500 bg-opacity-30 rounded-b-xl w-24 z-10 shadow-md shadow-slate-700"
           `}
         >
           <a
-            href="/"
-            className="block px-3 py-1 m-1 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
+            href="#about"
+            className="block px-3 py-1 m-1 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
           >
-            Home
+            About
           </a>
           <a
-            href="/projects"
-            className="block px-3 py-1 m-1 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
+            href="#projects"
+            className="block px-3 py-1 m-1 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
           >
             Projects
           </a>
           <a
-            href="/about"
-            className="block px-3 py-1 m-1 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
+            href="#skills"
+            className="block px-3 py-1 m-1 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
           >
-            About
+            Skills
           </a>
-        </div> */}
+        </div>
+        <div className="flex justify-end mx-2 sm:mx-6 rounded-full p-1 ">
+          <ThemeSwitcher />
+        </div>
       </div>
     </header>
   );
