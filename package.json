@@ -20,6 +20,7 @@
     "eslint-config-next": "13.4.19",
     "next": "13.4.19",
     "next-themes": "^0.3.0",
+    "next-translate": "^2.6.2",
     "postcss": "8.4.29",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -29,5 +30,8 @@
     "tailwindcss": "3.3.3",
     "tw-elements": "^1.0.0",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "next-translate-plugin": "^2.6.2"
   }
 }
