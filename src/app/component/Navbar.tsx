@@ -121,7 +121,7 @@ export default function Navbar() {
             Skills
           </a>
         </div>
-        <div className="flex justify-end mx-2 sm:mx-6 rounded-full p-1 ">
+        <div className="shadow-sm dark:shadow-slate-400 border-1 dark:border-slate-400 shadow-slate-900 border-slate-800 flex justify-end mx-2 sm:mx-6 rounded-full p-0.5 transition ease-in-out hover:transition-y-0.5 hover:scale-105">
           <ThemeSwitcher />
         </div>
       </div>
