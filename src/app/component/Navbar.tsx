@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,10 +50,10 @@ export default function Navbar() {
         <div className="sm:flex hidden sm:w-11/12">
           <div className="rounded-md shadow-sm mx-3">
             <a
-              href="#projects"
+              href="/"
               className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 hover:bg-opacity-20"
             >
-              About
+              home
             </a>
           </div>
           <div className="rounded-md shadow-sm mx-3">
@@ -60,8 +61,16 @@ export default function Navbar() {
               href="#projects"
               className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 hover:bg-opacity-20"
             >
-              Projects
+              About
             </a>
+          </div>
+          <div className="rounded-md shadow-sm mx-3">
+            <Link
+              href={"/experience"}
+              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 hover:bg-opacity-20"
+            >
+              Projects
+            </Link>
           </div>
           <div className="rounded-md shadow-sm mx-3">
             <a

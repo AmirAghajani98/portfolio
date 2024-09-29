@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Projects: React.FC = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -53,7 +54,7 @@ const Projects: React.FC = () => {
             interface.
           </p>
         </div>
-        <div className="my-4 sm:my-auto sm:w-full z-50  py-4 p-4 sm:py-8 sm:h-[480px] dark:z-10 dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-100 bg-opacity-70 sm:text-justify text-start rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900 ">
+        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-8 sm:h-[480px] dark:z-10 dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-100 bg-opacity-70 sm:text-justify text-start rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900 ">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/resume.png"
@@ -96,7 +97,6 @@ const Projects: React.FC = () => {
           </p>
         </div>
       </div>
-
       {isModalOpen && (
         <div
           className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-70 z-50"
@@ -119,6 +119,14 @@ const Projects: React.FC = () => {
           </div>
         </div>
       )}
+      <div className="w-full justify-center items-center text-center ">
+        <Link
+          href={"/experience"}
+          className="text-lg font-sans mx-auto py-4 px-4 font-semibold dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-100 bg-opacity-70 rounded-lg "
+        >
+          see more...
+        </Link>
+      </div>
     </main>
   );
 };
