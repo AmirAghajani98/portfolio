@@ -24,7 +24,7 @@ export default function Projects() {
   };
   return (
     <main className="sm:min-h-screen sm:w-full mx-auto sm:py-10 pb-10 pt-24 opacity-95 bg-slate-400 projectback justify-center flex flex-col">
-      <h1 className="sm:text-5xl text-4xl text-center mx-auto sm:my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 w-[50%]">
+      <h1 className="sm:text-5xl text-4xl text-center mx-auto sm:mt-8 pb-6 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 w-[50%]">
         All Projects
       </h1>
       <div className="w-10/12 sm:my-20 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-x-20 gap-y-14">
@@ -49,8 +49,12 @@ export default function Projects() {
             Tailwind CSS, it offers a seamless user experience and responsive
             design.
           </p>
-          <span className="font-sans text-right sm:mt-1 block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
-            <a href="https://karjoo.plus/" target="blank">
+          <span className="font-sans text-right sm:mt-1 block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23] hover:animate-pulse hover:bg-opacity-80">
+            <a
+              className="text-white p-2 rounded-xl hover:bg-[#121a23]"
+              href="https://karjoo.plus/"
+              target="blank"
+            >
               visit site
             </a>
           </span>
@@ -76,8 +80,12 @@ export default function Projects() {
             stories to help families create lasting memories through
             photography.
           </p>
-          <span className="font-sans text-right sm:mt-1 block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
-            <a href="https://saraphotography.com.au/en/" target="blank">
+          <span className="font-sans text-right sm:mt-1 block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23] hover:animate-pulse hover:bg-opacity-80">
+            <a
+              className="text-white p-2 rounded-xl hover:bg-[#121a23]"
+              href="https://saraphotography.com.au/en/"
+              target="blank"
+            >
               visit site
             </a>
           </span>
@@ -103,8 +111,12 @@ export default function Projects() {
             between job seekers and employers.the app can be modified to suit
             each exhibition.
           </p>
-          <span className="font-sans text-right sm:mt-1 block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
-            <a href="https://jobs.karjoo.plus/qazvin" target="blank">
+          <span className="font-sans text-right sm:mt-1 block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23] hover:animate-pulse hover:bg-opacity-80">
+            <a
+              className="text-white p-2 rounded-xl hover:bg-[#121a23]"
+              href="https://jobs.karjoo.plus/qazvin"
+              target="blank"
+            >
               visit site
             </a>
           </span>
