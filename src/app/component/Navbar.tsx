@@ -66,7 +66,7 @@ export default function Navbar() {
           </div>
           <div className="rounded-md shadow-sm mx-3">
             <Link
-              href={"/experience"}
+              href={"/projects"}
               className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 hover:bg-opacity-20"
             >
               Projects
