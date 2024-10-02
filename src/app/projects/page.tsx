@@ -2,9 +2,8 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
-const Projects: React.FC = () => {
+export default function Projects() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalIframeSrc, setModalIframeSrc] = useState("");
 
@@ -23,17 +22,13 @@ const Projects: React.FC = () => {
       closeModal();
     }
   };
-
   return (
-    <main
-      id="projects"
-      className="sm:min-h-screen sm:w-full mx-auto sm:py-10 pb-10 pt-24 opacity-95 bg-slate-400 projectback justify-center flex flex-col"
-    >
-      <h1 className="sm:text-5xl text-4xl text-center mx-auto sm:my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 w-[50%]">
-        Projects
+    <main className="sm:min-h-screen sm:w-full mx-auto sm:py-10 pb-10 pt-24 opacity-95 bg-slate-400 projectback justify-center flex flex-col">
+      <h1 className="sm:text-5xl text-4xl text-center mx-auto sm:mt-8 pb-6 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 w-[50%]">
+        All Projects
       </h1>
-      <div className="w-[86%] h-full sm:my-20 mx-auto sm:flex gap-16">
-        <div className="my-4 sm:my-auto sm:flex-col sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-50 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-500 dark:hover:bg-opacity-60 hover:bg-opacity-40 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
+      <div className="w-10/12 sm:my-20 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-x-20 gap-y-14">
+        <div className="my-4 sm:my-auto sm:flex-col sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/karjoo-landing.png"
@@ -64,7 +59,7 @@ const Projects: React.FC = () => {
             </a>
           </span>
         </div>
-        <div className="my-4 sm:my-auto sm:flex-col sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-50 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-500 dark:hover:bg-opacity-60 hover:bg-opacity-40 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
+        <div className="my-4 sm:my-auto sm:flex-col sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/sara-photo.png"
@@ -95,7 +90,7 @@ const Projects: React.FC = () => {
             </a>
           </span>
         </div>
-        <div className="my-4 sm:my-auto sm:flex-col sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-50 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-500 dark:hover:bg-opacity-60 hover:bg-opacity-40 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
+        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/qazvinjobs.png"
@@ -125,6 +120,48 @@ const Projects: React.FC = () => {
               {"visit site >"}
             </a>
           </span>
+        </div>
+        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
+          <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
+            <Image
+              src="./img/resume.png"
+              width={500}
+              height={400}
+              alt="Resume Template"
+              className="mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:bg-opacity-20 cursor-pointer"
+              onClick={() => openModal("./img/resume.png")}
+            />
+          </div>
+          <h2 className="mt-2 sm:text-justify font-mono  mx-auto my-2 font-semibold text-lg dark:text-slate-100 text-[#121a23]">
+            Resume Template
+          </h2>
+          <p className="sm:mt-3 sm:mb-4 sm:h-[30%] text-justify font-sans block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
+            Resume template app utilizes a simple user interface to help you
+            easily create professional and stylish resumes. With customizable
+            sections, pre-designed templates, and helpful guidance, you can
+            personalize your resume.
+          </p>
+        </div>
+        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
+          <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
+            <Image
+              src="./img/weatherapp.png"
+              width={500}
+              height={400}
+              alt="Global Weather App"
+              className="mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:bg-opacity-20 cursor-pointer"
+              onClick={() => openModal("./img/weatherapp.png")}
+            />
+          </div>
+          <h2 className="font-mono sm:text-justify mt-2  mx-auto my-2 font-semibold text-lg dark:text-slate-100 text-[#121a23]">
+            Global Weather App
+          </h2>
+          <p className="sm:mt-3 sm:mb-4 sm:h-[30%] text-justify font-sans block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
+            Weather app uses a REST API to provide real-time updates and
+            forecasts for each city. It offers current conditions, hourly
+            forecasts, and severe weather alerts, all in a user-friendly
+            interface.
+          </p>
         </div>
       </div>
       {isModalOpen && (
@@ -185,16 +222,6 @@ const Projects: React.FC = () => {
           </div>
         </div>
       )}
-      <div className="w-full justify-center items-center text-center">
-        <Link
-          href={"/projects"}
-          className="text-lg font-sans mx-auto py-4 px-4 font-semibold dark:hover:shadow-slate-700 hover:shadow-slate-500 hover:shadow dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-30 bg-opacity-70 rounded-lg"
-        >
-          see more...
-        </Link>
-      </div>
     </main>
   );
-};
-
-export default Projects;
+}
