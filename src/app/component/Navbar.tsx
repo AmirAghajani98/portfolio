@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`z-10 sm:py-1.5 py-1 dark:bg-slate-700 bg-slate-500 w-full shadow-sm shadow-slate-700 transition-transform transform duration-200 ${
+      className={`z-10 sm:py-1.5 py-1 dark:bg-slate-800 bg-slate-500 dark:bg-opacity-60 w-full shadow-sm shadow-slate-700 transition-transform transform duration-200 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       } sticky top-0`}
     >
