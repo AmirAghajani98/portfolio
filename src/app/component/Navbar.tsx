@@ -117,12 +117,13 @@ export default function Navbar() {
           >
             About
           </a>
-          <a
-            href="#projects"
+          <Link
+            href={"/projects"}
             className="block px-3 py-1 m-1 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
           >
             Projects
-          </a>
+          </Link>
+
           <a
             href="#skills"
             className="block px-3 py-1 m-1 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
