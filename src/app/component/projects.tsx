@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
         Projects
       </h1>
       <div className="w-[86%] h-full sm:my-20 mx-auto sm:flex gap-16">
-        <div className="my-4 sm:my-auto sm:flex-col sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
+        <div className="my-4 sm:my-auto sm:flex-col sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-50 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-500 dark:hover:bg-opacity-60 hover:bg-opacity-40 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/karjoo-landing.png"
@@ -64,7 +64,7 @@ const Projects: React.FC = () => {
             </a>
           </span>
         </div>
-        <div className="my-4 sm:my-auto sm:flex-col sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
+        <div className="my-4 sm:my-auto sm:flex-col sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-50 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-500 dark:hover:bg-opacity-60 hover:bg-opacity-40 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/sara-photo.png"
@@ -95,7 +95,7 @@ const Projects: React.FC = () => {
             </a>
           </span>
         </div>
-        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
+        <div className="my-4 sm:my-auto sm:flex-col sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-50 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-500 dark:hover:bg-opacity-60 hover:bg-opacity-40 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/qazvinjobs.png"
@@ -188,7 +188,7 @@ const Projects: React.FC = () => {
       <div className="w-full justify-center items-center text-center">
         <Link
           href={"/projects"}
-          className="text-lg font-sans mx-auto py-4 px-4 font-semibold dark:hover:shadow-slate-700 hover:shadow-slate-400 hover:shadow dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-30 bg-opacity-70 rounded-lg"
+          className="text-lg font-sans mx-auto py-4 px-4 font-semibold dark:hover:shadow-slate-700 hover:shadow-slate-500 hover:shadow dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-30 bg-opacity-70 rounded-lg"
         >
           see more...
         </Link>

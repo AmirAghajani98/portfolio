@@ -35,7 +35,7 @@ export default function Navbar() {
         isVisible ? "translate-y-0" : "-translate-y-full"
       } sticky top-0`}
     >
-      <div className="flex items-center justify-between w-full ">
+      <div className="flex items-center justify-between w-full">
         <div className="flex items-center shrink-0">
           <a aria-current="page" href="/">
             <Image
@@ -48,34 +48,34 @@ export default function Navbar() {
           </a>
         </div>
         <div className="sm:flex hidden sm:w-11/12">
-          <div className="rounded-md shadow-sm mx-3">
+          <div className="rounded-md mx-3 ">
             <a
               href="/"
-              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 hover:bg-opacity-20"
+              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 "
             >
               home
             </a>
           </div>
-          <div className="rounded-md shadow-sm mx-3">
+          <div className="rounded-md mx-3">
             <a
               href="#projects"
-              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 hover:bg-opacity-20"
+              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 "
             >
               About
             </a>
           </div>
-          <div className="rounded-md shadow-sm mx-3">
+          <div className="rounded-md mx-3">
             <Link
               href={"/projects"}
-              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 hover:bg-opacity-20"
+              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 "
             >
               Projects
             </Link>
           </div>
-          <div className="rounded-md shadow-sm mx-3">
+          <div className="rounded-md mx-3">
             <a
               href="#skills"
-              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 hover:bg-opacity-20"
+              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 "
             >
               Skills
             </a>
