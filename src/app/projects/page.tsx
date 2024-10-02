@@ -28,135 +28,135 @@ export default function Projects() {
         All Projects
       </h1>
       <div className="w-10/12 sm:my-20 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-x-20 gap-y-14">
-        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-8 sm:h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-100 bg-opacity-70 sm:text-justify text-start rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
+        <div className="my-4 sm:my-auto sm:flex-col sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/karjoo-landing.png"
               width={500}
               height={400}
               alt="karjoo-landing"
-              className="my-2 mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:shadow-md hover:shadow-slate-700 cursor-pointer"
+              className="mx-auto h-[50%] p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl cursor-pointer"
               onClick={() => openModal("https://karjoo.plus/")}
             />
           </div>
-          <h2 className="font-mono sm:text-justify mt-2 mx-auto my-2 font-semibold text-lg dark:text-slate-100 text-[#121a23]">
+          <h2 className="font-mono sm:text-justify mt-3 mx-auto mb-4 font-semibold text-lg dark:text-slate-100 text-[#121a23]">
             Karjoo+ Landing
           </h2>
-          <p className="font-sans text-justify sm:mt-1 block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
+          <p className="font-sans h-[31%] text-justify block mx-auto my-auto text-base dark:text-slate-100 text-[#121a23]">
             Karjoo.plus is a comprehensive platform for human resource
             management, featuring an exhibition calendar, a list of job fairs,
             and detailed pages for each exhibition. Built with Astro and
             Tailwind CSS, it offers a seamless user experience and responsive
             design.
           </p>
-          <span className="font-sans text-right sm:mt-1 block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23] hover:animate-pulse hover:bg-opacity-80">
+          <span className="font-sans h-[10%] text-right sm:mt-1 block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
             <a
-              className="text-white p-2 rounded-xl hover:bg-[#121a23]"
               href="https://karjoo.plus/"
               target="blank"
+              className="font-medium text-sm"
             >
-              visit site
+              {"visit site >"}
             </a>
           </span>
         </div>
-        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-8 sm:h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-100 bg-opacity-70 sm:text-justify text-start rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
+        <div className="my-4 sm:my-auto sm:flex-col sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/sara-photo.png"
               width={500}
               height={400}
               alt="sara-photography"
-              className="my-2mx-auto p-0.5 z-10 mt-1 h-[225px] dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:bg-opacity-20 hover:shadow-md hover:shadow-slate-700 cursor-pointer"
+              className="mx-auto p-0.5 h-[50%] z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:bg-opacity-20 cursor-pointer"
               onClick={() => openModal("https://saraphotography.com.au/en/")}
             />
           </div>
           <h2 className="mt-2 sm:text-justify font-mono mx-auto my-2 font-semibold text-lg dark:text-slate-100 text-[#121a23]">
             Photography Website
           </h2>
-          <p className="sm:mt-1 text-justify font-sans block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
+          <p className="sm:mt-3 sm:mb-4 sm:h-[32%] text-justify font-sans block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
             website photography specializing in capturing precious moments for
             families, newborns, first birthdays, pregnancies, and other
             significant occasions. The site features a blog, inspiration, and
             stories to help families create lasting memories through
             photography.
           </p>
-          <span className="font-sans text-right sm:mt-1 block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23] hover:animate-pulse hover:bg-opacity-80">
+          <span className="font-sans h-[10%] text-right sm:mt-1 block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
             <a
-              className="text-white p-2 rounded-xl hover:bg-[#121a23]"
               href="https://saraphotography.com.au/en/"
               target="blank"
+              className="font-medium text-sm"
             >
-              visit site
+              {"visit site >"}
             </a>
           </span>
         </div>
-        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-8 sm:h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-100 bg-opacity-70 sm:text-justify text-start rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
+        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/qazvinjobs.png"
               width={500}
               height={400}
               alt="Exhibition Event Web App"
-              className="my-2 mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:bg-opacity-20 hover:shadow-md hover:shadow-slate-700 cursor-pointer"
+              className="mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:bg-opacity-20 cursor-pointer"
               onClick={() => openModal("https://jobs.karjoo.plus/qazvin")}
             />
           </div>
           <h2 className="mt-2 sm:text-justify font-mono mx-auto my-2 font-semibold text-lg dark:text-slate-100 text-[#121a23]">
             Exhibition Event Web App
           </h2>
-          <p className="sm:mt-1 text-justify font-sans block  mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
+          <p className="sm:mt-3 sm:mb-4 sm:h-[30%] text-justify font-sans block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
             The exhibitions web app provides real-time access to company
             profiles, booth locations, navigation routes, and job listings,
             enhancing the event experience and facilitating direct connections
             between job seekers and employers.the app can be modified to suit
             each exhibition.
           </p>
-          <span className="font-sans text-right sm:mt-1 block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23] hover:animate-pulse hover:bg-opacity-80">
+          <span className="font-sans h-[10%] text-right sm:mt-1 block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
             <a
-              className="text-white p-2 rounded-xl hover:bg-[#121a23]"
               href="https://jobs.karjoo.plus/qazvin"
               target="blank"
+              className="font-medium text-sm"
             >
-              visit site
+              {"visit site >"}
             </a>
           </span>
         </div>
-        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-8 sm:h-[480px] dark:z-10 dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-100 bg-opacity-70 sm:text-justify text-start rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900 ">
+        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/resume.png"
               width={500}
               height={400}
               alt="Resume Template"
-              className="my-2 mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:bg-opacity-20 hover:shadow-md hover:shadow-slate-700 cursor-pointer"
+              className="mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:bg-opacity-20 cursor-pointer"
               onClick={() => openModal("./img/resume.png")}
             />
           </div>
           <h2 className="mt-2 sm:text-justify font-mono  mx-auto my-2 font-semibold text-lg dark:text-slate-100 text-[#121a23]">
             Resume Template
           </h2>
-          <p className="sm:mt-1 text-justify font-sans block  mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
+          <p className="sm:mt-3 sm:mb-4 sm:h-[30%] text-justify font-sans block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
             Resume template app utilizes a simple user interface to help you
             easily create professional and stylish resumes. With customizable
             sections, pre-designed templates, and helpful guidance, you can
             personalize your resume.
           </p>
         </div>
-        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-8 sm:h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-100 bg-opacity-70 sm:text-justify text-start rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900 ">
+        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/weatherapp.png"
               width={500}
               height={400}
               alt="Global Weather App"
-              className="my-2 mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:shadow-md hover:shadow-slate-700 cursor-pointer"
+              className="mx-auto p-0.5 z-10 dark:bg-slate-90 dark:bg-opacity-90 rounded-2xl hover:bg-opacity-20 cursor-pointer"
               onClick={() => openModal("./img/weatherapp.png")}
             />
           </div>
           <h2 className="font-mono sm:text-justify mt-2  mx-auto my-2 font-semibold text-lg dark:text-slate-100 text-[#121a23]">
             Global Weather App
           </h2>
-          <p className="font-sans text-justify sm:mt-1 block  mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
+          <p className="sm:mt-3 sm:mb-4 sm:h-[30%] text-justify font-sans block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
             Weather app uses a REST API to provide real-time updates and
             forecasts for each city. It offers current conditions, hourly
             forecasts, and severe weather alerts, all in a user-friendly
