@@ -28,7 +28,7 @@ export default function Projects() {
         All Projects
       </h1>
       <div className="w-10/12 sm:my-20 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-x-20 gap-y-14">
-        <div className="my-4 sm:my-auto sm:flex-col sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
+        <div className="my-4 sm:my-auto sm:flex-col sm:w-full z-50 py-4 p-4 sm:py-6 h-[520px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/karjoo-landing.png"
@@ -49,7 +49,7 @@ export default function Projects() {
             Tailwind CSS, it offers a seamless user experience and responsive
             design.
           </p>
-          <span className="font-sans h-[10%] text-right sm:mt-1 block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
+          <span className="font-sans h-[10%] text-right sm:mt-1 flex justify-end pt-4 mx-auto text-base dark:text-slate-100 text-[#121a23]">
             <a
               href="https://karjoo.plus/"
               target="blank"
@@ -59,7 +59,7 @@ export default function Projects() {
             </a>
           </span>
         </div>
-        <div className="my-4 sm:my-auto sm:flex-col sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
+        <div className="my-4 sm:my-auto sm:flex-col sm:w-full z-50 py-4 p-4 sm:py-6 h-[520px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/sara-photo.png"
@@ -80,7 +80,7 @@ export default function Projects() {
             stories to help families create lasting memories through
             photography.
           </p>
-          <span className="font-sans h-[10%] text-right sm:mt-1 block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
+          <span className="font-sans h-[10%] text-right sm:mt-1 flex justify-end pt-4 mx-auto text-base dark:text-slate-100 text-[#121a23]">
             <a
               href="https://saraphotography.com.au/en/"
               target="blank"
@@ -90,7 +90,7 @@ export default function Projects() {
             </a>
           </span>
         </div>
-        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
+        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-6 h-[520px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/qazvinjobs.png"
@@ -111,7 +111,7 @@ export default function Projects() {
             between job seekers and employers.the app can be modified to suit
             each exhibition.
           </p>
-          <span className="font-sans h-[10%] text-right sm:mt-1 block mx-auto my-2 text-base dark:text-slate-100 text-[#121a23]">
+          <span className="font-sans h-[10%] text-right sm:mt-1 flex justify-end pt-4 mx-auto text-base dark:text-slate-100 text-[#121a23]">
             <a
               href="https://jobs.karjoo.plus/qazvin"
               target="blank"
@@ -121,7 +121,7 @@ export default function Projects() {
             </a>
           </span>
         </div>
-        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
+        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-6 h-[520px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/resume.png"
@@ -142,7 +142,7 @@ export default function Projects() {
             personalize your resume.
           </p>
         </div>
-        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-6 h-[480px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
+        <div className="my-4 sm:my-auto sm:w-full z-50 py-4 p-4 sm:py-6 h-[520px] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 sm:text-justify text-start dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow shadow-slate-500 dark:shadow-slate-900">
           <div className="inline-flex justify-center items-center dark:text-slate-100 text-[#121a23] w-full">
             <Image
               src="./img/weatherapp.png"
