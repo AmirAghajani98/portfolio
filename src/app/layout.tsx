@@ -1,7 +1,7 @@
 import "./globals.css";
-import type { Metadata } from "next";
 import Navbar from "./component/Navbar";
 import ProviderTheme from "./component/ProviderTheme";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Amir Mohammad Aghajnai",
