@@ -53,7 +53,7 @@ const Projects: React.FC = () => {
               <h2 className="font-mono mt-3 mb-4 font-semibold text-xl dark:text-slate-100 text-[#121a23]">
                 {project.title}
               </h2>
-              <p className="font-sans text-justify mx-auto mb-6 text-base leading-relaxed dark:text-slate-100 text-[#121a23] line-clamp-4">
+              <p className="font-sans whitespace-normal text-justify mx-auto mb-6 text-base leading-relaxed dark:text-slate-100 text-[#121a23] line-clamp-4">
                 {project.description}
               </p>
               <div className="text-right">
