@@ -2,8 +2,8 @@
 
 export default function resume() {
   return (
-    <main className="flex justify-center content-center">
-      <div className="border border-gray-300 rounded-sm shadow-lg py-10 px-10 w-4/5 mt-10 mb-10">
+    <main className="flex justify-center content-center font-sans">
+      <div className="border border-gray-300 rounded-sm font-sans shadow-lg py-10 px-10 w-4/5 mt-10 mb-10">
         <ul className="flex flex-wrap justify-end gap-2">
           <li>
             <>
@@ -83,12 +83,12 @@ export default function resume() {
           <div>
             <div
               className="bg-cover bg-no-repeat rounded-full h-52 w-52"
-              // style={{"background-image: url(../bootstrap/dog.jpg)"}}
+              style={{ backgroundImage: "url('/bootstrap/dog.jpg')" }}
             ></div>
           </div>
           <div className="grid justify-items-end">
-            <h1 className="text-7xl font-extrabold">DAHYE JI</h1>
-            <p className="text-xl mt-5">Aspiring Front-End Developer</p>
+            <h1 className="text-7xl font-extrabold">Amir Aghajani</h1>
+            <p className="text-xl mt-5">Software Engineer</p>
           </div>
         </div>
         <div className="flex gap-x-10 mt-10">
