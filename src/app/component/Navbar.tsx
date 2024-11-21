@@ -37,7 +37,7 @@ export default function Navbar() {
     >
       <div className="flex items-center justify-between w-full">
         <div className="flex items-center shrink-0">
-          <a aria-current="page" href="/">
+          <a aria-current="page" href="/#">
             <Image
               className="h-10 w-auto rounded-full sm:mx-8 mx-2"
               src="./img/alogo.jpg"
@@ -50,7 +50,7 @@ export default function Navbar() {
         <div className="sm:flex hidden sm:w-11/12">
           <div className="rounded-md mx-3 ">
             <a
-              href="/"
+              href="/#"
               className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 "
             >
               home
