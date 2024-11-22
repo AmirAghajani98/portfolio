@@ -7,35 +7,10 @@
     "title": "Contact Details",
     "phone": "+98-9369477625",
     "email": "amir.aghajani1377@gmail.com",
-    "location": "ایران"
-  },
-
-  "githubStats": {
-    "title": "GitHub Stats",
-    "html": "HTML",
-    "css": "CSS",
-    "js": "JavaScript"
+    "location": "Iran"
   },
   "skills": {
-    "title": "Skills",
-    "list": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React",
-      "Node.js",
-      "Tailwind CSS",
-      "GraphQL",
-      "PostGraphile"
-    ]
-  },
-  "furtherEducation": {
-    "title": "Further Education",
-    "list": [
-      "Like Lion Frontend School",
-      "Udemy (Advanced JavaScript, React)",
-      "FreeCodeCamp (Full Stack Development)"
-    ]
+    "title": "Skills"
   },
   "currentlyLearning": {
     "title": "Currently Learning",
