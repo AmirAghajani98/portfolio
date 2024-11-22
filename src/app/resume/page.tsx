@@ -1,14 +1,18 @@
 "use client";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../component/LanguageSwitcher";
 
 export default function resume() {
+  const { t } = useTranslation();
   return (
     <main className="flex justify-center content-center font-sans">
       <div className="border border-gray-300 rounded-sm font-sans shadow-lg py-10 px-10 w-4/5 mt-10 mb-10">
+        <LanguageSwitcher />
         <ul className="flex flex-wrap justify-end gap-2">
           <li>
             <>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/amir-aghajani/"
                 target="blank"
                 className="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
               >
@@ -28,7 +32,7 @@ export default function resume() {
           <li>
             <>
               <a
-                href="https://github.com/"
+                href="https://github.com/AmirAghajani98"
                 target="blank"
                 className="bg-gray-700 p-2 font-medium text-white inline-flex items-center space-x-2 rounded"
               >
@@ -53,27 +57,29 @@ export default function resume() {
           <li>
             <>
               <a
-                href="https://dev.to/"
-                className="bg-black p-2 font-medium text-white inline-flex items-center space-x-2 rounded"
+                href="mailto:amir.aghajani1377@gmaol.com"
+                className="bg-red-600 p-2 font-medium text-white inline-flex items-center space-x-2 rounded"
               >
                 <svg
-                  className="w-5 h-5"
-                  role="img"
-                  aria-hidden="true"
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 32 447.99999999999994 448"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="2500"
-                  height="2321"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  role="img"
+                  className="w-5"
+                  preserveAspectRatio="xMidYMid meet"
                 >
-                  <g fill="none">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M120.12 208.29c-3.88-2.9-7.77-4.35-11.65-4.35H91.03v104.47h17.45c3.88 0 7.77-1.45 11.65-4.35s5.82-7.25 5.82-13.06v-69.65c-.01-5.8-1.96-10.16-5.83-13.06zM404.1 32H43.9C19.7 32 .06 51.59 0 75.8v360.4C.06 460.41 19.7 480 43.9 480h360.2c24.21 0 43.84-19.59 43.9-43.8V75.8c-.06-24.21-19.7-43.8-43.9-43.8zM154.2 291.19c0 18.81-11.61 47.31-48.36 47.25h-46.4V172.98h47.38c35.44 0 47.36 28.46 47.37 47.28zm100.68-88.66H201.6v38.42h32.57v29.57H201.6v38.41h53.29v29.57h-62.18c-11.16.29-20.44-8.53-20.72-19.69V193.7c-.27-11.15 8.56-20.41 19.71-20.69h63.19zm103.64 115.29c-13.2 30.75-36.85 24.63-47.44 0l-38.53-144.8h32.57l29.71 113.72 29.57-113.72h32.58z"
-                      fill="currentColor"
-                    />
-                  </g>
+                  <path
+                    fill="currentColor"
+                    d="M12 13.065L1.36 6.224L1.347 17.81c0 .83.674 1.505 1.505 1.505h18.297c.83 0 1.505-.674 1.505-1.505V6.224L12 13.065z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M22.68 5.313L12 13.935L1.36 5.313L1.347 3.812c0-.83.674-1.505 1.505-1.505h18.297c.83 0 1.505.674 1.505 1.505V5.313z"
+                  />
+                  <path
+                    fill="red"
+                    d="M1.36 6.224L12 13.935l10.64-7.711L22.68 3.812c0-.687-.375-1.285-.938-1.617L12 10.935L1.36 2.195A1.853 1.853 0 0 0 .397 3.812v2.412l.964.635z"
+                  />
                 </svg>
               </a>
             </>
@@ -87,8 +93,9 @@ export default function resume() {
             ></div>
           </div>
           <div className="grid justify-items-end">
-            <h1 className="text-7xl font-extrabold">Amir Aghajani</h1>
-            <p className="text-xl mt-5">Software Engineer</p>
+            <h2 className="text-6xl font-extrabold">Amir Aghajani</h2>
+            <p className="text-2xl mt-5">Software Engineer</p>
+            <p className="text-2xl mt-5">Frontend Web Developer</p>
           </div>
         </div>
         <div className="flex gap-x-10 mt-10">
@@ -114,28 +121,33 @@ export default function resume() {
                 </li>
               </ul>
             </>
+
             <>
-              <strong className="text-xl font-medium ">Github Stats</strong>
-              <ul className="flex w-full mt-2 mb-10">
-                <li className="px-2 mt-2 w-4/12 bg-pink-600 text-white text-center rounded-tl-lg rounded-bl-lg">
-                  HTML
-                </li>
-                <li className="px-2 mt-2 w-4/12 bg-blue-600 text-white text-center">
-                  CSS
-                </li>
-                <li className="px-2 mt-2 w-5/12 bg-yellow-500 text-white text-center rounded-tr-lg rounded-br-lg">
-                  JS
-                </li>
-              </ul>
-            </>
-            <>
-              <strong className="text-xl font-medium">Skills</strong>
+              <strong className="text-xl font-medium">{t("skills")}</strong>
               <ul className="mt-2 mb-10">
                 <li className="px-2 mt-1">HTML</li>
                 <li className="px-2 mt-1">CSS</li>
                 <li className="px-2 mt-1">JavaScript</li>
+                <li className="px-2 mt-1">TypeScript</li>
                 <li className="px-2 mt-1">React</li>
-                <li className="px-2 mt-1">Node.js</li>
+                <li className="px-2 mt-1">React Ruter</li>
+                <li className="px-2 mt-1">Next.js</li>
+                <li className="px-2 mt-1">Graphql</li>
+                <li className="px-2 mt-1">Sql</li>
+                <li className="px-2 mt-1">Tailwind-Css</li>
+                <li className="px-2 mt-1">BootStrap</li>
+                <li className="px-2 mt-1">Wordpress</li>
+                <li className="px-2 mt-1">Postgres</li>
+                <li className="px-2 mt-1">Git</li>
+                <li className="px-2 mt-1">Github</li>
+                <li className="px-2 mt-1">Github-Actions</li>
+                <li className="px-2 mt-1">JWt</li>
+                <li className="px-2 mt-1">ApoloGraphql</li>
+                <li className="px-2 mt-1">Codegen</li>
+                <li className="px-2 mt-1">EsLint</li>
+                <li className="px-2 mt-1">Nvm</li>
+                <li className="px-2 mt-1">Npm</li>
+                <li className="px-2 mt-1">Yarn</li>
               </ul>
             </>
             <>

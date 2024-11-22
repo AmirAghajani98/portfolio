@@ -5,11 +5,11 @@
   },
   "contactDetails": {
     "title": "Contact Details",
-    "phone": "Phone",
-    "email": "E-mail",
-    "location": "Location",
-    "address": "Seoul, South Korea"
+    "phone": "+98-9369477625",
+    "email": "amir.aghajani1377@gmail.com",
+    "location": "ایران"
   },
+
   "githubStats": {
     "title": "GitHub Stats",
     "html": "HTML",
@@ -57,24 +57,76 @@
   },
   "about": {
     "title": "About",
-    "content": "I am a dedicated software engineer with a strong passion for front-end development, especially in creating dynamic and user-centric web applications using React. With a deep focus on performance, accessibility, and design, I aim to deliver scalable solutions that meet modern web standards. I enjoy learning about new technologies and applying them to improve user experiences."
+    "content": "Hi, I have been working in web programming for about three years. Currently, I live in Iran, where I serve as a training manager and web developer at my company. I obtained my bachelor's degree from QIAU University. Before transitioning to programming, I worked in content creation and had a strong interest in automotive mechanics. These experiences helped me develop my analytical and problem-solving skills, which are crucial in my role as a developer. My technical skills include proficiency in multiple programming languages, frameworks, and tools that enhance my development capabilities. In addition to software development, I enjoy sharing knowledge with others and assisting new programmers during training sessions. My soft skills—such as creative thinking, problem-solving, teamwork, leadership, and ideation—enable me to communicate and collaborate effectively with my team. As an introverted individual, I thrive in collaborative environments and enjoy finding creative solutions while contributing to a positive and supportive atmosphere. Overall, my combination of technical expertise and interpersonal skills allows me to excel in both development and training roles."
   },
   "workExperiences": {
-    "title": "Work Experiences",
+    "title": "Work Experience",
     "list": [
       {
-        "companyName": "Sara Photography",
-        "duration": "2019-2021",
-        "jobTitle": "Web Developer",
+        "company": "KARJOO+",
+        "role": "Tech Lead",
+        "duration": "1 yr 11 mos",
         "location": "Tehran, Iran",
-        "description": "Designed and developed a WordPress platform for photography services, focusing on user-friendly design and SEO optimization. Collaborated with a team to deliver a scalable solution for managing photography portfolios and client bookings."
+        "type": "Full-time (Hybrid)",
+        "description": "Leading the technical team to develop and enhance KARJOO+ products and services.",
+        "skills": [
+          "Project Management",
+          "Technology Leadership",
+          "Managing Technical Personnel",
+          "TypeScript",
+          "Tailwind CSS",
+          "React.js",
+          "GraphQL"
+        ]
       },
       {
-        "companyName": "Freelance",
-        "duration": "2014-2019",
-        "jobTitle": "Full-Stack Developer",
-        "location": "Remote",
-        "description": "Provided full-stack development services for various clients, focusing on custom web applications. Built solutions using React, Node.js, and GraphQL, ensuring performance and scalability for business needs."
+        "company": "KARJOO+",
+        "role": "Software Mentor and Coach",
+        "duration": "2 yrs 3 mos",
+        "location": "Qazvin, Iran",
+        "type": "Part-time (Hybrid)",
+        "description": "Guiding students in web development programs using React and Tailwind.",
+        "skills": [
+          "Coaching",
+          "Leadership",
+          "Leadership Development",
+          "Teamwork"
+        ]
+      },
+      {
+        "company": "Sara Photography",
+        "role": "Website Developer",
+        "duration": "9 mos",
+        "location": "Brisbane, Australia",
+        "type": "Freelance (Remote)",
+        "description": "Designed and developed a WordPress-based platform to showcase photography services.",
+        "skills": [
+          "WordPress",
+          "CSS",
+          "HTML5",
+          "JavaScript",
+          "Elementor",
+          "Coaching"
+        ]
+      },
+      {
+        "company": "Afarinesh Beauty Clinic",
+        "role": "Project Development Manager",
+        "duration": "1 yr 4 mos",
+        "location": "Qazvin, Iran",
+        "type": "Freelance (Remote)",
+        "description": "Developed a management dashboard for clinics, including patient, service, and schedule management.",
+        "skills": [
+          "Next.js",
+          "React.js",
+          "Team Leadership",
+          "TypeScript",
+          "Tailwind CSS",
+          "Project Management",
+          "PostgreSQL",
+          "SQL",
+          "Apollo GraphQL"
+        ]
       }
     ]
   },
@@ -82,32 +134,29 @@
     "title": "Projects",
     "list": [
       {
-        "name": "Rules of 10000 hours",
-        "technologies": ["HTML", "CSS", "JS"],
-        "liveLink": "#",
-        "codeLink": "#",
-        "description": "A project demonstrating the theory of mastering any skill with consistent effort over 10,000 hours. Built with responsive design and interactive elements for better user engagement."
+        "title": "Karjoo+ Landing",
+        "description": "Karjoo.plus is a comprehensive platform for human resource management, featuring an exhibition calendar, a list of job fairs, and detailed pages for each exhibition. Built with Astro and Tailwind CSS, it offers a seamless user experience and responsive design.",
+        "link": "https://karjoo.plus/"
       },
       {
-        "name": "Vending Machine",
-        "technologies": ["HTML", "CSS", "JS"],
-        "liveLink": "#",
-        "codeLink": "#",
-        "description": "An interactive simulation of a vending machine. Implemented a user-friendly interface with dynamic behavior for a realistic experience, including payment and selection options."
+        "title": "Photography Website",
+        "description": "Website photography specializing in capturing precious moments for families, newborns, first birthdays, pregnancies, and other significant occasions. The site features a blog, inspiration, and stories to help families create lasting memories through photography.",
+        "link": "https://saraphotography.com.au/"
       },
       {
-        "name": "Landing Page",
-        "technologies": ["HTML", "CSS", "React", "Node.js"],
-        "liveLink": "#",
-        "codeLink": "#",
-        "description": "Designed a responsive and visually appealing landing page for promoting a product or service. Integrated backend features to manage user data and interaction analytics."
+        "title": "Exhibition Event Web App",
+        "description": "The exhibitions web app provides real-time access to company profiles, booth locations, navigation routes, and job listings, enhancing the event experience and facilitating direct connections between job seekers and employers. The app can be modified to suit each exhibition.",
+        "link": "https://jobs.karjoo.plus/qazvin"
       },
       {
-        "name": "Gamgyul Market",
-        "technologies": ["HTML", "CSS", "React", "Node.js"],
-        "liveLink": "#",
-        "codeLink": "#",
-        "description": "Developed an e-commerce platform for a local market. Features include product browsing, user authentication, and a shopping cart, with a seamless front-to-back integration."
+        "title": "Resume Template",
+        "description": "Resume template app utilizes a simple user interface to help you easily create professional and stylish resumes. With customizable sections, pre-designed templates, and helpful guidance, you can personalize your resume.",
+        "link": "./img/resume.png"
+      },
+      {
+        "title": "Global Weather App",
+        "description": "Weather app uses a REST API to provide real-time updates and forecasts for each city. It offers current conditions, hourly forecasts, and severe weather alerts, all in a user-friendly interface.",
+        "link": "./img/weatherapp.png"
       }
     ]
   }

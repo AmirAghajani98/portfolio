@@ -1,113 +1,117 @@
 {
   "header": {
-    "name": "Amir Aghajani",
-    "title": "Software Engineer"
+    "name": "امیر محمد آقاجانی",
+    "title": "برنامه نویس تحت وب"
   },
   "contactDetails": {
-    "title": "Contact Details",
-    "phone": "Phone",
-    "email": "E-mail",
-    "location": "Location",
-    "address": "Seoul, South Korea"
+    "title": "جزئیات تماس",
+    "phone": "+۹۸-۹۳۶۹۴۷۷۶۲۵",
+    "email": "amir.aghajani1377@gmail.com",
+    "location": "ایران"
   },
-  "githubStats": {
-    "title": "GitHub Stats",
-    "html": "HTML",
-    "css": "CSS",
-    "js": "JavaScript"
-  },
+
   "skills": {
-    "title": "Skills",
-    "list": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React",
-      "Node.js",
-      "Tailwind CSS",
-      "GraphQL",
-      "PostGraphile"
-    ]
-  },
-  "furtherEducation": {
-    "title": "Further Education",
-    "list": [
-      "Like Lion Frontend School",
-      "Udemy (Advanced JavaScript, React)",
-      "FreeCodeCamp (Full Stack Development)"
-    ]
+    "title": "مهارت ها"
   },
   "currentlyLearning": {
-    "title": "Currently Learning",
-    "list": [
-      "Web Accessibility (WCAG standards)",
-      "User Experience Design",
-      "Advanced Node.js and Backend Optimization"
-    ]
+    "title": "در حال یادگیری",
+    "list": ["ری اکت پیشرفته", "Node.js پیشرفته و بهینه‌سازی بک‌اند"]
   },
   "interests": {
-    "title": "Interests & Hobbies",
-    "list": [
-      "Sustainability",
-      "Exploring New Technologies",
-      "Blogging on dev.to",
-      "Investment and Financial Markets",
-      "Travel and Cultural Exploration"
-    ]
+    "title": "علایق و سرگرمی‌ها",
+    "list": ["کاوش در طبیعت", "جستوجوی فناوری‌های نوین", "سفر", "یادگیری"]
   },
   "about": {
-    "title": "About",
-    "content": "I am a dedicated software engineer with a strong passion for front-end development, especially in creating dynamic and user-centric web applications using React. With a deep focus on performance, accessibility, and design, I aim to deliver scalable solutions that meet modern web standards. I enjoy learning about new technologies and applying them to improve user experiences."
+    "title": "در باره من",
+    "content": "سلام، من حدود سه سال است که در زمینه برنامه نویسی وب کار می کنم. در حال حاضر در ایران زندگی می کنم و به عنوان مدیر آموزش و توسعه دهنده وب در شرکت خود خدمت می کنم. لیسانس خود را از دانشگاه QIAU گرفتم. با انتقال به برنامه نویسی، من در تولید محتوا کار کردم و علاقه شدیدی به مکانیک خودرو داشتم در نقش من به عنوان یک توسعه دهنده بسیار مهم است مهارت‌هایی مانند تفکر خلاق، حل مسئله، کار گروهی، رهبری و ایده‌پردازی به من این امکان را می‌دهد که به طور موثر با تیم خود ارتباط برقرار کنم فردی درونگرا، در محیط‌های مشارکتی پیشرفت می‌کنم و از یافتن راه‌حل‌های خلاقانه لذت می‌برم و در عین حال به ایجاد یک فضای مثبت و حمایتی کمک می‌کنم. به طور کلی، ترکیبی از تخصص فنی و مهارت‌های بین فردی به من اجازه می‌دهد که در نقش‌های توسعه و آموزش عالی باشم."
   },
   "workExperiences": {
-    "title": "Work Experiences",
+    "title": "تجربیات کاری",
     "list": [
       {
-        "companyName": "Sara Photography",
-        "duration": "2019-2021",
-        "jobTitle": "Web Developer",
-        "location": "Tehran, Iran",
-        "description": "Designed and developed a WordPress platform for photography services, focusing on user-friendly design and SEO optimization. Collaborated with a team to deliver a scalable solution for managing photography portfolios and client bookings."
+        "company": "کارجوپلاس",
+        "role": "مدیریت نیروهای فنی",
+        "duration": "۱ سال و ۱۱ ماه",
+        "location": "تهران، ایران",
+        "type": "تمام وقت (هیبرید)",
+        "description": "هدایت تیم فنی برای توسعه و ارتقای محصولات و خدمات کارجوپلاس.",
+        "skills": [
+          "مدیریت پروژه",
+          "مدیریت نیروهای فنی",
+          "TypeScript",
+          "Tailwind CSS",
+          "React.js",
+          "GraphQL"
+        ]
       },
       {
-        "companyName": "Freelance",
-        "duration": "2014-2019",
-        "jobTitle": "Full-Stack Developer",
-        "location": "Remote",
-        "description": "Provided full-stack development services for various clients, focusing on custom web applications. Built solutions using React, Node.js, and GraphQL, ensuring performance and scalability for business needs."
+        "company": "کارجوپلاس",
+        "role": "منتور و مربی نرم‌افزار",
+        "duration": "۲ سال و ۳ ماه",
+        "location": "قزوین، ایران",
+        "type": "پاره وقت (هیبرید)",
+        "description": "آموزش و هدایت دانشجویان در برنامه‌های توسعه وب با استفاده از React و Tailwind.",
+        "skills": ["منتورینگ", "رهبری", "توسعه رهبری", "کار تیمی"]
+      },
+      {
+        "company": "Sara Photography",
+        "role": "توسعه‌دهنده وبسایت",
+        "duration": "۹ ماه",
+        "location": "بریزبن، استرالیا",
+        "type": "فریلنس (از راه دور)",
+        "description": "طراحی و توسعه پلتفرم مبتنی بر وردپرس برای نمایش خدمات عکاسی.",
+        "skills": [
+          "WordPress",
+          "CSS",
+          "HTML5",
+          "JavaScript",
+          "Elementor",
+          "منتورینگ"
+        ]
+      },
+      {
+        "company": "کلینیک زیبایی آفرینش",
+        "role": "مدیر توسعه پروژه",
+        "duration": "۱ سال و ۴ ماه",
+        "location": "قزوین، ایران",
+        "type": "فریلنس (از راه دور)",
+        "description": "ایجاد داشبورد مدیریت برای کلینیک شامل مدیریت بیماران، خدمات، زمان‌بندی و گزارش‌دهی.",
+        "skills": [
+          "Next.js",
+          "React.js",
+          "رهبری تیم",
+          "TypeScript",
+          "Tailwind CSS",
+          "مدیریت پروژه",
+          "PostgreSQL",
+          "SQL",
+          "Apollo GraphQL"
+        ]
       }
     ]
   },
   "projects": {
-    "title": "Projects",
+    "title": "پروژه ها",
     "list": [
       {
-        "name": "Rules of 10000 hours",
-        "technologies": ["HTML", "CSS", "JS"],
-        "liveLink": "#",
-        "codeLink": "#",
-        "description": "A project demonstrating the theory of mastering any skill with consistent effort over 10,000 hours. Built with responsive design and interactive elements for better user engagement."
+        "title": "صفحه اصلی کارجو+",
+        "description": "کارجو.پلاس یک پلتفرم جامع برای مدیریت منابع انسانی است که شامل تقویم نمایشگاه‌ها، فهرست نمایشگاه‌های شغلی، و صفحات جزئی برای هر نمایشگاه می‌شود. این پلتفرم با استفاده از Astro و Tailwind CSS ساخته شده و تجربه کاربری بی‌نظیر و طراحی واکنش‌گرا را ارائه می‌دهد.",
+        "link": "https://karjoo.plus/"
       },
       {
-        "name": "Vending Machine",
-        "technologies": ["HTML", "CSS", "JS"],
-        "liveLink": "#",
-        "codeLink": "#",
-        "description": "An interactive simulation of a vending machine. Implemented a user-friendly interface with dynamic behavior for a realistic experience, including payment and selection options."
+        "title": "وب‌سایت عکاسی",
+        "description": "وب‌سایت عکاسی که بر ثبت لحظات گرانبها برای خانواده‌ها، نوزادان، جشن‌های تولد، بارداری‌ها و سایر مناسبت‌های مهم متمرکز است. این سایت شامل وبلاگ، الهام‌بخشی و داستان‌ها برای کمک به خانواده‌ها در ایجاد خاطرات ماندگار از طریق عکاسی می‌باشد.",
+        "link": "https://saraphotography.com.au/"
       },
       {
-        "name": "Landing Page",
-        "technologies": ["HTML", "CSS", "React", "Node.js"],
-        "liveLink": "#",
-        "codeLink": "#",
-        "description": "Designed a responsive and visually appealing landing page for promoting a product or service. Integrated backend features to manage user data and interaction analytics."
+        "title": "اپلیکیشن وب نمایشگاه",
+        "description": "اپلیکیشن نمایشگاه وب دسترسی به‌روز به پروفایل شرکت‌ها، موقعیت غرفه‌ها، مسیرهای ناوبری و فهرست‌های شغلی را فراهم می‌آورد و تجربه شرکت در رویداد را ارتقا داده و ارتباط مستقیم بین جویندگان کار و کارفرمایان را تسهیل می‌کند. این اپلیکیشن می‌تواند برای هر نمایشگاه تنظیم و تغییر یابد.",
+        "link": "https://jobs.karjoo.plus/qazvin"
       },
       {
-        "name": "Gamgyul Market",
-        "technologies": ["HTML", "CSS", "React", "Node.js"],
-        "liveLink": "#",
-        "codeLink": "#",
-        "description": "Developed an e-commerce platform for a local market. Features include product browsing, user authentication, and a shopping cart, with a seamless front-to-back integration."
+        "title": "قالب رزومه",
+        "description": "اپلیکیشن قالب رزومه از یک رابط کاربری ساده برای کمک به شما در ساخت رزومه‌های حرفه‌ای و شیک استفاده می‌کند. با بخش‌های قابل تنظیم، قالب‌های از پیش طراحی شده و راهنمایی مفید، می‌توانید رزومه خود را شخصی‌سازی کنید.",
+        "link": "#"
       }
     ]
   }

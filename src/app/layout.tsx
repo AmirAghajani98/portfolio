@@ -1,5 +1,5 @@
 import "./globals.css";
-import Navbar from "./component/Navbar";
+import "./i18";
 import ProviderTheme from "./component/ProviderTheme";
 import { Metadata } from "next";
 
@@ -17,7 +17,6 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body>
         <ProviderTheme>
-          <Navbar />
           <> {children}</>
         </ProviderTheme>
       </body>
