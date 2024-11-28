@@ -10,7 +10,7 @@ const BackButton = () => {
   return (
     <div>
       <button
-        className="p-3 absolute top-3 left-3 opacity-70 rounded-full bg-slate-400 dark:bg-slate-800"
+        className="p-3 opacity-70 rounded-full bg-slate-400 dark:bg-slate-800"
         onClick={handleGoBack}
       >
         <svg

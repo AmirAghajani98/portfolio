@@ -15,7 +15,7 @@ const LanguageSwitcher = () => {
     <div className="relative flex items-center">
       <button
         onClick={toggleLanguage}
-        className="relative flex items-center p-2 rounded-full bg-gray-800 text-white shadow-md"
+        className="relative flex items-center p-2 rounded-full text-white shadow-md"
       >
         <span
           className={`transition-transform duration-500 ease-in-out transform ${
