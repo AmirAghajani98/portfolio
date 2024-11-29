@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../component/LanguageSwitcher";
 import BackButton from "../component/BackButton";
+import { ThemeSwitcher } from "../component/ThemeSwitcher";
 interface WorkExperience {
   company: string;
   role: string;
@@ -23,7 +24,9 @@ interface Projects {
 }
 
 export default function resume() {
-  const { t } = useTranslation();
+  const { i18n, t } = useTranslation();
+  const isRTL = i18n.language === "fa";
+  const currentLocale = i18n.language;
 
   const workExperiences: WorkExperience[] = t("workExperiences.list", {
     returnObjects: true,
@@ -35,17 +38,17 @@ export default function resume() {
   const projects: Projects[] = t("projects.list", {
     returnObjects: true,
   }) as Projects[];
-  const { i18n } = useTranslation();
-
-  const currentLocale = i18n.language;
 
   return (
-    <main>
-      <div className="flex justify-between dark:bg-slate-800 opacity-90 w-40 rounded-xl m-4">
-        <div className="my-2 mx-14 rounded-full bg-gray-900">
-          <LanguageSwitcher />
+    <main className="w-screen">
+      <div className="flex justify-between rounded-xl m-4">
+        <div className="w-full flex justify-end gap-x-4">
+          <div className="flex w-40 justify-between my-1.5 p-2 rounded-full bg-opacity-70 bg-slate-700">
+            <LanguageSwitcher />
+            <ThemeSwitcher />
+          </div>
         </div>
-        <div className="absolute left-5 top-5 rounded-ful hover:bg-slate-950 hover:rounded-full">
+        <div className="absolute left-5 top-6 rounded-ful hover:bg-slate-950 hover:rounded-full">
           <BackButton />
         </div>
       </div>
@@ -254,9 +257,11 @@ export default function resume() {
                 <h3 className="text-2xl pb-1 border-b font-semibold grid justify-items-end">
                   {t("about.title")}
                 </h3>
-                <p className="grid justify-items-end mt-4 text-xs">
-                  {t("about.content")}
-                </p>
+                <div className={isRTL ? "text-right" : "text-left"}>
+                  <p className="grid justify-items-end mt-4 text-xs">
+                    {t("about.content")}
+                  </p>
+                </div>
               </div>
               <div>
                 <h2 className="text-2xl mt-6 pb-1 border-b font-semibold grid justify-items-end">
@@ -296,9 +301,11 @@ export default function resume() {
                           </li>
                         </ul>
                       </>
-                      <p className="text-xs grid justify-items-end">
-                        {project.description}
-                      </p>
+                      <div className={isRTL ? "text-right" : "text-left"}>
+                        <p className="text-xs grid justify-items-end">
+                          {project.description}
+                        </p>
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -323,7 +330,11 @@ export default function resume() {
                         {experience.role}
                       </p>
 
-                      <p className="text-base mb-2">{experience.description}</p>
+                      <div className={isRTL ? "text-right" : "text-left"}>
+                        <p className="text-base mb-2">
+                          {experience.description}
+                        </p>
+                      </div>
                       <strong>{t("skills.title")}:</strong>
                       <div className="mt-1 text-xs grid grid-cols-2 justify-items-end w-[80%]">
                         {experience.skills.map((skill, i) => (
