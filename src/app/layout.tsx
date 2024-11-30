@@ -1,12 +1,9 @@
-import "./globals.css";
-import Navbar from "./component/Navbar";
-import ProviderTheme from "./component/ProviderTheme";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Amir Mohammad Aghajnai",
-  description: "web developer",
-};
+import "./globals.css";
+import "./i18";
+import ProviderTheme from "./component/ProviderTheme";
+import { Suspense } from "react";
 
 export default function RootLayout({
   children,
@@ -14,12 +11,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html className="scroll-smooth">
       <body>
-        <ProviderTheme>
-          <Navbar />
-          <> {children}</>
-        </ProviderTheme>
+        <Suspense fallback={<div>Loading...</div>}>
+          <ProviderTheme>
+            <>{children}</>
+          </ProviderTheme>
+        </Suspense>
       </body>
     </html>
   );

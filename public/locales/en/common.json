@@ -1,0 +1,164 @@
+{
+  "header": {
+    "name": "Amir Aghajani",
+    "title": "Software Engineer"
+  },
+  "contactDetails": {
+    "title": ":Contact Details",
+    "phonetitle": ":Phone Numbre",
+    "phone": "98-9369477625+",
+    "emailtitle": ":E-mail",
+    "email": "amir.aghajani1377@gmail.com",
+    "locationtitle": ":Location",
+    "location": "Iran"
+  },
+  "skills": {
+    "title": ":Skills"
+  },
+  "currentlyLearning": {
+    "title": ":Currently Learning",
+    "list": [
+      "Web Accessibility (WCAG standards)",
+      "User Experience Design",
+      "Advanced Node.js and Backend Optimization"
+    ]
+  },
+  "interests": {
+    "title": ":Interests & Hobbies",
+    "list": [
+      "Sustainability",
+      "Exploring New Technologies",
+      "Blogging on dev.to",
+      "Investment and Financial Markets",
+      "Travel and Cultural Exploration"
+    ]
+  },
+  "about": {
+    "title": ":About",
+    "content": "Hi, I have been working in web programming for about three years. Currently, I live in Iran, where I serve as a training manager and web developer at my company. I obtained my bachelor's degree from QIAU University. Before transitioning to programming, I worked in content creation and had a strong interest in automotive mechanics. These experiences helped me develop my analytical and problem-solving skills, which are crucial in my role as a developer. My technical skills include proficiency in multiple programming languages, frameworks, and tools that enhance my development capabilities. In addition to software development, I enjoy sharing knowledge with others and assisting new programmers during training sessions. My soft skills—such as creative thinking, problem-solving, teamwork, leadership, and ideation—enable me to communicate and collaborate effectively with my team. As an introverted individual, I thrive in collaborative environments and enjoy finding creative solutions while contributing to a positive and supportive atmosphere. Overall, my combination of technical expertise and interpersonal skills allows me to excel in both development and training roles."
+  },
+  "education": {
+    "title": ":Education",
+    "university": "Qazvin Islamic Azad University",
+    "duration": "2017-2020",
+    "grade": "Bachelor's degree",
+    "field-study": "Business and International Management"
+  },
+  "further": {
+    "title": ":Further-Education",
+    "firstname": "Freecodecamp",
+    "secondname": "Rahkar-Education"
+  },
+  "workExperiences": {
+    "title": ":Work Experience",
+    "list": [
+      {
+        "company": "KARJOO+",
+        "role": "Tech Lead",
+        "duration": "1 yr 11 mos",
+        "location": "Tehran, Iran",
+        "type": "Full-time (Hybrid)",
+        "description": "Leading the technical team to develop and enhance KARJOO+ products and services.",
+        "skills": [
+          "Project Management",
+          "Technology Leadership",
+          "Managing Technical Personnel",
+          "TypeScript",
+          "Tailwind CSS",
+          "React.js",
+          "GraphQL"
+        ]
+      },
+      {
+        "company": "KARJOO+",
+        "role": "Software Mentor and Coach",
+        "duration": "2 yrs 3 mos",
+        "location": "Qazvin, Iran",
+        "type": "Part-time (Hybrid)",
+        "description": "Guiding students in web development programs using React and Tailwind.",
+        "skills": [
+          "Coaching",
+          "Leadership",
+          "Leadership Development",
+          "Teamwork"
+        ]
+      },
+      {
+        "company": "Sara Photography",
+        "role": "Website Developer",
+        "duration": "9 mos",
+        "location": "Brisbane, Australia",
+        "type": "Freelance (Remote)",
+        "description": "Designed and developed a WordPress-based platform to showcase photography services.",
+        "skills": [
+          "WordPress",
+          "CSS",
+          "HTML5",
+          "JavaScript",
+          "Elementor",
+          "Coaching"
+        ]
+      },
+      {
+        "company": "Afarinesh Beauty Clinic",
+        "role": "Project Development Manager",
+        "duration": "1 yr 4 mos",
+        "location": "Qazvin, Iran",
+        "type": "Freelance (Remote)",
+        "description": "Developed a management dashboard for clinics, including patient, service, and schedule management.",
+        "skills": [
+          "Next.js",
+          "React.js",
+          "Team Leadership",
+          "TypeScript",
+          "Tailwind CSS",
+          "Project Management",
+          "PostgreSQL",
+          "SQL",
+          "Apollo GraphQL"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": ":Projects",
+    "list": [
+      {
+        "title": "Karjoo+ Landing",
+        "description": "Karjoo.plus is a comprehensive platform for human resource management, featuring an exhibition calendar, a list of job fairs, and detailed pages for each exhibition. Built with Astro and Tailwind CSS, it offers a seamless user experience and responsive design.",
+        "link": "https://karjoo.plus/",
+        "skillA": "Tailwind",
+        "skillB": "JavaScript",
+        "skillC": "CSS",
+        "skillD": "HTML5"
+      },
+      {
+        "title": "Photography Website",
+        "description": "Website photography specializing in capturing precious moments for families, newborns, first birthdays, pregnancies, and other significant occasions. The site features a blog, inspiration, and stories to help families create lasting memories through photography.",
+        "link": "https://saraphotography.com.au/",
+        "skillA": "WordPress",
+        "skillB": "JavaScript",
+        "skillC": "CSS",
+        "skillD": "HTML5"
+      },
+      {
+        "title": "Exhibition Event Web App",
+        "description": "The exhibitions web app provides real-time access to company profiles, booth locations, navigation routes, and job listings, enhancing the event experience and facilitating direct connections between job seekers and employers. The app can be modified to suit each exhibition.",
+        "link": "https://jobs.karjoo.plus/qazvin",
+        "skillA": "Tailwind",
+        "skillB": "JavaScript",
+        "skillC": "TypeScript",
+        "skillD": "Next-Js"
+      },
+      {
+        "title": "Resume Template",
+        "description": "Resume template app utilizes a simple user interface to help you easily create professional and stylish resumes. With customizable sections, pre-designed templates, and helpful guidance, you can personalize your resume.",
+        "link": "./img/resume.png",
+        "skillA": "Tailwind",
+        "skillB": "TypeScript",
+        "skillC": "CSS",
+        "skillD": "HTML5"
+      }
+    ]
+  }
+}

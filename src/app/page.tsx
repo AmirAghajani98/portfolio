@@ -7,11 +7,13 @@ import SkillsSlider from "./component/SkillsSlider";
 import Footer from "./component/Footer";
 import { UseThemeProps } from "next-themes/dist/types";
 import { useTheme } from "next-themes";
+import Navbar from "./component/Navbar";
 
 export default function Home() {
   const { theme }: UseThemeProps = useTheme();
   return (
     <>
+      <Navbar />
       <Intro />
       <main
         id="about"
@@ -21,11 +23,7 @@ export default function Home() {
           <div className="text-center m-auto">
             <div className="mx-auto z-50 mr-4">
               <Image
-                src={
-                  theme === "dark"
-                    ? "./img/amir-dark.png"
-                    : "./img/amir-lite.png"
-                }
+                src={"./img/aaa.jpg"}
                 width={350}
                 height={350}
                 alt="Picture of the author"
