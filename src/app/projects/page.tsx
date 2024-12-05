@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { projectsData } from "../component/projectsData";
+import { projectsData } from "../utils/projectsData";
 import BackButton from "../component/BackButton";
 
 export default function Projects() {
