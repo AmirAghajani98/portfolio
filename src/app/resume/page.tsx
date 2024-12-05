@@ -57,7 +57,7 @@ export default function resume() {
         <div
           lang={currentLocale}
           dir={currentLocale === "fa" ? "ltr" : "rtl"}
-          className="border border-gray-600 rounded-xl font-sans shadow-md bg-slate-200 shadow-slate-400 py-10 px-10 w-3/5 mt-10 mb-10"
+          className="border border-gray-600 rounded-xl font-sans shadow-md bg-slate-200 shadow-slate-400 py-10 px-10 w-10/12 mt-10 mb-10"
         >
           <div className="flex justify-evenly">
             <Image
