@@ -42,7 +42,7 @@ export default function resume() {
 
   return (
     <main className="w-screen">
-      <div className="flex justify-between rounded-xl m-4">
+      {/* <div className="flex justify-between rounded-xl m-4">
         <div className="w-full flex justify-end gap-x-4">
           <div className="flex w-40 justify-between my-1.5 p-2 rounded-full bg-opacity-70 bg-slate-700">
             <LanguageSwitcher />
@@ -52,7 +52,7 @@ export default function resume() {
         <div className="absolute left-5 top-6 rounded-ful hover:bg-slate-950 hover:rounded-full">
           <BackButton />
         </div>
-      </div>
+      </div> */}
       <div className="flex justify-center content-center font-sans">
         <div
           lang={currentLocale}
