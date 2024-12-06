@@ -1,7 +1,7 @@
 {
   "header": {
-    "name": "Amir Aghajani",
-    "title": "Software Engineer"
+    "name": "Amir Mohamad Aghajani",
+    "list": ["Coaching & Mentoring web Development", "Software Engineer"]
   },
   "contactDetails": {
     "title": ":Contact Details",
@@ -17,11 +17,7 @@
   },
   "currentlyLearning": {
     "title": ":Currently Learning",
-    "list": [
-      "Web Accessibility (WCAG standards)",
-      "User Experience Design",
-      "Advanced Node.js and Backend Optimization"
-    ]
+    "list": ["nest-js", "postgraphile", "node-js"]
   },
   "interests": {
     "title": ":Interests & Hobbies",
