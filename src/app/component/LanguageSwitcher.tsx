@@ -1,33 +1,33 @@
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
-  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const toggleLanguage = () => {
     const newLang = i18n.language === "en" ? "fa" : "en";
     i18n.changeLanguage(newLang);
-    setIsOpen(!isOpen);
   };
 
   return (
-    <div className="">
-      <button
-        onClick={toggleLanguage}
-        className="relative flex items-center p-2 bg-opacity-70 rounded-full bg-slate-400 dark:bg-slate-800"
+    <div className="flex items-center rounded-full">
+      <label
+        htmlFor="language-toggle"
+        className="inline-flex items-center p-1 cursor-pointer dark:bg-gray-700 dark:text-gray-100 rounded-full bg-opacity-70 hover:shadow-slate-500 hover:shadow"
       >
-        <span
-          className={`transition-transform duration-500 ease-in-out transform ${
-            isOpen ? "rotate-180" : "rotate-0"
-          }`}
-        >
-          🌍
+        <input
+          id="language-toggle"
+          type="checkbox"
+          className="hidden peer rounded-full"
+          checked={i18n.language === "fa"}
+          onChange={toggleLanguage}
+        />
+        <span className="px-4 py-2 dark:bg-gray-500 font-sans font-medium peer-checked:dark:bg-gray-700 rounded-full">
+          En
         </span>
-        <span className="ml-2">
-          {i18n.language === "en" ? "English" : "فارسی"}
+        <span className="px-4 py-2 dark:bg-gray-700 font-sans font-medium peer-checked:dark:bg-gray-500 rounded-full">
+          Fa
         </span>
-      </button>
+      </label>
     </div>
   );
 };

@@ -5,6 +5,8 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../component/LanguageSwitcher";
 import BackButton from "../component/BackButton";
 import { ThemeSwitcher } from "../component/ThemeSwitcher";
+import DownloadDropdown from "../component/DownloadDropdown";
+
 interface WorkExperience {
   company: string;
   role: string;
@@ -47,17 +49,25 @@ export default function resume() {
 
   return (
     <main className="w-screen">
-      <div className="flex justify-between rounded-xl m-4">
-        <div className="w-full flex justify-end gap-x-4">
-          <div className="flex w-40 justify-between my-1.5 p-2 rounded-full bg-opacity-70 bg-slate-700">
-            <LanguageSwitcher />
-            <ThemeSwitcher />
+      <div className="flex w-full justify-between rounded-xl my-4 px-8">
+        <div className="w-1/2 flex justify-start items-center gap-x-4 rounded-2xl">
+          <div className="flex justify-between items-center my-1 p-1 rounded-full border border-slate-600 bg-opacity-70 bg-slate-700 hover:shadow-slate-500 hover:shadow">
+            <BackButton />
+          </div>
+          <div className="my-1.5 p-1">
+            <DownloadDropdown />
           </div>
         </div>
-        <div className="absolute left-5 top-6 rounded-ful hover:bg-slate-950 hover:rounded-full">
-          <BackButton />
+        <div className="w-1/2 flex justify-end items-center gap-x-4 rounded-2xl">
+          <div className="my-1.5 p-1">
+            <LanguageSwitcher />
+          </div>
+          {/* <div className="flex justify-between items-center my-1 p-1 rounded-full border border-slate-600 bg-opacity-70 bg-slate-700 hover:shadow-slate-500 hover:shadow">
+            <ThemeSwitcher />
+          </div> */}
         </div>
       </div>
+
       <div className="flex justify-center content-center font-sans">
         <div
           lang={currentLocale}
