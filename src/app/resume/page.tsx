@@ -5,6 +5,8 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../component/LanguageSwitcher";
 import BackButton from "../component/BackButton";
 import { ThemeSwitcher } from "../component/ThemeSwitcher";
+import DownloadDropdown from "../component/DownloadDropdown";
+
 interface WorkExperience {
   company: string;
   role: string;
@@ -47,17 +49,23 @@ export default function resume() {
 
   return (
     <main className="w-screen">
-      <div className="flex justify-between rounded-xl m-4">
-        <div className="w-full flex justify-end gap-x-4">
-          <div className="flex w-40 justify-between my-1.5 p-2 rounded-full bg-opacity-70 bg-slate-700">
+      <div className="flex justify-end rounded-xl m-4">
+        <div className="w-1/4 flex justify-center items-center gap-x-4 rounded-2xl bg-slate-800 bg-opacity-80">
+          <div className="my-1.5 p-1">
             <LanguageSwitcher />
+          </div>
+          <div className="my-1.5 p-1">
+            <DownloadDropdown />
+          </div>
+          <div className="flex justify-between items-center my-1 p-1 rounded-full border border-slate-600 bg-opacity-70 bg-slate-700 hover:shadow-slate-500 hover:shadow">
             <ThemeSwitcher />
           </div>
         </div>
-        <div className="absolute left-5 top-6 rounded-ful hover:bg-slate-950 hover:rounded-full">
+        <div className="absolute left-5 top-6 rounded-ful hover:bg-slate-950">
           <BackButton />
         </div>
       </div>
+
       <div className="flex justify-center content-center font-sans">
         <div
           lang={currentLocale}

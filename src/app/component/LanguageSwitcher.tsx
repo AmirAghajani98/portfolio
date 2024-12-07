@@ -15,7 +15,7 @@ const LanguageSwitcher = () => {
     <div className="">
       <button
         onClick={toggleLanguage}
-        className="relative flex items-center p-2 bg-opacity-70 rounded-full bg-slate-400 dark:bg-slate-800"
+        className="flex w-32 justify-around items-center p-2 rounded-full bg-opacity-70 bg-slate-700 border border-slate-600 hover:shadow-slate-500 hover:shadow"
       >
         <span
           className={`transition-transform duration-500 ease-in-out transform ${
@@ -24,7 +24,7 @@ const LanguageSwitcher = () => {
         >
           🌍
         </span>
-        <span className="ml-2">
+        <span className="ml-2 bg-slate-600 px-2 py-1 rounded-full">
           {i18n.language === "en" ? "English" : "فارسی"}
         </span>
       </button>
