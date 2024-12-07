@@ -37,6 +37,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "daisyui": "^4.12.14",
     "postcss-nesting": "^13.0.0"
   }
 }

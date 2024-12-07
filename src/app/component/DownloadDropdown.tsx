@@ -1,6 +1,8 @@
-import React from "react";
+import { useState } from "react";
 
-const DownloadDropdown: React.FC = () => {
+const DownloadDropdown = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const handleDownload = (filePath: string, fileName: string) => {
     const link = document.createElement("a");
     link.href = filePath;
@@ -10,25 +12,59 @@ const DownloadDropdown: React.FC = () => {
     document.body.removeChild(link);
   };
 
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="flex flex-col items-start gap-2">
-      <select
-        id="language-select"
-        onChange={(e) => {
-          if (e.target.value) {
-            const [filePath, fileName] = e.target.value.split("|");
-            handleDownload(filePath, fileName);
-          }
-        }}
-        className="flex w-32 justify-around p-3.5 rounded-full bg-opacity-70 bg-slate-700 border border-slate-600 hover:shadow-slate-600 hover:shadow"
-        defaultValue=""
+    <div className="relative">
+      <button
+        onClick={toggleDropdown}
+        className="flex w-full justify-around font-mono items-center gap-x-2 bg-slate-800 text-white font-medium rounded-lg p-3 hover:bg-slate-600 transition duration-200"
       >
-        <option value="" disabled>
-          Download Cv
-        </option>
-        <option value="/resume/en-resume.pdf|resume-en.pdf">English</option>
-        <option value="/resume/fa-resume.pdf|resume-fa.pdf">Persian</option>
-      </select>
+        Download-CV
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className={`w-5 h-5 transform transition-transform duration-200 rounded-full bg-slate-900 bg-opacity-60 border border-slate-400 p-0.5 ${
+            isOpen ? "rotate-180" : ""
+          }`}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+      </button>
+
+      <div
+        className={`${
+          isOpen ? "block" : "hidden"
+        } absolute left-0 right-0 mt-2 bg-slate-800 text-white rounded-lg shadow-lg z-10`}
+      >
+        <div
+          onClick={() => {
+            handleDownload("/resume/en-resume.pdf", "resume-en.pdf");
+            setIsOpen(false);
+          }}
+          className="p-3 font-mono cursor-pointer hover:bg-slate-600 rounded-lg"
+        >
+          English
+        </div>
+        <div
+          onClick={() => {
+            handleDownload("/resume/fa-resume.pdf", "resume-fa.pdf");
+            setIsOpen(false);
+          }}
+          className="p-3 font-mono cursor-pointer hover:bg-slate-600 rounded-lg"
+        >
+          Persian
+        </div>
+      </div>
     </div>
   );
 };

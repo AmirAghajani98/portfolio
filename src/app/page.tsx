@@ -32,9 +32,7 @@ export default function Home() {
             </div>
           </div>
           <Image
-            src={
-              theme === "dark" ? "./img/amir-lite.png" : "./img/amir-dark.png"
-            }
+            src={"./img/aaa.jpg"}
             width={200}
             height={200}
             alt="Picture of the author"

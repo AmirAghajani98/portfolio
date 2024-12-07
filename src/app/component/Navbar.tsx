@@ -4,14 +4,40 @@ import Image from "next/image";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import {
+  ArrowDownTrayIcon,
+  Bars3BottomRightIcon,
+  Bars3Icon,
+  BarsArrowDownIcon,
+  BarsArrowUpIcon,
+} from "@heroicons/react/24/outline";
+import Modal from "./Modal";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+    if (!isModalOpen) {
+      setIsOpen(false);
+    }
+  };
+
+  const handleDownloadCV = (file: string) => {
+    const link = document.createElement("a");
+    link.href = file;
+    link.download = file.split("/").pop() || "download";
+    link.click();
+    toggleModal();
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollTop = window.pageYOffset;
@@ -41,25 +67,26 @@ export default function Navbar() {
             <Image
               className="h-10 w-auto rounded-full sm:mx-8 mx-2"
               src="./img/alogo.jpg"
-              alt=""
+              alt="Logo"
               width={100}
               height={100}
-            ></Image>
+            />
           </a>
         </div>
+
         <div className="sm:flex hidden sm:w-11/12">
-          <div className="rounded-md mx-3 ">
+          <div className="rounded-md mx-3">
             <a
               href="/#"
-              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 "
+              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800"
             >
-              home
+              Home
             </a>
           </div>
           <div className="rounded-md mx-3">
             <a
               href="#projects"
-              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 "
+              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800"
             >
               About
             </a>
@@ -67,74 +94,78 @@ export default function Navbar() {
           <div className="rounded-md mx-3">
             <Link
               href={"/projects"}
-              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 "
+              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800"
             >
               Projects
             </Link>
           </div>
           <div className="rounded-md mx-3">
+            <Link
+              href={"/resume"}
+              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800"
+            >
+              Resume
+            </Link>
+          </div>
+          <div className="rounded-md mx-3">
             <a
               href="#skills"
-              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800 "
+              className="block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans dark:text-slate-100 text-[#121a23] hover:text-slate-800"
             >
               Skills
             </a>
           </div>
         </div>
+
         <div className="flex items-center w-full justify-end">
           <button
             onClick={toggleMenu}
-            className="sm:hidden text-[#121a23] dark:text-slate-300"
+            className="sm:hidden text-[#121a23] dark:text-slate-300 mx-2"
           >
-            {isOpen ? (
-              <svg fill="currentColor" viewBox="0 0 20 20" className="w-6 h-6">
-                <path
-                  fillRule="evenodd"
-                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-            ) : (
-              <svg fill="currentColor" viewBox="0 0 20 20" className="w-6 h-6">
-                <path
-                  fillRule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-            )}
+            {isOpen ? <BarsArrowUpIcon width={30} /> : <Bars3Icon width={30} />}
           </button>
         </div>
+
         <div
           className={`${
-            isOpen ? "bg-opacity-100" : "hidden opacity-0"
-          } sm:hidden absolute top-14 right-0 p-1 border-none dark:bg-slate-700 dark:bg-opacity-60 bg-slate-500 bg-opacity-30 rounded-b-xl w-24 z-10 shadow-md shadow-slate-700"
-          `}
+            isOpen ? "block opacity-100" : "hidden opacity-0"
+          } sm:hidden absolute top-14 right-0 p-2 border-none dark:bg-slate-700 dark:bg-opacity-60 bg-slate-500 bg-opacity-80 rounded-b-xl w-48 z-10 shadow-md shadow-slate-700 transition-opacity duration-300`}
         >
           <a
             href="#about"
-            className="block px-3 py-1 m-1 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
+            className="block px-3 py-2 m-1 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
           >
             About
           </a>
           <Link
             href={"/projects"}
-            className="block px-3 py-1 m-1 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
+            className="block px-3 py-2 m-1 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
           >
             Projects
           </Link>
-
           <a
             href="#skills"
-            className="block px-3 py-1 m-1 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
+            className="block px-3 py-2 m-1 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
           >
             Skills
           </a>
+          <a
+            className="flex cursor-pointer justify-between py-2 m-1 px-3 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
+            onClick={toggleModal}
+          >
+            download cv
+            <ArrowDownTrayIcon width={20} />
+          </a>
         </div>
-        <div className="shadow-sm dark:shadow-slate-400 border-1 dark:border-slate-400 shadow-slate-900 border-slate-800 flex justify-end mx-2 sm:mx-6 rounded-full p-0.5 transition ease-in-out hover:transition-y-0.5 hover:scale-105">
+        <div className="">
           <ThemeSwitcher />
         </div>
       </div>
+      <Modal
+        isOpen={isModalOpen}
+        onClose={toggleModal}
+        onDownload={handleDownloadCV}
+      />
     </header>
   );
 }
