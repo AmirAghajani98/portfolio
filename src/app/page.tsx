@@ -5,12 +5,12 @@ import Intro from "./component/Intro";
 import Projects from "./component/projects";
 import SkillsSlider from "./component/SkillsSlider";
 import Footer from "./component/Footer";
-import { UseThemeProps } from "next-themes/dist/types";
 import { useTheme } from "next-themes";
 import Navbar from "./component/Navbar";
 
 export default function Home() {
-  const { theme }: UseThemeProps = useTheme();
+  const { theme } = useTheme();
+
   return (
     <>
       <Navbar />
@@ -19,7 +19,7 @@ export default function Home() {
         id="about"
         className="w-full py-10 sm:px-0 px-4 dark:opacity-100 opacity-95 backmain"
       >
-        <div className="sm:py-10 z-10 dark:z-10 sm:flex w-[86%] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-10 bg-opacity-10 sm:text-justify text-start p-8 rounded-3xl mx-auto shadow-lg shadow-slate-600 border border-slate-400 dark:shadow-slate-900 dark:border-slate-800">
+        <div className="sm:py-10 z-10 dark:z-10 sm:flex w-[90%] sm:w-[86%] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-10 bg-opacity-10 sm:text-justify text-start sm:p-8 p-4 rounded-3xl mx-auto shadow-lg shadow-slate-600 border border-slate-400 dark:shadow-slate-900 dark:border-slate-800">
           <div className="text-center m-auto">
             <div className="mx-auto z-50 mr-4">
               <Image

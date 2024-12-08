@@ -20,7 +20,7 @@ export const projectsData = [
     alt: "sara-photography",
   },
   {
-    title: "Exhibition Event Web App",
+    title: "Exhibition Web App",
     image: "./img/qazvinjobs.png",
     description: `The exhibitions web app provides real-time access to company
                   profiles, booth locations, navigation routes, and job listings,

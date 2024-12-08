@@ -38,7 +38,7 @@ const Projects: React.FC = () => {
           projectsData.slice(0, 3).map((project, index) => (
             <div
               key={index}
-              className="my-4 sm:my-6 sm:flex sm:flex-col sm:w-full z-50 p-6 sm:py-8 h-auto dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 hover:shadow-lg dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow-md transition-all duration-300 ease-in-out"
+              className="my-8 sm:my-6 sm:flex sm:flex-col sm:w-full z-50 p-4 sm:pt-8 sm:pb-5 h-auto dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 hover:shadow-lg dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow-md transition-all duration-300 ease-in-out"
             >
               <div className="flex justify-center items-center mb-4">
                 <Image
@@ -50,10 +50,10 @@ const Projects: React.FC = () => {
                   onClick={() => openModal(project.link)}
                 />
               </div>
-              <h2 className="font-mono mt-3 mb-4 font-semibold text-xl dark:text-slate-100 text-[#121a23]">
+              <h2 className="font-mono mt-3 mb-4 sm:mx-4 text-left font-semibold text-xl dark:text-slate-100 text-[#121a23]">
                 {project.title}
               </h2>
-              <p className="font-sans whitespace-normal text-justify mx-auto mb-6 text-base leading-relaxed dark:text-slate-100 text-[#121a23] line-clamp-4">
+              <p className="font-sans whitespace-normal sm:mx-4 text-left sm:mb-6 mb-2 text-base leading-relaxed dark:text-slate-100 text-[#121a23] sm:line-clamp-5 line-clamp-4">
                 {project.description}
               </p>
               <div className="text-right">
@@ -130,7 +130,7 @@ const Projects: React.FC = () => {
       <div className="w-full justify-center items-center text-center">
         <Link
           href={"/projects"}
-          className="text-lg font-sans mx-auto py-4 px-4 font-semibold dark:hover:shadow-slate-700 hover:shadow-slate-500 hover:shadow dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-30 bg-opacity-70 rounded-lg"
+          className="text-lg font-sans mx-auto py-4 px-4 font-semibold dark:hover:shadow-slate-700 hover:shadow-slate-500 hover:shadow dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-20 bg-opacity-70 rounded-lg"
         >
           see more...
         </Link>

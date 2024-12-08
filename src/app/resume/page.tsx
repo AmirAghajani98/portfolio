@@ -49,12 +49,12 @@ export default function resume() {
 
   return (
     <main className="w-screen">
-      <div className="flex w-full justify-between rounded-xl my-4 px-8">
+      <div className="flex w-full justify-between rounded-xl px-4 py-4">
         <div className="w-1/2 flex justify-start items-center gap-x-4 rounded-2xl">
-          <div className="flex justify-between items-center my-1 p-1 rounded-full border border-slate-600 bg-opacity-70 bg-slate-700 hover:shadow-slate-500 hover:shadow">
+          <div className="flex justify-between items-center rounded-full border border-slate-600 hover:shadow-slate-500 hover:shadow">
             <BackButton />
           </div>
-          <div className="my-1.5 p-1">
+          <div className="flex items-center justify-center ">
             <DownloadDropdown />
           </div>
         </div>
@@ -99,11 +99,11 @@ export default function resume() {
           <div className="flex gap-x-10 mt-4">
             <div className="w-2/6 text-auto ">
               <>
-                <p className="w-full text-2xl mt-6 pb-1 border-b font-semibold grid justify-items-end">
+                <p className="w-full text-2xl  pb-1 border-b font-semibold grid justify-items-end">
                   {t("contactDetails.title")}
                 </p>
-                <ul className="mb-4 grid justify-items-end">
-                  <li className="px-2 mt-1 mb-2 grid justify-items-end">
+                <ul className="my-4 grid justify-items-end">
+                  <li className="px-2 mt-1 grid justify-items-end">
                     <strong className="mr-1">
                       {t("contactDetails.phonetitle")}
                     </strong>
@@ -111,7 +111,7 @@ export default function resume() {
                       {t("contactDetails.phone")}
                     </a>
                   </li>
-                  <li className="px-2 grid justify-items-end">
+                  <li className="px-2 grid mt-4 justify-items-end">
                     <strong className="mr-1">
                       {t("contactDetails.emailtitle")}
                     </strong>
@@ -119,7 +119,7 @@ export default function resume() {
                       {t("contactDetails.email")}
                     </a>
                   </li>
-                  <li className="px-2 mt-1 grid justify-items-end">
+                  <li className="px-2 mt-4 grid justify-items-end">
                     <strong className="mr-1">
                       {t("contactDetails.locationtitle")}
                     </strong>
@@ -130,7 +130,7 @@ export default function resume() {
                 </ul>
               </>
               <>
-                <p className="w-full text-2xl mt-6 pb-1 border-b font-semibold grid justify-items-end">
+                <p className="w-full text-2xl mt-16 pb-1 border-b font-semibold grid justify-items-end">
                   {t("skills.title")}
                 </p>
                 <ul className="mt-2 mb-10 grid grid-cols-2 justify-items-end">
@@ -160,7 +160,7 @@ export default function resume() {
                 </ul>
               </>
               <>
-                <p className="w-full text-2xl mt-6 pb-1 border-b font-semibold grid justify-items-end">
+                <p className="w-full text-2xl mt-16 pb-1 border-b font-semibold grid justify-items-end">
                   {t("further.title")}
                 </p>
                 <ul className="mt-2 mb-10 grid justify-items-end">
@@ -169,7 +169,7 @@ export default function resume() {
                 </ul>
               </>
               <>
-                <p className="w-full text-2xl mt-6 pb-1 border-b font-semibold grid justify-items-end">
+                <p className="w-full text-2xl mt-16 pb-1 border-b font-semibold grid justify-items-end">
                   {t("currentlyLearning.title")}
                 </p>
                 <ul className="mt-2 grid justify-items-end">
@@ -181,7 +181,7 @@ export default function resume() {
                 </ul>
               </>
 
-              <div className="w-full">
+              <div className="w-full mt-16">
                 <p className="w-full text-2xl mt-6 pb-1 border-b font-semibold grid justify-items-end">
                   {t("education.title")}
                 </p>
@@ -203,7 +203,7 @@ export default function resume() {
                 </ul>
               </div>
               <>
-                <p className="w-full text-2xl mt-6 pb-1 border-b font-semibold grid justify-items-end">
+                <p className="w-full text-2xl mt-16 pb-1 border-b font-semibold grid justify-items-end">
                   {t("interests.title")}
                 </p>
                 <ul className="mt-2 grid justify-items-end">
@@ -221,7 +221,7 @@ export default function resume() {
                   {t("about.title")}
                 </p>
                 <div className={isRTL ? "text-right" : "text-left"}>
-                  <p className="grid justify-items-end mt-4 text-xs">
+                  <p className="grid justify-items-end mt-4 text-base">
                     {t("about.content")}
                   </p>
                 </div>
@@ -253,7 +253,7 @@ export default function resume() {
                         </strong>
                       </div>
                       <div className={isRTL ? "text-right" : "text-left"}>
-                        <p className="text-xs grid justify-items-end">
+                        <p className="text-sm grid justify-items-end">
                           {project.description}
                         </p>
                       </div>
