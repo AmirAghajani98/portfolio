@@ -7,9 +7,27 @@ import SkillsSlider from "./component/SkillsSlider";
 import Footer from "./component/Footer";
 import { useTheme } from "next-themes";
 import Navbar from "./component/Navbar";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const { theme } = useTheme();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="fixed inset-0 flex justify-center items-center bg-slate-700 bg-opacity-60 z-50">
+        <span className="loading loading-bars loading-lg"></span>
+      </div>
+    );
+  }
 
   return (
     <>
@@ -19,13 +37,13 @@ export default function Home() {
         id="about"
         className="w-full py-10 sm:px-0 px-4 dark:opacity-100 opacity-95 backmain"
       >
-        <div className="sm:py-10 z-10 dark:z-10 sm:flex w-[90%] sm:w-[86%] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-10 bg-opacity-10 sm:text-justify text-start sm:p-8 p-4 rounded-3xl mx-auto shadow-lg shadow-slate-600 border border-slate-400 dark:shadow-slate-900 dark:border-slate-800">
+        <div className="sm:py-10 z-10 dark:z-10 sm:flex sm:items-center w-[90%] sm:w-[90%] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-10 bg-opacity-10 sm:text-justify text-start sm:p-8 p-4 rounded-3xl mx-auto shadow-lg shadow-slate-600 border border-slate-400 dark:shadow-slate-900 dark:border-slate-800">
           <div className="text-center m-auto">
             <div className="mx-auto z-50 mr-4">
               <Image
                 src={"./img/aaa.jpg"}
-                width={350}
-                height={350}
+                width={400}
+                height={400}
                 alt="Picture of the author"
                 className="m-auto rounded-full sm:block hidden z-50 shadow-lg shadow-slate-600 border border-slate-400 dark:shadow-slate-900 dark:border-slate-800"
               />
@@ -40,7 +58,7 @@ export default function Home() {
           />
           <div className="w-full mt-14 sm:mt-0 text-justify">
             <h1 className="text-3xl font-semibold mb-3 font-mono">About Me</h1>
-            <p className="text-base dark:text-slate-300 font-sans leading-7 indent-3">
+            <p className="text-lg dark:text-slate-300 font-sans leading-7 indent-3">
               Hi, I am 26 years old and have been working in web programming for
               about three years. Currently, I live in Iran, where I serve as a
               training manager and senior developer at my company. I obtained my

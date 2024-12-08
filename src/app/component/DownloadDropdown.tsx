@@ -20,9 +20,8 @@ const DownloadDropdown = () => {
     <div className="relative">
       <button
         onClick={toggleDropdown}
-        className="flex w-full justify-around font-mono items-center gap-x-2 bg-slate-800 text-white font-medium rounded-lg px-3 py-2.5 hover:bg-slate-600 transition duration-200"
+        className="flex w-full justify-around font-mono items-center gap-x-2 bg-slate-700 text-white font-medium rounded-lg px-3 py-2.5 hover:bg-slate-600 transition duration-200"
       >
-        Download-CV
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -39,6 +38,7 @@ const DownloadDropdown = () => {
             d="m19.5 8.25-7.5 7.5-7.5-7.5"
           />
         </svg>
+        Download-CV
       </button>
 
       <div

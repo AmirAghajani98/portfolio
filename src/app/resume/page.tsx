@@ -6,6 +6,7 @@ import LanguageSwitcher from "../component/LanguageSwitcher";
 import BackButton from "../component/BackButton";
 import { ThemeSwitcher } from "../component/ThemeSwitcher";
 import DownloadDropdown from "../component/DownloadDropdown";
+import { useState, useEffect } from "react";
 
 interface WorkExperience {
   company: string;
@@ -30,6 +31,15 @@ export default function resume() {
   const { i18n, t } = useTranslation();
   const isRTL = i18n.language === "fa";
   const currentLocale = i18n.language;
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const workExperiences: WorkExperience[] = t("workExperiences.list", {
     returnObjects: true,
@@ -47,20 +57,19 @@ export default function resume() {
     returnObjects: true,
   }) as Projects[];
 
+  if (loading) {
+    return (
+      <div className="fixed inset-0 flex justify-center items-center bg-slate-700 bg-opacity-60 z-50">
+        <span className="loading loading-bars loading-lg"></span>
+      </div>
+    );
+  }
   return (
     <main className="w-screen">
       <div className="flex w-full justify-between rounded-xl px-4 py-4">
         <div className="w-1/2 flex justify-start items-center gap-x-4 rounded-2xl">
           <div className="flex justify-between items-center rounded-full border border-slate-600 hover:shadow-slate-500 hover:shadow">
             <BackButton />
-          </div>
-          <div className="flex items-center justify-center ">
-            <DownloadDropdown />
-          </div>
-        </div>
-        <div className="w-1/2 flex justify-end items-center gap-x-4 rounded-2xl">
-          <div className="my-1.5 p-1">
-            <LanguageSwitcher />
           </div>
           {/* <div className="flex justify-between items-center my-1 p-1 rounded-full border border-slate-600 bg-opacity-70 bg-slate-700 hover:shadow-slate-500 hover:shadow">
             <ThemeSwitcher />
@@ -72,8 +81,16 @@ export default function resume() {
         <div
           lang={currentLocale}
           dir={currentLocale === "fa" ? "ltr" : "rtl"}
-          className="border border-gray-600 rounded-xl font-sans shadow-md bg-slate-800 shadow-slate-400 py-10 px-10 w-4/6 my-10"
+          className="border border-gray-600 rounded-xl font-sans shadow-md bg-slate-800 shadow-slate-400 px-10 w-4/6 my-10"
         >
+          <div className="w-full flex justify-between items-center rounded-2xl mt-8">
+            <div className="my-1.5 p-1">
+              <LanguageSwitcher />
+            </div>
+            <div className="flex items-center justify-center ">
+              <DownloadDropdown />
+            </div>
+          </div>
           <div className="flex justify-between w-full">
             <Image
               className="justify-center rounded-full shadow shadow-slate-200 mx-20 my-10"

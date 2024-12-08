@@ -38,8 +38,8 @@ const ScrollUpButton = () => {
       <Image
         src={"./img/up.png"}
         alt={""}
-        width={40}
-        height={40}
+        width={50}
+        height={50}
         className="rounded-full"
       ></Image>
     </button>

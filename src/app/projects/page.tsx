@@ -1,13 +1,23 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { projectsData } from "../utils/projectsData";
 import BackButton from "../component/BackButton";
 import { ThemeSwitcher } from "../component/ThemeSwitcher";
+import Footer from "../component/Footer";
 
 export default function Projects() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalIframeSrc, setModalIframeSrc] = useState("");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const openModal = (url: string) => {
     setModalIframeSrc(url);
@@ -25,8 +35,16 @@ export default function Projects() {
     }
   };
 
+  if (loading) {
+    return (
+      <div className="fixed inset-0 flex justify-center items-center bg-slate-700 bg-opacity-60 z-50">
+        <span className="loading loading-bars loading-lg"></span>
+      </div>
+    );
+  }
+
   return (
-    <main className="sm:min-h-screen sm:w-full mx-auto sm:py-10 pb-10 pt-4 opacity-95 bg-slate-400 projectback justify-center flex flex-col">
+    <main className="sm:min-h-screen sm:w-full mx-auto sm:pt-10 pt-4 opacity-95 bg-slate-400 projectback justify-center flex flex-col">
       <div className="w-full flex justify-between items-center rounded-2xl sm:-mt-8">
         <div className="flex mx-4 justify-between items-center rounded-full border border-slate-600 hover:shadow-slate-500 hover:shadow">
           <BackButton />
@@ -43,7 +61,7 @@ export default function Projects() {
           projectsData.map((project, index) => (
             <div
               key={index}
-              className="my-8 sm:my-6 sm:flex sm:flex-col sm:w-full z-50 p-4 sm:py-8 sm:px-8 h-auto dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 hover:shadow-lg dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow-md transition-all duration-300 ease-in-out"
+              className="my-8 sm:my-6 sm:flex sm:flex-col sm:w-full z-50 p-4 sm:pt-8 sm:pb-6 sm:px-8 h-auto dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-40 bg-opacity-70 hover:shadow-lg dark:hover:shadow-slate-700 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-3xl shadow-md transition-all duration-300 ease-in-out"
             >
               <div className="flex justify-center items-center mb-4">
                 <Image
@@ -61,7 +79,7 @@ export default function Projects() {
               <p className="font-sans whitespace-normal text-left mx-auto sm-mb-6 mb-2 text-base leading-relaxed dark:text-slate-100 text-[#121a23] line-clamp-4">
                 {project.description}
               </p>
-              <div className="text-right">
+              <div className="text-right flex items-end justify-end">
                 <a
                   href={project.link}
                   target="_blank"
@@ -110,6 +128,7 @@ export default function Projects() {
           </div>
         </div>
       )}
+      <Footer />
     </main>
   );
 }
