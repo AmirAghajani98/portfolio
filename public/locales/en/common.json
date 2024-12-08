@@ -10,7 +10,7 @@
     "emailtitle": ":E-mail",
     "email": "amir.aghajani1377@gmail.com",
     "locationtitle": ":Location",
-    "location": "Iran"
+    "location": "Iran- Qazvin"
   },
   "skills": {
     "title": ":Skills"
@@ -52,7 +52,7 @@
         "company": "KARJOO+",
         "role": "Tech Lead",
         "duration": "1 yr 11 mos",
-        "location": "Tehran, Iran",
+        "location": "Qazvin، Iran",
         "type": "Full-time (Hybrid)",
         "description": "Leading the technical team to develop and enhance KARJOO+ products and services.",
         "skills": [
@@ -69,7 +69,7 @@
         "company": "KARJOO+",
         "role": "Software Mentor and Coach",
         "duration": "2 yrs 3 mos",
-        "location": "Qazvin, Iran",
+        "location": "Qazvin، Iran",
         "type": "Part-time (Hybrid)",
         "description": "Guiding students in web development programs using React and Tailwind.",
         "skills": [
@@ -99,7 +99,7 @@
         "company": "Afarinesh Beauty Clinic",
         "role": "Project Development Manager",
         "duration": "1 yr 4 mos",
-        "location": "Qazvin, Iran",
+        "location": "Qazvin، Iran",
         "type": "Freelance (Remote)",
         "description": "Developed a management dashboard for clinics, including patient, service, and schedule management.",
         "skills": [

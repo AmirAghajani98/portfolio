@@ -4,7 +4,6 @@ import "./globals.css";
 import "./i18";
 import ProviderTheme from "./component/ProviderTheme";
 import { Suspense } from "react";
-import Footer from "./component/Footer";
 
 export default function RootLayout({
   children,
@@ -14,7 +13,7 @@ export default function RootLayout({
   return (
     <html className="scroll-smooth">
       <body>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div></div>}>
           <ProviderTheme>
             <>{children}</>
           </ProviderTheme>

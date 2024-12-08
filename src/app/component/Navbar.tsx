@@ -59,9 +59,9 @@ export default function Navbar() {
 
   return (
     <header
-      className={`z-10 sm:py-1.5 py-1 dark:bg-slate-800 bg-slate-500 dark:bg-opacity-60 w-full shadow-sm shadow-slate-700 transition-transform transform duration-200 ${
+      className={`z-50 sm:py-1.5 py-1 w-full shadow-sm shadow-slate-700 transition-transform transform duration-200 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
-      } sticky top-0`}
+      } sticky top-0 dark:bg-opacity-80 bg-opacity-95 dark:bg-slate-800 bg-slate-500`}
     >
       <div className="flex items-center justify-between w-full">
         <div className="sm:flex items-center shrink-0 hidden">
@@ -98,13 +98,30 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="flex w-full items-center">
-          <button
-            onClick={toggleMenu}
-            className="sm:hidden text-[#121a23] dark:text-slate-300 mx-2"
-          >
-            {isOpen ? <BarsArrowUpIcon width={30} /> : <Bars3Icon width={30} />}
-          </button>
+        <div className="flex w-full items-center sm:hidden">
+          <label className="px-2 bg-none bg-opacity-60 swap swap-rotate">
+            <input type="checkbox" checked={isOpen} onChange={toggleMenu} />
+
+            <svg
+              className="swap-off fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 512 512"
+            >
+              <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+            </svg>
+
+            <svg
+              className="swap-on fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 512 512"
+            >
+              <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+            </svg>
+          </label>
         </div>
         <div className="flex w-full justify-end">
           <ThemeSwitcher />
