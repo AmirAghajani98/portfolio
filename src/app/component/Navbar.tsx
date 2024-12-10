@@ -3,11 +3,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  ArrowDownTrayIcon,
-  Bars3Icon,
-  BarsArrowUpIcon,
-} from "@heroicons/react/24/outline";
+import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import Modal from "./Modal";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 

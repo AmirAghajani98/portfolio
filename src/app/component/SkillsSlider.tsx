@@ -76,7 +76,7 @@ const SkillsSlider: React.FC = () => {
   return (
     <div
       id="skills"
-      className="z-50 w-full dark:opacity-100 opacity-95 h-auto mx-auto py-10 backmain "
+      className="z-50 w-full dark:opacity-100 opacity-95 h-auto mx-auto py-10 backmain"
     >
       <h1 className="sm:text-5xl text-4xl text-center mx-auto my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 w-[50%]">
         skills
