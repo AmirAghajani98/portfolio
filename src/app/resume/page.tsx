@@ -7,6 +7,7 @@ import BackButton from "../component/BackButton";
 import { ThemeSwitcher } from "../component/ThemeSwitcher";
 import DownloadDropdown from "../component/DownloadDropdown";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 interface WorkExperience {
   company: string;
@@ -134,17 +135,17 @@ export default function resume() {
                       <strong className="mr-1">
                         {t("contactDetails.phonetitle")}
                       </strong>
-                      <a href="tel:+821023456789" className="block">
+                      <Link href="tel:+821023456789" className="block">
                         {t("contactDetails.phone")}
-                      </a>
+                      </Link>
                     </li>
                     <li className="px-2 grid mt-4 justify-items-end">
                       <strong className="mr-1">
                         {t("contactDetails.emailtitle")}
                       </strong>
-                      <a href="mailto:" className="block">
+                      <Link href="mailto:" className="block">
                         {t("contactDetails.email")}
-                      </a>
+                      </Link>
                     </li>
                     <li className="px-2 mt-4 grid justify-items-end">
                       <strong className="mr-1">

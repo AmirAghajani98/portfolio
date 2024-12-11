@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { projectsData } from "../utils/projectsData";
 import BackButton from "../component/BackButton";
 import { ThemeSwitcher } from "../component/ThemeSwitcher";
@@ -80,14 +81,14 @@ export default function Projects() {
                 {project.description}
               </p>
               <div className="text-right flex items-end justify-end">
-                <a
+                <Link
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm font-medium text-blue-950 dark:text-blue-400 hover:underline"
                 >
                   Visit site &gt;
-                </a>
+                </Link>
               </div>
             </div>
           ))}

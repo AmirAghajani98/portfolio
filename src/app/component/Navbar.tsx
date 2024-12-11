@@ -62,7 +62,7 @@ export default function Navbar() {
     >
       <div className="flex items-center justify-between w-full">
         <div className="sm:flex items-center shrink-0 hidden">
-          <a aria-current="page" href="/#">
+          <Link aria-current="page" href="/#">
             <Image
               className="h-10 w-auto rounded-full sm:mx-8 mx-2"
               src="./img/alogo.jpg"
@@ -70,7 +70,7 @@ export default function Navbar() {
               width={100}
               height={100}
             />
-          </a>
+          </Link>
         </div>
 
         <div className="sm:flex hidden sm:w-11/12">
@@ -101,7 +101,6 @@ export default function Navbar() {
         <div className="flex w-full items-center sm:hidden">
           <label className="px-2 bg-none bg-opacity-60 swap swap-rotate">
             <input type="checkbox" checked={isOpen} onChange={toggleMenu} />
-
             <svg
               className="swap-off fill-current"
               xmlns="http://www.w3.org/2000/svg"

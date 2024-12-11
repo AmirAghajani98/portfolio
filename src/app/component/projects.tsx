@@ -57,14 +57,14 @@ const Projects: React.FC = () => {
                 {project.description}
               </p>
               <div className="text-right flex items-end justify-end">
-                <a
+                <Link
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm font-medium text-blue-950 dark:text-blue-400 hover:underline"
                 >
                   Visit site &gt;
-                </a>
+                </Link>
               </div>
             </div>
           ))}
