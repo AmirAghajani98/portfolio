@@ -11,7 +11,7 @@ export const Progress: React.FC<{ value: number; name: string }> = ({
   useEffect(() => {
     const timeout = setTimeout(() => {
       setAnimatedValue(value);
-    }, 1000); // Slight delay to ensure smooth animation
+    }, 1000);
     return () => clearTimeout(timeout);
   }, [value]);
 

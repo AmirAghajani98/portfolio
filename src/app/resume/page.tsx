@@ -92,7 +92,7 @@ export default function resume() {
           >
             <div className="flex justify-between w-full">
               <Image
-                className="justify-center rounded-full shadow shadow-slate-200 my-8 mr-4"
+                className="justify-center rounded-full shadow shadow-slate-700 my-8 mr-4"
                 src={"./img/aaaa.jpg"}
                 alt={"amir"}
                 width={300}

@@ -20,12 +20,12 @@ const DownloadDropdown = () => {
   return (
     <div className="relative mx-auto flex w-full max-w-lg items-center justify-center">
       <div className="relative z-10 flex w-full cursor-pointer items-center overflow-hidden rounded-xl border border-slate-800 p-[1.5px]">
-        <div className="animate-rotate absolute inset-0 w-full rounded-full bg-[conic-gradient(#0ea5e9_20deg,transparent_120deg)]"></div>
+        <div className="animate-rotate absolute inset-0 w-full rounded-full bg-[conic-gradient(#64748b,transparent_180deg)]"></div>
 
         <div className="relative z-20 flex w-full rounded-[0.60rem] bg-slate-900">
           <button
             onClick={toggleDropdown}
-            className="flex w-full justify-between font-mono items-center gap-x-3 text-white font-medium rounded-lg px-3 py-2 z-10 hover:bg-slate-600 transition duration-200 border-4 border-transparent bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end animate-gradientBorder"
+            className="flex w-full justify-between font-mono items-center gap-x-3 text-white font-medium rounded-lg px-3 py-2 z-10 hover:bg-slate-700 transition duration-200 border-4 border-transparent bg-gradient-to-l from-gradient-end via-gradient-middle to-gradient-start animate-gradientBorder"
           >
             Download-CV
             <ChevronRightIcon

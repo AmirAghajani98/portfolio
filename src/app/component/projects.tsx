@@ -127,13 +127,17 @@ const Projects: React.FC = () => {
           </div>
         </div>
       )}
-      <div className="w-full justify-center items-center text-center">
-        <Link
-          href={"/projects"}
-          className="text-lg font-sans mx-auto py-4 px-4 font-semibold dark:hover:shadow-slate-700 hover:shadow-slate-500 hover:shadow dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-20 bg-opacity-70 rounded-lg"
-        >
-          see more...
-        </Link>
+
+      <div className="w-full max-w-32 mx-auto justify-center items-center text-center relative z-10 flex cursor-pointer overflow-hidden rounded-xl sm:p-[2.5px] p-[2px]">
+        <div className="animate-rotate absolute inset-0 rounded-full bg-[conic-gradient(#475569_45deg,transparent_180deg)] dark:bg-[conic-gradient(#64748b_45deg,transparent_180deg)]"></div>
+        <div className="relative z-20 flex w-full rounded-[10px] bg-slate-900">
+          <Link
+            href={"/projects"}
+            className="text-lg font-sans mx-auto w-full h-full py-1.5 px-3 font-semibold dark:hover:bg-opacity-40 hover:bg-opacity-75 dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-400 dark:bg-opacity-30 bg-opacity-80 rounded-lg transition duration-200 border border-transparent bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end animate-gradientBorder"
+          >
+            see more...
+          </Link>
+        </div>
       </div>
     </main>
   );
