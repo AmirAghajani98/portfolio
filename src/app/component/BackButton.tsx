@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const BackButton = () => {
@@ -8,7 +9,7 @@ const BackButton = () => {
   };
 
   return (
-    <div>
+    <Link href={""}>
       <button
         className="sm:p-2.5 p-1.5 bg-opacity-70 rounded-full dark:text-slate-100 text-slate-900 bg-slate-600 dark:bg-slate-500"
         onClick={handleGoBack}
@@ -28,7 +29,7 @@ const BackButton = () => {
           />
         </svg>
       </button>
-    </div>
+    </Link>
   );
 };
 

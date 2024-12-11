@@ -88,6 +88,7 @@ const SkillsSlider: React.FC = () => {
             className="rounded-full dark:bg-slate-700 bg-opacity-70 dark:bg-opacity-70 bg-slate-500 sm:p-5 py-4 sm:my-16 sm:mx-auto mx-10 my-4"
           >
             <Image
+              loading="lazy"
               src={logo}
               alt={`Logo ${index + 1}`}
               width={80}

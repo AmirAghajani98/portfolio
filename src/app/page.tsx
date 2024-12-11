@@ -1,16 +1,14 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Intro from "./component/Intro";
-import Projects from "./component/projects";
 import SkillsSlider from "./component/SkillsSlider";
 import Footer from "./component/Footer";
-import { useTheme } from "next-themes";
 import Navbar from "./component/Navbar";
-import { useState, useEffect } from "react";
+import Projects from "./component/projects";
 
 export default function Home() {
-  const { theme } = useTheme();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -41,6 +39,7 @@ export default function Home() {
           <div className="text-center m-auto">
             <div className="mx-auto z-50 mr-4">
               <Image
+                loading="lazy"
                 src={"./img/aaa.jpg"}
                 width={400}
                 height={400}
@@ -50,6 +49,7 @@ export default function Home() {
             </div>
           </div>
           <Image
+            loading="lazy"
             src={"./img/aaa.jpg"}
             width={200}
             height={200}

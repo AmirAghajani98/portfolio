@@ -26,14 +26,6 @@ export default function Navbar() {
     }
   };
 
-  const handleDownloadCV = (file: string) => {
-    const link = document.createElement("a");
-    link.href = file;
-    link.download = file.split("/").pop() || "download";
-    link.click();
-    toggleModal();
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollTop = window.pageYOffset;
@@ -64,6 +56,7 @@ export default function Navbar() {
         <div className="sm:flex items-center shrink-0 hidden">
           <Link aria-current="page" href="/#">
             <Image
+              loading="lazy"
               className="h-10 w-auto rounded-full sm:mx-8 mx-2"
               src="./img/alogo.jpg"
               alt="Logo"
@@ -75,7 +68,7 @@ export default function Navbar() {
 
         <div className="sm:flex hidden sm:w-11/12">
           {[
-            { name: "About", href: "#projects" },
+            { name: "About", href: "#about" },
             { name: "Projects", href: "/projects" },
             { name: "Resume", href: "/resume" },
             { name: "Skills", href: "#skills" },
@@ -102,7 +95,7 @@ export default function Navbar() {
           <label className="px-2 bg-none bg-opacity-60 swap swap-rotate">
             <input type="checkbox" checked={isOpen} onChange={toggleMenu} />
             <svg
-              className="swap-off fill-current"
+              className="swap-off fill-current text-slate-900 dark:text-slate-200"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -112,7 +105,7 @@ export default function Navbar() {
             </svg>
 
             <svg
-              className="swap-on fill-current"
+              className="swap-on fill-current text-slate-900 dark:text-slate-200"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -156,11 +149,7 @@ export default function Navbar() {
           </a>
         </div>
       </div>
-      <Modal
-        isOpen={isModalOpen}
-        onClose={toggleModal}
-        onDownload={handleDownloadCV}
-      />
+      <Modal isOpen={isModalOpen} onClose={toggleModal} />
     </header>
   );
 }

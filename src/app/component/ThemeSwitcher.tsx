@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
@@ -24,9 +25,10 @@ export const ThemeSwitcher = () => {
   };
 
   return (
-    <button
+    <Link
       className="sm:w-20 sm:h-10 w-16 h-8 rounded-full ring-1 bg-slate-700 ring-slate-700 dark:bg-slate-500 dark:ring-slate-500 flex items-center transition duration-300 focus:outline-none shadow mx-2 sm:mx-5"
       onClick={toggleTheme}
+      href={""}
     >
       <div
         id="switch-toggle"
@@ -68,6 +70,6 @@ export const ThemeSwitcher = () => {
           </svg>
         )}
       </div>
-    </button>
+    </Link>
   );
 };

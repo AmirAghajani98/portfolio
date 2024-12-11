@@ -1,13 +1,13 @@
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 import React, { useRef } from "react";
 
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onDownload: (file: string) => void;
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose, onDownload }) => {
+const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
   const modalRef = useRef<HTMLDialogElement | null>(null);
 
   const openModal = () => {
@@ -49,18 +49,26 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, onDownload }) => {
             Select Resume to Download
           </h3>
           <div className="flex justify-around space-x-4 mt-8">
-            <button
+            <Link
+              href="/resume/en-resume.pdf"
+              locale={false}
+              rel="noopener noreferrer"
+              target="_blank"
+              download="resume-en.pdf"
               className="bg-slate-600 rounded-xl p-2 text-sm hover:shadow font-mono"
-              onClick={() => onDownload("/resume/en-resume.pdf")}
             >
               En-Resume
-            </button>
-            <button
+            </Link>
+            <Link
+              href="/resume/fa-resume.pdf"
+              locale={false}
+              rel="noopener noreferrer"
+              target="_blank"
+              download="resume-fa.pdf"
               className="bg-slate-600 rounded-xl p-2 text-sm hover:shadow font-mono"
-              onClick={() => onDownload("/resume/fa-resume.pdf")}
             >
               Fa-Resume
-            </button>
+            </Link>
           </div>
         </div>
       </dialog>

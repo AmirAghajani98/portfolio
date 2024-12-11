@@ -66,6 +66,7 @@ export default function Projects() {
             >
               <div className="flex justify-center items-center mb-4">
                 <Image
+                  loading="lazy"
                   src={project.image}
                   width={500}
                   height={400}
@@ -123,8 +124,8 @@ export default function Projects() {
               src={modalIframeSrc}
               title="Project Preview"
               className="w-[80%] h-[80%] rounded-lg m-auto my-24"
-              frameBorder="0"
               allowFullScreen
+              loading="lazy"
             />
           </div>
         </div>

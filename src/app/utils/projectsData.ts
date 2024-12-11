@@ -16,7 +16,7 @@ export const projectsData = [
                   families, newborns, first birthdays, pregnancies, and other
                   significant occasions. The site features a blog, inspiration, and
                   stories to help families create lasting memories through photography.`,
-    link: "https://saraphotography.com.au/en/",
+    link: "https://saraphotography.com.au/",
     alt: "sara-photography",
   },
   {

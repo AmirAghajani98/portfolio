@@ -3,6 +3,7 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
 import Image from "next/image";
+import Link from "next/link";
 
 const Intro: React.FC = () => {
   return (
@@ -42,7 +43,7 @@ const Intro: React.FC = () => {
             </h2>
           </div>
           <div className="sm:mt-10 mt-6 justify-center flex w-full sm:mx-auto">
-            <a
+            <Link
               href="mailto:amir.aghajani1377@gmail.com"
               target={"_blank"}
               className="sm:mx-3"
@@ -54,8 +55,8 @@ const Intro: React.FC = () => {
                 alt="Picture of the author"
                 className="mx-4 my-2 p-2 bg-slate-700 bg-opacity-30 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
               />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://github.com/AmirAghajani98"
               target={"_blank"}
               className="sm:mx-3"
@@ -67,8 +68,12 @@ const Intro: React.FC = () => {
                 alt="Picture of the author"
                 className="mx-4 my-2 p-2 bg-slate-700 bg-opacity-30 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
               />
-            </a>
-            <a href="https://t.me/Amr431" target={"_blank"} className="sm:mx-3">
+            </Link>
+            <Link
+              href="https://t.me/Amr431"
+              target={"_blank"}
+              className="sm:mx-3"
+            >
               <Image
                 src="./img/4.png"
                 width={50}
@@ -76,20 +81,21 @@ const Intro: React.FC = () => {
                 alt="Picture of the author"
                 className="mx-4 my-2 p-2 bg-slate-700 bg-opacity-30 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
               />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/amir-aghajani/"
               target={"_blank"}
               className="sm:mx-3"
             >
               <Image
+                loading="lazy"
                 src="./img/5.png"
                 width={50}
                 height={50}
                 alt="Picture of the author"
                 className="mx-4 my-2 p-2 bg-slate-700 bg-opacity-30 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

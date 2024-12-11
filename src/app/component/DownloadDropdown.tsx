@@ -1,17 +1,9 @@
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 import { useState } from "react";
 
 const DownloadDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const handleDownload = (filePath: string, fileName: string) => {
-    const link = document.createElement("a");
-    link.href = filePath;
-    link.download = fileName;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -23,9 +15,10 @@ const DownloadDropdown = () => {
         <div className="animate-rotate absolute inset-0 w-full rounded-full bg-[conic-gradient(#64748b,transparent_180deg)]"></div>
 
         <div className="relative z-20 flex w-full rounded-[0.60rem] bg-slate-900">
-          <button
+          <Link
             onClick={toggleDropdown}
             className="flex w-full justify-between font-mono items-center gap-x-3 text-white font-medium rounded-lg px-3 py-2 z-10 hover:bg-slate-700 transition duration-200 border-4 border-transparent bg-gradient-to-l from-gradient-end via-gradient-middle to-gradient-start animate-gradientBorder"
+            href={""}
           >
             Download-CV
             <ChevronRightIcon
@@ -33,7 +26,7 @@ const DownloadDropdown = () => {
                 isOpen ? "rotate-180" : ""
               }`}
             />
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -44,24 +37,26 @@ const DownloadDropdown = () => {
             : "-translate-x-10 opacity-0 -z-10"
         }`}
       >
-        <div
-          onClick={() => {
-            handleDownload("/resume/en-resume.pdf", "resume-en.pdf");
-            setIsOpen(false);
-          }}
+        <Link
+          href="/resume/en-resume.pdf"
+          locale={false}
+          rel="noopener noreferrer"
+          target="_blank"
+          download="resume-en.pdf"
           className="p-2.5 mx-1 font-mono cursor-pointer bg-slate-700 hover:bg-slate-600 rounded-lg"
         >
           English
-        </div>
-        <div
-          onClick={() => {
-            handleDownload("/resume/fa-resume.pdf", "resume-fa.pdf");
-            setIsOpen(false);
-          }}
+        </Link>
+        <Link
+          href="/resume/fa-resume.pdf"
+          locale={false}
+          rel="noopener noreferrer"
+          target="_blank"
+          download="resume-fa.pdf"
           className="p-2.5 font-mono cursor-pointer bg-slate-700 hover:bg-slate-600 rounded-lg"
         >
           Persian
-        </div>
+        </Link>
       </div>
     </div>
   );

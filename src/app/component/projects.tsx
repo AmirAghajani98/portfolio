@@ -42,6 +42,7 @@ const Projects: React.FC = () => {
             >
               <div className="flex justify-center items-center mb-4">
                 <Image
+                  loading="lazy"
                   src={project.image}
                   width={500}
                   height={400}
@@ -82,6 +83,7 @@ const Projects: React.FC = () => {
               &times;
             </span>
             <Image
+              loading="lazy"
               src={modalIframeSrc}
               alt="Full preview"
               width={800}
@@ -118,6 +120,7 @@ const Projects: React.FC = () => {
               &times;
             </span>
             <iframe
+              loading="lazy"
               src={modalIframeSrc}
               title="Project Preview"
               className="w-[80%] h-[80%] rounded-lg m-auto my-24"
@@ -142,5 +145,4 @@ const Projects: React.FC = () => {
     </main>
   );
 };
-
 export default Projects;
