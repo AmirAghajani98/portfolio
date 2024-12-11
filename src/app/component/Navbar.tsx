@@ -1,15 +1,12 @@
 "use client";
+
+import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  ArrowDownTrayIcon,
-  Bars3Icon,
-  BarsArrowUpIcon,
-} from "@heroicons/react/24/outline";
-import Modal from "./Modal";
+import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import { ThemeSwitcher } from "./ThemeSwitcher";
+import Modal from "./Modal";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,9 +56,9 @@ export default function Navbar() {
 
   return (
     <header
-      className={`z-50 sm:py-1.5 py-1 w-full shadow-sm shadow-slate-700 transition-transform transform duration-200 ${
+      className={`z-50 sm:py-1.5 py-1 w-full shadow-sm shadow-slate-600 dark:shadow-slate-600 transition-transform transform duration-200 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
-      } sticky top-0 dark:bg-opacity-80 bg-opacity-95 dark:bg-slate-800 bg-slate-500`}
+      } sticky top-0 dark:bg-opacity-80 bg-opacity-80 dark:bg-slate-800 bg-slate-400`}
     >
       <div className="flex items-center justify-between w-full">
         <div className="sm:flex items-center shrink-0 hidden">
@@ -83,13 +80,16 @@ export default function Navbar() {
             { name: "Resume", href: "/resume" },
             { name: "Skills", href: "#skills" },
           ].map((item) => (
-            <div key={item.href} className="rounded-md mx-3">
+            <div
+              key={item.href}
+              className="rounded-md mx-3 justify-center items-center"
+            >
               <Link
                 href={item.href}
-                className={`block px-4 py-1.5 text-center w-auto rounded-md text-base font-medium font-sans ${
+                className={`block px-4 py-1.5 text-center justify-center w-full rounded-md text-base font-medium font-sans relative after:block after:content-[''] after:reletive after:h-[1px] after:bg-slate-800 dark:after:bg-slate-200 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center ${
                   pathname === item.href
                     ? "text-white bg-blue-500"
-                    : "dark:text-slate-100 text-[#121a23] hover:text-slate-800"
+                    : "dark:text-slate-100 dark:hover:text-slate-300 text-[#121a23] hover:text-slate-800"
                 }`}
               >
                 {item.name}

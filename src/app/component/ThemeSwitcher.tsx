@@ -25,16 +25,16 @@ export const ThemeSwitcher = () => {
 
   return (
     <button
-      className="sm:w-20 sm:h-10 w-16 h-8 rounded-full bg-slate-700 dark:bg-slate-500 flex items-center transition duration-300 focus:outline-none shadow mx-2"
+      className="sm:w-20 sm:h-10 w-16 h-8 rounded-full ring-1 bg-slate-700 ring-slate-700 dark:bg-slate-500 dark:ring-slate-500 flex items-center transition duration-300 focus:outline-none shadow mx-2 sm:mx-5"
       onClick={toggleTheme}
     >
       <div
         id="switch-toggle"
         className={`sm:w-10 sm:h-10 w-8 h-8 relative rounded-full transition duration-500 transform ${
           isDarkMode
-            ? "bg-gray-700 sm:translate-x-full translate-x-full"
-            : "bg-yellow-600 sm:-translate-x-0 -translate-x-1"
-        } p-1 text-white flex items-center justify-center`}
+            ? "bg-slate-900 sm:translate-x-full translate-x-full ring-1 ring-yellow-500"
+            : "bg-slate-500 sm:-translate-x-0 -translate-x-1 ring-1 ring-black"
+        } p-1  dark:text-yellow-400 text-black flex items-center justify-center`}
       >
         {isDarkMode ? (
           <svg
@@ -42,7 +42,7 @@ export const ThemeSwitcher = () => {
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            className="w-5 h-5"
+            className="sm:w-6 sm:h-6 w-5 h-5"
           >
             <path
               strokeLinecap="round"
@@ -57,7 +57,7 @@ export const ThemeSwitcher = () => {
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            className="w-5 h-5"
+            className="sm:w-6 sm:h-6 w-5 h-5"
           >
             <path
               strokeLinecap="round"

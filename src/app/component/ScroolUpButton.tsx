@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+
 const ScrollUpButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
