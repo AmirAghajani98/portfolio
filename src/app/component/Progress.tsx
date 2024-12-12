@@ -1,11 +1,14 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
-export const Progress: React.FC<{ value: number; name: string }> = ({
-  value,
-  name,
-}) => {
+interface ProgressProps {
+  value: number;
+  logo: string;
+}
+
+export const Progress: React.FC<ProgressProps> = ({ value, logo }) => {
   const [animatedValue, setAnimatedValue] = useState(0);
 
   useEffect(() => {
@@ -16,22 +19,30 @@ export const Progress: React.FC<{ value: number; name: string }> = ({
   }, [value]);
 
   return (
-    <div className="flex flex-col items-center space-y-2">
+    <div className="flex flex-col items-center">
       <div
-        className="radial-progress transition-all duration-[1.5s] ease-out"
+        className="radial-progress relative transition-all duration-[1.5s] ease-out flex items-start justify-center text-slate-800 dark:text-slate-400"
         style={
           {
             "--value": animatedValue,
             "--size": "100px",
-            "--thickness": "8px",
+            "--thickness": "5px",
           } as React.CSSProperties
         }
         role="progressbar"
         aria-label={`${value}%`}
       >
-        {animatedValue}%
+        <span className="text-sm font-medium text-center my-4 font-sans">
+          {animatedValue}%
+        </span>
+        <Image
+          src={logo}
+          alt="Skill logo"
+          width={35}
+          height={35}
+          className="absolute top-10"
+        />
       </div>
-      <p className="text-center font-medium text-lg">{name}</p>
     </div>
   );
 };

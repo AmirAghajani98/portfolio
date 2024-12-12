@@ -2,7 +2,7 @@
 
 import React from "react";
 import Slider, { Settings } from "react-slick";
-import Image from "next/image";
+import { Progress } from "./Progress";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -10,8 +10,8 @@ const SkillsSlider: React.FC = () => {
   const settings: Settings = {
     infinite: true,
     speed: 2000,
-    slidesToShow: 12,
-    slidesToScroll: 2,
+    slidesToShow: 10,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
     arrows: false,
@@ -30,7 +30,7 @@ const SkillsSlider: React.FC = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          rows: 2,
+          rows: 1,
         },
       },
       {
@@ -39,38 +39,27 @@ const SkillsSlider: React.FC = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          rows: 2,
+          rows: 1,
           slidesPerRow: 1,
         },
       },
     ],
   };
 
-  const logos: string[] = [
-    "./img/bootstrap.svg",
-    "./img/css.svg",
-    "./img/eslint.svg",
-    "./img/git.svg",
-    "./img/github.svg",
-    "./img/gitlab.svg",
-    "./img/graphql.svg",
-    "./img/html.svg",
-    "./img/js.svg",
-    "./img/materialui.svg",
-    "./img/mysql.svg",
-    "./img/next.svg",
-    "./img/npm.svg",
-    "./img/postgres.svg",
-    "./img/postman.svg",
-    "./img/sqlite.svg",
-    "./img/react.svg",
-    "./img/sass.png",
-    "./img/tailwind.svg",
-    "./img/trello.svg",
-    "./img/vscode.svg",
-    "./img/ts.svg",
-    "./img/woo.svg",
-    "./img/wordpress.svg",
+  const skills = [
+    { logo: "./img/bootstrap.svg", progress: 90 },
+    { logo: "./img/css.svg", progress: 85 },
+    { logo: "./img/eslint.svg", progress: 80 },
+    { logo: "./img/git.svg", progress: 95 },
+    { logo: "./img/github.svg", progress: 85 },
+    { logo: "./img/graphql.svg", progress: 70 },
+    { logo: "./img/html.svg", progress: 95 },
+    { logo: "./img/js.svg", progress: 90 },
+    { logo: "./img/mysql.svg", progress: 80 },
+    { logo: "./img/next.svg", progress: 85 },
+    { logo: "./img/postgres.svg", progress: 75 },
+    { logo: "./img/react.svg", progress: 90 },
+    { logo: "./img/tailwind.svg", progress: 95 },
   ];
 
   return (
@@ -82,19 +71,12 @@ const SkillsSlider: React.FC = () => {
         skills
       </h1>
       <Slider {...settings} className="sm:w-10/12 m-auto">
-        {logos.map((logo, index) => (
+        {skills.map((skill, index) => (
           <div
             key={index}
-            className="rounded-full dark:bg-slate-700 bg-opacity-70 dark:bg-opacity-70 bg-slate-500 sm:p-5 py-4 sm:my-16 sm:mx-auto mx-10 my-4"
+            className="flex flex-col items-center rounded-full dark:bg-slate-700 bg-opacity-70 dark:bg-opacity-70 bg-slate-500 sm:p-2 px-12 py-1 sm:my-16 sm:mx-auto mx-10 my-4"
           >
-            <Image
-              loading="lazy"
-              src={logo}
-              alt={`Logo ${index + 1}`}
-              width={80}
-              height={80}
-              className="m-auto sm:w-suto w-12"
-            />
+            <Progress value={skill.progress} logo={skill.logo} />
           </div>
         ))}
       </Slider>
