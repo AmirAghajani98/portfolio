@@ -7,8 +7,9 @@ import { usePathname } from "next/navigation";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import Modal from "./Modal";
+import BackButton from "./BackButton";
 
-export default function Navbar() {
+export default function SecondaryNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
@@ -53,36 +54,32 @@ export default function Navbar() {
       } sticky top-0 dark:bg-opacity-80 bg-opacity-80 dark:bg-slate-800 bg-slate-400`}
     >
       <div className="flex items-center justify-between w-full">
-        <div className="sm:flex items-center shrink-0 hidden">
-          <Link aria-current="page" href="/#">
-            <Image
-              loading="lazy"
-              className="h-10 w-auto rounded-full sm:mx-8 mx-2"
-              src="./img/alogo.jpg"
-              alt="Logo"
-              width={100}
-              height={100}
-            />
-          </Link>
-        </div>
-
         <div className="sm:flex hidden sm:w-11/12">
+          <div className="mx-2">
+            <BackButton />
+          </div>
           {[
             { name: "Home", href: "/" },
-            { name: "About", href: "#about" },
-            { name: "Skills", href: "#skills" },
             { name: "Projects", href: "/projects" },
             { name: "Resume", href: "/resume" },
           ].map((item) => (
             <div
               key={item.href}
-              className="rounded-md mx-3 justify-center items-center"
+              className={`rounded-md mx-3 flex justify-center items-center relative ${
+                pathname === item.href ? "overflow-hidden" : ""
+              }`}
             >
+              {pathname === item.href && (
+                <div className="absolute inset-0 z-0 animate-rotate bg-[conic-gradient(#2F4F4F,transparent_180deg)] dark:bg-[conic-gradient(#FAF9F1,transparent_180deg)] rounded-full"></div>
+              )}
               <Link
                 href={item.href}
-                className={`block px-4 py-1.5 text-center justify-center w-full rounded-md text-base font-medium font-sans relative after:block after:content-[''] after:reletive after:h-[1px] after:bg-slate-800 dark:after:bg-slate-200 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center ${
+                className={`relative z-10 block px-4 py-1.5 text-center w-[98%] rounded-md text-base font-medium font-sans 
+                after:block after:content-[''] after:h-[1px] after:bg-slate-800 dark:after:bg-slate-200 after:w-full 
+                after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-500 after:origin-center
+                ${
                   pathname === item.href
-                    ? "dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-40 text-slate-800 bg-slate-400 bg-opacity-40 border dark:border-slate-600 border-slate-500"
+                    ? "dark:text-slate-100 dark:bg-slate-700 text-slate-800 bg-slate-400"
                     : "dark:text-slate-100 dark:hover:text-slate-300 text-[#121a23] hover:text-slate-800"
                 }`}
               >
@@ -91,7 +88,6 @@ export default function Navbar() {
             </div>
           ))}
         </div>
-
         <div className="flex w-full items-center sm:hidden">
           <label className="px-2 bg-none bg-opacity-60 swap swap-rotate">
             <input type="checkbox" checked={isOpen} onChange={toggleMenu} />
@@ -122,25 +118,35 @@ export default function Navbar() {
         <div
           className={`${
             isOpen ? "block opacity-100" : "hidden opacity-0"
-          } sm:hidden absolute top-10 left-0 p-2 border-none dark:bg-slate-700 dark:bg-opacity-70 bg-slate-500 bg-opacity-80 rounded-b-lg w-44 z-10 shadow-md shadow-slate-700 transition-opacity duration-300`}
+          } sm:hidden absolute top-10 left-0 p-2 border-none dark:bg-slate-700 dark:bg-opacity-80 bg-slate-500 bg-opacity-95 rounded-b-lg w-44 z-10 shadow-md shadow-slate-700 transition-opacity duration-300`}
         >
           {[
             { name: "Home", href: "/" },
-            { name: "Skills", href: "#skills" },
-            { name: "About", href: "#projects" },
             { name: "Projects", href: "/projects" },
           ].map((item) => (
-            <Link
+            <div
               key={item.href}
-              href={item.href}
-              className={`block px-3 py-2 m-1 rounded-md text-base font-sans font-medium ${
-                pathname === item.href
-                  ? "dark:text-slate-100 dark:bg-slate-800 dark:bg-opacity-80 text-slate-800 bg-slate-400 bg-opacity-40 border dark:border-slate-600 border-slate-500"
-                  : "dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
+              className={`relative block m-1  dark:p-[1px] p-0.5 rounded-md overflow-hidden ${
+                pathname === item.href ? "overflow-hidden" : ""
               }`}
             >
-              {item.name}
-            </Link>
+              {pathname === item.href && (
+                <span className="absolute inset-0 z-0 animate-rotate rounded-md bg-[conic-gradient(#2F4F4F,transparent_180deg)] dark:bg-[conic-gradient(#FAF9F1,transparent_180deg)]"></span>
+              )}
+              <Link
+                href={item.href}
+                className={`relative px-3 py-2 z-10 text-base font-sans font-medium block text-center rounded-md w-full 
+          after:block after:content-[''] after:h-[1px] after:bg-slate-800 dark:after:bg-slate-200 after:w-full 
+          after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-500 after:origin-center
+          ${
+            pathname === item.href
+              ? "dark:text-slate-100 text-slate-800 bg-slate-400 dark:bg-slate-800"
+              : "dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 hover:bg-slate-500 hover:bg-opacity-60"
+          }`}
+              >
+                {item.name}
+              </Link>
+            </div>
           ))}
           <a
             className="flex cursor-pointer justify-between py-2 m-1 px-3 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
