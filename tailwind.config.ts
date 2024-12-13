@@ -40,9 +40,9 @@ const config: Config = {
         },
       },
       colors: {
-        gradientStart: "#0ea5e9", // Blue
-        gradientMiddle: "#f43f5e", // Red
-        gradientEnd: "#10b981", // Green
+        gradientStart: "#0ea5e9",
+        gradientMiddle: "#f43f5e",
+        gradientEnd: "#10b981",
       },
     },
   },

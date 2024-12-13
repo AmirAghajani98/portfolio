@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import { ThemeSwitcher } from "./ThemeSwitcher";
@@ -14,6 +14,7 @@ export default function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const pathname = usePathname();
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -45,6 +46,17 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollTop]);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <header
@@ -80,7 +92,7 @@ export default function Navbar() {
             >
               <Link
                 href={item.href}
-                className={`block px-4 py-1.5 text-center justify-center w-full rounded-md text-base font-medium font-sans relative after:block after:content-[''] after:reletive after:h-[1px] after:bg-slate-800 dark:after:bg-slate-200 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center ${
+                className={`block px-4 py-1.5 text-center justify-center w-full rounded-md text-base font-medium font-sans relative ${
                   pathname === item.href
                     ? "dark:text-slate-100 dark:bg-slate-700 dark:bg-opacity-40 text-slate-800 bg-slate-400 bg-opacity-40 border dark:border-slate-600 border-slate-500"
                     : "dark:text-slate-100 dark:hover:text-slate-300 text-[#121a23] hover:text-slate-800"
@@ -120,6 +132,7 @@ export default function Navbar() {
           <ThemeSwitcher />
         </div>
         <div
+          ref={menuRef}
           className={`${
             isOpen ? "block opacity-100" : "hidden opacity-0"
           } sm:hidden absolute top-10 left-0 p-2 border-none dark:bg-slate-700 dark:bg-opacity-70 bg-slate-500 bg-opacity-80 rounded-b-lg w-44 z-10 shadow-md shadow-slate-700 transition-opacity duration-300`}
@@ -133,6 +146,7 @@ export default function Navbar() {
             <Link
               key={item.href}
               href={item.href}
+              onClick={() => setIsOpen(false)}
               className={`block px-3 py-2 m-1 rounded-md text-base font-sans font-medium ${
                 pathname === item.href
                   ? "dark:text-slate-100 dark:bg-slate-800 dark:bg-opacity-80 text-slate-800 bg-slate-400 bg-opacity-40 border dark:border-slate-600 border-slate-500"

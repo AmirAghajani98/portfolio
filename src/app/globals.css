@@ -6,9 +6,7 @@
   font-family: one;
   font-style: normal;
   font-weight: 500;
-  src: url("./font/handmade-memories/Handmade\ Memories.otf")
-      format("embedded-opentype"),
-    url("./font/flying-bird/Flying\ Bird.ttf") format("truetype");
+  src: url("./font/flying-bird/Flying-Bird.ttf") format("truetype");
 }
 
 @font-face {
@@ -23,15 +21,14 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  font-family: one, sans-serif;
+  font-family: "one", sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: two, sans-serif;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  font-family: "one", sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -40,6 +37,25 @@ h6 {
     --background-end-rgb: 0, 0, 0;
   }
 }
+body {
+  height: auto;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "two", sans-serif;
+}
+
 .dark .backmain {
   background: radial-gradient(ellipse at top, #1b2735 0%, transparent 70%),
     radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) !important;
@@ -74,23 +90,9 @@ h6 {
   ) !important;
 }
 
-body {
-  height: auto;
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 #img {
   z-index: 10 !important;
 }
-/* html {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-} */
 
 .modal {
   display: flex;
@@ -120,15 +122,18 @@ body {
   color: #fff;
   cursor: pointer;
 }
+
 .dark .slick-prev,
 .dark .slick-next {
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85) !important;
 }
-.dark .slick-prev:before,
-.dark .slick-next:before {
+
+.dark .slick-prev::before,
+.dark .slick-next::before {
   color: #121a23 !important;
 }
+
 .slick-prev,
 .slick-next {
   width: 30px !important;
@@ -141,8 +146,7 @@ body {
   z-index: 1000;
 }
 
-.slick-prev:before,
-.slick-next:before {
+.slick-prev::before .slick-next::before {
   --tw-bg-opacity: 1;
   color: rgb(100 116 139) !important;
   font-size: 30px !important;
@@ -158,18 +162,18 @@ body {
   justify-content: center;
 }
 
-.slick-dots li button:before {
+.slick-dots li button::before {
   font-size: 12px !important;
   color: rgb(51 65 85) !important;
   opacity: 0.8;
 }
-.dark .slick-dots li button:before {
+.dark .slick-dots li button::before {
   font-size: 12px !important;
   color: rgb(176, 176, 176) !important;
   opacity: 0.8;
 }
 
-.slick-dots li.slick-active button:before {
+.slick-dots li.slick-active button::before {
   color: rgb(255, 255, 255) !important;
   opacity: 1;
 }
@@ -355,7 +359,7 @@ body {
     340px 663px #fff, 1579px 1091px #fff, 809px 111px #fff, 32px 1128px #fff,
     69px 1852px #fff, 878px 300px #fff, 730px 726px #fff, 1137px 68px #fff;
   animation: animStar 50s linear infinite;
-  &:after {
+  &::after {
     content: " ";
     position: relative;
     top: 2000px;
@@ -613,7 +617,7 @@ body {
     354px 1735px #fff, 1534px 235px #fff, 560px 1850px #fff, 493px 1737px #fff,
     782px 598px #fff, 1709px 1377px #fff, 717px 1040px #fff;
   animation: animStar 100s linear infinite;
-  &:after {
+  &::after {
     content: " ";
     position: relative;
     top: 2000px;
@@ -708,7 +712,7 @@ body {
     1748px 121px #fff, 1608px 364px #fff, 1064px 1610px #fff, 1682px 1826px #fff,
     1747px 1800px #fff;
   animation: animStar 150s linear infinite;
-  &:after {
+  &::after {
     content: "";
     position: relative;
     top: 2000px;
@@ -924,7 +928,7 @@ body {
     340px 663px #000, 1579px 1091px #000, 809px 111px #000, 32px 1128px #000,
     69px 1852px #000, 878px 300px #000, 730px 726px #000, 1137px 68px #000;
   animation: animStar 50s linear infinite;
-  &:after {
+  &::after {
     content: " ";
     position: relative;
     top: 2000px;
@@ -1182,7 +1186,7 @@ body {
     354px 1735px #000, 1534px 235px #000, 560px 1850px #000, 493px 1737px #000,
     782px 598px #000, 1709px 1377px #000, 717px 1040px #000;
   animation: animStar 100s linear infinite;
-  &:after {
+  &::after {
     content: " ";
     position: relative;
     top: 2000px;
@@ -1277,7 +1281,7 @@ body {
     1748px 121px #000, 1608px 364px #000, 1064px 1610px #000, 1682px 1826px #000,
     1747px 1800px #000;
   animation: animStar 150s linear infinite;
-  &:after {
+  &::after {
     content: "";
     position: relative;
     top: 2000px;
