@@ -30,9 +30,9 @@ const Projects: React.FC = () => {
       id="projects"
       className="sm:min-h-screen sm:w-full mx-auto sm:py-10 pb-10 pt-24 opacity-95 bg-slate-400 projectback justify-center flex flex-col"
     >
-      <h1 className="sm:text-5xl text-4xl text-center mx-auto sm:my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 w-[50%]">
+      <h2 className="sm:text-5xl text-4xl text-center mx-auto sm:my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 w-[50%]">
         Projects
-      </h1>
+      </h2>
       <div className="w-[85%] sm:w-10/12 sm:my-20 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-x-20 gap-y-14">
         {projectsData &&
           projectsData.slice(0, 3).map((project, index) => (
@@ -51,9 +51,9 @@ const Projects: React.FC = () => {
                   onClick={() => openModal(project.link)}
                 />
               </div>
-              <h2 className="font-mono mt-3 mb-4 sm:mx-4 text-left font-semibold text-xl dark:text-slate-100 text-[#121a23]">
+              <h3 className="font-mono mt-3 mb-4 sm:mx-4 text-left font-semibold text-xl dark:text-slate-100 text-[#121a23]">
                 {project.title}
-              </h2>
+              </h3>
               <p className="font-sans whitespace-normal sm:mx-4 text-left sm:mb-6 mb-2 text-base leading-relaxed dark:text-slate-100 text-[#121a23] sm:line-clamp-5 line-clamp-4">
                 {project.description}
               </p>

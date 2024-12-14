@@ -49,9 +49,9 @@ export default function Projects() {
     <>
       <SecondaryNavbar />
       <main className="sm:min-h-screen sm:w-full mx-auto sm:pt-10 pt-4 opacity-95 bg-slate-400 projectback justify-center flex flex-col">
-        <h1 className="sm:text-5xl text-4xl text-center mx-auto mt-8 pb-6 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 w-[50%]">
+        <h2 className="sm:text-5xl text-4xl text-center mx-auto mt-8 pb-6 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 w-[50%]">
           Projects
-        </h1>
+        </h2>
         <div className="w-[90%] sm:w-10/12 sm:my-20 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-x-24 gap-y-14">
           {projectsData &&
             projectsData.map((project, index) => (
@@ -70,9 +70,9 @@ export default function Projects() {
                     onClick={() => openModal(project.link)}
                   />
                 </div>
-                <h2 className="font-mono mt-3 mb-4 font-semibold text-xl dark:text-slate-100 text-[#121a23]">
+                <h3 className="font-mono mt-3 mb-4 font-semibold text-xl dark:text-slate-100 text-[#121a23]">
                   {project.title}
-                </h2>
+                </h3>
                 <p className="font-sans whitespace-normal text-left mx-auto sm-mb-6 mb-2 text-base leading-relaxed dark:text-slate-100 text-[#121a23] line-clamp-4">
                   {project.description}
                 </p>

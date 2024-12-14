@@ -45,9 +45,9 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
               <XMarkIcon width={20} />
             </button>
           </form>
-          <h3 className="font-bold font-mono text-lg">
+          <p className="font-bold font-mono text-lg">
             Select Resume to Download
-          </h3>
+          </p>
           <div className="flex justify-around space-x-4 mt-8">
             <Link
               href="/resume/en-resume.pdf"

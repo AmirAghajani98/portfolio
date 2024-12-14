@@ -96,9 +96,9 @@ export default function resume() {
                 />
                 <div className="flex justify-between mt-16">
                   <div className={isRTL ? "text-right" : "text-left"}>
-                    <h2 className="text-6xl font-extrabold">
+                    <h1 className="text-6xl font-extrabold">
                       {t("header.name")}
-                    </h2>
+                    </h1>
                     <ul className="grid justify-items-end mt-8">
                       {header.map((header, index) => (
                         <li key={index} className="px-2 my-2 text-3xl">
@@ -110,9 +110,9 @@ export default function resume() {
                 </div>
               </div>
               <div>
-                <p className="text-2xl pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
+                <h2 className="text-2xl pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
                   {t("about.title")}
-                </p>
+                </h2>
                 <div className={isRTL ? "text-right" : "text-left"}>
                   <p className="grid justify-items-end mt-4 text-base">
                     {t("about.content")}
@@ -122,9 +122,9 @@ export default function resume() {
               <div className="flex gap-x-10 mt-4">
                 <div className="w-[30%] text-auto ">
                   <>
-                    <p className="w-full mt-6 text-2xl pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
+                    <h2 className="w-full mt-6 text-2xl pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
                       {t("contactDetails.title")}
-                    </p>
+                    </h2>
                     <ul className="my-4 grid justify-items-end">
                       <li className="px-2 mt-1 grid justify-items-end">
                         <strong className="mr-1">
@@ -153,9 +153,9 @@ export default function resume() {
                     </ul>
                   </>
                   <>
-                    <p className="w-full text-2xl mt-16 pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
+                    <h2 className="w-full text-2xl mt-16 pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
                       {t("skills.title")}
-                    </p>
+                    </h2>
                     <ul className="mt-2 mb-10 grid grid-cols-2 justify-items-end">
                       <li className="px-2 mt-1">HTML</li>
                       <li className="px-2 mt-1">CSS</li>
@@ -183,9 +183,9 @@ export default function resume() {
                     </ul>
                   </>
                   <>
-                    <p className="w-full text-2xl mt-16 pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
+                    <h2 className="w-full text-2xl mt-16 pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
                       {t("further.title")}
-                    </p>
+                    </h2>
                     <ul className="mt-2 mb-10 grid justify-items-end">
                       <li className="px-2 mt-1"> {t("further.firstname")}</li>
                       <li className="px-2 mt-1"> {t("further.secondname")}</li>
@@ -204,9 +204,9 @@ export default function resume() {
                     </ul>
                   </>
                   <div className="w-full mt-16">
-                    <p className="w-full text-2xl mt-6 pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
+                    <h2 className="w-full text-2xl mt-6 pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
                       {t("education.title")}
-                    </p>
+                    </h2>
                     <ul className="mt-2">
                       <li className="pt-2 grid justify-items-end">
                         <p className="flex justify-between text-sm gap-x-2">
@@ -225,9 +225,9 @@ export default function resume() {
                     </ul>
                   </div>
                   <>
-                    <p className="w-full text-2xl mt-16 pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
+                    <h2 className="w-full text-2xl mt-16 pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
                       {t("interests.title")}
-                    </p>
+                    </h2>
                     <ul className="mt-2 grid justify-items-end">
                       {interests.map((interest, index) => (
                         <li key={index} className="px-2 mt-1">
@@ -239,9 +239,9 @@ export default function resume() {
                 </div>
                 <div className="w-[70%] grid justify-items-end">
                   <div>
-                    <p className="text-2xl mt-6 pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
+                    <h2 className="text-2xl mt-6 pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
                       {t("projects.title")}
-                    </p>
+                    </h2>
                     <ul className="">
                       {projects.map((project, index) => (
                         <li key={index} className="py-3 grid">
@@ -274,9 +274,9 @@ export default function resume() {
                     </ul>
                   </div>
                   <div className="w-full">
-                    <p className="w-full text-2xl mt-6 pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
+                    <h2 className="w-full text-2xl mt-6 pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
                       {t("workExperiences.title")}
-                    </p>
+                    </h2>
                     <ul className="mt-2 grid">
                       {workExperiences.map((experience, index) => (
                         <li key={index} className="py-4 grid justify-items-end">

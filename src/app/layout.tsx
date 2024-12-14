@@ -1,35 +1,49 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import "./i18";
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import ProviderTheme from "./component/ProviderTheme";
 
 export const metadata: Metadata = {
-  title: "Amir Aghajani - Web Developer",
-  description: "software engineer and web developer",
+  title: {
+    default: "Amir Aghajani - Web Developer",
+    template: "%s | Amir Aghajani",
+  },
+  description:
+    "Software engineer and web developer specializing in modern web technologies.",
   openGraph: {
-    title: "Amir Aghajani",
-    description: "software engineer and web developer",
+    title: "Amir Aghajani - Web Developer",
+    description:
+      "Software engineer and web developer specializing in modern web technologies.",
     url: "https://amiraghajani.liara.run/",
-    siteName: "Amir Aghajani Portfolio",
+    siteName: "amir-aghajani-portfolio",
     images: [
       {
-        url: "./img/alogo.jpg",
+        url: "/img/aaa.jpg",
         width: 800,
         height: 600,
-        alt: "Amir Aghajani",
+        alt: "Amir Aghajani Portfolio Image",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Amir Aghajani",
-    description: "software engineer and web developer",
-    images: ["./img/alogo.jpg"],
+    title: "Amir Aghajani - Web Developer",
+    description:
+      "Software engineer and web developer specializing in modern web technologies.",
+    images: ["/img/aaa.jpg"],
   },
   icons: {
     icon: "/favicon.ico",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -43,19 +57,23 @@ export default function RootLayout({
   const isRtl = lang === "fa";
 
   return (
-    <html
-      className="scroll-smooth"
-      style={{ scrollBehavior: "smooth" }}
-      lang={lang}
-      dir={isRtl ? "rtl" : "ltr"}
-    >
+    <html lang={lang} dir={isRtl ? "rtl" : "ltr"} className="scroll-smooth">
       <head>
-        <link rel="canonical" href="https://amiraghajani.liara.run/" />
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://amiraghajani.liara.run/" />
         <link rel="icon" href="/favicon.ico" />
+        <title>Amir Aghajani - Web Developer</title>
       </head>
-      <body className="h-screen">
-        <Suspense fallback={<div>Loading...</div>}>
+      <body className={"h-screen"}>
+        <Suspense
+          fallback={
+            <div className="flex justify-center items-center h-full">
+              Loading...
+            </div>
+          }
+        >
           <ProviderTheme>
             <>{children}</>
           </ProviderTheme>

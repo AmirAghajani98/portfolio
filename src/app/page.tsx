@@ -57,7 +57,7 @@ export default function Home() {
             className="m-auto rounded-full mt-8 mb-16 sm:hidden shadow-md shadow-cyan-500/50 z-50"
           />
           <div className="w-full mt-14 sm:mt-0 text-justify">
-            <h1 className="text-3xl font-semibold mb-3 font-mono">About Me</h1>
+            <h2 className="text-3xl font-semibold mb-3 font-mono">About Me</h2>
             <p className="text-lg dark:text-slate-300 font-sans leading-7 indent-3">
               Hi, I am 26 years old and have been working in web programming for
               about three years. Currently, I live in Iran, where I serve as a
