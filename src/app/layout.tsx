@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "amir-aghajani-portfolio",
     images: [
       {
-        url: "/img/aaa.jpg",
+        url: "/img/site.png",
         width: 800,
         height: 600,
         alt: "Amir Aghajani Portfolio Image",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Amir Aghajani - Web Developer",
     description:
       "Software engineer and web developer specializing in modern web technologies.",
-    images: ["/img/aaa.jpg"],
+    images: ["/img/site.png"],
   },
   icons: {
     icon: "/favicon.ico",
