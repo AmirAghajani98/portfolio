@@ -33,6 +33,7 @@ export const metadata: Metadata = {
     description:
       "Software engineer and web developer specializing in modern web technologies.",
     images: ["/img/site.png"],
+    site: "https://amiraghajani.liara.run/",
   },
   icons: {
     icon: "/favicon.ico",
