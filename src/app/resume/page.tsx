@@ -3,8 +3,6 @@
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../component/LanguageSwitcher";
-import BackButton from "../component/BackButton";
-import { ThemeSwitcher } from "../component/ThemeSwitcher";
 import DownloadDropdown from "../component/DownloadDropdown";
 import { useState, useEffect } from "react";
 import Link from "next/link";
