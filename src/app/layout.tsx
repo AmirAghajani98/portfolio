@@ -20,10 +20,11 @@ export const metadata: Metadata = {
     url: "https://amiraghajani.liara.run/",
     siteName: "amir-aghajani-portfolio",
     images: {
-      url: "./opengraph-image.jpg",
+      url: "opengraph-image.jpg",
       width: 1200,
       height: 630,
       alt: "Amir Aghajani Portfolio Image",
+      type: "",
     },
     type: "website",
   },
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
     title: "Amir Aghajani - Web Developer",
     description:
       "Software engineer and web developer specializing in modern web technologies.",
-    images: "./opengraph-image.jpg",
+    images: "opengraph-image.jpg",
   },
 };
 
