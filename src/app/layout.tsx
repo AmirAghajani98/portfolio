@@ -19,15 +19,20 @@ export const metadata: Metadata = {
       "Software engineer and web developer specializing in modern web technologies.",
     url: "https://amiraghajani.liara.run/",
     siteName: "amir-aghajani-portfolio",
-    images: [
-      {
-        url: "opengraph-image.jpg",
-        width: "1200px",
-        height: "630px",
-        alt: "Amir Aghajani Portfolio Image",
-      },
-    ],
+    images: {
+      url: "/opengraph-image.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Amir Aghajani Portfolio Image",
+    },
     type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Amir Aghajani - Web Developer",
+    description:
+      "Software engineer and web developer specializing in modern web technologies.",
+    images: "/opengraph-image.jpg",
   },
 };
 
@@ -45,6 +50,8 @@ export default function RootLayout({
   return (
     <html lang={lang} dir={isRtl ? "rtl" : "ltr"} className="scroll-smooth">
       <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://amiraghajani.liara.run/" />
         <link rel="icon" href="/favicon.ico" />
         <title>Amir Aghajani - Web Developer</title>
