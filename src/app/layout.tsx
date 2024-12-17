@@ -12,11 +12,11 @@ export const metadata: Metadata = {
     template: "%s | Amir Aghajani",
   },
   description:
-    "Software engineer and web developer specializing in modern web technologies.",
+    "Software engineer and web developer specializing in modern web technologies and building dynamic apps.",
   openGraph: {
     title: "Amir Aghajani - Web Developer",
     description:
-      "Software engineer and web developer specializing in modern web technologies.",
+      "Software engineer and web developer specializing in modern web technologies and building dynamic apps.",
     url: "https://amiraghajani.liara.run/",
     siteName: "amir-aghajani-portfolio",
     images: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Amir Aghajani - Web Developer",
     description:
-      "Software engineer and web developer specializing in modern web technologies.",
+      "Software engineer and web developer specializing in modern web technologies and building dynamic apps.",
     images: "/opengraph-image.jpg",
   },
 };
@@ -53,6 +53,10 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          property="image"
+          content="https://amiraghajani.liara.run/opengraph-image.jpg"
+        />
         <meta
           property="og:image"
           content="https://amiraghajani.liara.run/opengraph-image.jpg"
