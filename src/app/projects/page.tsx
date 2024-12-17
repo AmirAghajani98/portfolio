@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { projectsData } from "../utils/projectsData";
-import BackButton from "../component/BackButton";
-import { ThemeSwitcher } from "../component/ThemeSwitcher";
 import Footer from "../component/Footer";
 import SecondaryNavbar from "../component/SecondaryNavbar";
 
@@ -61,6 +59,7 @@ export default function Projects() {
               >
                 <div className="flex justify-center items-center mb-4">
                   <Image
+                    priority
                     loading="lazy"
                     src={project.image}
                     width={500}

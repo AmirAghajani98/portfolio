@@ -7,6 +7,7 @@ import ProviderTheme from "./component/ProviderTheme";
 import ClientWrapper from "./component/ClientWrapper";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://amiraghajani.liara.run"),
   title: {
     default: "Amir Aghajani - Web Developer",
     template: "%s | Amir Aghajani",
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
       width: 1200,
       height: 630,
       alt: "Amir Aghajani Portfolio Image",
-      type: "",
+      type: "image/jpeg",
     },
     type: "website",
   },
@@ -53,18 +54,6 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          property="image"
-          content="https://amiraghajani.liara.run/opengraph-image.jpg"
-        />
-        <meta
-          property="og:image"
-          content="https://amiraghajani.liara.run/opengraph-image.jpg"
-        />
-        <meta
-          name="twitter:image"
-          content="https://amiraghajani.liara.run/opengraph-image.jpg"
-        />
         <link rel="canonical" href="https://amiraghajani.liara.run/" />
         <link rel="icon" href="/favicon.ico" />
         <title>Amir Aghajani - Web Developer</title>

@@ -85,12 +85,12 @@ export default function resume() {
             >
               <div className="flex justify-between w-full">
                 <Image
-                  loading="lazy"
                   className="justify-center rounded-full shadow shadow-slate-700 my-8 mr-4"
                   src={"./img/aaaa.jpg"}
                   alt={"amir"}
                   width={300}
                   height={200}
+                  priority
                 />
                 <div className="flex justify-between mt-16">
                   <div className={isRTL ? "text-right" : "text-left"}>
