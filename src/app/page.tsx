@@ -7,6 +7,7 @@ import SkillsSlider from "./component/SkillsSlider";
 import Footer from "./component/Footer";
 import Navbar from "./component/Navbar";
 import Projects from "./component/projects";
+import ContactForm from "./component/ContactForm";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -84,6 +85,7 @@ export default function Home() {
       </main>
       <Projects />
       <SkillsSlider />
+      <ContactForm/>
       <Footer />
     </>
   );

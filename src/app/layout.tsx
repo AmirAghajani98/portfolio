@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import ProviderTheme from "./component/ProviderTheme";
 import ClientWrapper from "./component/ClientWrapper";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://amiraghajani.liara.run"),
@@ -59,6 +60,7 @@ export default function RootLayout({
         <title>Amir Aghajani - Web Developer</title>
       </head>
       <body className="h-screen">
+        
         <Suspense
           fallback={
             <div className="flex justify-center items-center h-full">
@@ -68,6 +70,14 @@ export default function RootLayout({
         >
           <ClientWrapper lang={lang}>
             <ProviderTheme>
+            <Toaster
+          position="bottom-center"
+          toastOptions={{
+            className:"",
+            duration: 3000,
+            style: { fontSize: "18px", fontFamily: "sans", minWidth: '400px',},
+          }}
+        />
               <>{children}</>
             </ProviderTheme>
           </ClientWrapper>
