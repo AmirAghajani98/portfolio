@@ -19,20 +19,20 @@ const ContactForm = () => {
   }
 
   return (
-    <main className="sm:w-full mx-auto opacity-95 bg-slate-400 projectback justify-center flex flex-col">
-      <div className="flex items-start gap-16 my-10 p-4 mx-auto w-10/12 font-[sans-serif] shadow-lg rounded-md">
-        <div className="w-1/2">
-          <h1 className="dark:text-gray-200 text-gray-900 text-3xl font-extrabold font-mono">
-            Let's Talk
-          </h1>
-          <p className="text-base dark:text-gray-200 text-gray-900 mt-4">
+    <main id="contact" className="sm:w-full mx-auto opacity-95 bg-slate-400 projectback justify-center flex flex-col">
+      <div className="sm:flex items-start gap-16 my-10 p-4 mx-auto sm:w-10/12 w-11/12 font-[sans-serif] shadow-lg rounded-md">
+        <div className="sm:w-1/2">
+        <h2 className="sm:text-5xl text-4xl text-center mx-auto sm:my-8 pb-8 font-mono dark:text-slate-100 text-[#121a23] font-bold sm:border-none border-b border-slate-500 dark:border-slate-600">
+        Let's Talk
+          </h2>
+          <p className="text-base dark:text-gray-200 text-gray-900 sm:mt-4 mt-6">
             Do you have a personal or business idea or brand to develop and need
             help? then reach out; We would love to hear about your project and
             help.
           </p>
           <div className="sm:flex gap-x-10">
             <div className="mt-10">
-              <h2 className="dark:text-gray-100 text-slate-900 text-base font-bold font-mono">
+              <h2 className="dark:text-gray-100 text-slate-900 text-lg font-bold font-mono">
                 Gmail
               </h2>
               <ul className="mt-2">
@@ -53,8 +53,8 @@ const ContactForm = () => {
               </ul>
             </div>
 
-            <div className="mt-10">
-              <h2 className="dark:text-gray-100 text-slate-900 text-base font-bold font-mono">
+            <div className="sm:mt-10 mt-6">
+              <h2 className="dark:text-gray-100 text-slate-900 text-lg font-bold font-mono">
                 PhoneNumber
               </h2>
               <ul className="mt-2">
@@ -74,10 +74,10 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="mt-6">
-            <h2 className="dark:text-gray-100 text-slate-900 text-base font-bold font-mono">
-              Socials
+            <h2 className="dark:text-gray-100 text-slate-900 text-lg font-bold font-mono">
+              Social
             </h2>
-            <div className="mt-2 flex gap-x-16 w-full">
+            <div className="mt-2 flex gap-x-16 w-full justify-between sm:justify-normal">
               <Link
                 href="https://github.com/AmirAghajani98"
                 target={"_blank"}
@@ -118,11 +118,11 @@ const ContactForm = () => {
           </div>
         </div>
 
-        <div className="w-1/2">
+        <div className="sm:w-1/2 mt-10 sm:mt-0">
           <form onSubmit={handleSubmit} className="space-y-6">
-            <h1 className="dark:text-gray-200 text-gray-900 text-3xl font-extrabold font-mono">
-              ContactForm
-            </h1>
+          <h2 className="text-4xl text-center mx-auto sm:my-8 pb-8 font-mono dark:text-slate-100 text-[#121a23] font-bold sm:border-none border-b border-slate-500 dark:border-slate-600">
+          ContactForm
+            </h2>
             <div className="flex flex-col sm:flex-row gap-4">
               <input
                 type="text"
