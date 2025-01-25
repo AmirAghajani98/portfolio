@@ -144,6 +144,7 @@ export default function Navbar() {
             { name: "Contact Me", href: "#contact" },
             { name: "About", href: "#projects" },
             { name: "Projects", href: "/projects" },
+            { name: "Resume", href: "/resume" },
           ].map((item) => (
             <Link
               key={item.href}
@@ -158,13 +159,13 @@ export default function Navbar() {
               {item.name}
             </Link>
           ))}
-          <a
+          {/* <a
             className="flex cursor-pointer justify-between py-2 m-1 px-3 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
             onClick={toggleModal}
           >
             download cv
             <ArrowDownTrayIcon width={20} />
-          </a>
+          </a> */}
         </div>
       </div>
       <Modal isOpen={isModalOpen} onClose={toggleModal} />
