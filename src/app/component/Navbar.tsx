@@ -83,6 +83,7 @@ export default function Navbar() {
             { name: "Home", href: "/" },
             { name: "About", href: "#about" },
             { name: "Skills", href: "#skills" },
+            { name: "Contact Me", href: "#contact" },
             { name: "Projects", href: "/projects" },
             { name: "Resume", href: "/resume" },
           ].map((item) => (
@@ -140,6 +141,7 @@ export default function Navbar() {
           {[
             { name: "Home", href: "/" },
             { name: "Skills", href: "#skills" },
+            { name: "Contact Me", href: "#contact" },
             { name: "About", href: "#projects" },
             { name: "Projects", href: "/projects" },
           ].map((item) => (
