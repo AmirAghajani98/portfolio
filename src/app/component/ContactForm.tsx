@@ -35,7 +35,7 @@ const ContactForm = () => {
               <h2 className="dark:text-gray-100 text-slate-900 text-lg font-bold font-mono">
                 Gmail
               </h2>
-              <ul className="mt-2">
+              <ul className="mt-1">
                 <li className="flex items-center">
                   <div className="h-10 w-10 dark:bg-slate-700 bg-slate-800 dark:bg-opacity-70 rounded-full border flex items-center justify-center shrink-0 hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-slate-400 dark:shadow-slate-500">
                     <EnvelopeIcon className="h-6 w-6 text-slate-100" />
@@ -57,7 +57,7 @@ const ContactForm = () => {
               <h2 className="dark:text-gray-100 text-slate-900 text-lg font-bold font-mono">
                 PhoneNumber
               </h2>
-              <ul className="mt-2">
+              <ul className="mt-1">
                 <li className="flex items-center">
                   <div className="h-10 w-10 dark:bg-slate-700 bg-slate-800 dark:bg-opacity-70 rounded-full border flex items-center justify-center shrink-0 hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-slate-400 dark:shadow-slate-500">
                     <PhoneArrowDownLeftIcon className="h-6 w-6 dark:text-slate-200" />
@@ -77,7 +77,7 @@ const ContactForm = () => {
             <h2 className="dark:text-gray-100 text-slate-900 text-lg font-bold font-mono">
               Social
             </h2>
-            <div className="mt-2 flex gap-x-16 w-full justify-between sm:justify-normal">
+            <div className="mt-1 flex gap-x-16 w-full justify-between sm:justify-normal">
               <Link
                 href="https://github.com/AmirAghajani98"
                 target={"_blank"}
