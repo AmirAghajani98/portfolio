@@ -123,6 +123,7 @@ export default function SecondaryNavbar() {
           {[
             { name: "Home", href: "/" },
             { name: "Projects", href: "/projects" },
+            { name: "Resume", href: "/resume" },
           ].map((item) => (
             <div
               key={item.href}

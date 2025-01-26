@@ -75,7 +75,7 @@ export default function RootLayout({
           toastOptions={{
             className:"",
             duration: 3000,
-            style: { fontSize: "18px", fontFamily: "sans", minWidth: '400px',},
+            style: { fontSize: "18px", fontFamily: "sans", minWidth:'300px',maxWidth:'400px'},
           }}
         />
               <>{children}</>

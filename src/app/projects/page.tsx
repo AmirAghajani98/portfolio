@@ -59,7 +59,6 @@ export default function Projects() {
               >
                 <div className="flex justify-center items-center mb-4">
                   <Image
-                    priority
                     loading="lazy"
                     src={project.image}
                     width={500}

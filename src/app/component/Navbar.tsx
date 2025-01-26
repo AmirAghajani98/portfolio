@@ -81,11 +81,10 @@ export default function Navbar() {
         <div className="sm:flex hidden sm:w-11/12">
           {[
             { name: "Home", href: "/" },
-            { name: "About", href: "#about" },
-            { name: "Skills", href: "#skills" },
-            { name: "Contact Me", href: "#contact" },
             { name: "Projects", href: "/projects" },
             { name: "Resume", href: "/resume" },
+            { name: "About", href: "#about" },
+            { name: "Contact", href: "#contact" },
           ].map((item) => (
             <div
               key={item.href}
@@ -140,11 +139,10 @@ export default function Navbar() {
         >
           {[
             { name: "Home", href: "/" },
-            { name: "Skills", href: "#skills" },
-            { name: "Contact Me", href: "#contact" },
-            { name: "About", href: "#projects" },
             { name: "Projects", href: "/projects" },
             { name: "Resume", href: "/resume" },
+            { name: "About", href: "#projects" },
+            { name: "Contact", href: "#contact" },
           ].map((item) => (
             <Link
               key={item.href}
