@@ -11,7 +11,7 @@ const DownloadDropdown = () => {
 
   return (
     <div className="relative mx-auto flex w-full max-w-lg items-center justify-center">
-      <div className="relative z-50 flex w-full cursor-pointer items-center overflow-hidden rounded-xl border border-slate-500 dark:border-slate-800 sm:p-[1.5px]">
+      <div className="relative sm:z-50 z-10 flex w-full cursor-pointer items-center overflow-hidden rounded-xl border border-slate-500 dark:border-slate-800 sm:p-[1.5px]">
         <div className="relative sm:z-50 flex w-full rounded-[0.60rem] dark:bg-gray-900 bg-gray-700 dark:hover:bg-gray-950 hover:bg-gray-800">
           <Link
             onClick={toggleDropdown}
