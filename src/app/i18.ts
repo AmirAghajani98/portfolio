@@ -16,7 +16,7 @@ if (!i18n.isInitialized) {
         translation: faTranslations,
       },
     },
-    lng: "en",
+    lng: "",
     fallbackLng: "en",
     interpolation: {
       escapeValue: false,

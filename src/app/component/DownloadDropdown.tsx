@@ -48,24 +48,23 @@ const DownloadDropdown = () => {
         }`}
       >
         <Link
-          href="/resume/en-resume.pdf"
+          href="https://drive.google.com/uc?export=download&id=1BYRswZohFIZPjtWnZ7I6IBSzM_r-dUxS"
+          locale={false}
+          rel="noopener noreferrer"
+          target="_blank"
+          className="p-2.5 sm:mr-1 sm:mt-0 mt-1 border-b text-sm sm:text-base sm:border-none border-slate-500 dark:border-b dark:border-slate-700 font-mono cursor-pointer shadow dark:bg-gray-900 bg-gray-700 dark:hover:bg-gray-950 hover:bg-gray-800 sm:rounded-lg rounded-t-lg"
+        >
+          English
+        </Link>
+        <Link
+          href="https://drive.google.com/uc?export=download&id=1hQS_Zrg3M0wwBeAlgnJclmoq0Q9gQQNn"
           locale={false}
           rel="noopener noreferrer"
           target="_blank"
           download="resume-en.pdf"
           className="p-2.5 sm:mr-1 sm:mt-0 mt-1 border-b text-sm sm:text-base sm:border-none border-slate-500 dark:border-b dark:border-slate-700 font-mono cursor-pointer shadow dark:bg-gray-900 bg-gray-700 dark:hover:bg-gray-950 hover:bg-gray-800 sm:rounded-lg rounded-t-lg"
         >
-          English
-        </Link>
-        <Link
-          href="/resume/fa-resume.pdf"
-          locale={false}
-          rel="noopener noreferrer"
-          target="_blank"
-          download="resume-fa.pdf"
-          className="p-2.5 font-mono cursor-pointer shadow text-sm sm:text-base dark:bg-gray-900 bg-gray-700 dark:hover:bg-gray-950 hover:bg-gray-800 sm:rounded-lg rounded-b-lg"
-        >
-          Persian
+          persian
         </Link>
       </div>
     </div>
