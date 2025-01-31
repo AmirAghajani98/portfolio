@@ -117,8 +117,8 @@ export default function SecondaryNavbar() {
         </div>
         <div
           className={`${
-            isOpen ? "block opacity-100" : "hidden opacity-0"
-          } sm:hidden absolute top-10 left-0 p-2 border-none dark:bg-slate-700 dark:bg-opacity-80 bg-slate-500 bg-opacity-95 rounded-b-lg w-44 z-10 shadow-md shadow-slate-700 transition-opacity duration-300`}
+            isOpen ? "block opacity-100 z-50" : "hidden opacity-0"
+          } sm:hidden absolute top-10 left-0 p-2 border-none dark:bg-slate-700 dark:bg-opacity-80 bg-slate-500 bg-opacity-95 rounded-b-lg w-44 z-50 shadow-md shadow-slate-700 transition-opacity duration-300`}
         >
           {[
             { name: "Home", href: "/" },
@@ -127,7 +127,7 @@ export default function SecondaryNavbar() {
           ].map((item) => (
             <div
               key={item.href}
-              className={`relative block m-1  dark:p-[1px] p-0.5 rounded-md overflow-hidden ${
+              className={`relative block m-1 z-50 dark:p-[1px] p-0.5 rounded-md overflow-hidden ${
                 pathname === item.href ? "overflow-hidden" : ""
               }`}
             >

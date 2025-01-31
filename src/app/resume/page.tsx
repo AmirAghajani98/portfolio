@@ -238,7 +238,7 @@ export default function resume() {
                     </ul>
                   </>
                 </div>
-                <div className="sm:w-[70%] w-[95%] mx-auto grid justify-items-end">
+                <div className="sm:w-[70%] w-[95%] mx-auto grid justify-center justify-items-end">
                   <div>
                     <h2 className="text-2xl mt-6 pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end font-sans">
                       {t("projects.title")}
@@ -293,7 +293,7 @@ export default function resume() {
                             </strong>
                           </p>
                           <div className="flex sm:hidden w-full gap-x-16 justify-end my-2">
-                            <p className="text-[15px]">
+                            <p className="text-[15px] text-right ">
                               {experience.duration}
                             </p>
                             <p className="text-[15px]">

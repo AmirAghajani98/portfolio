@@ -21,10 +21,10 @@ const LanguageSwitcher = () => {
           checked={i18n.language === "fa"}
           onChange={toggleLanguage}
         />
-        <span className="px-4 py-2 dark:bg-gray-700 bg-gray-500 font-sans font-medium peer-checked:dark:bg-gray-900 peer-checked:bg-gray-700 text-slate-900 dark:text-slate-200 peer-checked:text-slate-100 peer-checked:dark:text-slate-200 rounded-full">
+        <span className="px-4 py-2 dark:bg-gray-700 bg-gray-500 font-sans font-medium text-sm sm:text-base peer-checked:dark:bg-gray-900 peer-checked:bg-gray-700 text-slate-900 dark:text-slate-200 peer-checked:text-slate-100 peer-checked:dark:text-slate-200 rounded-full">
           En
         </span>
-        <span className="px-4 py-2 dark:bg-gray-900 bg-gray-700 font-sans font-medium peer-checked:dark:bg-gray-700 peer-checked:bg-gray-500 text-slate-100 dark:text-slate-200 peer-checked:text-slate-900 peer-checked:dark:text-slate-200 rounded-full">
+        <span className="px-4 py-2 dark:bg-gray-900 bg-gray-700 font-sans font-medium text-sm sm:text-base peer-checked:dark:bg-gray-700 peer-checked:bg-gray-500 text-slate-100 dark:text-slate-200 peer-checked:text-slate-900 peer-checked:dark:text-slate-200 rounded-full">
           Fa
         </span>
       </label>
