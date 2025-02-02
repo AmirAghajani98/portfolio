@@ -1,16 +1,17 @@
-import type { Metadata } from 'next';
-import Resume from './page'; 
+import type { Metadata } from "next";
+import Resume from "./page";
 
 export const generateMetadata = async (): Promise<Metadata> => {
-  const description= "Download or view the resume of Amir Aghajani, a web developer specializing in modern web technologies";
-  const imageUrl = "/opengraph-image.jpg"; 
+  const imageUrl = "/opengraph-image.jpg";
 
   return {
-    title:"Resume",
-    description,
+    title: "Resume",
+    description:
+      "Download or view the resume of Amir Aghajani, a web developer specializing in modern web technologies",
     openGraph: {
-      title:"Resume",
-      description,
+      title: "Resume",
+      description:
+        "Download or view the resume of Amir Aghajani, a web developer specializing in modern web technologies",
       siteName: "Amir Aghajani Portfolio",
       images: [
         {
@@ -24,13 +25,13 @@ export const generateMetadata = async (): Promise<Metadata> => {
     },
     twitter: {
       card: "summary_large_image",
-      title:"Resume",
-      description,
+      title: "Resume",
+      description:
+        "Download or view the resume of Amir Aghajani, a web developer specializing in modern web technologies",
       images: imageUrl,
     },
   };
 };
-
 
 export default function ResumePage() {
   return (
@@ -39,5 +40,3 @@ export default function ResumePage() {
     </div>
   );
 }
-
-

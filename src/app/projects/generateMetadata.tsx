@@ -1,16 +1,17 @@
-import type { Metadata } from 'next';
-import Projects from './page'; 
+import type { Metadata } from "next";
+import Projects from "./page";
 
 export const generateMetadata = async (): Promise<Metadata> => {
-  const description = "Explore the projects created by Amir Aghajani, a web developer specializing in modern web technologies.";
-  const imageUrl = "/opengraph-image.jpg"; 
+  const imageUrl = "/opengraph-image.jpg";
 
   return {
-    title:"Projects",
-    description,
+    title: "Projects",
+    description:
+      "Explore the projects created by Amir Aghajani, a web developer specializing in modern web technologies.",
     openGraph: {
-      title:"Projects",
-      description,
+      title: "Projects",
+      description:
+        "Explore the projects created by Amir Aghajani, a web developer specializing in modern web technologies.",
       siteName: "Amir Aghajani Portfolio",
       images: [
         {
@@ -24,8 +25,9 @@ export const generateMetadata = async (): Promise<Metadata> => {
     },
     twitter: {
       card: "summary_large_image",
-      title:"Projects",
-      description,
+      title: "Projects",
+      description:
+        "Explore the projects created by Amir Aghajani, a web developer specializing in modern web technologies.",
       images: imageUrl,
     },
   };
