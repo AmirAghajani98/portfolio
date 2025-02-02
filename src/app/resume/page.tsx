@@ -1,13 +1,13 @@
 "use client";
-
+import { useState, useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../component/LanguageSwitcher";
 import DownloadDropdown from "../component/DownloadDropdown";
-import { useState, useEffect } from "react";
-import Link from "next/link";
 import SecondaryNavbar from "../component/SecondaryNavbar";
 import Footer from "../component/Footer";
+import generateMetadata from "./generateMetadata";
 
 interface WorkExperience {
   company: string;
@@ -27,7 +27,7 @@ interface Projects {
   skillC: string;
   skillD: string;
 }
-
+export { generateMetadata };
 export default function resume() {
   const { i18n, t } = useTranslation();
   const isRTL = i18n.language === "fa";

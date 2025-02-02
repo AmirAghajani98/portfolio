@@ -5,7 +5,9 @@ import Link from "next/link";
 import { projectsData } from "../utils/projectsData";
 import Footer from "../component/Footer";
 import SecondaryNavbar from "../component/SecondaryNavbar";
+import generateMetadata from "./generateMetadata";
 
+export { generateMetadata };
 export default function Projects() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalIframeSrc, setModalIframeSrc] = useState("");
