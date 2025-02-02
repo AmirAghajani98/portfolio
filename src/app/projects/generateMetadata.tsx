@@ -2,17 +2,15 @@ import type { Metadata } from 'next';
 import Projects from './page'; 
 
 export const generateMetadata = async (): Promise<Metadata> => {
-  const title = "Projects";
   const description = "Explore the projects created by Amir Aghajani, a web developer specializing in modern web technologies.";
   const imageUrl = "/opengraph-image.jpg"; 
 
   return {
-    title,
+    title:"Projects",
     description,
     openGraph: {
-      title,
+      title:"Projects",
       description,
-      url: "https://aghatech.ir/projects/", 
       siteName: "Amir Aghajani Portfolio",
       images: [
         {
@@ -26,7 +24,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title:"Projects",
       description,
       images: imageUrl,
     },
