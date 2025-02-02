@@ -1,35 +1,45 @@
 import type { Metadata } from 'next';
-import ProjectsClient from './page'; 
+import Resume from './page'; 
 
-export const generateMetadata = async (): Promise<Metadata> => ({
-  metadataBase: new URL("https://aghatech.ir/resume"),
-  title: 'Amir Aghajani - Resume',
-  description: 'Download or view the resume of Amir Aghajani, a web developer specializing in modern web technologies',
-  openGraph: {
-    url: "https://aghatech.ir/resume",
-    title: 'Amir Aghajani - Resume',
-    description: 'Download or view the resume of Amir Aghajani, a web developer specializing in modern web technologies',
-    images: [
-      {
-        url: '/resume-opengraph-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Amir Aghajani - Resume',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Amir Aghajani - Resume',
-    description: 'Download or view the resume of Amir Aghajani, a web developer specializing in modern web technologies',
-    images: '/resume-opengraph-image.png',
-  },
-});
+export const generateMetadata = async (): Promise<Metadata> => {
+  const title = "Resume";
+  const description= 'Download or view the resume of Amir Aghajani, a web developer specializing in modern web technologies';
+  const imageUrl = "/opengraph-image.jpg"; 
 
-export default function ProjectsPage() {
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: "https://aghatech.ir/resume/", 
+      siteName: "Amir Aghajani Portfolio",
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: "resume",
+        },
+      ],
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: imageUrl,
+    },
+  };
+};
+
+
+export default function ResumePage() {
   return (
     <div>
-      <ProjectsClient />
+      <Resume />
     </div>
   );
 }
+
+

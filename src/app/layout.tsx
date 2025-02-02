@@ -8,18 +8,20 @@ import ClientWrapper from "./component/ClientWrapper";
 import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aghatech.ir"),
+  metadataBase: new URL("https://aghatech.ir/"),
   title: {
     default: "Amir Aghajani - Web Developer",
     template: "%s | Amir Aghajani",
   },
+  generator: "Next.js",
+  keywords: ["Next.js", "React", "JavaScript"],
   description:
     "Software engineer and web developer specializing in modern web technologies and building dynamic apps.",
   openGraph: {
     title: "Amir Aghajani - Web Developer",
     description:
       "Software engineer and web developer specializing in modern web technologies and building dynamic apps.",
-    url: "https://aghatech.ir",
+    url: "https://aghatech.ir/",
     siteName: "amir-aghajani-portfolio",
     images: {
       url: "/opengraph-image.jpg",
@@ -52,13 +54,14 @@ export default function RootLayout({
   }
   return (
     <html lang={lang} dir={isRtl ? "rtl" : "ltr"} className="scroll-smooth">
-      <head>
+      {/* <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://aghatech.ir/" />
+        <link rel="canonical" href="https://aghatech.ir" />
         <link rel="icon" href="/favicon.ico" />
         <title>Amir Aghajani - Web Developer</title>
-      </head>
+      </head> */}
       <body className="h-screen">
         
         <Suspense

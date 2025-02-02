@@ -1,35 +1,42 @@
 import type { Metadata } from 'next';
-import ProjectsClient from './page'; 
+import Projects from './page'; 
 
-export const generateMetadata = async (): Promise<Metadata> => ({
-  metadataBase: new URL("https://aghatech.ir/projects"),
-  title: 'Projects by Amir Aghajani',
-  description: 'Explore the projects created by Amir Aghajani, a web developer specializing in modern web technologies.',
-  openGraph: {
-    url: "https://aghatech.ir/projects",
-    title: 'Projects by Amir Aghajani',
-    description: 'Explore the projects created by Amir Aghajani, a web developer specializing in modern web technologies.',
-    images: [
-      {
-        url: '/projects-opengraph-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Projects by Amir Aghajani',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Projects by Amir Aghajani',
-    description: 'Explore the projects created by Amir Aghajani, a web developer specializing in modern web technologies.',
-    images: '/projects-opengraph-image.png',
-  },
-});
+export const generateMetadata = async (): Promise<Metadata> => {
+  const title = "Projects";
+  const description = "Explore the projects created by Amir Aghajani, a web developer specializing in modern web technologies.";
+  const imageUrl = "/opengraph-image.jpg"; 
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: "https://aghatech.ir/projects/", 
+      siteName: "Amir Aghajani Portfolio",
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: "Projects",
+        },
+      ],
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: imageUrl,
+    },
+  };
+};
 
 export default function ProjectsPage() {
   return (
     <div>
-      <ProjectsClient />
+      <Projects />
     </div>
   );
 }
