@@ -3,7 +3,7 @@ import Resume from './page';
 
 export const generateMetadata = async (): Promise<Metadata> => {
   const title = "Resume";
-  const description= 'Download or view the resume of Amir Aghajani, a web developer specializing in modern web technologies';
+  const description= "Download or view the resume of Amir Aghajani, a web developer specializing in modern web technologies";
   const imageUrl = "/opengraph-image.jpg"; 
 
   return {
