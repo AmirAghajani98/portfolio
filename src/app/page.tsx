@@ -60,32 +60,32 @@ export default function Home() {
           <div className="w-full mt-14 sm:mt-0 text-justify">
             <h2 className="text-3xl font-semibold mb-3 font-mono">About Me</h2>
             <p className="text-lg dark:text-slate-300 font-sans leading-7 indent-3">
-              Hi, I am 26 years old and have been working in web programming for
-              about three years. Currently, I live in Iran, where I serve as a
-              training manager and senior developer at my company. I obtained my
+              Hello, I am 26 years old and have been working in web programming
+              for about three years. Currently, I reside in Iran, where I serve
+              as a training manager and senior developer at my company. I hold a
               bachelor's degree from QIAU University. Before transitioning to
-              programming, I worked in content creation and had a strong
-              interest in automotive mechanics. These experiences helped me
-              develop my analytical and problem-solving skills, which are
-              crucial in my role as a developer. My technical skills include
-              proficiency in multiple programming languages, frameworks, and
-              tools that enhance my development capabilities. In addition to
-              software development, I enjoy sharing knowledge with others and
-              assisting new programmers during training sessions. My soft
-              skills—such as creative thinking, problem-solving, teamwork,
-              leadership, and ideation—enable me to communicate and collaborate
-              effectively with my team. As an introverted individual, I thrive
-              in collaborative environments and enjoy finding creative solutions
-              while contributing to a positive and supportive atmosphere.
-              Overall, my combination of technical expertise and interpersonal
-              skills allows me to excel in both development and training roles.
+              programming, I worked in content creation and developed a strong
+              interest in automotive mechanics. These experiences have honed my
+              analytical and problem-solving skills, which are essential in my
+              role as a developer. My technical expertise includes proficiency
+              in multiple programming languages, frameworks, and tools that
+              enhance my development capabilities. In addition to software
+              development, I enjoy sharing knowledge with others and mentoring
+              new programmers during training sessions. My soft skills-such as
+              creative thinking, problem-solving, teamwork, leadership, and
+              ideation-enable me to communicate and collaborate effectively with
+              my team. As an introverted individual, I thrive in collaborative
+              environments and take pleasure in devising creative solutions
+              while fostering a positive and supportive atmosphere. Overall, my
+              blend of technical expertise and interpersonal skills allows me to
+              excel in both development and training roles.
             </p>
           </div>
         </div>
       </main>
       <Projects />
       <SkillsSlider />
-      <ContactForm/>
+      <ContactForm />
       <Footer />
     </>
   );

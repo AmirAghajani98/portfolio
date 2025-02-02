@@ -31,7 +31,7 @@
   },
   "about": {
     "title": ":About",
-    "content": "Hi! I’m 26 years old, and I’ve been working as a web developer for about three years, with a focus on JavaScript. I earned my bachelor’s degree from Islamic Azad University, Qazvin Branch, and currently, I live in Iran. I work at *KarejoPlus Studio* as a web developer and training manager.  Before diving into programming, I worked in content creation and spent some time in the automotive mechanics field. These experiences helped me strengthen my analytical and problem-solving skills, which are now super helpful in my software development work.  In addition to JavaScript, I’ve worked with several frameworks and tools that help me deliver projects effectively. One of the things I value most in programming is sharing my knowledge with others and helping new developers grow. My soft skills—like creative thinking, teamwork, leadership, and ideation—help me collaborate well with my team and create a positive, supportive environment.  As an introvert, I feel comfortable working in groups and enjoy finding creative solutions to challenges. The combination of my technical and interpersonal skills has allowed me to succeed both in software development and in my training role"
+    "content": "Hi! I'm 26 years old, and I've been working as a web developer for about three years, with a focus on JavaScript. I earned my bachelor's degree from Islamic Azad University, Qazvin Branch, and currently, I live in Iran. I work at 'KarojoPlus Studio' as a web developer and training manager. Before diving into programming, I worked in content creation and spent some time in the automotive mechanics field. These experiences helped me strengthen my analytical and problem-solving skills, which are now highly beneficial in my software development work. In addition to JavaScript, I've worked with several frameworks and tools that help me deliver projects effectively. One of the things I value most in programming is sharing my knowledge with others and helping new developers grow. My soft skills—such as creative thinking, teamwork, leadership, and ideation—help me collaborate well with my team and create a positive, supportive environment. As an introvert, I feel comfortable working in groups and enjoy finding creative solutions to challenges. The combination of my technical and interpersonal skills has allowed me to succeed both in software development and in my training role."
   },
   "education": {
     "title": ":Education",
@@ -54,7 +54,7 @@
         "duration": "23Months",
         "location": "Qazvin, Iran",
         "type": "Full-time (Hybrid)",
-        "description": "Leading the technical team to develop and enhance KARJOO+ products and services.",
+        "description": "Leading the technical teams to develop and enhance KARJOO's products and services.",
         "skills": [
           "Project Management",
           "Technology Leadership",
@@ -121,7 +121,7 @@
     "list": [
       {
         "title": "Karjoo+ Landing",
-        "description": "Karjoo.plus is a comprehensive platform for human resource management, featuring an exhibition calendar, a list of job fairs, and detailed pages for each exhibition. Built with Astro and Tailwind CSS, it offers a seamless user experience and responsive design.",
+        "description": "Karjoo.plus is a comprehensive platform for human resource management, featuring an exhibition calendar, a list of job fans, and detailed pages for each exhibition. Built with Astro and Tailwind CSS, it offers a seamless user experience and responsive design.",
         "link": "https://karjoo.plus/",
         "skillA": "Tailwind",
         "skillB": "JavaScript",
@@ -130,7 +130,7 @@
       },
       {
         "title": "Photography Website",
-        "description": "Website photography specializing in capturing precious moments for families, newborns, first birthdays, pregnancies, and other significant occasions. The site features a blog, inspiration, and stories to help families create lasting memories through photography.",
+        "description": "A photography website specializing in capturing precious memories for families, newborns, first birthdays, pregnancies, and other significant occasions. The site features a blog, inspiration, and stories to help families create lasting memories through photography.",
         "link": "https://saraphotography.com.au/",
         "skillA": "WordPress",
         "skillB": "JavaScript",
@@ -148,7 +148,7 @@
       },
       {
         "title": "Resume Template",
-        "description": "Resume template app utilizes a simple user interface to help you easily create professional and stylish resumes. With customizable sections, pre-designed templates, and helpful guidance, you can personalize your resume.",
+        "description": "A resume template app that utilizes a simple user interface to help you easily create professional and stylish resumes. With customizable sections, pre-designed templates, and helpful guidance, you can personalize your resume.",
         "link": "./img/resume.png",
         "skillA": "Tailwind",
         "skillB": "TypeScript",
