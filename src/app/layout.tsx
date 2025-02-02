@@ -8,7 +8,7 @@ import ClientWrapper from "./component/ClientWrapper";
 import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://amiraghajani.liara.run"),
+  metadataBase: new URL("https://aghatech.ir"),
   title: {
     default: "Amir Aghajani - Web Developer",
     template: "%s | Amir Aghajani",
