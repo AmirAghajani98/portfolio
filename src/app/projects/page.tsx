@@ -5,9 +5,30 @@ import Link from "next/link";
 import { projectsData } from "../utils/projectsData";
 import Footer from "../component/Footer";
 import SecondaryNavbar from "../component/SecondaryNavbar";
-import generateMetadata from "./generateMetadata";
+import type { Metadata } from 'next';
 
-export { generateMetadata };
+export const generateMetadata = async (): Promise<Metadata> => ({
+  title: 'Projects by Amir Aghajani',
+  description: 'Explore the projects created by Amir Aghajani, a web developer specializing in modern web technologies.',
+  openGraph: {
+    title: 'Projects by Amir Aghajani',
+    description: 'Explore the projects created by Amir Aghajani, a web developer specializing in modern web technologies.',
+    images: [
+      {
+        url: '/projects-opengraph-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Projects by Amir Aghajani',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Projects by Amir Aghajani',
+    description: 'Explore the projects created by Amir Aghajani, a web developer specializing in modern web technologies.',
+    images: '/projects-opengraph-image.jpg',
+  },
+});
 export default function Projects() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalIframeSrc, setModalIframeSrc] = useState("");
