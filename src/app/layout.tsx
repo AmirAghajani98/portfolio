@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: "Amir Aghajani - Web Developer",
     description:
       "Software engineer and web developer specializing in modern web technologies and building dynamic apps.",
-    url: "https://amiraghajani.liara.run/",
+    url: "https://aghatech.ir",
     siteName: "amir-aghajani-portfolio",
     images: {
       url: "/opengraph-image.jpg",
@@ -55,7 +55,7 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://amiraghajani.liara.run/" />
+        <link rel="canonical" href="https://aghatech.ir/" />
         <link rel="icon" href="/favicon.ico" />
         <title>Amir Aghajani - Web Developer</title>
       </head>
