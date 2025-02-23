@@ -1,11 +1,14 @@
 import "./globals.css";
 import "./i18";
 import i18n from "./i18";
+import Script from "next/script";
+import Head from "next/head";
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Toaster } from "react-hot-toast";
 import { Suspense } from "react";
 import ProviderTheme from "./component/ProviderTheme";
 import ClientWrapper from "./component/ClientWrapper";
-import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aghatech.ir/"),
@@ -60,6 +63,17 @@ export default function RootLayout({
   }
   return (
     <html lang={lang} dir={isRtl ? "rtl" : "ltr"} className="scroll-smooth">
+      <Head>
+        <Script id="clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "qehzs1inz3");
+          `}
+        </Script>
+      </Head>
       <body className="h-screen">
         <Suspense
           fallback={
@@ -68,6 +82,7 @@ export default function RootLayout({
             </div>
           }
         >
+          <SpeedInsights />
           <ClientWrapper lang={lang}>
             <ProviderTheme>
               <Toaster
