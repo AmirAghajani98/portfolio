@@ -13,40 +13,66 @@ import ClientWrapper from "./component/ClientWrapper";
 export const metadata: Metadata = {
   metadataBase: new URL("https://aghatech.ir/"),
   title: {
-    default: "Amir Aghajani - Web Developer",
-    template: "%s | Amir-Aghajani",
+    default: "Amir Aghajani - Web Developer | برنامه‌نویس تحت وب",
+    template: "%s | Amir Aghajani",
   },
   generator: "Next.js",
-  keywords: ["Next.js", "React", "JavaScript"],
+  applicationName: "Amir Aghajani Portfolio",
+  keywords: [
+    "Amir Aghajani",
+    "امیر آقاجانی",
+    "Web Developer",
+    "برنامه‌نویس تحت وب",
+    "Frontend Developer",
+    "React Developer",
+    "طراحی وب‌سایت",
+    "توسعه‌دهنده وب",
+  ],
   description:
-    "Software engineer and web developer specializing in modern web technologies and building dynamic apps.",
+    "Amir Aghajani is a skilled web developer specializing in modern web technologies, including React, Node.js, and full-stack development. Explore my portfolio for custom web solutions.",
   openGraph: {
     title: {
-      default: "Amir Aghajani - Web Developer",
-      template: "%s | Amir-Aghajani",
+      default: "Amir Aghajani - Web Developer | برنامه‌نویس تحت وب",
+      template: "%s | Amir Aghajani",
     },
     description:
-      "Software engineer and web developer specializing in modern web technologies and building dynamic apps.",
+      "Amir Aghajani is a skilled web developer specializing in modern web technologies, including React, Node.js, and full-stack development. Explore my portfolio for custom web solutions.",
     url: "https://aghatech.ir/",
-    siteName: "amir-aghajani-portfolio",
-    images: {
-      url: "/opengraph-image.jpg",
-      width: 1200,
-      height: 630,
-      alt: "Amir Aghajani Portfolio Image",
-      type: "image/jpeg",
-    },
+    siteName: "Amir Aghajani Portfolio",
+    images: [
+      {
+        url: "/opengraph-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Amir Aghajani Portfolio img",
+        type: "image/jpeg",
+      },
+    ],
     type: "website",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: {
-      default: "Amir Aghajani - Web Developer",
-      template: "%s | Amir-Aghajani",
+      default: "Amir Aghajani - Web Developer | برنامه‌نویس تحت وب",
+      template: "%s | Amir Aghajani",
     },
     description:
-      "Software engineer and web developer specializing in modern web technologies and building dynamic apps.",
+      "Amir Aghajani is a skilled web developer specializing in modern web technologies, including React, Node.js, and full-stack development. Explore my portfolio for custom web solutions.",
     images: "/opengraph-image.jpg",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+    },
+  },
+  alternates: {
+    canonical: "https://aghatech.ir/",
   },
 };
 
@@ -64,15 +90,7 @@ export default function RootLayout({
   return (
     <html lang={lang} dir={isRtl ? "rtl" : "ltr"} className="scroll-smooth">
       <Head>
-        <Script id="clarity" strategy="afterInteractive">
-          {`
-            (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "qehzs1inz3");
-          `}
-        </Script>
+        <Script async src="//static.getclicky.com/101478845.js"></Script>
       </Head>
       <body className="h-screen">
         <Suspense
