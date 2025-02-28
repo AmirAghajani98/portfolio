@@ -1,87 +1,46 @@
 "use client";
 
 import React from "react";
-import Slider, { Settings } from "react-slick";
-import { Progress } from "./Progress";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { ProgressBar } from "./ProgressBar";
 
-const SkillsSlider: React.FC = () => {
-  const settings: Settings = {
-    infinite: true,
-    speed: 2000,
-    slidesToShow: 10,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 0,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          rows: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          rows: 1,
-          slidesPerRow: 1,
-        },
-      },
-    ],
-  };
-
+const SkillsSection: React.FC = () => {
   const skills = [
-    { logo: "./img/bootstrap.svg", progress: 90 },
-    { logo: "./img/css.svg", progress: 85 },
-    { logo: "./img/eslint.svg", progress: 80 },
-    { logo: "./img/git.svg", progress: 95 },
-    { logo: "./img/github.svg", progress: 85 },
+    { logo: "./img/bootstrap.svg", progress: 80 },
+    { logo: "./img/css.svg", progress: 95 },
+    { logo: "./img/git.svg", progress: 90 },
+    { logo: "./img/apollo.svg", progress: 75 },
+    { logo: "./img/github.png", progress: 85 },
     { logo: "./img/graphql.svg", progress: 70 },
     { logo: "./img/html.svg", progress: 95 },
     { logo: "./img/js.svg", progress: 90 },
     { logo: "./img/mysql.svg", progress: 80 },
     { logo: "./img/next.svg", progress: 85 },
-    { logo: "./img/postgres.svg", progress: 75 },
+    { logo: "./img/postgres.svg", progress: 70 },
     { logo: "./img/react.svg", progress: 90 },
     { logo: "./img/tailwind.svg", progress: 95 },
+    { logo: "./img/wordpress.svg", progress: 75 },
   ];
 
   return (
     <div
       id="skills"
-      className="z-50 w-full dark:opacity-100 opacity-95 h-auto mx-auto py-10 backmain"
+      className="w-full opacity-95 bg-slate-400 projectback justify-center h-auto py-10 px-6 shadow-lg"
     >
-      <h1 className="sm:text-5xl text-4xl text-center mx-auto my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 w-[50%]">
-        skills
+      <h1 className="sm:text-5xl text-4xl text-center mx-auto my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b-4 border-slate-500 dark:border-slate-600 w-[50%]">
+        Skills
       </h1>
-      <Slider {...settings} className="sm:w-10/12 m-auto">
+      <div className="sm:flex justify-center sm:gap-6">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center rounded-full dark:bg-slate-700 bg-opacity-70 dark:bg-opacity-70 bg-slate-500 sm:p-2 px-12 py-1 sm:my-16 sm:mx-auto mx-10 my-4"
+            className="flex flex-col items-center justify-center p-4 rounded-lg shadow-lg bg-opacity-90 dark:bg-opacity-80 hover:shadow-2xl"
           >
-            <Progress value={skill.progress} logo={skill.logo} />
+            <ProgressBar value={skill.progress} logo={skill.logo} />
           </div>
         ))}
-      </Slider>
+      </div>
     </div>
   );
 };
 
-export default SkillsSlider;
+export default SkillsSection;
