@@ -19,11 +19,14 @@ const ContactForm = () => {
   }
 
   return (
-    <main id="contact" className="sm:w-full mx-auto opacity-95 bg-slate-400 projectback justify-center flex flex-col">
+    <main
+      id="contact"
+      className="sm:w-full mx-auto opacity-95 bg-slate-400 projectback justify-center flex flex-col"
+    >
       <div className="sm:flex items-start gap-16 my-10 p-4 mx-auto sm:w-10/12 w-11/12 font-[sans-serif] shadow-lg rounded-md">
         <div className="sm:w-1/2">
-        <h2 className="sm:text-5xl text-4xl text-center mx-auto sm:my-8 pb-8 font-mono dark:text-slate-100 text-[#121a23] font-bold sm:border-none border-b border-slate-500 dark:border-slate-600">
-        Let's Talk
+          <h2 className="sm:text-5xl text-4xl text-center mx-auto sm:my-8 pb-8 font-mono dark:text-slate-100 text-[#121a23] font-bold sm:border-none border-b border-slate-500 dark:border-slate-600">
+            Let's Talk
           </h2>
           <p className="text-base dark:text-gray-200 text-gray-900 sm:mt-4 mt-6">
             Do you have a personal or business idea or brand to develop and need
@@ -42,7 +45,7 @@ const ContactForm = () => {
                   </div>
                   <a
                     href="mailto:amir.aghajani1377@gmail.com"
-                    className="dark:text-blue-500 text-blue-950 text-base ml-4"
+                    className="dark:text-blue-500 text-blue-950 sm:text-base text-sm ml-1 sm:ml-4"
                   >
                     <small className="block">Mail</small>
                     <strong className="font-sans">
@@ -64,7 +67,7 @@ const ContactForm = () => {
                   </div>
                   <a
                     href="tel:+989369477625"
-                    className="dark:text-blue-500 text-blue-950 text-base ml-4"
+                    className="dark:text-blue-500 text-blue-950 text-base ml-1 sm:ml-4"
                   >
                     <small className="block font-mono">phone</small>
                     <strong className="font-mono">+989369477625</strong>
@@ -84,7 +87,7 @@ const ContactForm = () => {
                 className=""
               >
                 <Image
-                  src="./img/icons8-github-96.png"
+                  src="./img/github.png"
                   width={50}
                   height={50}
                   alt="Picture of the author"
@@ -120,8 +123,8 @@ const ContactForm = () => {
 
         <div className="sm:w-1/2 mt-10 sm:mt-0">
           <form onSubmit={handleSubmit} className="space-y-6">
-          <h2 className="text-4xl text-center mx-auto sm:my-8 pb-8 font-mono dark:text-slate-100 text-[#121a23] font-bold sm:border-none border-b border-slate-500 dark:border-slate-600">
-          ContactForm
+            <h2 className="text-4xl text-center mx-auto sm:my-8 pb-8 font-mono dark:text-slate-100 text-[#121a23] font-bold sm:border-none border-b border-slate-500 dark:border-slate-600">
+              ContactForm
             </h2>
             <div className="flex flex-col sm:flex-row gap-4">
               <input

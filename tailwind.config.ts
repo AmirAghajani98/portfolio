@@ -14,6 +14,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "gradient-animated": "linear-gradient(90deg, var(--tw-gradient-stops))",
+        "progress-light": "linear-gradient(to top, #e2e8f0, #475569)",
+        "progress-dark": "linear-gradient(to top, #000000, #923cb5)",
+        "progress-light-small": "linear-gradient(to right, #e2e8f0, #475569)",
+        "progress-dark-small": "linear-gradient(to right, #000000, #923cb5)",
       },
       animation: {
         rotate: "rotate 10s linear infinite",
