@@ -7,20 +7,20 @@ export default function HeroLanding() {
   return (
     <section className="relative font-sans pt-0 w-full">
       <div
-        className="pointer-events-none absolute sm:left-1/2 top-0 sm:-translate-x-1/2 transform font-serif"
+        className="pointer-events-none absolute w-[60%] sm:left-1/2 top-0 sm:-translate-x-1/2 transform font-serif"
         aria-hidden="true"
       >
         <Image
-          className="opacity-50 dark:opacity-20"
-          src={"./img/stripes.svg"}
-          height={700}
-          width={1000}
+          className="opacity-50 dark:opacity-10 w-full"
+          src={"./img/strips2.png"}
+          height={100}
+          width={1100}
           alt="Stripes"
           priority
         />
       </div>
       <div className="mx-auto max-w-6xl sm:px-6">
-        <div className="pb-12 pt-32 md:pb-10 md:pt-40">
+        <div className="pb-12 pt-32 md:pb-10 md:pt-20">
           <div className="pb-12 text-center md:pb-4">
             <div className="mb-6" data-aos="zoom-y-out">
               {/* <div className="-mx-0.5 flex justify-center -space-x-3">
@@ -78,7 +78,7 @@ export default function HeroLanding() {
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
-                className="mb-8 text-lg text-gray-700"
+                className="mb-8 text-lg text-gray-700 dark:text-gray-300"
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
@@ -117,7 +117,7 @@ export default function HeroLanding() {
             data-aos="zoom-y-out"
             data-aos-delay={600}
           ></div>
-          <div className="w-full flex justify-center ">
+          <div className="w-full flex justify-center sm:mt-36">
             <Cobe />
           </div>
         </div>
