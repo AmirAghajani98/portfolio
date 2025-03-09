@@ -44,7 +44,7 @@ const LandingContact = () => {
           </h2>
           <p className="text-lg dark:text-gray-400 text-gray-900 sm:mt-2 mb-4 mt-6 sm:w-2/3 text-center mx-auto">
             Do you have a personal or business idea or brand to develop and need
-            help? then reach out; We would love to hear about your project and
+            help? Then reach out; I would love to hear about your project and
             help.
           </p>
 

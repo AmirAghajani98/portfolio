@@ -7,7 +7,7 @@ export default function FeaturesPlanet() {
     <section className="relative before:absolute before:inset-0 before:-z-20 sm:mt-28 mt-10">
       <div className="mx-auto sm:pb-16 pb-4 text-center mt-24">
         <h2 className="sm:text-3xl text-2xl sm:w-[70%] mx-auto sm:pb-10 pb-4 font-bold border-b border-slate-500 dark:border-slate-600 dark:text-gray-200 text-gray-950 md:text-4xl font-sans">
-          Everything You Need to Build, Manage, and Grow Your Website
+          Personalized Services
         </h2>
       </div>
 

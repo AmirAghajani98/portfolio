@@ -50,7 +50,7 @@ const ContactForm = () => {
           </h2>
           <p className="text-base dark:text-gray-200 text-gray-900 sm:mt-4 mt-6">
             Do you have a personal or business idea or brand to develop and need
-            help? then reach out; We would love to hear about your project and
+            help? Then reach out; I would love to hear about your project and
             help.
           </p>
           <div className="sm:flex gap-x-10">

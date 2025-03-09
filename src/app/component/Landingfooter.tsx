@@ -113,16 +113,16 @@ export default function LandingFooter() {
             About me
           </h3>
           <p className="text-base font-mono dark:text-slate-200 text-slate-900 text-left">
-            I’m amir aghajani a 26-year-old web developer with 4+ years of
-            experience, currently based in Iran. As a training manager and
-            senior developer, I hold a bachelor’s degree from qazvin azad
-            University. My journey includes content creation and a passion for
-            automotive mechanics, which have sharpened my problem-solving and
-            analytical skills. Proficient in multiple programming languages and
-            frameworks, I also enjoy mentoring and sharing knowledge with
-            others. With strong soft skills like teamwork, leadership, and
-            creative thinking, I thrive in collaborative environments and strive
-            to create innovative solutions.
+            I’m amir aghajani a web developer with 4+ years of experience,
+            currently based in Iran. As a training manager and senior developer,
+            I hold a bachelor’s degree from qazvin azad University. My journey
+            includes content creation and a passion for automotive mechanics,
+            which have sharpened my problem-solving and analytical skills.
+            Proficient in multiple programming languages and frameworks, I also
+            enjoy mentoring and sharing knowledge with others. With strong soft
+            skills like teamwork, leadership, and creative thinking, I thrive in
+            collaborative environments and strive to create innovative
+            solutions.
           </p>
         </div>
         <nav className="block sm:hidden">
