@@ -1,22 +1,36 @@
 "use client";
 
-import React, { useRef, useEffect } from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import LoadingButton from "./LoadingButton";
+import { emailConfig } from "../../../mail-config";
 
 const LandingContact = () => {
-  const [state, handleSubmit] = useForm("xrbegnbq");
   const formRef = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  useEffect(() => {
-    if (state.succeeded) {
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      await emailjs.sendForm(
+        emailConfig.serviceID,
+        emailConfig.templateID,
+        formRef.current!,
+        emailConfig.publicKey
+      );
+
       toast.success("Your message was sent successfully!");
-      if (formRef.current) {
-        formRef.current.reset();
-      }
+      formRef.current?.reset();
+    } catch (error) {
+      toast.error("Failed to send the message. Please try again.");
+      console.error(error);
+    } finally {
+      setIsSubmitting(false);
     }
-  }, [state.succeeded]);
+  };
 
   return (
     <main
@@ -49,15 +63,10 @@ const LandingContact = () => {
               <input
                 id="Name"
                 type="text"
-                name="Name"
+                name="name"
                 placeholder="Your name"
                 required
                 className="sm:w-11/12 p-2 border rounded dark:text-gray-200 text-gray-900 bg-slate-200 dark:bg-slate-800"
-              />
-              <ValidationError
-                prefix="Name"
-                field="Name"
-                errors={state.errors}
               />
               <br />
               <label
@@ -69,15 +78,10 @@ const LandingContact = () => {
               <input
                 id="Mail"
                 type="email"
-                name="Mail"
+                name="to_email"
                 placeholder="example@gmail.com"
                 required
                 className="sm:w-11/12 p-2 border rounded dark:text-gray-200 text-gray-900 bg-slate-200 dark:bg-slate-800"
-              />
-              <ValidationError
-                prefix="Mail"
-                field="Mail"
-                errors={state.errors}
               />
               <br />
               <label
@@ -89,7 +93,7 @@ const LandingContact = () => {
               <input
                 id="Business"
                 type="text"
-                name="Business"
+                name="business"
                 placeholder="Your business"
                 required
                 className="sm:w-11/12 p-2 border rounded dark:text-gray-200 text-gray-900 bg-slate-200 dark:bg-slate-800"
@@ -112,10 +116,10 @@ const LandingContact = () => {
               <div className="sm:w-11/12 my-6">
                 <button
                   type="submit"
-                  disabled={state.submitting}
+                  disabled={isSubmitting}
                   className="w-1/3 p-3 dark:text-gray-800 font-medium text-lg text-gray-200 dark:bg-blue-500 rounded dark:hover:bg-blue-600 bg-blue-700"
                 >
-                  {state.submitting ? <LoadingButton /> : "Send"}
+                  {isSubmitting ? <LoadingButton /> : "Send"}
                 </button>
               </div>
             </form>

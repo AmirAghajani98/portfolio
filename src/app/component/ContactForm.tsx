@@ -1,22 +1,42 @@
 "use client";
 
-import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
-import LoadingButton from "./LoadingButton";
 import Link from "next/link";
 import Image from "next/image";
 import {
   EnvelopeIcon,
   PhoneArrowDownLeftIcon,
 } from "@heroicons/react/24/outline";
+import { contactConfig } from "../../../mail-config";
+import LoadingButton from "./LoadingButton";
 
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm("xrbegnbq");
+  const formRef = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  if (state.succeeded) {
-    toast.success("Your message was sent successfully!");
-  }
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      await emailjs.sendForm(
+        contactConfig.serviceID,
+        contactConfig.templateID,
+        formRef.current!,
+        contactConfig.publicKey
+      );
+
+      toast.success("Your message was sent successfully!");
+      formRef.current?.reset();
+    } catch (error) {
+      toast.error("Failed to send the message. Please try again.");
+      console.error(error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <main
@@ -122,7 +142,7 @@ const ContactForm = () => {
         </div>
 
         <div className="sm:w-1/2 mt-10 sm:mt-0">
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
             <h2 className="text-4xl text-center mx-auto sm:my-8 pb-8 font-mono dark:text-slate-100 text-[#121a23] font-bold sm:border-none border-b border-slate-500 dark:border-slate-600">
               ContactForm
             </h2>
@@ -151,10 +171,10 @@ const ContactForm = () => {
             />
             <button
               type="submit"
-              disabled={state.submitting}
+              disabled={isSubmitting}
               className="w-full p-3 dark:text-gray-800 font-medium text-lg text-gray-200 dark:bg-blue-500 rounded dark:hover:bg-blue-600 bg-blue-700"
             >
-              {state.submitting ? <LoadingButton /> : "Send"}
+              {isSubmitting ? <LoadingButton /> : "Send"}
             </button>
           </form>
         </div>
