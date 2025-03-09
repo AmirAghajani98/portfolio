@@ -20,6 +20,15 @@ export const projectsData = [
     alt: "sara-photography",
   },
   {
+    title: "rojhani web store",
+    image: "./img/rojhani.png",
+    description: `The Rojhani website is a reputable online store.
+     Known for offering high-quality and diverse products from trusted local, it has become a popular 
+     destination for fashion in Iran. With a user-friendly design, secure payment options, and fast delivery,`,
+    link: "https://rojhani.me/",
+    alt: "Global Weather App",
+  },
+  {
     title: "Exhibition Web App",
     image: "./img/qazvinjobs.png",
     description: `The exhibitions web app provides real-time access to company
@@ -30,6 +39,7 @@ export const projectsData = [
     link: "https://jobs.karjoo.plus/qazvin",
     alt: "Exhibition Event Web App",
   },
+
   {
     title: "Resume Template",
     image: "./img/resume.png",
