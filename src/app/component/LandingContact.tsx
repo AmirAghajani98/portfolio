@@ -39,7 +39,7 @@ const LandingContact = () => {
     >
       <div className="text-center gap-16 my-10 p-4 mx-auto sm:w-10/12 w-11/12 font-[sans-serif] rounded-md">
         <div className="w-full">
-          <h2 className="sm:text-5xl text-3xl sm:w-[50%] text-center mx-auto sm:my-4 pb-4 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600">
+          <h2 className="sm:text-4xl text-2xl sm:w-[50%] text-center mx-auto sm:my-4 pb-4 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600">
             Get in Touch
           </h2>
           <p className="text-lg dark:text-gray-400 text-gray-900 sm:mt-2 mb-4 mt-6 sm:w-2/3 text-center mx-auto">
