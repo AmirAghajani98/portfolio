@@ -5,6 +5,7 @@ import FeaturesPlanet from "../component/FeaturesPlanet";
 import Footer from "../component/Footer";
 import HeroLanding from "../component/HeroLanding";
 import LandingContact from "../component/LandingContact";
+import LandingFooter from "../component/Landingfooter";
 import LandingProjects from "../component/LandingProjects";
 import Navbar from "../component/Navbar";
 
@@ -19,7 +20,7 @@ export default function Home() {
         <LandingProjects />
         <LandingContact />
       </main>
-      <Footer />
+      <LandingFooter />
     </>
   );
 }

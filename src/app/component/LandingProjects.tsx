@@ -6,16 +6,13 @@ import Link from "next/link";
 import { projectsData } from "../utils/projectsData";
 
 const LandingProjects: React.FC = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
-  const [modalIframeSrc, setModalIframeSrc] = useState("");
-
   return (
     <main
       id="projects"
       className="sm:min-h-screen sm:w-full mx-auto sm:py-10 pb-10 pt-24 opacity-95 bg-slate-400 projectback justify-center flex flex-col"
     >
-      <h2 className="sm:text-5xl text-4xl text-center mx-auto sm:my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 w-[50%]">
-        Projects
+      <h2 className="sm:text-5xl text-3xl text-center mx-auto sm:my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 sm:w-[50%]">
+        Ideas Turned into Reality
       </h2>
       <div className="w-[85%] sm:w-10/12 sm:my-20 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-x-20 gap-y-14">
         {projectsData &&
@@ -37,7 +34,7 @@ const LandingProjects: React.FC = () => {
               <h3 className="font-mono mt-3 mb-4 sm:mx-4 text-left font-semibold text-xl dark:text-slate-100 text-[#121a23]">
                 {project.title}
               </h3>
-              <p className="font-sans whitespace-normal sm:mx-4 text-left sm:mb-6 mb-2 text-base leading-relaxed dark:text-slate-100 text-[#121a23] sm:line-clamp-5 line-clamp-4">
+              <p className="font-sans whitespace-normal sm:mx-4 text-left sm:mb-6 mb-2 text-base leading-relaxed dark:text-gray-400 text-gray-800 sm:line-clamp-5 line-clamp-4">
                 {project.description}
               </p>
               <div className="text-right flex items-end justify-end">

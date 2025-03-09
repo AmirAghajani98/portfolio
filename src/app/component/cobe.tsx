@@ -14,8 +14,8 @@ export default function Cobe() {
 
     const globe = createGlobe(canvasRef.current, {
       devicePixelRatio: 2,
-      width: isMobile ? 300 * 2 : 500 * 2,
-      height: isMobile ? 300 * 2 : 500 * 2,
+      width: isMobile ? 170 * 2 : 500 * 2,
+      height: isMobile ? 170 * 2 : 500 * 2,
       phi: 0,
       theta: 0,
       dark: 1,
@@ -42,16 +42,21 @@ export default function Cobe() {
   }, [isMobile]);
 
   return (
-    <div className="sm:w-full justify-center flex">
-      <canvas
-        ref={canvasRef}
-        style={{
-          width: isMobile ? 300 : 500,
-          height: isMobile ? 300 : 500,
-          maxWidth: "100%",
-          aspectRatio: 1,
-        }}
-      />
+    <div>
+      <h2 className="font-sans sm:hidden text-2xl mx-auto pt-20 pb-4 -mb-24 font-bold border-b border-slate-500 dark:border-slate-600 text-center text-slate-950 dark:text-slate-200">
+        Top Brands Built Their Legacy Online
+      </h2>
+      <div className="sm:w-full justify-center flex sm:translate-y-0 translate-y-[250px]">
+        <canvas
+          ref={canvasRef}
+          style={{
+            width: isMobile ? 170 : 500,
+            height: isMobile ? 170 : 500,
+            maxWidth: "100%",
+            aspectRatio: 1,
+          }}
+        />
+      </div>
     </div>
   );
 }

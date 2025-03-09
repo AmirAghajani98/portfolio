@@ -5,7 +5,10 @@ import Image from "next/image";
 export default function BusinessCategories() {
   return (
     <section>
-      <div className="mx-auto px-4 sm:px-6 w-full sm:absolute left-1/2 sm:-bottom-[340px] sm:-translate-x-1/2 sm:transform font-serif">
+      <div className="mx-auto px-4 sm:px-6 w-full sm:absolute left-1/2 sm:-bottom-[530px] sm:-translate-x-1/2 sm:transform font-serif">
+        <h2 className="hidden sm:block font-sans sm:text-4xl text-2xl sm:w-[50%] mx-auto pb-10 font-bold border-b border-slate-500 dark:border-slate-600 sm:mb-52 text-center text-slate-950 dark:text-slate-200">
+          Top Brands Built Their Legacy Online
+        </h2>
         <div className="pb-12 md:pb-20">
           <div className="relative flex h-[324px] w-auto items-center justify-center">
             <div className="absolute z-10">
@@ -163,7 +166,7 @@ export default function BusinessCategories() {
             <div className="sm:absolute inset-y-0 left-1/2 -z-10 w-px translate-x-[216px] bg-linear-to-t dark:from-gray-200 to-transparent mix-blend-multiply"></div>
             <div className="absolute before:absolute before:-inset-3 before:animate-[spin_3s_linear_infinite] before:rounded-full before:border before:border-transparent before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] before:[background:conic-gradient(from_180deg,transparent,var(--color-blue-500))_border-box]">
               <div className="animate-[breath_8s_ease-in-out_infinite_both]">
-                <div className="flex sm:h-40 sm:w-40 w-32 h-32 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
+                <div className="flex sm:h-40 -translate-y-[125px] sm:-translate-y-0 sm:w-40 w-24 h-24 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                   <Image
                     className="relative"
                     src={"./img/Atlassian.png"}
@@ -178,7 +181,7 @@ export default function BusinessCategories() {
               <article className="flex h-full w-full items-center justify-center focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-300">
                 <div className="absolute sm:-translate-x-[200px] -translate-x-[130px]">
                   <div className="animate-[breath_7s_ease-in-out_3s_infinite_both]">
-                    <div className="flex sm:h-24 sm:w-24 w-20 h-20 items-center justify-center rounded-full bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
+                    <div className="flex w-24 h-24 items-center justify-center rounded-full bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                       <Image
                         className="relative rounded-full"
                         src={"./img/menulog.svg"}
@@ -189,7 +192,7 @@ export default function BusinessCategories() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute sm:translate-x-[200px] sm:translate-y-[0px] translate-y-[120px]">
+                <div className="absolute sm:translate-x-[200px] sm:translate-y-[0px] translate-y-[125px]">
                   <div className="animate-[breath_7s_ease-in-out_3.5s_infinite_both]">
                     <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                       <Image
@@ -202,9 +205,9 @@ export default function BusinessCategories() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute sm:-translate-x-[300px] sm:-translate-y-[110px] translate-x-[90px] -translate-y-[70px]">
+                <div className="absolute sm:-translate-x-[300px] sm:-translate-y-[110px] translate-x-[85px] -translate-y-[80px]">
                   <div className="animate-[breath_6s_ease-in-out_1.5s_infinite_both]">
-                    <div className="flex sm:h-32 sm:w-32 w-24 h-24 items-center justify-center rounded-full bg-white bg-opacity-40 shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-teal-300 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
+                    <div className="flex sm:h-32 sm:w-32 w-[75px] h-[75px] items-center justify-center rounded-full bg-white bg-opacity-40 shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-teal-300 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                       <Image
                         className="relative"
                         src={"./img/good-guys-logo.svg"}
@@ -215,7 +218,7 @@ export default function BusinessCategories() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute sm:-translate-y-[110px] sm:translate-x-[300px] -translate-y-[120px]">
+                <div className="hidden sm:block sm:absolute sm:-translate-y-[110px] sm:translate-x-[300px] -translate-y-[120px]">
                   <div className="animate-[breath_6s_ease-in-out_1.5s_infinite_both]">
                     <div className="flex sm:h-32 sm:w-32 w-24 h-24 items-center justify-center rounded-full bg-white bg-opacity-40 shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-teal-300 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                       <Image
@@ -228,9 +231,9 @@ export default function BusinessCategories() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute sm:translate-x-[300px] translate-x-[90px] translate-y-[70px] sm:translate-y-[110px]">
+                <div className="absolute sm:translate-x-[300px] translate-x-[85px] translate-y-[80px] sm:translate-y-[110px]">
                   <div className="animate-[breath_6s_ease-in-out_2.5s_infinite_both]">
-                    <div className="flex sm:h-28 sm:w-28 w-16 h-16 items-center justify-center rounded-full bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
+                    <div className="flex sm:h-28 sm:w-28 w-[75px] h-[75px] items-center justify-center rounded-full bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                       <Image
                         className="relative"
                         src={"./img/canva.svg"}
@@ -241,9 +244,9 @@ export default function BusinessCategories() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute sm:-translate-x-[300px] sm:translate-y-[110px] -translate-x-[90px] -translate-y-[70px] ">
+                <div className="absolute sm:-translate-x-[300px] sm:translate-y-[110px] -translate-x-[85px] -translate-y-[80px] ">
                   <div className="animate-[breath_6s_ease-in-out_2.5s_infinite_both]">
-                    <div className="flex sm:h-28 sm:w-28 w-16 h-16 items-center justify-center rounded-full bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
+                    <div className="flex sm:h-28 sm:w-28 w-[75px] h-[75px] items-center justify-center rounded-full bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                       <Image
                         className="relative rounded-full"
                         src={"./img/mindroom.jpeg"}
@@ -254,9 +257,9 @@ export default function BusinessCategories() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute sm:-translate-x-[400px] sm:translate-y-[0px] -translate-x-[90px] translate-y-[70px] sm:opacity-80">
+                <div className="absolute sm:-translate-x-[400px] sm:translate-y-[0px] -translate-x-[85px] translate-y-[80px] sm:opacity-80">
                   <div className="animate-[breath_6s_ease-in-out_2s_infinite_both]">
-                    <div className="flex sm:h-[100px] sm:w-[100px] w-16 h-16 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
+                    <div className="flex sm:h-[100px] sm:w-[100px] w-[75px] h-[75px] items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
                       <Image
                         className="relative"
                         src={"./img/uberEats.svg"}
@@ -269,7 +272,7 @@ export default function BusinessCategories() {
                 </div>
                 <div className="absolute sm:translate-x-[400px] translate-x-[130px] opacity-80">
                   <div className="animate-[breath_6s_ease-in-out_2s_infinite_both]">
-                    <div className="flex sm:h-[100px] sm:w-[100px] w-20 h-20 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
+                    <div className="flex sm:h-[100px] sm:w-[100px] w-24 h-24 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
                       <Image
                         className="relative"
                         src={"./img/asos.svg"}
