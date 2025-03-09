@@ -1,4 +1,3 @@
-// filepath: /home/amir/personal/portfolio/src/app/component/ProgressBar.tsx
 "use client";
 
 import React from "react";
