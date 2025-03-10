@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { projectsData } from "../utils/projectsData";
+import { projectsData } from "../../utils/projectsData";
 
 const LandingProjects: React.FC = () => {
   return (
@@ -42,7 +42,7 @@ const LandingProjects: React.FC = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm font-medium text-blue-950 dark:text-blue-400 hover:underline"
+                  className="text-sm font-sans font-medium text-blue-950 dark:text-blue-400 hover:underline"
                 >
                   Visit site &gt;
                 </Link>

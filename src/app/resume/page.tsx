@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "../component/LanguageSwitcher";
+import LanguageSwitcher from "../component/Buttons/LanguageSwitcher";
 import DownloadDropdown from "../component/DownloadDropdown";
 import SecondaryNavbar from "../component/SecondaryNavbar";
 import Footer from "../component/Footer";
@@ -316,9 +316,7 @@ export default function resume() {
                             <p className="text-[15px] text-right ">
                               {experience.duration}
                             </p>
-                            <p className="text-[15px]">
-                              {experience.location}
-                            </p>
+                            <p className="text-[15px]">{experience.location}</p>
                           </div>
                           <p className="flex sm:text-lg text-base sm:gap-x-2 font-medium">
                             <span className="font-light sm:block hidden">

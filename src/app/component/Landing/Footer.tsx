@@ -1,6 +1,6 @@
 "use client";
 
-import ScrollUpButton from "./ScroolUpButton";
+import ScrollUpButton from "../Buttons/ScroolUpButton";
 import Link from "next/link";
 import Image from "next/image";
 

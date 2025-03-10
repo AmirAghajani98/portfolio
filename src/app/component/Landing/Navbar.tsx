@@ -4,8 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
-import { ThemeSwitcher } from "./Buttons/ThemeSwitcher";
-import Modal from "./Modal";
+import { ThemeSwitcher } from "../Buttons/ThemeSwitcher";
+import Modal from "../Modal";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,9 +79,10 @@ export default function Navbar() {
 
         <div className="sm:flex hidden sm:w-11/12">
           {[
-            { name: "Home", href: "/" },
+            // { name: "Home", href: "/" },
             { name: "Projects", href: "/projects" },
             { name: "Resume", href: "/resume" },
+            { name: "Services", href: "#Services" },
             { name: "About", href: "#about" },
             { name: "Contact", href: "#contact" },
           ].map((item) => (
@@ -137,9 +138,10 @@ export default function Navbar() {
           } sm:hidden absolute top-10 left-0 p-2 border-none dark:bg-slate-700 dark:bg-opacity-70 bg-slate-500 bg-opacity-80 rounded-b-lg w-44 z-10 shadow-md shadow-slate-700 transition-opacity duration-300`}
         >
           {[
-            { name: "Home", href: "/" },
+            // { name: "Home", href: "/" },
             { name: "Projects", href: "/projects" },
             { name: "Resume", href: "/resume" },
+            { name: "Services", href: "#Services" },
             { name: "About", href: "#about" },
             { name: "Contact", href: "#contact" },
           ].map((item) => (

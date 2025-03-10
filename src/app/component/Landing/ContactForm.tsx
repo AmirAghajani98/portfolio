@@ -3,8 +3,8 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
-import LoadingButton from "./LoadingButton";
-import { emailConfig } from "../../../mail-config";
+import LoadingButton from "../Buttons/LoadingButton";
+import { emailConfig } from "../../../../mail-config";
 
 const LandingContact = () => {
   const formRef = useRef<HTMLFormElement>(null);

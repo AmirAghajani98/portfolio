@@ -1,6 +1,6 @@
 "use client";
 
-import ScrollUpButton from "./ScroolUpButton";
+import ScrollUpButton from "./Buttons/ScroolUpButton";
 
 export default function Footer() {
   return (
