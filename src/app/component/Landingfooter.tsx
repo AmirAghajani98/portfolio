@@ -116,12 +116,10 @@ export default function LandingFooter() {
           <div className="mt-14">
             <li className="flex items-center justify-center text-center my-2">
               <a
-                href="mailto:amir.aghajani1377@gmail.com"
+                href="mailto:hi@aghatech.ir"
                 className="dark:text-blue-600 text-blue-950 sm:text-base "
               >
-                <strong className="font-sans text-xl">
-                  amir.aghajani1377@gmail.com
-                </strong>
+                <strong className="font-sans text-xl">hi@aghatech.ir</strong>
               </a>
             </li>
             <li className="flex items-center justify-center text-center my-2">
