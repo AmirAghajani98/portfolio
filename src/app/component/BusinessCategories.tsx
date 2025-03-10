@@ -13,7 +13,7 @@ export default function BusinessCategories() {
           <div className="relative flex h-[324px] w-auto items-center justify-center">
             <div className="absolute z-10">
               <svg
-                className="fill-blue-500 mx-auto"
+                className="fill-blue-500 mx-auto sm:block hidden"
                 xmlns="http://www.w3.org/2000/svg"
                 width={250}
                 height={60}
