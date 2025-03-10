@@ -4,9 +4,9 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
-import { ThemeSwitcher } from "./ThemeSwitcher";
+import { ThemeSwitcher } from "./Buttons/ThemeSwitcher";
 import Modal from "./Modal";
-import BackButton from "./BackButton";
+import BackButton from "./Buttons/BackButton";
 
 export default function SecondaryNavbar() {
   const [isOpen, setIsOpen] = useState(false);

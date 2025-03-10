@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Cobe from "./cobe";
+import Cobe from "./Cobe";
 
 export default function HeroLanding() {
   return (

@@ -7,8 +7,8 @@ import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Toaster } from "react-hot-toast";
 import { Suspense } from "react";
-import ProviderTheme from "./component/ProviderTheme";
-import ClientWrapper from "./component/ClientWrapper";
+import ProviderTheme from "./utils/ProviderTheme";
+import ClientWrapper from "./utils/ClientWrapper";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aghatech.ir/"),

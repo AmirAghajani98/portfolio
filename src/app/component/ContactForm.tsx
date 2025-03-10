@@ -10,7 +10,7 @@ import {
   PhoneArrowDownLeftIcon,
 } from "@heroicons/react/24/outline";
 import { contactConfig } from "../../../mail-config";
-import LoadingButton from "./LoadingButton";
+import LoadingButton from "./Buttons/LoadingButton";
 
 const ContactForm = () => {
   const formRef = useRef<HTMLFormElement>(null);

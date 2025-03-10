@@ -1,13 +1,12 @@
 "use client";
 
-import BusinessCategories from "../component/BusinessCategories";
-import FeaturesPlanet from "../component/FeaturesPlanet";
-import Footer from "../component/Footer";
-import HeroLanding from "../component/HeroLanding";
-import LandingContact from "../component/LandingContact";
-import LandingFooter from "../component/Landingfooter";
-import LandingProjects from "../component/LandingProjects";
-import Navbar from "../component/Navbar";
+import BusinessCategories from "../component/Landing/BusinessCategories";
+import FeaturesPlanet from "../component/Landing/FeaturesPlanet";
+import HeroLanding from "../component/Landing/HeroSection";
+import LandingContact from "../component/Landing/ContactForm";
+import LandingFooter from "../component/Landing/Footer";
+import LandingProjects from "../component/Landing/Projects";
+import Navbar from "../component/Landing/Navbar";
 
 export default function Home() {
   return (
