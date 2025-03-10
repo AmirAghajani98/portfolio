@@ -6,20 +6,7 @@ import Image from "next/image";
 
 export default function LandingFooter() {
   return (
-    <footer className="footer sm:footer-horizontal w-full footer-center text-base-content rounded pt-10 pb-6 dark:bg-slate-800 dark:bg-opacity-60 bg-slate-500">
-      <div
-        className="pointer-events-none sm:w-[70%] translate-y-[358px] sm:translate-y-4 absolute sm:left-1/2 sm:-translate-x-1/2 transform font-serif"
-        aria-hidden="true"
-      >
-        <Image
-          className="opacity-10 dark:opacity-5 rotate-180 mx-auto w-full sm:h-[380px]"
-          src={"./img/strips2.png"}
-          height={100}
-          width={100}
-          alt="Stripes"
-          priority
-        />
-      </div>
+    <footer className="opacity-100 z-50 sm:footer-horizontal w-full footer-center text-base-content rounded pt-10 pb-6 dark:bg-slate-800 dark:bg-opacity-60 bg-slate-500">
       <div className="sm:flex justify-around w-full items-center">
         <div className="sm:col-span-1 sm:w-1/3">
           <nav className="hidden sm:grid grid-flow-col sm:gap-8 gap-4 border-b dark:border-slate-600 pb-4 border-slate-200 font-mono font-semibold sm:text-lg text-slate-200">
@@ -192,15 +179,25 @@ export default function LandingFooter() {
         </nav>
       </div>
 
-      <aside className="">
+      <aside className="mt-10 sm:mt-6">
         <div className="absolute right-0 text-right items-center">
           <ScrollUpButton />
         </div>
-        <p className="font-sans text-slate-200 w-9/12">
+        <p className="font-sans text-slate-200 sm:w-full w-10/12">
           Copyright © {new Date().getFullYear()} - All right reserved by Amir
           Aghajani
         </p>
       </aside>
+      <div className="sm:w-[70%] -translate-y-[90%] sm:-translate-y-[95%] sm:translate-x-[20%] absolute font-serif">
+        <Image
+          className="opacity-10 dark:opacity-5 rotate-180 mx-auto w-full sm:h-[380px]"
+          src={"./img/strips2.png"}
+          height={100}
+          width={100}
+          alt="Stripes"
+          priority
+        />
+      </div>
     </footer>
   );
 }
