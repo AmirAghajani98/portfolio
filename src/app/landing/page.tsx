@@ -8,7 +8,7 @@ import LandingFooter from "../component/Landing/Footer";
 import LandingProjects from "../component/Landing/Projects";
 import Navbar from "../component/Landing/Navbar";
 
-export default function Home() {
+export default function Landing() {
   return (
     <>
       <Navbar />
