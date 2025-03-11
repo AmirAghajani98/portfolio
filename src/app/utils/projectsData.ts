@@ -26,7 +26,16 @@ export const projectsData = [
      Known for offering high-quality and diverse products from trusted local, it has become a popular 
      destination for fashion in Iran. With a user-friendly design, secure payment options, and fast delivery,`,
     link: "https://rojhani.me/",
-    alt: "Global Weather App",
+    alt: "rojhani",
+  },
+  {
+    title: "Light karjoo Plus System",
+    image: "./img/lite.png",
+    description: `Recruitment and Recruitment Management Made Easy
+                  Register job advertisements and manage information on 
+                  cooperation requests and submitted resumes in just 3 easy steps`,
+    link: "https://lite.karjoo.plus/",
+    alt: "lite",
   },
   {
     title: "Exhibition Web App",
@@ -39,7 +48,6 @@ export const projectsData = [
     link: "https://jobs.karjoo.plus/qazvin",
     alt: "Exhibition Event Web App",
   },
-
   {
     title: "Resume Template",
     image: "./img/resume.png",
@@ -49,15 +57,5 @@ export const projectsData = [
                   personalize your resume.`,
     link: "./img/resume.png",
     alt: "Resume Template",
-  },
-  {
-    title: "Global Weather App",
-    image: "./img/weatherapp.png",
-    description: `Weather app uses a REST API to provide real-time updates and
-                  forecasts for each city. It offers current conditions, hourly
-                  forecasts, and severe weather alerts, all in a user-friendly
-                  interface.`,
-    link: "./img/weatherapp.png",
-    alt: "Global Weather App",
   },
 ];
