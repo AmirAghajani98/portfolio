@@ -1,14 +1,33 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import BusinessCategories from "../component/Landing/BusinessCategories";
 import FeaturesPlanet from "../component/Landing/FeaturesPlanet";
 import HeroLanding from "../component/Landing/HeroSection";
-import LandingContact from "../component/Landing/ContactForm";
-import LandingFooter from "../component/Landing/Footer";
+import ContactForm from "../component/Landing/ContactForm";
+import Footer from "../component/Landing/Footer";
 import LandingProjects from "../component/Landing/Projects";
 import Navbar from "../component/Landing/Navbar";
 
 export default function Landing() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="fixed w-full inset-0 flex justify-center items-center bg-slate-700 bg-opacity-60 z-50">
+        <span className="sm:w-20 loading loading-bars loading-lg"></span>
+      </div>
+    );
+  }
+
   return (
     <>
       <Navbar />
@@ -17,9 +36,9 @@ export default function Landing() {
         <BusinessCategories />
         <FeaturesPlanet />
         <LandingProjects />
-        <LandingContact />
+        <ContactForm />
       </main>
-      <LandingFooter />
+      <Footer />
     </>
   );
 }
