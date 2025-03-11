@@ -8,6 +8,8 @@ import ContactForm from "../component/Landing/ContactForm";
 import Footer from "../component/Landing/Footer";
 import LandingProjects from "../component/Landing/Projects";
 import Navbar from "../component/Landing/Navbar";
+import Testimonial from "../component/Landing/Testimonial";
+import FAQ from "../component/Landing/Faq";
 
 export default function Landing() {
   const [loading, setLoading] = useState(true);
@@ -36,7 +38,9 @@ export default function Landing() {
         <BusinessCategories />
         <FeaturesPlanet />
         <LandingProjects />
+        <Testimonial />
         <ContactForm />
+        <FAQ />
       </main>
       <Footer />
     </>

@@ -19,7 +19,7 @@ const LandingProjects: React.FC = () => {
           projectsData.slice(0, 3).map((project, index) => (
             <div
               key={index}
-              className="my-8 sm:my-6 sm:flex sm:flex-col sm:w-full z-50 p-4 sm:pt-8 sm:pb-5 h-auto dark:text-slate-100 text-[#121a23] dark:bg-slate-800 bg-slate-400 dark:bg-opacity-40 bg-opacity-50 hover:shadow dark:hover:shadow-slate-800 hover:shadow-slate-400 dark:hover:bg-opacity-60 hover:bg-opacity-50 rounded-xl shadow transition-all duration-300 ease-in-out"
+              className="my-8 sm:my-6 sm:flex sm:flex-col sm:w-full z-50 p-4 sm:pt-8 sm:pb-5 h-auto dark:text-slate-100 text-[#121a23] dark:bg-slate-800 bg-slate-400 dark:bg-opacity-30 bg-opacity-40 rounded-xl shadow-lg dark:shadow-slate-900 transition-all duration-300 ease-in-out"
             >
               <div className="flex justify-center items-center mb-4">
                 <Image
