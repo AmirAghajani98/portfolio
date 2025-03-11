@@ -4,24 +4,21 @@ import ScrollUpButton from "../Buttons/ScroolUpButton";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function LandingFooter() {
+export default function Footer() {
   return (
-    <footer className="opacity-100 z-50 sm:footer-horizontal w-full footer-center text-base-content rounded pt-10 pb-6 dark:bg-slate-800 dark:bg-opacity-60 bg-slate-500">
-      <div className="sm:flex justify-around w-full items-center">
-        <div className="sm:col-span-1 sm:w-1/3">
+    <footer className="sm:footer-horizontal w-full footer-center text-base-content rounded pt-10 pb-6 dark:bg-slate-800 dark:bg-opacity-60 bg-slate-500 relative z-10">
+      <div className="sm:flex justify-around w-full items-center z-50">
+        <div className="sm:w-1/3">
           <nav className="hidden sm:grid grid-flow-col sm:gap-8 gap-4 border-b dark:border-slate-600 pb-4 border-slate-200 font-mono font-semibold sm:text-lg text-slate-200">
-            <a className="link link-hover" href="#about">
-              About-me
-            </a>
-            <a className="link link-hover" href="#contact">
+            <Link href="#contact" className="link link-hover">
               Contact
-            </a>
-            <a className="link link-hover" href="/projects">
+            </Link>
+            <Link href="/projects" className="link link-hover">
               Projects
-            </a>
-            <a className="link link-hover" href="/resume">
+            </Link>
+            <Link href="/resume" className="link link-hover">
               Resume
-            </a>
+            </Link>
           </nav>
           <nav className="sm:block hidden">
             <div className="mt-14">
@@ -181,12 +178,12 @@ export default function LandingFooter() {
         <div className="absolute right-0 text-right items-center">
           <ScrollUpButton />
         </div>
-        <p className="font-sans text-slate-200 sm:w-full w-10/12">
+        <p className="font-sans text-slate-200 sm:w-full w-9/12">
           Copyright © {new Date().getFullYear()} - All right reserved by Amir
           Aghajani
         </p>
       </aside>
-      <div className="sm:w-[70%] -translate-y-[90%] sm:-translate-y-[95%] sm:translate-x-[20%] absolute font-serif">
+      <div className="sm:w-[70%] z-[-1] -translate-y-[90%] sm:-translate-y-[95%] sm:translate-x-[20%] absolute font-serif">
         <Image
           className="opacity-10 dark:opacity-5 rotate-180 mx-auto w-full sm:h-[380px]"
           src={"./img/strips2.png"}
