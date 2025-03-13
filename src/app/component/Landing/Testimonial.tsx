@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay, Pagination } from "swiper/modules";
+// import { Autoplay, Pagination } from "swiper/modules";
 
 export default function Testimonial() {
   const testimonials = [
@@ -21,35 +21,35 @@ export default function Testimonial() {
       image: "/img/aaa.jpg",
       rating: 5,
     },
-    {
-      id: 3,
-      name: "Alex Johnson",
-      comment: "طراحی سایت عالی و تحویل به موقع. ممنون!",
-      image: "/img/aaa.jpg",
-      rating: 5,
-    },
-    {
-      id: 4,
-      name: "Sarah Lee",
-      comment: "سئو سایت‌مان را به بهترین شکل انجام دادند.",
-      image: "/img/aaa.jpg",
-      rating: 5,
-    },
+    // {
+    //   id: 3,
+    //   name: "Alex Johnson",
+    //   comment: "طراحی سایت عالی و تحویل به موقع. ممنون!",
+    //   image: "/img/aaa.jpg",
+    //   rating: 5,
+    // },
+    // {
+    //   id: 4,
+    //   name: "Sarah Lee",
+    //   comment: "سئو سایت‌مان را به بهترین شکل انجام دادند.",
+    //   image: "/img/aaa.jpg",
+    //   rating: 5,
+    // },
   ];
 
   return (
     <div className="container mx-auto px-4 py-12 text-center justify-center sm:mb-28">
       <h2 className="sm:text-4xl text-2xl sm:w-[50%] mx-auto sm:pb-10 pb-4 sm:mb-20 mb-10 font-bold border-b border-slate-500 dark:border-slate-600 dark:text-gray-200 text-gray-950 md:text-4xl font-sans">
-        Testimonial
+        Why Clients Trust Me
       </h2>
 
       <Swiper
         slidesPerView={1}
-        spaceBetween={90}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: true,
-        }}
+        spaceBetween={200}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: true,
+        // }}
         loop={true}
         pagination={{
           clickable: true,
@@ -60,11 +60,11 @@ export default function Testimonial() {
             slidesPerView: 1,
           },
           1024: {
-            slidesPerView: 3,
+            slidesPerView: 2,
           },
         }}
-        modules={[Autoplay, Pagination]}
-        className="mySwiper"
+        // modules={[Autoplay, Pagination]}
+        className="mySwiper sm:pb-14 pb-2 mx-auto"
         style={{
           paddingBottom: "60px",
           margin: "auto",
@@ -72,8 +72,8 @@ export default function Testimonial() {
       >
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>
-            <div className="bg-slate-400 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-30 p-6 rounded-xl shadow-lg dark:shadow-slate-900 text-center">
-              <div className="flex justify-around w-full">
+            <div className="bg-slate-400 dark:bg-slate-800 sm:h-72 bg-opacity-40 dark:bg-opacity-30 p-6 rounded-xl shadow-lg dark:shadow-slate-900 text-center">
+              <div className="flex justify-around w-full ">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}

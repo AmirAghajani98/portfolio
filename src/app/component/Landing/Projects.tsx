@@ -9,10 +9,10 @@ const LandingProjects: React.FC = () => {
   return (
     <main
       id="projects"
-      className="sm:min-h-screen sm:w-full mx-auto sm:py-10 pb-10 pt-24 opacity-95 bg-slate-400 projectback justify-center flex flex-col sm:my-28"
+      className="sm:min-h-screen sm:w-full mx-auto sm:py-10 pb-10 opacity-95 bg-slate-400 projectback justify-center flex flex-col sm:my-28"
     >
       <h2 className="sm:text-4xl text-2xl text-center mx-auto sm:my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 sm:w-[50%]">
-        Ideas Turned into Reality
+        Some Featured Clients{" "}
       </h2>
       <div className="w-[85%] sm:w-10/12 sm:my-20 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-x-20 gap-y-14">
         {projectsData &&

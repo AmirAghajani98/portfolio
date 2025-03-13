@@ -47,7 +47,6 @@ const LandingContact = () => {
             help? Then reach out; I would love to hear about your project and
             help.
           </p>
-
           <div className="sm:w-3/6 mt-10 sm:mt-8 m-auto">
             <form
               ref={formRef}

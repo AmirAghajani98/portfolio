@@ -43,7 +43,7 @@ export default function Cobe() {
 
   return (
     <div>
-      <div className="sm:w-full justify-center flex sm:translate-y-0 translate-y-[250px]">
+      <div className="sm:w-full justify-center flex sm:translate-y-0 -translate-y-[332px]">
         <canvas
           ref={canvasRef}
           style={{
