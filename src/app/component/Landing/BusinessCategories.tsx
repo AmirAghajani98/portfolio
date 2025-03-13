@@ -1,17 +1,18 @@
 "use client";
 
 import Image from "next/image";
+import Cobe from "./Cobe";
 
 export default function BusinessCategories() {
   return (
-    <section>
-      <div className="mx-auto px-4 sm:px-6 w-full sm:absolute left-1/2 sm:-bottom-[530px] sm:-translate-x-1/2 sm:transform font-serif">
-        <h2 className="hidden sm:block font-sans sm:text-4xl text-2xl sm:w-[50%] mx-auto pb-10 font-bold border-b border-slate-500 dark:border-slate-600 sm:mb-52 text-center text-slate-950 dark:text-slate-200">
+    <section className="">
+      <div className="mx-auto px-4 sm:px-6 w-full sm:z-50 sm:absolute left-1/2 sm:-translate-x-1/2 sm:transform font-serif ">
+        <h2 className="font-sans sm:text-4xl text-2xl sm:w-[50%] mx-auto sm:pb-10 pb-4 font-bold border-b border-slate-500 dark:border-slate-600 sm:mb-52 text-center text-slate-950 dark:text-slate-200">
           Top Brands Built Their Legacy Online
         </h2>
-        <div className="pb-12 md:pb-20">
-          <div className="relative flex h-[324px] w-auto items-center justify-center">
-            <div className="absolute z-10">
+        <div className="pb-12 md:pb-32">
+          <div className="relative flex sm:h-[300px] h-[400px] w-auto items-center justify-center">
+            <div className="absolute sm:z-10">
               <svg
                 className="fill-blue-500 mx-auto sm:block hidden"
                 xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +155,6 @@ export default function BusinessCategories() {
                 </defs>
               </svg>
             </div>
-
             <div className="absolute inset-x-0 top-0 -z-10 h-1px bg-linear-to-r dark:from-transparent dark:via-gray-200 to-transparent mix-blend-multiply"></div>
             <div className="absolute inset-x-0 bottom-0 -z-10 h-1px bg-linear-to-r dark:from-transparent dark:via-gray-200 to-transparent mix-blend-multiply"></div>
             <div className="absolute inset-x-[200px] top-1/2 -z-10 h-px bg-linear-to-r from-transparent dark:via-blue-500/60 to-transparent mix-blend-multiply"></div>
@@ -287,6 +287,9 @@ export default function BusinessCategories() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="w-full flex justify-center sm:mt-20 sm:-z-10">
+        <Cobe />
       </div>
     </section>
   );

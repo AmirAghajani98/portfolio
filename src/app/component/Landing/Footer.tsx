@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="sm:footer-horizontal w-full footer-center text-base-content rounded pt-10 pb-6 dark:bg-slate-800 dark:bg-opacity-60 bg-slate-500 relative z-10">
       <div className="sm:flex justify-around w-full items-center z-50">
         <div className="sm:w-1/3">
-          <nav className="hidden sm:grid grid-flow-col sm:gap-8 gap-4 border-b dark:border-slate-600 pb-4 border-slate-200 font-mono font-semibold sm:text-lg text-slate-200">
+          {/* <nav className="hidden sm:grid grid-flow-col sm:gap-8 gap-4 border-b dark:border-slate-600 pb-4 border-slate-200 font-mono font-semibold sm:text-lg text-slate-200">
             <Link href="#contact" className="link link-hover">
               Contact
             </Link>
@@ -19,9 +19,16 @@ export default function Footer() {
             <Link href="/resume" className="link link-hover">
               Resume
             </Link>
-          </nav>
-          <nav className="sm:block hidden">
-            <div className="mt-14">
+          </nav> */}
+          <Image
+            className="sm:w-56 w-80 mx-auto sm:-my-14 -my-20"
+            src={"./img/aghatech.png"}
+            width={100}
+            height={1}
+            alt={""}
+          />
+          <nav className="sm:block hidden -mt-16">
+            <div className="">
               <li className="flex items-center justify-center text-center my-2">
                 <a
                   href="mailto:amir.aghajani1377@gmail.com"
@@ -94,19 +101,18 @@ export default function Footer() {
             className="float-right sm:w-40 sm:h-40 w-28 h-28 rounded-full sm:ml-4 mt-2"
           />
           <h3 className="text-left font-mono text-xl font-bold mb-2 dark:text-slate-200 text-slate-900">
-            About me
+            About Me
           </h3>
           <p className="text-base font-mono dark:text-slate-200 text-slate-900 text-left">
-            I’m amir aghajani a web developer with 4+ years of experience,
+            I’m Amir Aghajani a web developer with 4+ years of experience,
             currently based in Iran. As a training manager and senior developer,
-            I hold a bachelor’s degree from qazvin azad University. My journey
-            includes content creation and a passion for automotive mechanics,
-            which have sharpened my problem-solving and analytical skills.
-            Proficient in multiple programming languages and frameworks, I also
-            enjoy mentoring and sharing knowledge with others. With strong soft
-            skills like teamwork, leadership, and creative thinking, I thrive in
-            collaborative environments and strive to create innovative
-            solutions.
+            My journey includes content creation and a passion for automotive
+            mechanics, which have sharpened my problem-solving and analytical
+            skills. Proficient in multiple programming languages and frameworks,
+            I also enjoy mentoring and sharing knowledge with others. With
+            strong soft skills like teamwork, leadership, and creative thinking,
+            I thrive in collaborative environments and strive to create
+            innovative solutions.
           </p>
         </div>
         <nav className="block sm:hidden">

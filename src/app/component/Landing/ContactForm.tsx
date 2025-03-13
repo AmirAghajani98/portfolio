@@ -35,28 +35,27 @@ const LandingContact = () => {
   return (
     <main
       id="contact"
-      className="sm:w-full mx-auto opacity-95 bg-slate-400 projectback justify-center"
+      className="sm:w-full mx-auto opacity-95 bg-slate-400 projectback"
     >
-      <div className="text-center gap-16 my-10 p-4 mx-auto sm:w-10/12 w-11/12 font-[sans-serif] rounded-md">
+      <div className="text-center gap-16 my-10 sm:mt-20 p-4 mx-auto sm:w-full w-11/12 font-[sans-serif] rounded-md">
         <div className="w-full">
-          <h2 className="sm:text-4xl text-2xl sm:w-[50%] text-center mx-auto sm:my-4 pb-4 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600">
+          <h2 className="sm:text-4xl text-2xl sm:w-[50%] text-center mx-auto sm:my-4 pb-4 sm:pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600">
             Get in Touch
           </h2>
-          <p className="text-lg dark:text-gray-400 text-gray-900 sm:mt-2 mb-4 mt-6 sm:w-2/3 text-center mx-auto">
+          <p className="text-lg dark:text-gray-400 text-gray-900 sm:mt-2 mb-4 mt-6 sm:w-1/2 text-center mx-auto">
             Do you have a personal or business idea or brand to develop and need
             help? Then reach out; I would love to hear about your project and
             help.
           </p>
-
-          <div className="sm:w-3/5 mt-10 sm:mt-8 mx-auto">
+          <div className="sm:w-3/6 mt-10 sm:mt-8 m-auto">
             <form
               ref={formRef}
               onSubmit={handleSubmit}
-              className="flex flex-col justify-start text-left"
+              className="flex text-left flex-col justify-center mx-auto"
             >
               <label
                 htmlFor="Name"
-                className="font-mono dark:text-slate-200 text-slate-950"
+                className="sm:w-full font-mono dark:text-slate-200 text-slate-950"
               >
                 Name
               </label>
@@ -66,12 +65,12 @@ const LandingContact = () => {
                 name="name"
                 placeholder="Your name"
                 required
-                className="sm:w-11/12 p-2 border rounded dark:text-gray-200 text-gray-900 bg-slate-200 dark:bg-slate-800"
+                className="sm:w-full p-2 border rounded dark:text-gray-200 text-gray-900 bg-slate-200 dark:bg-slate-800"
               />
               <br />
               <label
                 htmlFor="Mail"
-                className="font-mono dark:text-slate-200 text-slate-950"
+                className=" sm:w-full font-mono dark:text-slate-200 text-slate-950"
               >
                 Mail
               </label>
@@ -81,12 +80,12 @@ const LandingContact = () => {
                 name="to_email"
                 placeholder="example@gmail.com"
                 required
-                className="sm:w-11/12 p-2 border rounded dark:text-gray-200 text-gray-900 bg-slate-200 dark:bg-slate-800"
+                className="sm:w-full p-2 border rounded dark:text-gray-200 text-gray-900 bg-slate-200 dark:bg-slate-800"
               />
               <br />
               <label
                 htmlFor="Business"
-                className="font-mono dark:text-slate-200 text-slate-950"
+                className="sm:w-full font-mono dark:text-slate-200 text-slate-950"
               >
                 Business
               </label>
@@ -96,12 +95,12 @@ const LandingContact = () => {
                 name="business"
                 placeholder="Your business"
                 required
-                className="sm:w-11/12 p-2 border rounded dark:text-gray-200 text-gray-900 bg-slate-200 dark:bg-slate-800"
+                className="sm:w-full p-2 border rounded dark:text-gray-200 text-gray-900 bg-slate-200 dark:bg-slate-800"
               />
               <br />
               <label
                 htmlFor="message"
-                className="font-mono dark:text-slate-200 text-slate-950"
+                className="sm:w-full font-mono dark:text-slate-200 text-slate-950"
               >
                 Message
               </label>
@@ -111,9 +110,9 @@ const LandingContact = () => {
                 placeholder="your message..."
                 rows={5}
                 required
-                className="sm:w-11/12 p-2 border rounded dark:text-gray-200 text-gray-900 bg-slate-200 dark:bg-slate-800"
+                className="sm:w-full p-2 border rounded dark:text-gray-200 text-gray-900 bg-slate-200 dark:bg-slate-800"
               />
-              <div className="sm:w-11/12 my-6">
+              <div className="sm:w-full my-6">
                 <button
                   type="submit"
                   disabled={isSubmitting}

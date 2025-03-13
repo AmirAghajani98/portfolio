@@ -8,6 +8,8 @@ import ContactForm from "../component/Landing/ContactForm";
 import Footer from "../component/Landing/Footer";
 import LandingProjects from "../component/Landing/Projects";
 import Navbar from "../component/Landing/Navbar";
+import Testimonial from "../component/Landing/Testimonial";
+import FAQ from "../component/Landing/Faq";
 
 export default function Landing() {
   const [loading, setLoading] = useState(true);
@@ -33,10 +35,12 @@ export default function Landing() {
       <Navbar />
       <main className="sm:min-h-screen sm:w-full mx-auto sm:py-0 pb-10 opacity-95 bg-slate-400 projectback justify-center flex flex-col">
         <HeroLanding />
-        <BusinessCategories />
         <FeaturesPlanet />
+        <BusinessCategories />
         <LandingProjects />
+        <Testimonial />
         <ContactForm />
+        <FAQ />
       </main>
       <Footer />
     </>
