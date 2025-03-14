@@ -78,7 +78,7 @@ export default function HeroLanding() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full mt-20 sm:pt-20">
           <div className="sm:flex justify-between items-center w-full">
             <div className="text-center md:text-left sm:w-1/2 mt-10">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-300 mb-6 font-mono">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-[50px] font-bold text-gray-900 dark:text-gray-300 mb-6 font-mono">
                 Hi, I’m
                 <br />
                 <span className="text-blue-900 dark:text-blue-700">

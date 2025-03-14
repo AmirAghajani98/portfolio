@@ -20,22 +20,25 @@ export default function Footer() {
               Resume
             </Link>
           </nav> */}
-          <Image
-            className="sm:w-56 w-80 mx-auto sm:-my-14 -my-20"
-            src={"./img/aghatech.png"}
-            width={100}
-            height={1}
-            alt={""}
-          />
+          <a href="/">
+            {" "}
+            <Image
+              className="sm:w-56 w-80 mx-auto sm:-my-14 -my-20"
+              src={"./img/aghatech.png"}
+              width={100}
+              height={1}
+              alt={""}
+            />
+          </a>
           <nav className="sm:block hidden -mt-16">
             <div className="">
               <li className="flex items-center justify-center text-center my-2">
                 <a
-                  href="mailto:amir.aghajani1377@gmail.com"
-                  className="dark:text-blue-600 text-blue-950 sm:text-base "
+                  href="mailto:hi@aghatech.ir"
+                  className="dark:text-blue-600 text-blue-950 sm:text-xl "
                 >
-                  <strong className="font-sans text-xl">
-                    amir.aghajani1377@gmail.com
+                  <strong className="font-sans text-2xl">
+                    hi@aghatech.ir{" "}
                   </strong>
                 </a>
               </li>

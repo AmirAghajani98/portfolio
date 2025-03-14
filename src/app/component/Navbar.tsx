@@ -59,7 +59,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`z-50 sm:py-0 py-1w-full shadow-sm shadow-slate-600 dark:shadow-slate-600 transition-transform transform duration-200 ${
+      className={`z-50 sm:py-0 py-1 w-full shadow-sm shadow-slate-600 dark:shadow-slate-600 transition-transform transform duration-200 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       } sticky top-0 dark:bg-opacity-80 bg-opacity-80 dark:bg-slate-800 bg-slate-400`}
     >
