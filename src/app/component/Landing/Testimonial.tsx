@@ -18,7 +18,7 @@ export default function Testimonial() {
       name: "masoud rojhani",
       comment:
         "Working with Amir was a professional and quality collaboration experience for me. Timely delivery and accuracy in work execution, as well as commitment in delivering the work, were important features of working with Amir for me.",
-      image: "/img/aaa.jpg",
+      image: "/img/masoud.png",
       rating: 5,
     },
     // {
