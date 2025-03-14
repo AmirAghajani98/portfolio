@@ -1,11 +1,20 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { ReactTyped } from "react-typed";
 import Image from "next/image";
 import Link from "next/link";
+import LoadingButton from "../component/Buttons/LoadingButton";
 
 const Intro: React.FC = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleClick = () => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 0);
+  };
   return (
     <section>
       <div
@@ -52,11 +61,12 @@ const Intro: React.FC = () => {
             <div className="absolute transitiona-all duration-1000 dark:opacity-70 -inset-px dark:bg-gradient-to-r dark:from-[#44BCFF] dark:via-[#FF44EC] dark:to-[#FF675E] bg-gradient-to-r from-slate-900 via-blue-900 to-amber-900 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
             <Link
               href={"/landing"}
+              onClick={handleClick}
               title="Get quote now"
               className="relative inline-flex font-sans items-center justify-center px-8 py-4 text-lg font-bold dark:text-white text-slate-950 transition-all duration-200 dark:bg-slate-800 bg-gray-400 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
               role="button"
             >
-              Let’s Create Something Great!
+              {isLoading ? <LoadingButton /> : " Let’s Create Something Great!"}
             </Link>
           </div>
           <div className="mt-36 sm:mt-24 dark:text-slate-100 text-[#121a23]">

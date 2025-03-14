@@ -46,12 +46,12 @@ const LandingContact = () => {
           Do you have a personal or business idea or brand to develop and need
           help? Then reach out; I would love to hear about your project and
           help.
-        </p>{" "}
+        </p>
         <div className="w-11/12 flex justify-center items-center">
           <div className="w-[55%]">
             <Image
-              className="relative mx-auto bg-slate-400 bg-opacity-20 rounded-lg"
-              src={"./img/develop1.png"}
+              className="relative mx-auto bg-gradient-to-br bg-transparent rounded-3xl"
+              src={"./img/develop01.png"}
               width={600}
               height={400}
               alt="Logo 01"
