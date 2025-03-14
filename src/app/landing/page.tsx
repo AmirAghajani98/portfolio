@@ -10,6 +10,7 @@ import LandingProjects from "../component/Landing/Projects";
 import Navbar from "../component/Landing/Navbar";
 import Testimonial from "../component/Landing/Testimonial";
 import FAQ from "../component/Landing/Faq";
+import { Pricetable } from "../component/Landing/PriceTable";
 
 export default function Landing() {
   const [loading, setLoading] = useState(true);
@@ -36,9 +37,10 @@ export default function Landing() {
       <main className="sm:min-h-screen sm:w-full mx-auto sm:py-0 pb-10 opacity-95 bg-slate-400 projectback justify-center flex flex-col">
         <HeroLanding />
         <FeaturesPlanet />
-        <BusinessCategories />
         <LandingProjects />
         <Testimonial />
+        <Pricetable />
+        <BusinessCategories />
         <ContactForm />
         <FAQ />
       </main>
