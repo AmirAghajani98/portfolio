@@ -47,7 +47,7 @@ const LandingProjects: React.FC = () => {
       >
         {projectsData.map((project, index) => (
           <SwiperSlide key={index}>
-            <div className="my-8 sm:my-6 sm:flex sm:flex-col sm:w-full w-11/12 mx-auto z-50 p-4 sm:pt-8 sm:pb-5 h-auto dark:text-slate-100 text-[#121a23] dark:bg-slate-800 bg-slate-400 dark:bg-opacity-30 bg-opacity-40 rounded-xl shadow-lg dark:shadow-slate-900 transition-all duration-300 ease-in-out">
+            <div className="my-8 sm:my-6 sm:flex sm:flex-col sm:w-full w-11/12 mx-auto z-50 p-4 sm:pt-8 sm:pb-5 h-full dark:text-slate-100 text-[#121a23] dark:bg-slate-800 bg-slate-400 dark:bg-opacity-30 bg-opacity-40 rounded-xl shadow-lg dark:shadow-slate-900 transition-all duration-300 ease-in-out">
               <div className="flex justify-center items-center mb-4">
                 <Image
                   loading="lazy"
@@ -61,7 +61,7 @@ const LandingProjects: React.FC = () => {
               <h3 className="font-mono mt-3 mb-4 sm:mx-4 text-left font-semibold text-xl dark:text-slate-100 text-[#121a23]">
                 {project.title}
               </h3>
-              <p className="font-sans whitespace-normal sm:mx-4 text-left sm:mb-6 mb-2 text-base leading-relaxed dark:text-gray-400 text-gray-800 sm:line-clamp-5 line-clamp-4">
+              <p className="font-sans sm:overflow-hidden text-ellipsis whitespace-normal h-32 sm:mx-4 text-left sm:mb-6 mb-2 text-base leading-relaxed dark:text-gray-400 text-gray-800 sm:line-clamp-5 line-clamp-4">
                 {project.description}
               </p>
               <div className="text-right flex items-end justify-end">
