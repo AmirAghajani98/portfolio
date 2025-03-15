@@ -40,7 +40,7 @@ export default function HeroLanding() {
                   Vision into a Thriving and Profitable Digital Business!
                 </p>
                 <h2 className="mb-8 sm:mb-0 text-xl text-gray-900 dark:text-gray-300 font-sans font-semibold">
-                  Customize Your Colutions!
+                  Customize Your Solutions!
                 </h2>
                 <div className="relative before:absolute before:inset-0 border-t sm:mt-20 py-2 dark:border-slate-600 ">
                   <div

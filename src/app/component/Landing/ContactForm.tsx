@@ -36,9 +36,9 @@ const LandingContact = () => {
   return (
     <main
       id="contact"
-      className="sm:w-full mx-auto opacity-95 bg-slate-400 projectback mt-20"
+      className="sm:w-full mx-auto opacity-95 bg-slate-400 projectback sm:mt-20 -mt-20"
     >
-      <div className="text-center gap-16 my-10 sm:mt-20 p-4 mx-auto sm:w-full w-11/12 font-[sans-serif] rounded-md">
+      <div className="text-center gap-16 my-10 sm:mt-20 p-4 mx-auto sm:w-full w-[95%] font-[sans-serif] rounded-md">
         <h2 className="sm:text-4xl text-2xl sm:w-[50%] text-center mx-auto sm:my-4 pb-4 sm:pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600">
           Get in Touch
         </h2>
@@ -47,8 +47,8 @@ const LandingContact = () => {
           help? Then reach out; I would love to hear about your project and
           help.
         </p>
-        <div className="w-11/12 flex justify-center items-center">
-          <div className="w-[55%]">
+        <div className="sm:w-11/12 sm:flex justify-center items-center">
+          <div className="sm:w-[55%] sm:block hidden">
             <Image
               className="relative mx-auto bg-gradient-to-br bg-transparent rounded-3xl"
               src={"./img/develop01.png"}
@@ -63,7 +63,7 @@ const LandingContact = () => {
               onSubmit={handleSubmit}
               className="flex text-left flex-col justify-center mx-auto"
             >
-              <div className="w-full flex justify-between">
+              <div className="w-full flex justify-between sm:gap-0 gap-x-4">
                 <div className="flex flex-col">
                   <label
                     htmlFor="Name"

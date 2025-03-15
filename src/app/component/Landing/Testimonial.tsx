@@ -1,7 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/pagination";
-// import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 export default function Testimonial() {
   const testimonials = [
@@ -9,36 +10,38 @@ export default function Testimonial() {
       id: 1,
       name: "Sara",
       comment:
-        "I’ve had an amazing experience working with Amir! He is always online whenever I need help with my website, making it so easy to get things fixed or updated quickly. His commitment to deadlines is great and everything is delivered on time. If you’re looking for a reliable and skilled web designer, I highly recommend him!",
-      image: "/img/sara.jpg",
+        "I’ve had an amazing experience working with Amir. He is always online whenever I need help with my website, making it so easy to get things fixed or updated quickly. His commitment to deadlines is great and everything is delivered on time. If you’re looking for a reliable and skilled web designer, I highly recommend him!",
+      image: "/img/avatar-1.png",
       rating: 5,
     },
     {
       id: 2,
-      name: "masoud rojhani",
+      name: "masoud",
       comment:
         "Working with Amir was a professional and quality collaboration experience for me. Timely delivery and accuracy in work execution, as well as commitment in delivering the work, were important features of working with Amir for me.",
-      image: "/img/masoud.png",
+      image: "/img/avatar-1.png",
       rating: 5,
     },
-    // {
-    //   id: 3,
-    //   name: "Alex Johnson",
-    //   comment: "طراحی سایت عالی و تحویل به موقع. ممنون!",
-    //   image: "/img/aaa.jpg",
-    //   rating: 5,
-    // },
-    // {
-    //   id: 4,
-    //   name: "Sarah Lee",
-    //   comment: "سئو سایت‌مان را به بهترین شکل انجام دادند.",
-    //   image: "/img/aaa.jpg",
-    //   rating: 5,
-    // },
+    {
+      id: 3,
+      name: "Alex",
+      comment:
+        "Amir was exactly who I neededHis website design was completely customized and perfectly aligned with my brand. He paid great attention to detail, and his creative ideas made my website stand out from the competition.Working with Amir was a highly professional and enjoyable experience. He was always responsive and delivered the project on time. ",
+      image: "/img/avatar-1.png",
+      rating: 5,
+    },
+    {
+      id: 4,
+      name: "Daniel",
+      comment:
+        "Amir exceeded my expectationsHis designs were modern, user-friendly, and fully SEO-optimized. He helped me improve my digital marketing strategy, which significantly increased my website traffic.What impressed me the most was Amir’s commitment and excellent support.If you’re looking for a high-quality web specialist, Amir is the best choice!",
+      image: "/img/avatar-1.png",
+      rating: 5,
+    },
   ];
 
   return (
-    <div className="container mx-auto px-4 py-12 text-center justify-center sm:mb-28">
+    <div className="container mx-auto px-4 py-12 text-center justify-center sm:mb-28 my-20">
       <h2 className="sm:text-4xl text-2xl sm:w-[50%] mx-auto sm:pb-10 pb-4 sm:mb-20 mb-10 font-bold border-b border-slate-500 dark:border-slate-600 dark:text-gray-200 text-gray-950 md:text-4xl font-sans">
         Why Clients Trust Me
       </h2>
@@ -46,10 +49,10 @@ export default function Testimonial() {
       <Swiper
         slidesPerView={1}
         spaceBetween={200}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: true,
-        // }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: true,
+        }}
         loop={true}
         pagination={{
           clickable: true,
@@ -60,10 +63,10 @@ export default function Testimonial() {
             slidesPerView: 1,
           },
           1024: {
-            slidesPerView: 2,
+            slidesPerView: 3,
           },
         }}
-        // modules={[Autoplay, Pagination]}
+        modules={[Autoplay, Pagination]}
         className="mySwiper sm:pb-14 pb-2 mx-auto"
         style={{
           paddingBottom: "60px",
@@ -72,13 +75,16 @@ export default function Testimonial() {
       >
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>
-            <div className="bg-slate-400 dark:bg-slate-800 sm:h-72 bg-opacity-40 dark:bg-opacity-30 p-6 rounded-xl shadow-lg dark:shadow-slate-900 text-center">
-              <div className="flex justify-around w-full ">
-                <img
+            <div className="bg-slate-400 dark:bg-slate-800 h-[330px] sm:h-[380px] bg-opacity-40 dark:bg-opacity-30 sm:p-6 p-3 rounded-xl shadow-lg dark:shadow-slate-900 text-center">
+              <div className="flex justify-around w-full">
+                <Image
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-28 h-28 rounded-full mx-auto mb-4"
+                  width={100}
+                  height={100}
+                  className="sm:w-24 sm:h-24 w-20 h-20 rounded-full mx-auto sm:mb-2 dark:border dark:border-slate-500"
                 />
+
                 <div className="flex flex-col justify-center w-3/5">
                   <h3 className="text-xl font-semibold dark:text-white text-slate-900 font-mono text-center">
                     {testimonial.name}
@@ -98,7 +104,7 @@ export default function Testimonial() {
                 </div>
               </div>
 
-              <p className="mt-4 text-gray-900 dark:text-gray-300 font-sans">
+              <p className="mt-4 sm:mt-1 text-gray-900 dark:text-gray-300 font-sans">
                 {testimonial.comment}
               </p>
             </div>
