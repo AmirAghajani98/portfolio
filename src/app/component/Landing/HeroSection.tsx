@@ -40,7 +40,7 @@ export default function HeroLanding() {
                   Vision into a Thriving and Profitable Digital Business!
                 </p>
                 <h2 className="mb-8 sm:mb-0 text-xl text-gray-900 dark:text-gray-300 font-sans font-semibold">
-                  Customize Your Colutions!
+                  Customize Your Solutions!
                 </h2>
                 <div className="relative before:absolute before:inset-0 border-t sm:mt-20 py-2 dark:border-slate-600 ">
                   <div
@@ -56,7 +56,7 @@ export default function HeroLanding() {
                           className="text-lg font-sans mx-auto w-full h-full py-2 px-3 font-semibold dark:hover:bg-opacity-40 hover:bg-opacity-75 dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-400 dark:bg-opacity-20 bg-opacity-80 rounded-lg transition duration-200 border border-transparent bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end animate-gradientBorder"
                         >
                           <span className="relative inline-flex items-center">
-                            Free Consultation{" "}
+                            Free Consultation
                             <span className="ml-1 tracking-normal dark:text-blue-300 text-blue-900 transition-transform group-hover:translate-x-0.5">
                               -&gt;
                             </span>

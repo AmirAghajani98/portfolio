@@ -6,7 +6,7 @@ import Cobe from "./Cobe";
 export default function BusinessCategories() {
   return (
     <section className="">
-      <div className="mx-auto px-4 sm:px-6 w-full sm:z-50 sm:absolute left-1/2 sm:-translate-x-1/2 sm:transform font-serif ">
+      <div className="mx-auto px-4 sm:px-6 w-full sm:z-50 sm:absolute left-1/2 sm:-translate-x-1/2 sm:transform font-serif">
         <h2 className="font-sans sm:text-4xl text-2xl sm:w-[50%] mx-auto sm:pb-10 pb-4 font-bold border-b border-slate-500 dark:border-slate-600 sm:mb-52 text-center text-slate-950 dark:text-slate-200">
           Top Brands Built Their Legacy Online
         </h2>

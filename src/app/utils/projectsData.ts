@@ -20,11 +20,11 @@ export const projectsData = [
     alt: "sara-photography",
   },
   {
-    title: "rojhani web store",
+    title: "Rojhani Web Store",
     image: "./img/rojhani.png",
     description: `The Rojhani website is a reputable online store.
-     Known for offering high-quality and diverse products from trusted local, it has become a popular 
-     destination for fashion in Iran. With a user-friendly design, secure payment options, and fast delivery,`,
+                  Known for offering high-quality and diverse products from trusted local, it has become a popular 
+                  destination for fashion in Iran. With a user-friendly design, secure payment options, and fast delivery,`,
     link: "https://rojhani.me/",
     alt: "rojhani",
   },
@@ -36,6 +36,16 @@ export const projectsData = [
                   cooperation requests and submitted resumes in just 3 easy steps`,
     link: "https://lite.karjoo.plus/",
     alt: "lite",
+  },
+  {
+    title: "Coffeeno Shop",
+    image: "./img/cafino.png",
+    description: `Caffeeno vision has been to redefine the coffee shop 
+                  experience by innovating service delivery and continuously improving
+                  quality standards in the coffee industry.
+                  offering customers an unforgettable journey through the world of coffee.`,
+    link: "https://coffeeno.shop/",
+    alt: "Exhibition Event Web App",
   },
   {
     title: "Exhibition Web App",
