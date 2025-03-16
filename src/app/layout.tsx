@@ -9,6 +9,11 @@ import { Toaster } from "react-hot-toast";
 import { Suspense } from "react";
 import ProviderTheme from "./utils/ProviderTheme";
 import ClientWrapper from "./utils/ClientWrapper";
+import dynamic from "next/dynamic";
+
+const ClarityComponent = dynamic(() => import("./component/Clarity"), {
+  ssr: false,
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aghatech.ir/"),
@@ -87,12 +92,13 @@ export default function RootLayout({
   if (i18n.language !== lang) {
     i18n.changeLanguage(lang);
   }
+
   return (
     <html lang={lang} dir={isRtl ? "rtl" : "ltr"} className="scroll-smooth">
-      <Head>
-        <Script async src="//static.getclicky.com/101478845.js"></Script>
-      </Head>
+      <Head children={undefined}></Head>
       <body className="h-screen">
+        <ClarityComponent />
+        <Script async src="//static.getclicky.com/101478845.js"></Script>
         <Suspense
           fallback={
             <div className="flex justify-center items-center h-full">
