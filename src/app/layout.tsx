@@ -1,17 +1,17 @@
 import "./globals.css";
 import "./i18";
 import i18n from "./i18";
-import Script from "next/script";
-import Head from "next/head";
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Toaster } from "react-hot-toast";
-import { Suspense } from "react";
+import Script from "next/script";
+import Head from "next/head";
+import dynamic from "next/dynamic";
 import ProviderTheme from "./utils/ProviderTheme";
 import ClientWrapper from "./utils/ClientWrapper";
-import dynamic from "next/dynamic";
 
-const ClarityComponent = dynamic(() => import("./component/Clarity"), {
+const ClarityComponent = dynamic(() => import("./utils/Clarity"), {
   ssr: false,
 });
 
