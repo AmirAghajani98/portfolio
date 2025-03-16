@@ -3,13 +3,9 @@ import "./i18";
 import i18n from "./i18";
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Toaster } from "react-hot-toast";
-import Script from "next/script";
-import Head from "next/head";
+import { GoogleTagManager } from "@next/third-parties/google";
 import dynamic from "next/dynamic";
-import ProviderTheme from "./utils/ProviderTheme";
-import ClientWrapper from "./utils/ClientWrapper";
+import ClientLayout from "./utils/ClientLayout";
 
 const ClarityComponent = dynamic(() => import("./utils/Clarity"), {
   ssr: false,
@@ -89,42 +85,28 @@ export default function RootLayout({
   lang: "en" | "fa";
 }) {
   const isRtl = lang === "fa";
-  if (i18n.language !== lang) {
-    i18n.changeLanguage(lang);
-  }
 
   return (
     <html lang={lang} dir={isRtl ? "rtl" : "ltr"} className="scroll-smooth">
-      <Head children={undefined}></Head>
-      <body className="h-screen">
+      <body className="min-h-screen">
+        <GoogleTagManager gtmId="GTM-WVH4VZ6K" />
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WVH4VZ6K"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
         <ClarityComponent />
-        <Script async src="//static.getclicky.com/101478845.js"></Script>
         <Suspense
           fallback={
-            <div className="flex justify-center items-center h-full">
+            <div className="flex items-center justify-center min-h-screen">
               Loading...
             </div>
           }
         >
-          <SpeedInsights />
-          <ClientWrapper lang={lang}>
-            <ProviderTheme>
-              <Toaster
-                position="bottom-center"
-                toastOptions={{
-                  className: "",
-                  duration: 3000,
-                  style: {
-                    fontSize: "18px",
-                    fontFamily: "sans",
-                    minWidth: "300px",
-                    maxWidth: "400px",
-                  },
-                }}
-              />
-              <>{children}</>
-            </ProviderTheme>
-          </ClientWrapper>
+          <ClientLayout lang={lang}>{children}</ClientLayout>
         </Suspense>
       </body>
     </html>

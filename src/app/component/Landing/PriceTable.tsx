@@ -24,7 +24,7 @@ export default function Pricetable() {
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div className="mb-12 ">
           <h2 className="sm:text-4xl text-2xl sm:w-[50%] text-center mx-auto sm:pb-10 pb-4 font-bold border-b border-slate-500 dark:border-slate-600 dark:text-gray-200 text-gray-950 md:text-4xl font-sans">
-            Choose your plan
+            Choose Your Perfect Plan
           </h2>
           {/* <p className="text-gray-500 text-center leading-6 mb-9">
             7 Days free trial. No credit card required.
@@ -96,7 +96,7 @@ export default function Pricetable() {
             </Link>
           </div>
           <div className="flex flex-col mx-auto sm:w-11/12 text-gray-900 dark:text-gray-200 rounded-2xl bg-gray-50 dark:bg-slate-800 py-6 xl:py-6 xl:px-4 transition-all duration-500 hover:bg-gray-100">
-            <div className="uppercase bg-gradient-to-r from-indigo-600 via-violet-800 to-indigo-600 rounded-t-2xl p-3 mx-3 sm:mx-auto text-center text-white font-sans">
+            <div className="uppercase bg-gradient-to-r from-indigo-600 via-violet-800 to-indigo-600 rounded-t-2xl p-3 mx-3 sm:mx-0 text-center text-white font-sans">
               MOST POPULAR
             </div>
             <div className="p-4 xl:py-6 xl:px-8">
