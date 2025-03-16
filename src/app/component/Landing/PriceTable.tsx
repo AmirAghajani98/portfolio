@@ -43,18 +43,20 @@ export default function Pricetable() {
             </label>
           </div> */}
         </div>
-        <div className="space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0 lg:items-center mx-auto w-[90%]">
-          <div className="flex justify-stretch items-stretch flex-col mx-auto w-10/12 text-gray-900 rounded-2xl bg-gray-50 p-6 sm:pb-6 sm:pt-9 sm:px-8 sm:h-[720px] transition-all duration-500 hover:bg-gray-100">
-            <h3 className="font-mono text-2xl font-bold mb-3">
+        <div className="space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0 lg:items-center mx-auto sm:w-[90%]">
+          <div className="flex justify-stretch items-stretch flex-col mx-auto sm:w-10/12 text-gray-900 dark:text-gray-200 rounded-2xl bg-gray-50 dark:bg-slate-800 p-6 sm:pb-6 sm:pt-9 sm:px-8 sm:h-[720px] transition-all duration-500 hover:bg-gray-100">
+            <h3 className="font-mono text-3xl font-bold mb-3 sm:text-left text-center">
               Personal or Small Business Website
             </h3>
             <div className="flex items-center mb-6">
-              <span className="font-manrope mr-2 text-5xl font-medium">
+              <span className="font-manrope mr-2 sm:text-5xl text-[42px] font-medium dark:text-indigo-300">
                 $299 – $650
               </span>
-              <span className="text-lg text-gray-500 font-mono">/ project</span>
+              <span className="text-lg text-gray-500 dark:text-gray-300 font-mono">
+                / project
+              </span>
             </div>
-            <ul className="mb-12 space-y-6 text-left text-lg text-gray-600 font-sans">
+            <ul className="mb-12 space-y-6 text-left text-lg text-gray-600 dark:text-gray-400 font-sans">
               <li className="flex items-center space-x-4">
                 <span>
                   Ideal for: Freelancers, small businesses, startups needing an
@@ -62,27 +64,27 @@ export default function Pricetable() {
                 </span>
               </li>
               <li className="flex items-center space-x-2">
-                <WrenchScrewdriverIcon className="h-6 w-6 text-gray-500" />
+                <WrenchScrewdriverIcon className="h-6 w-6 text-gray-500 dark:text-indigo-500" />
                 <span>WordPress installation & theme setup</span>
               </li>
               <li className="flex items-center space-x-2">
-                <DocumentTextIcon className="h-6 w-6 text-gray-500" />
+                <DocumentTextIcon className="h-6 w-6 text-gray-500 dark:text-indigo-500" />
                 <span>3-5 pages (Home, About, Services,...)</span>
               </li>
               <li className="flex items-center space-x-2">
-                <DevicePhoneMobileIcon className="h-6 w-6 text-gray-500" />
+                <DevicePhoneMobileIcon className="h-6 w-6 text-gray-500 dark:text-indigo-500" />
                 <span>Mobile-responsive design</span>
               </li>
               <li className="flex items-center space-x-2">
-                <ArrowTrendingUpIcon className="h-6 w-6 text-gray-500" />
+                <ArrowTrendingUpIcon className="h-6 w-6 text-gray-500 dark:text-indigo-500" />
                 <span>Basic SEO setup</span>
               </li>
               <li className="flex items-center space-x-2">
-                <EnvelopeIcon className="h-6 w-6 text-gray-500" />
+                <EnvelopeIcon className="h-6 w-6 text-gray-500 dark:text-indigo-500" />
                 <span>Contact form integration</span>
               </li>
               <li className="flex items-center space-x-2">
-                <ClipboardDocumentIcon className="h-6 w-6 text-gray-500" />
+                <ClipboardDocumentIcon className="h-6 w-6 text-gray-500 dark:text-indigo-500" />
                 <span>Blog setup (optional)</span>
               </li>
             </ul>
@@ -93,23 +95,23 @@ export default function Pricetable() {
               Purchase Plan
             </Link>
           </div>
-          <div className="flex flex-col mx-auto w-11/12 text-gray-900 rounded-2xl bg-gray-50 p-6 xl:py-6 xl:px-4 transition-all duration-500 hover:bg-gray-100">
-            <div className="uppercase bg-gradient-to-r from-indigo-600 to-violet-600 rounded-t-2xl p-3 text-center text-white font-sans">
+          <div className="flex flex-col mx-auto sm:w-11/12 text-gray-900 dark:text-gray-200 rounded-2xl bg-gray-50 dark:bg-slate-800 py-6 xl:py-6 xl:px-4 transition-all duration-500 hover:bg-gray-100">
+            <div className="uppercase bg-gradient-to-r from-indigo-600 via-violet-800 to-indigo-600 rounded-t-2xl p-3 mx-3 sm:mx-auto text-center text-white font-sans">
               MOST POPULAR
             </div>
-            <div className="p-6 xl:py-6 xl:px-8">
-              <h3 className="font-mono text-2xl font-bold mb-3">
+            <div className="p-4 xl:py-6 xl:px-8">
+              <h3 className="font-mono text-3xl font-bold mb-3 sm:text-left text-center">
                 Corporate & Medium Business Website
               </h3>
               <div className="flex items-center mb-6">
-                <span className="font-manrope text-5xl font-medium text-indigo-600">
+                <span className="font-manrope text-5xl font-medium text-indigo-600 dark:text-indigo-500">
                   $800 – $1,700
                 </span>
-                <span className="text-lg text-gray-500 font-mono">
+                <span className="sm:text-lg text-gray-500 dark:text-gray-300 font-mono">
                   / project
                 </span>
               </div>
-              <ul className="mb-12 space-y-6 text-left text-lg font-sans">
+              <ul className="mb-12 space-y-6 text-left text-lg font-sans dark:text-gray-300">
                 <li className="flex items-center space-x-4">
                   <span>
                     Ideal for: Growing businesses needing a more advanced
@@ -153,15 +155,19 @@ export default function Pricetable() {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col mx-auto w-10/12 text-gray-900 rounded-2xl bg-gray-50 p-6 xl:py-9 xl:px-8 transition-all duration-500 hover:bg-gray-100">
-            <h3 className="font-mono text-2xl font-bold mb-3">
+          <div className="flex flex-col mx-auto sm:w-10/12 text-gray-900 dark:text-gray-200 rounded-2xl bg-gray-50 dark:bg-slate-800 p-6 xl:py-9 xl:px-8 transition-all duration-500 hover:bg-gray-100">
+            <h3 className="font-mono text-3xl font-bold mb-3 sm:text-left text-center">
               E-Commerce & Large Business Website
             </h3>
             <div className="flex items-center mb-6">
-              <span className="font-manrope text-5xl">$2,500 – $4,000</span>
-              <span className="text-lg text-gray-500 font-mono">/project</span>
+              <span className="font-manrope text-[42px] dark:text-indigo-300 font-medium">
+                $2,500 – $4,000
+              </span>
+              <span className="sm:text-lg text-gray-500 dark:text-gray-300 font-mono">
+                /project
+              </span>
             </div>
-            <ul className="mb-12 space-y-6 text-left text-lg text-gray-600 font-sans">
+            <ul className="mb-12 space-y-6 text-left text-lg text-gray-600 dark:text-gray-400 font-sans">
               <li className="flex items-center space-x-4">
                 <span>
                   Ideal for: Online stores, large businesses, or complex custom
@@ -169,31 +175,31 @@ export default function Pricetable() {
                 </span>
               </li>
               <li className="flex items-center space-x-2">
-                <ShoppingCartIcon className="h-6 w-6 text-gray-500" />
+                <ShoppingCartIcon className="h-6 w-6 text-gray-500 dark:text-indigo-500" />
                 <span>WooCommerce setup & product listing</span>
               </li>
               <li className="flex items-center space-x-2">
-                <DocumentTextIcon className="h-6 w-6 text-gray-500" />
+                <DocumentTextIcon className="h-6 w-6 text-gray-500 dark:text-indigo-500" />
                 <span>Custom product pages & checkout</span>
               </li>
               <li className="flex items-center space-x-2">
-                <BanknotesIcon className="h-6 w-6 text-gray-500" />
+                <BanknotesIcon className="h-6 w-6 text-gray-500 dark:text-indigo-500" />
                 <span>Payment gateway integration (PayPal, etc...)</span>
               </li>
               <li className="flex items-center space-x-2">
-                <BoltIcon className="h-6 w-6 text-gray-500" />
+                <BoltIcon className="h-6 w-6 text-gray-500 dark:text-indigo-500" />
                 <span>Advanced speed optimization</span>
               </li>
               <li className="flex items-center space-x-2">
-                <EnvelopeIcon className="h-6 w-6 text-gray-500" />
+                <EnvelopeIcon className="h-6 w-6 text-gray-500 dark:text-indigo-500" />
                 <span>Email marketing & automation setup</span>
               </li>
               <li className="flex items-center space-x-2">
-                <DocumentChartBarIcon className="h-6 w-6 text-gray-500" />
+                <DocumentChartBarIcon className="h-6 w-6 text-gray-500 dark:text-indigo-500" />
                 <span>Inventory management system</span>
               </li>
               <li className="flex items-center space-x-2">
-                <ShieldCheckIcon className="h-6 w-6 text-gray-500" />
+                <ShieldCheckIcon className="h-6 w-6 text-gray-500 dark:text-indigo-500" />
                 <span>Security, backups & performance monitoring</span>
               </li>
             </ul>
