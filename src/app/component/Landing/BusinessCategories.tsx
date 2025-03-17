@@ -5,11 +5,15 @@ import Cobe from "./Cobe";
 
 export default function BusinessCategories() {
   return (
-    <section className="">
+    <section className="sm:my-20">
       <div className="mx-auto px-4 sm:px-6 w-full sm:z-50 sm:absolute left-1/2 sm:-translate-x-1/2 sm:transform font-serif">
-        <h2 className="font-sans sm:text-4xl text-2xl sm:w-[50%] mx-auto sm:pb-10 pb-4 font-bold border-b border-slate-500 dark:border-slate-600 sm:mb-52 text-center text-slate-950 dark:text-slate-200">
+        <h2 className="font-sans sm:text-4xl text-2xl sm:w-[50%] mx-auto pb-4 font-bold border-b border-slate-500 dark:border-slate-600 text-center text-slate-950 dark:text-slate-200">
           Top Brands Built Their Legacy Online
         </h2>
+        <p className="sm:mb-48 pt-6 sm:text-lg font-sans text-center text-gray-700 dark:text-gray-400">
+          Top brands have built their legacy online by embracing innovation and
+          connecting with global audiences
+        </p>
         <div className="pb-12 md:pb-32">
           <div className="relative flex sm:h-[300px] h-[400px] w-auto items-center justify-center">
             <div className="absolute sm:z-10">
@@ -288,7 +292,7 @@ export default function BusinessCategories() {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center sm:mt-20 sm:-z-10">
+      <div className="w-full flex justify-center sm:mt-28 sm:-z-10">
         <Cobe />
       </div>
     </section>

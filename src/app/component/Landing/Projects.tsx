@@ -13,7 +13,7 @@ const LandingProjects: React.FC = () => {
   return (
     <main
       id="projects"
-      className="sm:min-h-screen sm:w-10/12 w-11/12 mx-auto sm:py-10 pb-10 opacity-95 bg-slate-400 projectback justify-center sm:my-28 mt-20"
+      className="sm:min-h-screen sm:w-10/12 w-11/12 mx-auto sm:py-10 pb-10 justify-center sm:my-28 mt-20"
     >
       <h2 className="sm:text-4xl text-2xl text-center mx-auto sm:my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 sm:w-[50%]">
         Some Featured Clients

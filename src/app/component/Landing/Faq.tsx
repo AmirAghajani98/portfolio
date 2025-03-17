@@ -57,7 +57,7 @@ export default function FAQ() {
     <section className="py-10 sm:py-16 lg:py-24 w-full">
       <div className="px-2 mx-auto sm:px-6 lg:px-8">
         <div className=" mx-auto text-center">
-          <h2 className="sm:text-4xl text-2xl sm:w-[50%] mx-auto sm:pb-10 pb-4 sm:mb-20 mb-10 font-bold border-b border-slate-500 dark:border-slate-600 dark:text-gray-200 text-gray-950 md:text-4xl font-sans">
+          <h2 className="sm:text-4xl text-2xl sm:w-[50%] mx-auto pb-4 sm:mb-20 mb-10 font-bold border-b border-slate-500 dark:border-slate-600 dark:text-gray-200 text-gray-950 md:text-4xl font-sans">
             FAQ{" "}
           </h2>
         </div>
@@ -102,14 +102,14 @@ export default function FAQ() {
           ))}
         </div>
         <div className="mx-auto w-full text-center mt-10">
+          <p className="text-center sm:flex flex flex-col text-gray-800 dark:text-gray-300 font-mono text-lg mt-9">
+            Still have questions?
+          </p>
           <Link
-            className="text-center sm:flex flex flex-col text-gray-800 dark:text-gray-300 font-mono text-lg mt-9 hover:underline"
+            className="cursor-pointer font-medium text-tertiary text-gray-800 dark:text-gray-300 transition-all duration-200 hover:text-tertiary font-mono focus:text-tertiary hover:underline"
             href={"mailto:hi@aghatech.ir"}
           >
-            Still have questions?{" "}
-            <span className="cursor-pointer font-medium text-tertiary transition-all duration-200 hover:text-tertiary focus:text-tertiary hover-underline">
-              Contact our support
-            </span>
+            Contact our support
           </Link>
         </div>
       </div>

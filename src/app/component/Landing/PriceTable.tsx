@@ -23,41 +23,28 @@ export default function Pricetable() {
     <section className="py-24">
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div className="mb-12 ">
-          <h2 className="sm:text-4xl text-2xl sm:w-[50%] text-center mx-auto sm:pb-10 pb-4 font-bold border-b border-slate-500 dark:border-slate-600 dark:text-gray-200 text-gray-950 md:text-4xl font-sans">
-            Choose Your Perfect Plan
+          <h2 className="sm:text-4xl text-2xl sm:w-[50%] text-center mx-auto pb-4 font-bold border-b border-slate-500 dark:border-slate-600 dark:text-gray-200 text-gray-950 md:text-4xl font-sans">
+            Plans That Work for You{" "}
           </h2>
-          {/* <p className="text-gray-500 text-center leading-6 mb-9">
-            7 Days free trial. No credit card required.
-          </p> */}
-          {/* <div className="flex justify-center items-center">
-            <label className="min-w-[3.5rem] text-xl relative text-gray-900 mr-4 font-medium">
-              Bill Monthly
-            </label>
-            <input
-              type="checkbox"
-              id="basic-with-description"
-              className="relative shrink-0 w-11 h-6 p-0.5 bg-indigo-100 checked:bg-none checked:bg-indigo-100 rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:border-blue-600 appearance-none before:inline-block before:w-5 before:h-5 before:bg-indigo-600 checked:before:bg-indigo-600 before:translate-x-0 checked:before:translate-x-full before:shadow before:rounded-full before:transform before:transition before:ease-in-out before:duration-200"
-            />
-            <label className="relative min-w-[3.5rem] font-medium text-xl text-gray-500 ml-4 ">
-              Bill Yearly
-            </label>
-          </div> */}
+          <p className="pt-6 sm:text-lg font-sans text-center text-gray-700 dark:text-gray-400">
+            Choose the perfect plan to grow your business and achieve your goals
+          </p>
         </div>
         <div className="space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0 lg:items-center mx-auto sm:w-[90%]">
-          <div className="flex justify-stretch items-stretch flex-col mx-auto sm:w-10/12 text-gray-900 dark:text-gray-200 rounded-2xl bg-gray-50 dark:bg-slate-800 p-6 sm:pb-6 sm:pt-9 sm:px-8 sm:h-[720px] transition-all duration-500 hover:bg-gray-100">
-            <h3 className="font-mono text-3xl font-bold mb-3 sm:text-left text-center">
+          <div className="flex flex-col mx-auto sm:w-10/12 w-[95%] text-gray-900 dark:text-gray-200 rounded-2xl bg-slate-300 dark:bg-slate-800 p-4 xl:py-9 xl:px-8 transition-all duration-500 hover:bg-gray-100">
+            <h3 className="font-sans sm:text-3xl text-2xl font-bold mb-3 sm:text-left text-center border-b border-gray-700 sm:border-none">
               Personal or Small Business Website
             </h3>
-            <div className="flex items-center mb-6">
-              <span className="font-manrope mr-2 sm:text-5xl text-[42px] font-medium dark:text-indigo-300">
+            <div className="flex items-center mb-6 justify-center sm:justify-start">
+              <span className="font-manrope text-4xl mr-2 sm:5xl dark:text-indigo-300 font-medium">
                 $299 – $650
               </span>
               <span className="text-lg text-gray-500 dark:text-gray-300 font-mono">
                 / project
               </span>
             </div>
-            <ul className="mb-12 space-y-6 text-left text-lg text-gray-600 dark:text-gray-400 font-sans">
-              <li className="flex items-center space-x-4">
+            <ul className="mb-12 space-y-6 text-left sm:text-lg text-gray-700 dark:text-gray-400 font-sans">
+              <li className="flex items-center space-x-4 text-center sm:text-left font-medium">
                 <span>
                   Ideal for: Freelancers, small businesses, startups needing an
                   online presence.
@@ -89,30 +76,30 @@ export default function Pricetable() {
               </li>
             </ul>
             <Link
-              href="/"
+              href="/#contact"
               className="w-full py-2.5 px-5 bg-indigo-600 font-mono shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center mx-auto hover:bg-indigo-700"
             >
-              Purchase Plan
+              Learn More
             </Link>
           </div>
-          <div className="flex flex-col mx-auto sm:w-11/12 text-gray-900 dark:text-gray-200 rounded-2xl bg-gray-50 dark:bg-slate-800 py-6 xl:py-6 xl:px-4 transition-all duration-500 hover:bg-gray-100">
-            <div className="uppercase bg-gradient-to-r from-indigo-600 via-violet-800 to-indigo-600 rounded-t-2xl p-3 mx-3 sm:mx-0 text-center text-white font-sans">
+          <div className="flex flex-col mx-auto sm:w-11/12 w-[95%] text-gray-900 dark:text-gray-200 rounded-2xl bg-slate-300 dark:bg-slate-800 p-4 xl:py-9 xl:px-6 transition-all duration-500 hover:bg-gray-100">
+            <div className="uppercase bg-gradient-to-r from-indigo-600 via-violet-800 to-indigo-600 rounded-t-2xl p-3 mx-1 sm:mx-0 text-center text-white font-sans">
               MOST POPULAR
             </div>
-            <div className="p-4 xl:py-6 xl:px-8">
-              <h3 className="font-mono text-3xl font-bold mb-3 sm:text-left text-center">
+            <div className="pt-4 xl:py-6 xl:px-8">
+              <h3 className="font-sans sm:text-3xl text-2xl font-bold mb-3 sm:text-left text-center border-b border-gray-700 sm:border-none">
                 Corporate & Medium Business Website
               </h3>
-              <div className="flex items-center mb-6">
-                <span className="font-manrope text-5xl font-medium text-indigo-600 dark:text-indigo-500">
+              <div className="flex items-center mb-6 sm:justify-start justify-center">
+                <span className="font-manrope sm:text-5xl text-4xl mr-2 font-medium text-indigo-600 dark:text-indigo-500">
                   $800 – $1,700
                 </span>
                 <span className="sm:text-lg text-gray-500 dark:text-gray-300 font-mono">
                   / project
                 </span>
               </div>
-              <ul className="mb-12 space-y-6 text-left text-lg font-sans dark:text-gray-300">
-                <li className="flex items-center space-x-4">
+              <ul className="mb-12 space-y-6 text-left sm:text-lg font-sans dark:text-gray-300">
+                <li className="flex items-center space-x-4 text-center sm:text-left font-medium">
                   <span>
                     Ideal for: Growing businesses needing a more advanced
                     website.
@@ -148,27 +135,27 @@ export default function Pricetable() {
                 </li>
               </ul>
               <Link
-                href="/"
+                href="#contact"
                 className="py-2.5 px-5 w-full bg-indigo-600 font-mono shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center block mx-auto hover:bg-indigo-700"
               >
-                Purchase Plan
+                Learn More
               </Link>
             </div>
           </div>
-          <div className="flex flex-col mx-auto sm:w-10/12 text-gray-900 dark:text-gray-200 rounded-2xl bg-gray-50 dark:bg-slate-800 p-6 xl:py-9 xl:px-8 transition-all duration-500 hover:bg-gray-100">
-            <h3 className="font-mono text-3xl font-bold mb-3 sm:text-left text-center">
+          <div className="flex flex-col mx-auto sm:w-10/12 w-[95%] text-gray-900 dark:text-gray-200 rounded-2xl bg-slate-300 dark:bg-slate-800 p-4 xl:py-9 xl:px-8 transition-all duration-500 hover:bg-gray-100">
+            <h3 className="font-sans sm:text-3xl text-2xl font-bold mb-3 sm:text-left text-center border-b border-gray-700 sm:border-none">
               E-Commerce & Large Business Website
             </h3>
-            <div className="flex items-center mb-6">
-              <span className="font-manrope text-[42px] dark:text-indigo-300 font-medium">
+            <div className="flex items-center mb-6 sm:justify-start justify-center">
+              <span className="font-manrope text-4xl mr-2 sm:5xl dark:text-indigo-300 font-medium">
                 $2,500 – $4,000
               </span>
               <span className="sm:text-lg text-gray-500 dark:text-gray-300 font-mono">
                 /project
               </span>
             </div>
-            <ul className="mb-12 space-y-6 text-left text-lg text-gray-600 dark:text-gray-400 font-sans">
-              <li className="flex items-center space-x-4">
+            <ul className="mb-12 space-y-6 text-left sm:text-lg text-gray-700 dark:text-gray-400 font-sans">
+              <li className="flex items-center space-x-4 text-center sm:text-left font-medium">
                 <span>
                   Ideal for: Online stores, large businesses, or complex custom
                   websites.
@@ -204,12 +191,15 @@ export default function Pricetable() {
               </li>
             </ul>
             <Link
-              href="javascript:;"
+              href="#contact"
               className="py-2.5 px-5 bg-indigo-600 font-mono shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-full mx-auto hover:bg-indigo-700"
             >
-              Purchase Plan
+              Learn More
             </Link>
           </div>
+        </div>
+        <div className="text-center font-mono pt-10 text-lg hover:underline text-gray-700 dark:text-gray-300">
+          <Link href={"#contact"}>Need a Custom Plan?</Link>
         </div>
       </div>
     </section>

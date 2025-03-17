@@ -4,9 +4,13 @@ export default function FeaturesPlanet() {
   return (
     <section className="relative before:absolute before:inset-0 before:-z-20 sm:my-28 my-10 bg-slate-400 projectback">
       <div className="mx-auto sm:pb-16 pb-4 text-center mt-24 w-11/12 justify-center">
-        <h2 className="sm:text-4xl text-2xl sm:w-[50%] mx-auto sm:pb-10 pb-4 font-bold border-b border-slate-500 dark:border-slate-600 dark:text-gray-200 text-gray-950 md:text-4xl font-sans">
+        <h2 className="sm:text-4xl text-2xl sm:w-[50%] text-center mx-auto pb-4 font-bold border-b border-slate-500 dark:border-slate-600 dark:text-gray-200 text-gray-950 md:text-4xl font-sans">
           Personalized Services
         </h2>
+        <p className="pt-6 sm:text-lg font-sans text-center text-gray-700 dark:text-gray-400">
+          Customized and Personalized Services Designed to Meet Your Unique
+          Goals and Requirements
+        </p>
       </div>
 
       <div className="mx-auto sm:w-9/12 px-4 sm:px-6 z-50">
