@@ -8,11 +8,11 @@ export default function HeroLanding() {
     <>
       <section className="relative font-sans pt-0 w-full bg-slate-400 projectback">
         <div
-          className="pointer-events-none -z-10 absolute sm:w-[60%] w-[100%] left-1/2 top-0 -translate-x-1/2 transform font-serif"
+          className="pointer-events-none dark:-z-10 absolute sm:w-[60%] w-[100%] left-1/2 top-0 -translate-x-1/2 transform font-serif"
           aria-hidden="true"
         >
           <Image
-            className="opacity-30 dark:opacity-10 w-full"
+            className="opacity-25 dark:opacity-10 w-full"
             src={"./img/strips2.png"}
             height={100}
             width={1100}
