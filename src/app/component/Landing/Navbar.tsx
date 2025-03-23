@@ -18,7 +18,6 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
     if (!isModalOpen) {
@@ -45,6 +44,17 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollTop]);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -116,7 +126,6 @@ export default function Navbar() {
             >
               <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
             </svg>
-
             <svg
               className="swap-on fill-current text-slate-900 dark:text-slate-200"
               xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +137,7 @@ export default function Navbar() {
             </svg>
           </label>
         </div>
-        <div className="flex w-full justify-end">
+        <div className="sm:flex hidden w-full justify-end">
           <ThemeSwitcher />
         </div>
         <div
@@ -158,13 +167,25 @@ export default function Navbar() {
               {item.name}
             </Link>
           ))}
-          {/* <a
-            className="flex cursor-pointer justify-between py-2 m-1 px-3 rounded-md text-base font-sans font-medium dark:text-slate-100 text-[#121a23] hover:text-white dark:bg-slate-700 bg-slate-400 bg-opacity-90 hover:bg-slate-500 hover:bg-opacity-60"
-            onClick={toggleModal}
-          >
-            download cv
-            <ArrowDownTrayIcon width={20} />
-          </a> */}
+
+          <div className="flex px-3 py-1 m-1 justify-between items-center font-sans rounded-md text-base font-medium dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-400">
+            Theme
+            <div className="w-1/2">
+              <ThemeSwitcher />
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center shrink-0 sm:hidden">
+          <Link aria-current="page" href="/#">
+            <Image
+              loading="lazy"
+              className="rounded-full w-11"
+              src="./img/alogo.png"
+              alt="Logo"
+              width={65}
+              height={65}
+            />
+          </Link>
         </div>
       </div>
       <Modal isOpen={isModalOpen} onClose={toggleModal} />

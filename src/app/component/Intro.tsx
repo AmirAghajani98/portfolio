@@ -62,11 +62,12 @@ const Intro: React.FC = () => {
             <Link
               href={"/landing"}
               onClick={handleClick}
-              title="Get quote now"
-              className="relative inline-flex font-sans items-center justify-center px-8 py-4 text-lg font-bold dark:text-white text-slate-950 transition-all duration-200 dark:bg-slate-800 bg-gray-400 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+              title="Let’s Create Something Great!"
+              className="relative inline-flex font-sans items-center justify-center px-8 py-4 text-lg font-bold dark:text-white text-slate-950 transition-all duration-200 dark:bg-slate-800 bg-gray-400 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
               role="button"
+              target="_blank"
             >
-              {isLoading ? <LoadingButton /> : " Let’s Create Something Great!"}
+              {isLoading ? <LoadingButton /> : "Let’s Create Something Great!"}
             </Link>
           </div>
           <div className="mt-36 sm:mt-24 dark:text-slate-100 text-[#121a23]">
