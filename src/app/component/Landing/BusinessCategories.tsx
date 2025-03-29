@@ -177,6 +177,7 @@ export default function BusinessCategories() {
                     width={140}
                     height={140}
                     alt="Logo 01"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -192,6 +193,7 @@ export default function BusinessCategories() {
                         width={100}
                         height={100}
                         alt="Logo 02"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -205,6 +207,7 @@ export default function BusinessCategories() {
                         width={90}
                         height={90}
                         alt="Logo 03"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -218,6 +221,7 @@ export default function BusinessCategories() {
                         width={100}
                         height={100}
                         alt="Logo 04"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -231,6 +235,7 @@ export default function BusinessCategories() {
                         width={110}
                         height={110}
                         alt="Logo 05"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -244,6 +249,7 @@ export default function BusinessCategories() {
                         width={100}
                         height={100}
                         alt="Logo 06"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -257,6 +263,7 @@ export default function BusinessCategories() {
                         width={100}
                         height={100}
                         alt="Logo 07"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -270,6 +277,7 @@ export default function BusinessCategories() {
                         width={100}
                         height={100}
                         alt="Logo 08"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -283,6 +291,7 @@ export default function BusinessCategories() {
                         width={80}
                         height={80}
                         alt="Logo 09"
+                        loading="lazy"
                       />
                     </div>
                   </div>

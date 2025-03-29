@@ -82,6 +82,7 @@ export default function Testimonial() {
                   alt={testimonial.name}
                   width={100}
                   height={100}
+                  loading="lazy"
                   className="sm:w-24 sm:h-24 w-20 h-20 rounded-full mx-auto sm:mb-2 dark:border dark:border-slate-500"
                 />
 

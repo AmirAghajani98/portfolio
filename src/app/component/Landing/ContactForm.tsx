@@ -55,6 +55,7 @@ const LandingContact = () => {
               width={600}
               height={400}
               alt="Logo 01"
+              loading="lazy"
             />
           </div>
           <div className="mt-10 sm:mt-32 m-auto sm:w-[40%]">

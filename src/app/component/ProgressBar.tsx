@@ -29,7 +29,13 @@ export const ProgressBar: React.FC<ProgressProps> = ({ value, logo }) => {
           ></div>
         </div>
         <div className="mt-2 text-center flex justify-center items-center">
-          <Image src={logo} alt="Skill logo" width={42} height={42} />
+          <Image
+            src={logo}
+            alt="Skill logo"
+            width={42}
+            height={42}
+            loading="lazy"
+          />
           <div className="text-slate-700 dark:text-slate-100 mx-1 text-lg sm:hidden">
             {value}%
           </div>
