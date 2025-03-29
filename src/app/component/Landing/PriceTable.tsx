@@ -1,6 +1,7 @@
 "use-client";
 
 import Link from "next/link";
+import Image from "next/image";
 import {
   AcademicCapIcon,
   ArrowTrendingUpIcon,
@@ -201,6 +202,34 @@ export default function Pricetable() {
         <div className="text-center font-mono pt-10 text-lg hover:underline text-gray-700 dark:text-gray-300">
           <Link href={"#contact"}>Need a Custom Plan?</Link>
         </div>
+      </div>
+      <div>
+        <Image
+          loading="lazy"
+          src={"./img/step-s.png"}
+          alt={"steps"}
+          width={100}
+          height={100}
+          className="w-[90%] h-auto sm:mt-0 mt-10 mx-auto rounded-3xl block sm:hidden"
+        />
+      </div>
+      <div className="w-full justify-center hidden sm:block">
+        <Image
+          loading="lazy"
+          src={"./img/steps-light.png"}
+          alt={"steps"}
+          width={100}
+          height={100}
+          className="w-[70%] h-auto sm:mt-0 mt-10 mx-auto rounded-3xl block dark:hidden"
+        />
+        <Image
+          loading="lazy"
+          src={"./img/steps-dark.png"}
+          alt={"steps"}
+          width={100}
+          height={100}
+          className="w-[70%] h-auto sm:mt-0 mt-10 mx-auto rounded-3xl hidden dark:block"
+        />
       </div>
     </section>
   );

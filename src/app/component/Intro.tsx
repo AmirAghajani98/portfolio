@@ -82,6 +82,7 @@ const Intro: React.FC = () => {
               className="sm:mx-3"
             >
               <Image
+                loading="lazy"
                 src="./img/2.png"
                 width={50}
                 height={50}
@@ -95,6 +96,7 @@ const Intro: React.FC = () => {
               className="sm:mx-3"
             >
               <Image
+                loading="lazy"
                 src="./img/7.png"
                 width={50}
                 height={50}
@@ -108,6 +110,7 @@ const Intro: React.FC = () => {
               className="sm:mx-3"
             >
               <Image
+                loading="lazy"
                 src="./img/4.png"
                 width={50}
                 height={50}

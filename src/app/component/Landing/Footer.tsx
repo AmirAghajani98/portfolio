@@ -28,6 +28,7 @@ export default function Footer() {
               width={100}
               height={1}
               alt={""}
+              loading="lazy"
             />
           </a>
           <nav className="sm:block hidden -mt-16">
@@ -59,6 +60,7 @@ export default function Footer() {
                   height={40}
                   alt="GitHub"
                   className=" p-1.5 dark:bg-slate-700 bg-slate-800 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
+                  loading="lazy"
                 />
               </Link>
               <Link href="https://t.me/Amr431" target={"_blank"}>
@@ -67,6 +69,7 @@ export default function Footer() {
                   width={40}
                   height={40}
                   alt="Telegram"
+                  loading="lazy"
                   className="p-1.5 dark:bg-slate-700 bg-slate-800 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
                 />
               </Link>
@@ -145,6 +148,7 @@ export default function Footer() {
                 height={40}
                 alt="GitHub"
                 className=" p-1.5 dark:bg-slate-700 bg-slate-800 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
+                loading="lazy"
               />
             </Link>
             <Link href="https://t.me/Amr431" target={"_blank"}>
@@ -154,6 +158,7 @@ export default function Footer() {
                 height={40}
                 alt="Telegram"
                 className="p-1.5 dark:bg-slate-700 bg-slate-800 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
+                loading="lazy"
               />
             </Link>
             <Link
@@ -199,7 +204,7 @@ export default function Footer() {
           height={100}
           width={100}
           alt="Stripes"
-          priority
+          loading="lazy"
         />
       </div>
     </footer>

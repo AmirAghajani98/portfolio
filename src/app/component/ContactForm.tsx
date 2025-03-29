@@ -107,6 +107,7 @@ const ContactForm = () => {
                 className=""
               >
                 <Image
+                  loading="lazy"
                   src="./img/github.png"
                   width={50}
                   height={50}
@@ -116,6 +117,7 @@ const ContactForm = () => {
               </Link>
               <Link href="https://t.me/Amr431" target={"_blank"} className="">
                 <Image
+                  loading="lazy"
                   src="./img/icons8-telegram-96(1).png"
                   width={50}
                   height={50}
