@@ -19,7 +19,7 @@ const Intro: React.FC = () => {
     <section>
       <div
         id="home"
-        className="h-screen items-start justify-center flex introback"
+        className="h-screen items-start justify-center flex introback pt-20 sm:pt-10"
       >
         <div id="stars" />
         <div id="stars2" />
