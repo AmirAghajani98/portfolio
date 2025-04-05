@@ -3,10 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function HeroLanding() {
+export default function HeroSection() {
   return (
     <>
-      <section className="relative font-sans pt-0 w-full bg-slate-400 projectback">
+      <section className="relative font-sans w-full bg-slate-400 projectback sm:py-40 py-16">
         <div
           className="pointer-events-none dark:-z-10 absolute sm:w-[60%] w-[100%] left-1/2 top-0 -translate-x-1/2 transform font-serif"
           aria-hidden="true"

@@ -54,7 +54,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
               locale={false}
               rel="noopener noreferrer"
               target="_blank"
-              className="p-2.5 sm:mr-1 sm:mt-0 mt-1 border-b text-sm sm:text-base sm:border-none border-slate-500 dark:border-b dark:border-slate-700 font-mono cursor-pointer shadow dark:bg-gray-900 bg-gray-700 dark:hover:bg-gray-950 hover:bg-gray-800 sm:rounded-lg rounded-t-lg"
+              className="p-2.5 sm:mr-1 sm:mt-0 mt-1 border-b text-sm sm:text-base sm:border-none border-slate-500 dark:border-b dark:border-slate-700 font-mono cursor-pointer shadow bg-gray-800 hover:bg-gray-800 sm:rounded-lg rounded-t-lg"
             >
               English
             </Link>
@@ -64,7 +64,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
               rel="noopener noreferrer"
               target="_blank"
               download="resume-en.pdf"
-              className="p-2.5 sm:mr-1 sm:mt-0 mt-1 border-b text-sm sm:text-base sm:border-none border-slate-500 dark:border-b dark:border-slate-700 font-mono cursor-pointer shadow dark:bg-gray-900 bg-gray-700 dark:hover:bg-gray-950 hover:bg-gray-800 sm:rounded-lg rounded-t-lg"
+              className="p-2.5 sm:mr-1 sm:mt-0 mt-1 border-b text-sm sm:text-base sm:border-none border-slate-500 dark:border-b dark:border-slate-700 font-mono cursor-pointer shadow bg-gray-800 hover:bg-gray-800 sm:rounded-lg rounded-t-lg"
             >
               persian
             </Link>

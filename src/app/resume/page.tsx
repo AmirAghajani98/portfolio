@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../component/Buttons/LanguageSwitcher";
 import DownloadDropdown from "../component/DownloadDropdown";
-import SecondaryNavbar from "../component/SecondaryNavbar";
+import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
 
 // const generateMetadata = async (): Promise<Metadata> => ({
@@ -87,8 +87,8 @@ export default function resume() {
   }
   return (
     <>
-      <SecondaryNavbar />
-      <main className="w-screen bg-slate-700 dark:bg-gray-950 pt-10">
+      <Navbar />
+      <main className="w-screen bg-slate-700 dark:bg-gray-950 pt-20 am:pt-16">
         <div className="flex justify-center content-center font-sans">
           <div className="text-gray-950 dark:text-teal-100 border border-gray-600 rounded-xl font-sans shadow-md dark:bg-slate-800 bg-slate-400 dark:bg-opacity-95 bg-opacity-80 shadow-slate-400 sm:px-10 px-4 sm:w-4/6 w-11/12 mb-16">
             <div className="w-full flex justify-between items-center rounded-2xl mt-8">

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { projectsData } from "../utils/projectsData";
 import Footer from "../component/Footer";
-import SecondaryNavbar from "../component/SecondaryNavbar";
+import Navbar from "../component/Navbar";
 
 export default function Projects() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -45,8 +45,8 @@ export default function Projects() {
 
   return (
     <>
-      <SecondaryNavbar />
-      <main className="sm:min-h-screen sm:w-full mx-auto sm:pt-10 pt-4 opacity-95 bg-slate-400 projectback justify-center flex flex-col">
+      <Navbar />
+      <main className="sm:min-h-screen sm:w-full mx-auto sm:pt-16 pt-20 opacity-95 bg-slate-400 projectback justify-center flex flex-col">
         <h2 className="sm:text-5xl text-4xl text-center mx-auto mt-8 pb-6 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 w-[50%]">
           Projects
         </h2>

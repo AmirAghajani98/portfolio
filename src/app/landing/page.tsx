@@ -7,7 +7,7 @@ import HeroLanding from "../component/Landing/HeroSection";
 import ContactForm from "../component/Landing/ContactForm";
 import Footer from "../component/Landing/Footer";
 import LandingProjects from "../component/Landing/Projects";
-import Navbar from "../component/Landing/Navbar";
+import Navbar from "../component/Navbar";
 import Testimonial from "../component/Landing/Testimonial";
 import FAQ from "../component/Landing/Faq";
 import Pricetable from "../component/Landing/PriceTable";
