@@ -203,7 +203,7 @@ export default function Pricetable() {
           <Link href={"#contact"}>Need a Custom Plan?</Link>
         </div>
       </div>
-      <div>
+      {/* <div>
         <Image
           loading="lazy"
           src={"./img/step-s.png"}
@@ -212,7 +212,7 @@ export default function Pricetable() {
           height={100}
           className="w-[90%] h-auto sm:mt-0 mt-10 mx-auto rounded-3xl block sm:hidden"
         />
-      </div>
+      </div> */}
       <div className="w-full justify-center hidden sm:block">
         <Image
           loading="lazy"

@@ -11,6 +11,7 @@ import Navbar from "../component/Navbar";
 import Testimonial from "../component/Landing/Testimonial";
 import FAQ from "../component/Landing/Faq";
 import Pricetable from "../component/Landing/PriceTable";
+import Timeline from "../component/Landing/Timeline";
 
 export default function Landing() {
   const [loading, setLoading] = useState(true);
@@ -40,6 +41,7 @@ export default function Landing() {
         <LandingProjects />
         <Testimonial />
         <Pricetable />
+        <Timeline />
         <BusinessCategories />
         <ContactForm />
         <FAQ />
