@@ -1,6 +1,5 @@
 import "./globals.css";
 import "./i18";
-import i18n from "./i18";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { GoogleTagManager } from "@next/third-parties/google";

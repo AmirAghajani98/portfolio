@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import Projects from "./page";
 
 export const generateMetadata = async (): Promise<Metadata> => {
-  const imageUrl = "/opengraph-image.jpg";
-
   return {
     title: "Projects",
     description:
@@ -15,7 +13,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
       siteName: "Amir Aghajani Portfolio",
       images: [
         {
-          url: imageUrl,
+          url: "/opengraph-image.jpg",
           width: 1200,
           height: 630,
           alt: "Projects",
@@ -28,7 +26,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
       title: "Projects",
       description:
         "Explore the projects created by Amir Aghajani, a web developer specializing in modern web technologies.",
-      images: imageUrl,
+      images: "/opengraph-image.jpg",
     },
   };
 };

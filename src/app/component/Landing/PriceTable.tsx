@@ -203,17 +203,10 @@ export default function Pricetable() {
           <Link href={"#contact"}>Need a Custom Plan?</Link>
         </div>
       </div>
-      <div>
-        <Image
-          loading="lazy"
-          src={"./img/step-s.png"}
-          alt={"steps"}
-          width={100}
-          height={100}
-          className="w-[90%] h-auto sm:mt-0 mt-10 mx-auto rounded-3xl block sm:hidden"
-        />
-      </div>
-      <div className="w-full justify-center hidden sm:block">
+      <div className="w-full justify-center hidden sm:block mt-40">
+        <h2 className="font-sans sm:text-4xl text-2xl sm:w-[50%] mx-auto pb-4 font-bold border-b border-slate-500 dark:border-slate-600 text-center text-slate-950 dark:text-slate-200">
+          Visual Guide to Building Your Perfect Website
+        </h2>
         <Image
           loading="lazy"
           src={"./img/steps-light.png"}

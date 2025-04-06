@@ -46,17 +46,6 @@ const Intro: React.FC = () => {
               />
             </strong>
           </p>
-          {/* <div className="w-full max-w-72 mx-auto justify-center items-center text-center relative z-10 flex cursor-pointer overflow-hidden sm:p-[3px] p-[2px]">
-            <div className="animate-rotate absolute inset-0 bg-[conic-gradient(#475569_45deg,transparent_180deg)] dark:bg-[conic-gradient(#64748b_45deg,transparent_180deg)]"></div>
-            <div className="relative z-20 flex w-full bg-slate-700">
-              <Link
-                href={"/projects"}
-                className="text-lg font-sans mx-auto w-full h-full py-2 px-4 font-semibold dark:hover:bg-opacity-40 hover:bg-opacity-75 dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-400 dark:bg-opacity-30 bg-opacity-80 transition duration-200 border border-transparent bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end animate-gradientBorder"
-              >
-                Let’s Create Something Great
-              </Link>
-            </div>
-          </div> */}
           <div className="relative inline-flex  group">
             <div className="absolute transitiona-all duration-1000 dark:opacity-70 -inset-px dark:bg-gradient-to-r dark:from-[#44BCFF] dark:via-[#FF44EC] dark:to-[#FF675E] bg-gradient-to-r from-slate-900 via-blue-900 to-amber-900 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
             <Link

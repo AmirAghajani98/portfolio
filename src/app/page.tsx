@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -41,20 +41,20 @@ export default function Home() {
             <div className="mx-auto z-50 mr-4">
               <Image
                 loading="lazy"
-                src={"./img/aaa.jpg"}
+                src={"./img/amiraghajani.jpg"}
                 width={400}
                 height={400}
-                alt="Picture of the author"
+                alt="amiraghajani"
                 className="m-auto rounded-full sm:block hidden z-50 shadow-lg shadow-slate-600 border border-slate-400 dark:shadow-slate-900 dark:border-slate-800"
               />
             </div>
           </div>
           <Image
             loading="lazy"
-            src={"./img/aaa.jpg"}
+            src={"./img/amiraghajani.jpg"}
             width={200}
             height={200}
-            alt="Picture of the author"
+            alt="amiraghajani"
             className="m-auto rounded-full mt-8 mb-16 sm:hidden shadow-md shadow-cyan-500/50 z-50"
           />
           <div className="w-full mt-14 sm:mt-0 text-justify">

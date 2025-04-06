@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { ThemeSwitcher } from "./Buttons/ThemeSwitcher";
 import {
   CodeBracketIcon,
@@ -37,16 +36,6 @@ export default function Sidebar({
         className="text-xl font-semibold text-gray-500 uppercase dark:text-gray-400 font-mono"
       >
         menu
-        {/* <Link aria-current="page" href="/#" className="">
-          <Image
-            loading="lazy"
-            className="rounded-full -my-8 -ml-4"
-            src="./img/aghatech.png"
-            alt="Logo"
-            width={100}
-            height={100}
-          />
-        </Link> */}
       </h5>
       <button
         type="button"
@@ -95,7 +84,7 @@ export default function Sidebar({
             },
             {
               name: "Services",
-              href: "#Services",
+              href: "/landing",
               icon: (
                 <CodeBracketIcon className="h-6 w-6 text-gray-700 dark:text-gray-400" />
               ),

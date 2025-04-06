@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import Landing from "./page";
 
 export const generateMetadata = async (): Promise<Metadata> => {
-  const imageUrl = "/opengraph-image.jpg";
-
   return {
     title: "Professional Website & Online Store Design | aghatech",
     description:
@@ -27,7 +25,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
       siteName: "Amir Aghajani Portfolio",
       images: [
         {
-          url: imageUrl,
+          url: "/opengraph-image.jpg",
           width: 1200,
           height: 630,
           alt: "landing",
@@ -40,12 +38,12 @@ export const generateMetadata = async (): Promise<Metadata> => {
       title: "Professional Website & Online Store Design | aghatech",
       description:
         "Design professional websites and online stores with top quality and affordable prices. 24/7 support and fast delivery. Request a free consultation today!",
-      images: imageUrl,
+      images: "/opengraph-image.jpg",
     },
   };
 };
 
-export default function ProjectsPage() {
+export default function LangingPage() {
   return (
     <div>
       <Landing />

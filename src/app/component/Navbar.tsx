@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between w-full">
         <div className="flex w-full items-center">
           <button
-            className="text-white font-medium rounded-full sm:w-24 sm:h-24 h-20 w-20 text-sm px-5 py-2.5  bg-slate-700 bg-opacity-10"
+            className="text-white font-medium rounded-full sm:w-24 sm:h-24 h-20 w-20 text-sm px-5 py-2.5"
             onClick={toggleSidebar}
           >
             <Bars3BottomLeftIcon className="h-10 w-10 dark:text-gray-400 text-gray-800 m-auto" />
@@ -35,7 +35,7 @@ export default function Navbar() {
           <Link aria-current="page" href="/#" className="">
             <Image
               loading="lazy"
-              className="rounded-full sm:w-24 w-20 bg-slate-700 bg-opacity-10"
+              className="rounded-full sm:w-24 w-20"
               src="./img/alogo.png"
               alt="Logo"
               width={10}
