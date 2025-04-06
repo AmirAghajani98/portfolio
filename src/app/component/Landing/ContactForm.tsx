@@ -51,7 +51,7 @@ const LandingContact = () => {
           <div className="sm:w-[55%] sm:block hidden">
             <Image
               className="relative mx-auto bg-gradient-to-br bg-transparent rounded-3xl"
-              src={"./img/develop01.png"}
+              src={"./img/develop.png"}
               width={600}
               height={400}
               alt="Logo 01"

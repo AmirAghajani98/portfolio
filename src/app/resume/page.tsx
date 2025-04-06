@@ -8,28 +8,6 @@ import DownloadDropdown from "../component/DownloadDropdown";
 import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
 
-// const generateMetadata = async (): Promise<Metadata> => ({
-//   title: 'Amir Aghajani - Resume',
-//   description: 'Download or view the resume of Amir Aghajani, a web developer specializing in modern web technologies.',
-//   openGraph: {
-//     title: 'Amir Aghajani - Resume',
-//     description: 'Download or view the resume of Amir Aghajani, a web developer specializing in modern web technologies.',
-//     images: [
-//       {
-//         url: '/resume-opengraph-image.jpg',
-//         width: 1200,
-//         height: 630,
-//         alt: 'Amir Aghajani - Resume',
-//       },
-//     ],
-//   },
-//   twitter: {
-//     card: 'summary_large_image',
-//     title: 'Amir Aghajani - Resume',
-//     description: 'Download or view the resume of Amir Aghajani, a web developer specializing in modern web technologies.',
-//     images: '/resume-opengraph-image.jpg',
-//   },
-// });
 interface WorkExperience {
   company: string;
   role: string;
@@ -57,7 +35,7 @@ export default function resume() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -106,11 +84,11 @@ export default function resume() {
               <div className="sm:flex sm:justify-between justify-center w-full">
                 <Image
                   className="mx-auto sm:mx-1 rounded-full shadow shadow-slate-700 my-8 sm:mr-4"
-                  src={"./img/aaaa.jpg"}
+                  src={"./img/amir.jpg"}
                   alt={"amir"}
                   width={300}
                   height={300}
-                  priority
+                  loading="lazy"
                 />
                 <div className="flex justify-between mt-16">
                   <div className={isRTL ? "text-right" : "text-left"}>

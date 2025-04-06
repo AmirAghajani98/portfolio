@@ -1,16 +1,4 @@
 import React from "react";
-import {
-  LightBulbIcon,
-  ChartBarIcon,
-  RectangleGroupIcon,
-  PencilIcon,
-  CodeBracketIcon,
-  DocumentTextIcon,
-  ShieldCheckIcon,
-  BoltIcon,
-  ChartBarSquareIcon,
-  ArrowPathIcon,
-} from "@heroicons/react/24/outline";
 import Image from "next/image";
 
 const Timeline = () => {
@@ -25,7 +13,7 @@ const Timeline = () => {
         text: "text-blue-600",
         border: "border-blue-500",
       },
-      image: "./img/pack19.png",
+      image: "./img/pack10.png",
     },
     {
       id: 2,
@@ -37,7 +25,7 @@ const Timeline = () => {
         text: "text-green-600",
         border: "border-green-500",
       },
-      image: "./img/pack11.png",
+      image: "./img/pack7.png",
     },
     {
       id: 3,
@@ -49,7 +37,7 @@ const Timeline = () => {
         text: "text-orange-600",
         border: "border-orange-500",
       },
-      image: "./img/pack17.png",
+      image: "./img/pack9.png",
     },
     {
       id: 4,
@@ -85,7 +73,7 @@ const Timeline = () => {
         text: "text-pink-600",
         border: "border-pink-500",
       },
-      image: "./img/pack14.png",
+      image: "./img/pack8.png",
     },
     {
       id: 7,
@@ -121,7 +109,7 @@ const Timeline = () => {
         text: "text-teal-600",
         border: "border-teal-500",
       },
-      image: "./img/pack7.png",
+      image: "./img/pack6.png",
     },
     {
       id: 10,
@@ -133,14 +121,14 @@ const Timeline = () => {
         text: "text-gray-600",
         border: "border-gray-500",
       },
-      image: "./img/pack6.png",
+      image: "./img/pack5.png",
     },
   ];
 
   return (
-    <div className="w-[95%] mx-auto p-0 font-sans mb-20">
+    <div className="w-[95%] mx-auto p-0 font-sans mb-40 sm:hidden">
       <h2 className="font-sans sm:text-4xl text-2xl sm:w-[50%] mx-auto pb-4 font-bold border-b border-slate-500 dark:border-slate-600 text-center text-slate-950 dark:text-slate-200">
-        Website Creation Journey
+        Visual Guide to Building Your Perfect Website
       </h2>
 
       <div className="relative mx-auto mt-12">
@@ -167,9 +155,9 @@ const Timeline = () => {
                     >
                       {step.icon}
                     </div>
-                    <h3 className={`font-bold ${step.color.text} font-sans`}>
+                    <p className={`font-bold ${step.color.text} font-sans`}>
                       {step.title}
-                    </h3>
+                    </p>
                   </div>
                   <ul className="list-disc pl-5 mt-2 text-sm text-gray-600 space-y-1">
                     {step.items.map((item, i) => (
