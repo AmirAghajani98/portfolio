@@ -25,7 +25,7 @@ export default function Sidebar({
   return (
     <div
       id="drawer-navigation"
-      className={`fixed top-0 left-0 z-40 w-64 h-screen p-4 overflow-y-auto transition-transform ${
+      className={`fixed top-0 left-0 z-40 w-64 sm:h-screen h-svh p-4 overflow-y-auto transition-transform ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       } bg-slate-400 dark:bg-gray-800`}
       tabIndex={-1}
