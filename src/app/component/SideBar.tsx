@@ -10,6 +10,7 @@ import {
   SparklesIcon,
   UserIcon,
 } from "@heroicons/react/24/outline";
+import LanguageSwitcher from "./Buttons/LanguageSwitcher";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -130,6 +131,10 @@ export default function Sidebar({
         <div className="bottom-0 w-5/6 absolute py-5 flex justify-between items-center border-t border-1-gray-200 dark:border-gray-600">
           <p className="text-lg dark:text-slate-200 text-slate-800">Theme</p>
           <ThemeSwitcher />
+        </div>
+        <div className="bottom-0 w-5/6  py-5 flex justify-between items-center border-t border-1-gray-200 dark:border-gray-600">
+          <p className="text-lg dark:text-slate-200 text-slate-800">lang</p>
+          <LanguageSwitcher />
         </div>
       </div>
     </div>

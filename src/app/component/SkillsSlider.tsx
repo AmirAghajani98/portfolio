@@ -1,9 +1,13 @@
 "use client";
 
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { ProgressBar } from "./ProgressBar";
 
 const SkillsSection: React.FC = () => {
+  const { i18n, t } = useTranslation();
+  const isRTL = i18n.language === "fa";
+  const currentLocale = i18n.language;
   const skills = [
     { logo: "./img/bootstrap.svg", progress: 80 },
     { logo: "./img/css.svg", progress: 95 },
@@ -24,10 +28,12 @@ const SkillsSection: React.FC = () => {
   return (
     <div
       id="skills"
+      lang={currentLocale}
+      dir={currentLocale === "fa" ? "ltr" : "rtl"}
       className="w-full opacity-95 bg-slate-400 projectback justify-center h-auto py-10 px-6 shadow-lg"
     >
       <h1 className="sm:text-5xl text-4xl text-center mx-auto my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b-4 border-slate-500 dark:border-slate-600 w-[50%]">
-        Skills
+        {t("skills.title")}
       </h1>
       <div className="sm:flex justify-center sm:gap-6">
         {skills.map((skill, index) => (
