@@ -21,6 +21,11 @@
     "language": "Language",
     "cv": "Download CV"
   },
+  "download": {
+    "title": "Select Resume to Download",
+    "en": "English",
+    "fa": "Persian"
+  },
   "myprojects": {
     "title": "My projects",
     "list": [

@@ -1,8 +1,12 @@
 import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
+import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import { useState } from "react";
 
 const DownloadDropdown = () => {
+  const { i18n, t } = useTranslation();
+  const isRTL = i18n.language === "fa";
+  const currentLocale = i18n.language;
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -10,7 +14,11 @@ const DownloadDropdown = () => {
   };
 
   return (
-    <div className="relative mx-auto flex w-full max-w-lg items-center justify-center">
+    <div
+      lang={currentLocale}
+      dir={currentLocale === "fa" ? "rtl" : "ltr"}
+      className="relative mx-auto flex w-full max-w-lg items-center justify-center"
+    >
       <div className="relative sm:z-50 z-10 flex w-full cursor-pointer items-center overflow-hidden rounded-xl border border-slate-500 dark:border-slate-800 sm:p-[1.5px]">
         <div className="relative sm:z-50 flex w-full rounded-[0.60rem] dark:bg-gray-900 bg-gray-700 dark:hover:bg-gray-950 hover:bg-gray-800">
           <Link
@@ -18,7 +26,7 @@ const DownloadDropdown = () => {
             className="hidden sm:flex w-full justify-between font-mono items-center gap-x-3 text-slate-100 dark:text-slate-200 font-medium rounded-lg px-3 py-2 z-5 transition duration-200 border-4 border-transparent bg-gradient-to-l from-gradient-end via-gradient-middle to-gradient-start animate-gradientBorder"
             href={""}
           >
-            Download-CV
+            {t("download.en")}
             <ChevronRightIcon
               className={`w-5 h-5 z-50 my-auto transform transition-transform duration-200 rounded-full border border-slate-100 dark:border-slate-400 p-0.5 ${
                 isOpen ? "rotate-180" : ""
@@ -30,7 +38,7 @@ const DownloadDropdown = () => {
             className="sm:hidden flex w-full justify-between font-mono items-center gap-x-3 text-slate-100 dark:text-slate-200 font-medium text-sm rounded-lg px-1 py-2 z-5 transition duration-200 border-4 border-transparent bg-gradient-to-l from-gradient-end via-gradient-middle to-gradient-start animate-gradientBorder"
             href={""}
           >
-            Download-CV
+            {t("download.fa")}
             <ChevronDownIcon
               className={`w-5 h-5 z-50 my-auto transform transition-transform duration-200 rounded-full border border-slate-100 dark:border-slate-400 p-0.5 ${
                 isOpen ? "rotate-180" : ""

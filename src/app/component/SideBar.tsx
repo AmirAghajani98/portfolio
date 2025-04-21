@@ -129,14 +129,14 @@ export default function Sidebar({
               },
               {
                 name: t("sidebar.about"),
-                href: "#about",
+                href: "./#about",
                 icon: (
                   <UserIcon className="h-6 w-6 text-gray-700 dark:text-gray-400" />
                 ),
               },
               {
                 name: t("sidebar.contact"),
-                href: "#contact",
+                href: "./#contact",
                 icon: (
                   <PhoneIcon className="h-6 w-6 text-gray-700 dark:text-gray-400" />
                 ),

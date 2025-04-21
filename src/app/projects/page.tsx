@@ -1,12 +1,24 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
-import { projectsData } from "../utils/projectsData";
 import Footer from "../component/Footer";
 import Navbar from "../component/Navbar";
-
+interface Projects {
+  title: string;
+  description: string;
+  link: string;
+  image: string;
+  linktext: string;
+}
 export default function Projects() {
+  const { i18n, t } = useTranslation();
+  const isRTL = i18n.language === "fa";
+  const currentLocale = i18n.language;
+  const projects: Projects[] = t("myprojects.list", {
+    returnObjects: true,
+  }) as Projects[];
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalIframeSrc, setModalIframeSrc] = useState("");
   const [loading, setLoading] = useState(true);
@@ -47,45 +59,52 @@ export default function Projects() {
     <>
       <Navbar />
       <main className="sm:min-h-screen sm:w-full mx-auto sm:pt-16 pt-20 opacity-95 bg-slate-400 projectback justify-center flex flex-col">
-        <h2 className="sm:text-5xl text-4xl text-center mx-auto mt-8 pb-6 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 w-[50%]">
-          Projects
+        <h2 className="sm:text-5xl text-4xl text-center mx-auto mt-8 pb-6 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 w-[70%] sm:w-[50%]">
+          {t("myprojects.title")}
         </h2>
         <div className="w-[90%] sm:w-10/12 sm:my-20 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-x-24 gap-y-14">
-          {projectsData &&
-            projectsData.map((project, index) => (
-              <div
-                key={index}
-                className="my-8 sm:my-6 sm:flex sm:flex-col sm:w-full z-50 p-4 sm:pt-8 sm:pb-5 h-auto dark:text-slate-100 text-[#121a23] dark:bg-slate-800 bg-slate-400 dark:bg-opacity-30 bg-opacity-40 rounded-xl shadow-lg dark:shadow-slate-900 transition-all duration-300 ease-in-out"
-              >
-                <div className="flex justify-center items-center mb-4">
-                  <Image
-                    loading="lazy"
-                    src={project.image}
-                    width={500}
-                    height={400}
-                    alt={project.title}
-                    className="w-full max-w-[300px] sm:max-w-[400px] rounded-xl cursor-pointer transition-transform duration-300 hover:scale-105"
-                    onClick={() => openModal(project.link)}
-                  />
-                </div>
-                <h3 className="font-mono mt-3 mb-4 font-semibold text-xl dark:text-slate-100 text-[#121a23]">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              lang={currentLocale}
+              dir={currentLocale === "fa" ? "rtl" : "ltr"}
+              className="my-8 sm:my-6 sm:flex sm:flex-col sm:w-full z-50 p-4 sm:pt-8 sm:pb-5 h-auto dark:text-slate-100 text-[#121a23] dark:bg-slate-800 bg-slate-400 dark:bg-opacity-30 bg-opacity-40 rounded-xl shadow-lg dark:shadow-slate-900 transition-all duration-300 ease-in-out"
+            >
+              <div className="flex justify-center items-center mb-4">
+                <Image
+                  loading="lazy"
+                  src={project.image}
+                  width={500}
+                  height={400}
+                  alt={project.title}
+                  className="w-full max-w-[300px] sm:max-w-[400px] rounded-xl cursor-pointer transition-transform duration-300 hover:scale-105"
+                  onClick={() => openModal(project.link)}
+                />
+              </div>
+              <h3 className="font-mono mt-3 mb-4 font-semibold text-xl dark:text-slate-100 text-[#121a23]">
+                <div className={isRTL ? "text-right" : "text-left"}>
                   {project.title}
-                </h3>
-                <p className="font-sans whitespace-normal text-left mx-auto sm-mb-6 mb-2 text-base leading-relaxed dark:text-slate-100 text-[#121a23] line-clamp-4">
+                </div>
+              </h3>
+              <p className="font-sans whitespace-normal text-left mx-auto sm-mb-6 mb-2 text-base leading-relaxed dark:text-slate-100 text-[#121a23] line-clamp-4">
+                <div className={isRTL ? "text-right" : "text-left"}>
                   {project.description}
-                </p>
-                <div className="text-right flex items-end justify-end">
+                </div>
+              </p>
+              <div className="text-right flex items-end justify-end">
+                <div className={isRTL ? "text-right" : "text-left"}>
                   <Link
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm font-medium text-blue-950 dark:text-blue-400 hover:underline"
                   >
-                    Visit site &gt;
+                    {project.linktext}&gt;
                   </Link>
                 </div>
               </div>
-            ))}
+            </div>
+          ))}
         </div>
         {isModalOpen && (
           <div
