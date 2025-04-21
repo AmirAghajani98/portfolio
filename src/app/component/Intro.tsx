@@ -65,7 +65,7 @@ const Intro: React.FC = () => {
               role="button"
               target="_blank"
             >
-              {isLoading ? <LoadingButton /> : "Let’s Create Something Great!"}
+              {isLoading ? <LoadingButton /> : t("intro.action")}
             </Link>
           </div>
           <div className="mt-36 sm:mt-24 dark:text-slate-100 text-[#121a23]">

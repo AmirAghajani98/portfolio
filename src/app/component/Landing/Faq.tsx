@@ -58,7 +58,7 @@ export default function FAQ() {
       <div className="px-2 mx-auto sm:px-6 lg:px-8">
         <div className=" mx-auto text-center">
           <h2 className="sm:text-4xl text-2xl sm:w-[50%] mx-auto pb-4 sm:mb-20 mb-10 font-bold border-b border-slate-500 dark:border-slate-600 dark:text-gray-200 text-gray-950 md:text-4xl font-sans">
-            FAQ{" "}
+            FAQ
           </h2>
         </div>
         <div className="sm:w-3/6 w-full mx-auto mt-8 space-y-4 md:mt-16">

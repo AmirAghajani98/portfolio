@@ -71,10 +71,8 @@ export default function Home() {
                 {t("aboutme.title")}
               </div>
             </h2>
-            <p className="text-lg dark:text-slate-300 font-sans leading-7 indent-3">
-              <div className={isRTL ? "text-right" : "text-left"}>
-                {t("aboutme.description")}
-              </div>
+            <p className="text-lg dark:text-slate-300 font-sans leading-7 indent-3 text-justify">
+              <div>{t("aboutme.description")}</div>
             </p>
           </div>
         </div>

@@ -96,7 +96,7 @@ const Projects: React.FC = () => {
                       className="text-sm font-sans font-medium text-blue-950 dark:text-blue-400 hover:underline"
                     >
                       {project.linktext}&gt;
-                    </Link>{" "}
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -189,7 +189,7 @@ const ContactForm = () => {
               disabled={isSubmitting}
               className="w-full p-3 dark:text-gray-800 font-medium text-lg text-gray-200 dark:bg-blue-500 rounded dark:hover:bg-blue-600 bg-blue-700"
             >
-              {isSubmitting ? <LoadingButton /> : "Send"}
+              {isSubmitting ? <LoadingButton /> : t("contact.send")}
             </button>
           </form>
         </div>

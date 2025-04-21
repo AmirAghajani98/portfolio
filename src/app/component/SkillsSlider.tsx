@@ -29,7 +29,6 @@ const SkillsSection: React.FC = () => {
     <div
       id="skills"
       lang={currentLocale}
-      dir={currentLocale === "fa" ? "ltr" : "rtl"}
       className="w-full opacity-95 bg-slate-400 projectback justify-center h-auto py-10 px-6 shadow-lg"
     >
       <h1 className="sm:text-5xl text-4xl text-center mx-auto my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b-4 border-slate-500 dark:border-slate-600 w-[50%]">
