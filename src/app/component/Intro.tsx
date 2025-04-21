@@ -2,11 +2,15 @@
 
 import React, { useState } from "react";
 import { ReactTyped } from "react-typed";
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
 import LoadingButton from "../component/Buttons/LoadingButton";
 
 const Intro: React.FC = () => {
+  const { i18n, t } = useTranslation();
+  const isRTL = i18n.language === "fa";
+  const currentLocale = i18n.language;
   const [isLoading, setIsLoading] = useState(false);
 
   const handleClick = () => {
@@ -24,11 +28,16 @@ const Intro: React.FC = () => {
         <div id="stars" />
         <div id="stars2" />
         <div id="stars3" />
-        <div className="w-full text-center">
+        <div
+          className="w-full text-center"
+          lang={currentLocale}
+          dir={currentLocale === "fa" ? "ltr" : "rtl"}
+        >
           <h1 className="sm:text-6xl sm:my-28 mb-20 mt-8 text-4xl font-bold dark:text-slate-100 text-[#121a23] font-sans">
-            Hello, I am <br />
+            {t("intro.hi")}
             <br />
-            Amir Mohammad Aghajani
+            <br />
+            {t("intro.name")}
           </h1>
           <p className="my-20 text-3xl sm:text-4xl text-center">
             <span className=""></span>
@@ -56,12 +65,12 @@ const Intro: React.FC = () => {
               role="button"
               target="_blank"
             >
-              {isLoading ? <LoadingButton /> : "Let’s Create Something Great!"}
+              {isLoading ? <LoadingButton /> : t("intro.action")}
             </Link>
           </div>
           <div className="mt-36 sm:mt-24 dark:text-slate-100 text-[#121a23]">
             <h2 className="justify-center sm:text-3xl text-2xl font-semibold sm:flex font-sans">
-              Connect with me
+              {t("intro.contact")}
             </h2>
           </div>
           <div className="sm:mt-10 mt-6 justify-center flex w-full sm:mx-auto">

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import Link from "next/link";
@@ -13,6 +14,9 @@ import { contactConfig } from "../../../mail-config";
 import LoadingButton from "./Buttons/LoadingButton";
 
 const ContactForm = () => {
+  const { i18n, t } = useTranslation();
+  const isRTL = i18n.language === "fa";
+  const currentLocale = i18n.language;
   const formRef = useRef<HTMLFormElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -43,20 +47,24 @@ const ContactForm = () => {
       id="contact"
       className="sm:w-full mx-auto opacity-95 bg-slate-400 projectback justify-center flex flex-col"
     >
-      <div className="sm:flex items-start gap-16 my-10 p-4 mx-auto sm:w-10/12 w-11/12 font-[sans-serif] shadow-lg rounded-md">
+      <div
+        lang={currentLocale}
+        dir={currentLocale === "fa" ? "rtl" : "ltr"}
+        className="sm:flex items-start gap-16 my-10 p-4 mx-auto sm:w-10/12 w-11/12 font-[sans-serif] shadow-lg rounded-md"
+      >
         <div className="sm:w-1/2">
           <h2 className="sm:text-5xl text-4xl text-center mx-auto sm:my-8 pb-8 font-mono dark:text-slate-100 text-[#121a23] font-bold sm:border-none border-b border-slate-500 dark:border-slate-600">
-            Let's Talk
+            {t("contact.title")}
           </h2>
           <p className="text-base dark:text-gray-200 text-gray-900 sm:mt-4 mt-6">
-            Do you have a personal or business idea or brand to develop and need
-            help? Then reach out; I would love to hear about your project and
-            help.
+            <div className={isRTL ? "text-right" : "text-left"}>
+              {t("contact.description")}
+            </div>
           </p>
           <div className="sm:flex gap-x-10">
             <div className="mt-10">
               <h2 className="dark:text-gray-100 text-slate-900 text-lg font-bold font-mono">
-                Gmail
+                {t("contact.gmail")}
               </h2>
               <ul className="mt-1">
                 <li className="flex items-center">
@@ -65,7 +73,7 @@ const ContactForm = () => {
                   </div>
                   <a
                     href="mailto:amir.aghajani1377@gmail.com"
-                    className="dark:text-blue-500 text-blue-950 sm:text-base text-sm ml-1 sm:ml-4"
+                    className="dark:text-blue-500 text-blue-950 sm:text-base text-sm mx-1 sm:mx-4"
                   >
                     <small className="block">Mail</small>
                     <strong className="font-sans">
@@ -78,7 +86,7 @@ const ContactForm = () => {
 
             <div className="sm:mt-10 mt-6">
               <h2 className="dark:text-gray-100 text-slate-900 text-lg font-bold font-mono">
-                PhoneNumber
+                {t("contact.phone")}
               </h2>
               <ul className="mt-1">
                 <li className="flex items-center">
@@ -87,7 +95,7 @@ const ContactForm = () => {
                   </div>
                   <a
                     href="tel:+989369477625"
-                    className="dark:text-blue-500 text-blue-950 text-base ml-1 sm:ml-4"
+                    className="dark:text-blue-500 text-blue-950 text-base mx-1 sm:mx-4"
                   >
                     <small className="block font-mono">phone</small>
                     <strong className="font-mono">+989369477625</strong>
@@ -98,7 +106,7 @@ const ContactForm = () => {
           </div>
           <div className="mt-6">
             <h2 className="dark:text-gray-100 text-slate-900 text-lg font-bold font-mono">
-              Social
+              {t("contact.social")}
             </h2>
             <div className="mt-1 flex gap-x-16 w-full justify-between sm:justify-normal">
               <Link
@@ -144,9 +152,14 @@ const ContactForm = () => {
         </div>
 
         <div className="sm:w-1/2 mt-10 sm:mt-0">
-          <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="space-y-6"
+            dir="ltr"
+          >
             <h2 className="text-4xl text-center mx-auto sm:my-8 pb-8 font-mono dark:text-slate-100 text-[#121a23] font-bold sm:border-none border-b border-slate-500 dark:border-slate-600">
-              ContactForm
+              {t("contact.form")}
             </h2>
             <div className="flex flex-col sm:flex-row gap-4">
               <input
@@ -176,7 +189,7 @@ const ContactForm = () => {
               disabled={isSubmitting}
               className="w-full p-3 dark:text-gray-800 font-medium text-lg text-gray-200 dark:bg-blue-500 rounded dark:hover:bg-blue-600 bg-blue-700"
             >
-              {isSubmitting ? <LoadingButton /> : "Send"}
+              {isSubmitting ? <LoadingButton /> : t("contact.send")}
             </button>
           </form>
         </div>

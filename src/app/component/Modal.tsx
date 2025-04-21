@@ -1,4 +1,5 @@
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import React, { useRef } from "react";
 
@@ -8,12 +9,14 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
+  const { i18n, t } = useTranslation();
+  const isRTL = i18n.language === "fa";
+  const currentLocale = i18n.language;
   const modalRef = useRef<HTMLDialogElement | null>(null);
 
   const openModal = () => {
     if (modalRef.current) modalRef.current.showModal();
   };
-
   const closeModal = () => {
     if (modalRef.current) modalRef.current.close();
     onClose();
@@ -45,9 +48,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
               <XMarkIcon width={20} />
             </button>
           </form>
-          <p className="font-bold font-mono text-lg">
-            Select Resume to Download
-          </p>
+          <p className="font-bold font-mono text-lg">{t("download.title")}</p>
           <div className="flex justify-around space-x-4 mt-8">
             <Link
               href="https://drive.google.com/uc?export=download&id=1BYRswZohFIZPjtWnZ7I6IBSzM_r-dUxS"
@@ -56,7 +57,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
               target="_blank"
               className="p-2.5 sm:mr-1 sm:mt-0 mt-1 border-b text-sm sm:text-base sm:border-none border-slate-500 dark:border-b dark:border-slate-700 font-mono cursor-pointer shadow bg-gray-800 hover:bg-gray-800 sm:rounded-lg rounded-t-lg"
             >
-              English
+              {t("download.en")}
             </Link>
             <Link
               href="https://drive.google.com/uc?export=download&id=1hQS_Zrg3M0wwBeAlgnJclmoq0Q9gQQNn"
@@ -66,7 +67,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
               download="resume-en.pdf"
               className="p-2.5 sm:mr-1 sm:mt-0 mt-1 border-b text-sm sm:text-base sm:border-none border-slate-500 dark:border-b dark:border-slate-700 font-mono cursor-pointer shadow bg-gray-800 hover:bg-gray-800 sm:rounded-lg rounded-t-lg"
             >
-              persian
+              {t("download.fa")}
             </Link>
           </div>
         </div>
