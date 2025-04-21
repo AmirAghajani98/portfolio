@@ -26,7 +26,7 @@ export default function Projects() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 10);
 
     return () => clearTimeout(timer);
   }, []);

@@ -19,7 +19,7 @@ export default function Landing() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 10);
 
     return () => clearTimeout(timer);
   }, []);
