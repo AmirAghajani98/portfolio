@@ -116,7 +116,7 @@ const ContactForm = () => {
               >
                 <Image
                   loading="lazy"
-                  src="./img/github.png"
+                  src="./img/github.webp"
                   width={50}
                   height={50}
                   alt="Picture of the author"
@@ -126,7 +126,7 @@ const ContactForm = () => {
               <Link href="https://t.me/Amr431" target={"_blank"} className="">
                 <Image
                   loading="lazy"
-                  src="./img/icons8-telegram-96(1).png"
+                  src="./img/icons8-telegram.webp"
                   width={50}
                   height={50}
                   alt="Picture of the author"
@@ -140,7 +140,7 @@ const ContactForm = () => {
               >
                 <Image
                   loading="lazy"
-                  src="./img/icons8-linkedin-96.png"
+                  src="./img/icons8-linkedin-96.webp"
                   width={50}
                   height={50}
                   alt="Picture of the author"

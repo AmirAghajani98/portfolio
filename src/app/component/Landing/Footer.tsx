@@ -24,7 +24,7 @@ export default function Footer() {
             {" "}
             <Image
               className="sm:w-56 w-80 mx-auto sm:-my-14 -my-20"
-              src={"./img/aghatech.png"}
+              src={"./img/aghatech.webp"}
               width={100}
               height={1}
               alt={""}
@@ -55,7 +55,7 @@ export default function Footer() {
             <div className="flex gap-6 justify-center mt-14">
               <Link href="https://github.com/AmirAghajani98" target={"_blank"}>
                 <Image
-                  src="./img/github.png"
+                  src="./img/github.webp"
                   width={40}
                   height={40}
                   alt="GitHub"
@@ -65,7 +65,7 @@ export default function Footer() {
               </Link>
               <Link href="https://t.me/Amr431" target={"_blank"}>
                 <Image
-                  src="./img/icons8-telegram-96(1).png"
+                  src="./img/icons8-telegram.webp"
                   width={40}
                   height={40}
                   alt="Telegram"
@@ -79,7 +79,7 @@ export default function Footer() {
               >
                 <Image
                   loading="lazy"
-                  src="./img/icons8-linkedin-96.png"
+                  src="./img/icons8-linkedin-96.webp"
                   width={40}
                   height={40}
                   alt="LinkedIn"
@@ -89,7 +89,7 @@ export default function Footer() {
               <Link href="https://wa.me/989369477625" target={"_blank"}>
                 <Image
                   loading="lazy"
-                  src="./img/whatsapp.png"
+                  src="./img/whatsapp.webp"
                   width={40}
                   height={40}
                   alt="WhatsApp"
@@ -102,7 +102,7 @@ export default function Footer() {
 
         <div className="p-1 overflow-auto sm:w-2/5 w-11/12 mt-4 sm:mt-0">
           <img
-            src="./img/amiraghajani.jpg"
+            src="./img/amiraghajani.webp"
             alt="amiraghajani"
             className="float-right sm:w-40 sm:h-40 w-28 h-28 rounded-full sm:ml-4 mt-2"
           />
@@ -143,7 +143,7 @@ export default function Footer() {
           <div className="flex gap-6 justify-center mt-14">
             <Link href="https://github.com/AmirAghajani98" target={"_blank"}>
               <Image
-                src="./img/github.png"
+                src="./img/github..webp"
                 width={40}
                 height={40}
                 alt="GitHub"
@@ -153,7 +153,7 @@ export default function Footer() {
             </Link>
             <Link href="https://t.me/Amr431" target={"_blank"}>
               <Image
-                src="./img/icons8-telegram-96(1).png"
+                src="./img/icons8-telegram.webp"
                 width={40}
                 height={40}
                 alt="Telegram"
@@ -167,7 +167,7 @@ export default function Footer() {
             >
               <Image
                 loading="lazy"
-                src="./img/icons8-linkedin-96.png"
+                src="./img/icons8-linkedin-96.webp"
                 width={40}
                 height={40}
                 alt="LinkedIn"
@@ -177,7 +177,7 @@ export default function Footer() {
             <Link href="https://wa.me/989369477625" target={"_blank"}>
               <Image
                 loading="lazy"
-                src="./img/whatsapp.png"
+                src="./img/whatsapp.webp"
                 width={40}
                 height={40}
                 alt="WhatsApp"
@@ -200,7 +200,7 @@ export default function Footer() {
       <div className="sm:w-[70%] z-[-1] -translate-y-[90%] sm:-translate-y-[95%] sm:translate-x-[20%] absolute font-serif">
         <Image
           className="opacity-10 dark:opacity-5 rotate-180 mx-auto w-full sm:h-[380px]"
-          src={"./img/strips2.png"}
+          src={"./img/strips2.webp"}
           height={100}
           width={100}
           alt="Stripes"

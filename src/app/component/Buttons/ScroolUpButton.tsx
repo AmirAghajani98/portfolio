@@ -39,7 +39,7 @@ const ScrollUpButton = () => {
     >
       <Image
         loading="lazy"
-        src={"./img/up.png"}
+        src={"./img/up.webp"}
         alt={""}
         width={50}
         height={50}

@@ -14,7 +14,7 @@ const Timeline = () => {
         darktext: "text-blue-200",
         border: "border-blue-500",
       },
-      image: "./img/pack10.png",
+      image: "./img/pack10.webp",
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ const Timeline = () => {
         darktext: "text-gray-400",
         border: "border-gray-500",
       },
-      image: "./img/pack7.png",
+      image: "./img/pack7.webp",
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ const Timeline = () => {
         darktext: "text-slate-200",
         border: "border-slate-500",
       },
-      image: "./img/pack9.png",
+      image: "./img/pack9.webp",
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ const Timeline = () => {
         darktext: "text-amber-300",
         border: "border-amber-500",
       },
-      image: "./img/pack1.png",
+      image: "./img/pack1.webp",
     },
     {
       id: 5,
@@ -66,7 +66,7 @@ const Timeline = () => {
         darktext: "text-indigo-300",
         border: "border-indigo-500",
       },
-      image: "./img/pack3.png",
+      image: "./img/pack3.webp",
     },
     {
       id: 6,
@@ -79,7 +79,7 @@ const Timeline = () => {
         darktext: "text-violet-100",
         border: "border-violet-500",
       },
-      image: "./img/pack8.png",
+      image: "./img/pack8.webp",
     },
     {
       id: 7,
@@ -92,7 +92,7 @@ const Timeline = () => {
         darktext: "text-yellow-400",
         border: "border-yellow-500",
       },
-      image: "./img/pack4.png",
+      image: "./img/pack4.webp",
     },
     {
       id: 8,
@@ -105,7 +105,7 @@ const Timeline = () => {
         darktext: "text-blue-100",
         border: "border-blue-500",
       },
-      image: "./img/pack2.png",
+      image: "./img/pack2.webp",
     },
     {
       id: 9,
@@ -118,7 +118,7 @@ const Timeline = () => {
         darktext: "text-teal-100",
         border: "border-teal-500",
       },
-      image: "./img/pack6.png",
+      image: "./img/pack6.webp",
     },
     {
       id: 10,
@@ -131,7 +131,7 @@ const Timeline = () => {
         darktext: "text-gray-200",
         border: "border-gray-500",
       },
-      image: "./img/pack5.png",
+      image: "./img/pack5.webp",
     },
   ];
 

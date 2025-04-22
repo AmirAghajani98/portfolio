@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
   return (
     <main
       id="projects"
-      className="sm:min-h-screen w-full mx-auto sm:px-48 py-10 justify-center bg-slate-400 projectback relative z-10 "
+      className="sm:min-h-screen w-full mx-auto sm:px-48 py-10 justify-center bg-slate-400 projectback relative"
     >
       <div>
         <h2 className="sm:text-4xl text-2xl text-center mx-auto sm:my-8 pb-10 font-mono text-gray-800 dark:text-gray-100 font-bold border-b border-gray-300 dark:border-gray-700 sm:w-[50%]">

@@ -13,7 +13,7 @@ export default function HeroSection() {
         >
           <Image
             className="opacity-25 dark:opacity-10 w-full"
-            src={"./img/strips2.png"}
+            src={"./img/strips2.webp"}
             height={100}
             width={1100}
             alt="Stripes"
@@ -112,7 +112,7 @@ export default function HeroSection() {
             </div>
             <div className="relative sm:w-1/2 w-[90%] mx-auto sm:mt-0 mt-10">
               <Image
-                src="./img/web.png"
+                src="./img/web.webp"
                 alt="Amir Aghajani - Web Developer"
                 width={500}
                 height={500}

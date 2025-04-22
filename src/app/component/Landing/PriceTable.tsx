@@ -209,7 +209,7 @@ export default function Pricetable() {
         </h2>
         <Image
           loading="lazy"
-          src={"./img/steps-light.png"}
+          src={"./img/steps-light.webp"}
           alt={"steps"}
           width={100}
           height={100}
@@ -217,7 +217,7 @@ export default function Pricetable() {
         />
         <Image
           loading="lazy"
-          src={"./img/steps-dark.png"}
+          src={"./img/steps-dark.webp"}
           alt={"steps"}
           width={100}
           height={100}

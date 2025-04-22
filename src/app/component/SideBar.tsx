@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { ThemeSwitcher } from "./Buttons/ThemeSwitcher";
 
@@ -29,6 +30,7 @@ export default function Sidebar({
   const sidebarRef = useRef<HTMLDivElement>(null);
   const { i18n, t } = useTranslation();
   const isRTL = i18n.language === "fa";
+  const pathname = usePathname();
   const currentLocale = i18n.language;
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -173,12 +175,15 @@ export default function Sidebar({
             </p>
             <ThemeSwitcher />
           </div>
-          <div className="bottom-0 pt-4 flex justify-between items-center sm:hidden">
-            <p className="text-lg dark:text-gray-300 text-gray-700">
-              {t("sidebar.language")}
-            </p>
-            <LanguageSwitcher />
-          </div>
+
+          {pathname !== "/landing" && (
+            <div className="bottom-0 pt-4 flex justify-between items-center sm:hidden">
+              <p className="text-lg dark:text-gray-300 text-gray-700">
+                {t("sidebar.language")}
+              </p>{" "}
+              <LanguageSwitcher />
+            </div>
+          )}
         </div>
       </div>
     </>

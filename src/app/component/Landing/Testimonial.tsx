@@ -11,7 +11,7 @@ export default function Testimonial() {
       name: "Sara",
       comment:
         "I’ve had an amazing experience working with Amir. He is always online whenever I need help with my website, making it so easy to get things fixed or updated quickly. His commitment to deadlines is great and everything is delivered on time. If you’re looking for a reliable and skilled web designer, I highly recommend him!",
-      image: "/img/avatar-1.png",
+      image: "/img/avatar.webp",
       rating: 5,
     },
     {
@@ -19,7 +19,7 @@ export default function Testimonial() {
       name: "masoud",
       comment:
         "Working with Amir was a professional and quality collaboration experience for me. Timely delivery and accuracy in work execution, as well as commitment in delivering the work, were important features of working with Amir for me.",
-      image: "/img/avatar-1.png",
+      image: "/img/avatar.webp",
       rating: 5,
     },
     {
@@ -27,7 +27,7 @@ export default function Testimonial() {
       name: "Alex",
       comment:
         "Amir was exactly who I neededHis website design was completely customized and perfectly aligned with my brand. He paid great attention to detail, and his creative ideas made my website stand out from the competition.Working with Amir was a highly professional and enjoyable experience. He was always responsive and delivered the project on time. ",
-      image: "/img/avatar-1.png",
+      image: "/img/avatar.webp",
       rating: 5,
     },
     {
@@ -35,7 +35,7 @@ export default function Testimonial() {
       name: "Daniel",
       comment:
         "Amir exceeded my expectationsHis designs were modern, user-friendly, and fully SEO-optimized. He helped me improve my digital marketing strategy, which significantly increased my website traffic.What impressed me the most was Amir’s commitment and excellent support.If you’re looking for a high-quality web specialist, Amir is the best choice!",
-      image: "/img/avatar-1.png",
+      image: "/img/avatar.webp",
       rating: 5,
     },
   ];
