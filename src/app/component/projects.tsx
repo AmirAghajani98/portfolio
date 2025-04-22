@@ -26,10 +26,10 @@ const Projects: React.FC = () => {
   return (
     <main
       id="projects"
-      className="sm:min-h-screen w-full mx-auto sm:px-48 py-10 justify-center bg-slate-400 projectback"
+      className="sm:min-h-screen w-full mx-auto sm:px-48 py-10 justify-center bg-slate-400 projectback relative z-10 "
     >
       <div>
-        <h2 className="sm:text-4xl text-2xl text-center mx-auto sm:my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 sm:w-[50%]">
+        <h2 className="sm:text-4xl text-2xl text-center mx-auto sm:my-8 pb-10 font-mono text-gray-800 dark:text-gray-100 font-bold border-b border-gray-300 dark:border-gray-700 sm:w-[50%]">
           {t("myprojects.title")}
         </h2>
         <Swiper
@@ -64,7 +64,7 @@ const Projects: React.FC = () => {
               <div
                 lang={currentLocale}
                 dir={currentLocale === "fa" ? "rtl" : "ltr"}
-                className="my-8 sm:my-6 sm:flex sm:flex-col sm:w-full w-11/12 mx-auto z-50 p-4 sm:pt-8 sm:pb-5 h-full dark:text-slate-100 text-[#121a23] dark:bg-slate-800 bg-slate-400 dark:bg-opacity-30 bg-opacity-40 rounded-xl shadow-lg dark:shadow-slate-900 transition-all duration-300 ease-in-out"
+                className="my-8 sm:my-6 sm:flex sm:flex-col sm:w-full w-11/12 mx-auto z-50 p-4 sm:pt-8 sm:pb-5 h-full text-gray-800 dark:text-gray-100 bg-slate-300 bg-opacity-30 dark:bg-gray-800 rounded-xl shadow-lg dark:shadow-gray-900 hover:shadow-2xl transition-all duration-300"
               >
                 <div className="flex justify-center items-center mb-4">
                   <Image
@@ -77,12 +77,12 @@ const Projects: React.FC = () => {
                   />
                 </div>
 
-                <h3 className="font-mono mt-3 mb-4 sm:mx-4 text-left font-semibold text-xl dark:text-slate-100 text-[#121a23]">
+                <h3 className="font-mono mt-3 mb-4 sm:mx-4 text-left font-semibold text-xl text-gray-800 dark:text-gray-100">
                   <div className={isRTL ? "text-right" : "text-left"}>
                     {project.title}
                   </div>
                 </h3>
-                <p className="font-sans sm:overflow-hidden text-ellipsis whitespace-normal h-32 sm:mx-4 text-left sm:mb-6 mb-2 text-base leading-relaxed dark:text-gray-400 text-gray-800 sm:line-clamp-5 line-clamp-4">
+                <p className="font-sans sm:overflow-hidden text-ellipsis whitespace-normal h-32 sm:mx-4 text-left sm:mb-6 mb-2 text-base leading-relaxed text-gray-600 dark:text-gray-300 sm:line-clamp-5 line-clamp-4">
                   <div className={isRTL ? "text-right" : "text-left"}>
                     {project.description}
                   </div>
@@ -93,7 +93,7 @@ const Projects: React.FC = () => {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm font-sans font-medium text-blue-950 dark:text-blue-400 hover:underline"
+                      className="link link-hover link-info text-indigo-800 dark:text-indigo-400 text-sm font-sans font-medium"
                     >
                       {project.linktext}&gt;
                     </Link>

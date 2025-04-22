@@ -55,13 +55,13 @@ const Intro: React.FC = () => {
               />
             </strong>
           </p>
-          <div className="relative inline-flex  group">
-            <div className="absolute transitiona-all duration-1000 dark:opacity-70 -inset-px dark:bg-gradient-to-r dark:from-[#44BCFF] dark:via-[#FF44EC] dark:to-[#FF675E] bg-gradient-to-r from-slate-900 via-blue-900 to-amber-900 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+          <div className="relative inline-flex group">
+            <div className="absolute transition-all duration-1000 dark:opacity-70 -inset-px dark:bg-gradient-to-r dark:from-[#858585] dark:via-[#535353] dark:to-[#858585] bg-gradient-to-r from-[#3b3653] via-[#61658c] to-[#3b3653]  rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
             <Link
               href={"/landing"}
               onClick={handleClick}
               title="Let’s Create Something Great!"
-              className="relative inline-flex font-sans items-center justify-center px-8 py-4 text-lg font-bold dark:text-white text-slate-950 transition-all duration-200 dark:bg-slate-800 bg-gray-400 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+              className="link-info hover:outline outline-violet-900 dark:outline-gray-600 hover:text-indigo-950 relative inline-flex font-sans items-center justify-center px-8 py-4 text-lg font-bold dark:text-white text-gray-900 transition-all duration-200 dark:bg-gray-800 bg-slate-300/80 rounded-xl shadow-lg hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               role="button"
               target="_blank"
             >

@@ -43,7 +43,7 @@ export default function Home() {
         <div
           lang={currentLocale}
           dir={currentLocale === "fa" ? "rtl" : "ltr"}
-          className="sm:py-10 z-10 dark:z-10 sm:flex sm:items-center w-[98%] sm:w-[90%] dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-500 dark:bg-opacity-10 bg-opacity-10 sm:text-justify text-start sm:p-8 p-4 rounded-3xl mx-auto shadow-lg shadow-slate-600 border border-slate-400 dark:shadow-slate-900 dark:border-slate-800"
+          className="sm:py-10 z-10 dark:z-10 sm:flex sm:items-center w-[98%] sm:w-[90%] bg-slate-300 bg-opacity-30 dark:bg-gray-800 rounded-xl sm:text-justify text-start sm:p-8 p-4 mx-auto shadow-lg dark:shadow-gray-900"
         >
           <div className="text-center m-auto">
             <div className=" z-50 mx-4">
@@ -66,12 +66,12 @@ export default function Home() {
             className="m-auto rounded-full mt-8 mb-16 sm:hidden shadow-md shadow-cyan-500/50 z-50"
           />
           <div className="w-full mt-14 sm:mt-0 text-justify">
-            <h2 className="text-3xl font-semibold mb-3 font-mono">
+            <h2 className="text-3xl font-semibold mb-3 font-mono text-gray-800 dark:text-gray-100">
               <div className={isRTL ? "text-right" : "text-left"}>
                 {t("aboutme.title")}
               </div>
             </h2>
-            <p className="text-lg dark:text-slate-300 font-sans leading-7 indent-3 text-justify">
+            <p className="text-lg font-sans leading-7 indent-3 text-justify text-gray-800 dark:text-gray-300">
               <div>{t("aboutme.description")}</div>
             </p>
           </div>

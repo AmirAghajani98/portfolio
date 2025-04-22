@@ -59,7 +59,7 @@ export default function Projects() {
     <>
       <Navbar />
       <main className="sm:min-h-screen sm:w-full mx-auto sm:pt-16 pt-20 opacity-95 bg-slate-400 projectback justify-center flex flex-col">
-        <h2 className="sm:text-5xl text-4xl text-center mx-auto mt-8 pb-6 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600 w-[70%] sm:w-[50%]">
+        <h2 className="sm:text-4xl text-2xl text-center mx-auto sm:my-8 pb-10 font-mono text-gray-800 dark:text-gray-100 font-bold border-b border-gray-300 dark:border-gray-700 sm:w-[50%]">
           {t("myprojects.title")}
         </h2>
         <div className="w-[90%] sm:w-10/12 sm:my-20 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-x-24 gap-y-14">
@@ -68,7 +68,7 @@ export default function Projects() {
               key={index}
               lang={currentLocale}
               dir={currentLocale === "fa" ? "rtl" : "ltr"}
-              className="my-8 sm:my-6 sm:flex sm:flex-col sm:w-full z-50 p-4 sm:pt-8 sm:pb-5 h-auto dark:text-slate-100 text-[#121a23] dark:bg-slate-800 bg-slate-400 dark:bg-opacity-30 bg-opacity-40 rounded-xl shadow-lg dark:shadow-slate-900 transition-all duration-300 ease-in-out"
+              className="my-8 sm:my-6 sm:flex sm:flex-col sm:w-full z-50 p-4 sm:pt-8 sm:pb-5 h-auto  text-gray-800 dark:text-gray-100 bg-slate-300 bg-opacity-30 dark:bg-gray-800 rounded-xl shadow-lg dark:shadow-gray-900 hover:shadow-2xl transition-all duration-300"
             >
               <div className="flex justify-center items-center mb-4">
                 <Image
@@ -77,7 +77,7 @@ export default function Projects() {
                   width={500}
                   height={400}
                   alt={project.title}
-                  className="w-full max-w-[300px] sm:max-w-[400px] rounded-xl cursor-pointer transition-transform duration-300 hover:scale-105"
+                  className="w-full max-w-11/12 sm:max-w-[400px] rounded-xl cursor-pointer transition-transform duration-300"
                   onClick={() => openModal(project.link)}
                 />
               </div>
@@ -97,7 +97,7 @@ export default function Projects() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-medium text-blue-950 dark:text-blue-400 hover:underline"
+                    className="link link-hover link-info text-indigo-800 dark:text-indigo-400 text-sm font-sans font-medium"
                   >
                     {project.linktext}&gt;
                   </Link>
