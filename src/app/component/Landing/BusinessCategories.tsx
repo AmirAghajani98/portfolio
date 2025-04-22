@@ -173,7 +173,7 @@ export default function BusinessCategories() {
                 <div className="flex sm:h-40 -translate-y-[125px] sm:-translate-y-0 sm:w-40 w-24 h-24 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                   <Image
                     className="relative"
-                    src={"./img/Atlassian.png"}
+                    src={"./img/Atlassian.webp"}
                     width={140}
                     height={140}
                     alt="Logo 01"
@@ -203,7 +203,7 @@ export default function BusinessCategories() {
                     <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                       <Image
                         className="relative"
-                        src={"./img/kogan.png"}
+                        src={"./img/kogan.webp"}
                         width={90}
                         height={90}
                         alt="Logo 03"
@@ -259,7 +259,7 @@ export default function BusinessCategories() {
                     <div className="flex sm:h-28 sm:w-28 w-[75px] h-[75px] items-center justify-center rounded-full bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                       <Image
                         className="relative rounded-full"
-                        src={"./img/mindroom.jpeg"}
+                        src={"./img/mindroom.webp"}
                         width={100}
                         height={100}
                         alt="Logo 07"

@@ -81,7 +81,7 @@ const Intro: React.FC = () => {
             >
               <Image
                 loading="lazy"
-                src="./img/2.png"
+                src="./img/2.webp"
                 width={50}
                 height={50}
                 alt="Picture of the author"
@@ -95,7 +95,7 @@ const Intro: React.FC = () => {
             >
               <Image
                 loading="lazy"
-                src="./img/7.png"
+                src="./img/7.webp"
                 width={50}
                 height={50}
                 alt="Picture of the author"
@@ -109,7 +109,7 @@ const Intro: React.FC = () => {
             >
               <Image
                 loading="lazy"
-                src="./img/4.png"
+                src="./img/4.webp"
                 width={50}
                 height={50}
                 alt="Picture of the author"
@@ -123,7 +123,7 @@ const Intro: React.FC = () => {
             >
               <Image
                 loading="lazy"
-                src="./img/5.png"
+                src="./img/5.webp"
                 width={50}
                 height={50}
                 alt="Picture of the author"

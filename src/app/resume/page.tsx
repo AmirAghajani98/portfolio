@@ -82,7 +82,7 @@ export default function resume() {
               <div className="sm:flex sm:justify-between justify-center w-full">
                 <Image
                   className="mx-auto sm:mx-1 rounded-full shadow shadow-slate-700 my-8 sm:mr-4"
-                  src={"./img/amir.jpg"}
+                  src={"./img/amir.webp"}
                   alt={"amir"}
                   width={300}
                   height={300}

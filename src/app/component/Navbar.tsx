@@ -44,7 +44,7 @@ export default function Navbar() {
             <Image
               loading="lazy"
               className="rounded-full sm:w-24 w-20"
-              src="./img/alogo.png"
+              src="./img/alogo.webp"
               alt="Logo"
               width={10}
               height={10}

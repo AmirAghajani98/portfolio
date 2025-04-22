@@ -13,7 +13,7 @@ const SkillsSection: React.FC = () => {
     { logo: "./img/css.svg", progress: 95 },
     { logo: "./img/git.svg", progress: 90 },
     { logo: "./img/apollo.svg", progress: 75 },
-    { logo: "./img/github.png", progress: 85 },
+    { logo: "./img/github.webp", progress: 85 },
     { logo: "./img/graphql.svg", progress: 70 },
     { logo: "./img/html.svg", progress: 95 },
     { logo: "./img/js.svg", progress: 90 },

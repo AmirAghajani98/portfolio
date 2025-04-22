@@ -49,7 +49,7 @@ export default function Home() {
             <div className=" z-50 mx-4">
               <Image
                 loading="lazy"
-                src={"./img/amiraghajani.jpg"}
+                src={"./img/amiraghajani.webp"}
                 width={400}
                 height={400}
                 alt="amiraghajani"
@@ -59,7 +59,7 @@ export default function Home() {
           </div>
           <Image
             loading="lazy"
-            src={"./img/amiraghajani.jpg"}
+            src={"./img/amiraghajani.webp"}
             width={200}
             height={200}
             alt="amiraghajani"
