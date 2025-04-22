@@ -60,7 +60,7 @@ h6 {
 .dark .projectback {
   background: radial-gradient(ellipse at top, #1b2735 0%, transparent 70%),
     radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) !important;
-  z-index: 100 !important;
+  z-index: 10 !important;
 }
 .projectback {
   background: radial-gradient(ellipse at top, #778695 0%, transparent 70%),

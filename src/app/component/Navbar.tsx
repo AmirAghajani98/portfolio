@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { Bars3BottomLeftIcon } from "@heroicons/react/24/outline";
 import Sidebar from "./SideBar";
 import Modal from "./Modal";
@@ -11,6 +12,7 @@ import LanguageSwitcher from "./Buttons/LanguageSwitcher";
 export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -30,9 +32,11 @@ export default function Navbar() {
           >
             <Bars3BottomLeftIcon className="h-10 w-10 dark:text-gray-400 text-gray-800 m-auto" />
           </button>
-          <div className="hidden sm:flex">
-            <LanguageSwitcher />
-          </div>
+          {pathname !== "/landing" && (
+            <div className="hidden sm:flex">
+              <LanguageSwitcher />
+            </div>
+          )}
         </div>
 
         <div className="flex items-center shrink-0">
