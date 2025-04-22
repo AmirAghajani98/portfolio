@@ -16,12 +16,14 @@ if (!i18n.isInitialized) {
         translation: faTranslations,
       },
     },
-    lng: "",
+    lng:
+      typeof window !== "undefined" && localStorage.getItem("i18nextLng")
+        ? localStorage.getItem("i18nextLng")!
+        : "en",
     fallbackLng: "en",
     interpolation: {
       escapeValue: false,
     },
   });
 }
-
 export default i18n;
