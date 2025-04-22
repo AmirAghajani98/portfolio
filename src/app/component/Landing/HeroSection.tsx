@@ -49,15 +49,15 @@ export default function HeroSection() {
                     data-aos-delay={450}
                   >
                     <div className="sm:w-54 mx-auto justify-center items-center text-center relative z-10 flex cursor-pointer overflow-hidden rounded-xl sm:p-[2.5px] p-[2px]">
-                      <div className="animate-rotate absolute inset-0 rounded-full bg-[conic-gradient(#475569_45deg,transparent_180deg)] dark:bg-[conic-gradient(#64748b_45deg,transparent_180deg)]"></div>
-                      <div className="relative z-20 flex w-full rounded-[10px] bg-slate-950">
+                      <div className="animate-rotate absolute inset-0 rounded-full bg-[conic-gradient(#f1f5f9_45deg,transparent_180deg)] dark:bg-[conic-gradient(#f1f5f9_45deg,transparent_180deg)]"></div>
+                      <div className="relative z-20 flex w-full rounded-[10px] bg-slate-400">
                         <Link
                           href={"#contact"}
-                          className="text-lg font-sans mx-auto w-full h-full py-2 px-3 font-semibold dark:hover:bg-opacity-40 hover:bg-opacity-75 dark:text-slate-100 text-[#121a23] dark:bg-slate-700 bg-slate-400 dark:bg-opacity-20 bg-opacity-80 rounded-lg transition duration-200 border border-transparent bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end animate-gradientBorder"
+                          className="link text-lg font-sans mx-auto w-full h-full py-2 px-3 font-semibold dark:hover:bg-opacity-40 hover:bg-opacity-75 text-slate-100 dark:text-slate-900 dark:bg-slate-500 bg-slate-700 dark:bg-opacity-20 bg-opacity-80 rounded-lg transition duration-200 border border-transparent bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end animate-gradientBorder"
                         >
                           <span className="relative inline-flex items-center">
                             Free Consultation
-                            <span className="ml-1 tracking-normal dark:text-blue-300 text-blue-900 transition-transform group-hover:translate-x-0.5">
+                            <span className="ml-1 tracking-normal dark:text-blue-900 text-blue-200 transition-transform group-hover:translate-x-0.5">
                               -&gt;
                             </span>
                           </span>

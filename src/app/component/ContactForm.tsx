@@ -50,13 +50,13 @@ const ContactForm = () => {
       <div
         lang={currentLocale}
         dir={currentLocale === "fa" ? "rtl" : "ltr"}
-        className="sm:flex items-start gap-16 my-10 p-4 mx-auto sm:w-10/12 w-11/12 font-[sans-serif] shadow-lg rounded-md"
+        className="sm:flex items-start gap-16 my-10 p-4 mx-auto sm:w-10/12 w-11/12 font-[sans-serif] shadow-md rounded-md"
       >
         <div className="sm:w-1/2">
-          <h2 className="sm:text-5xl text-4xl text-center mx-auto sm:my-8 pb-8 font-mono dark:text-slate-100 text-[#121a23] font-bold sm:border-none border-b border-slate-500 dark:border-slate-600">
+          <h2 className="sm:text-5xl text-4xl text-center mx-auto sm:my-8 pb-4 font-mono text-gray-800 dark:text-gray-100 font-bold sm:border-none border-b border-gray-300 dark:border-gray-700">
             {t("contact.title")}
           </h2>
-          <p className="text-base dark:text-gray-200 text-gray-900 sm:mt-4 mt-6">
+          <p className="text-base text-gray-700 dark:text-gray-300 sm:mt-4 mt-6">
             <div className={isRTL ? "text-right" : "text-left"}>
               {t("contact.description")}
             </div>
@@ -167,14 +167,14 @@ const ContactForm = () => {
                 name="name"
                 placeholder="Name"
                 required
-                className="flex-1 p-2 border rounded bg-slate-200 dark:bg-slate-800 dark:text-gray-200 text-gray-900"
+                className="input input-bordered w-full input-info bg-slate-200 bg-opacity-90 dark:bg-base-100"
               />
               <input
                 type="tel"
                 name="phone"
                 placeholder="Phone"
                 required
-                className="flex-1 p-2 border rounded bg-slate-200 dark:bg-slate-800 dark:text-gray-200 text-gray-900"
+                className="input input-bordered w-full input-info bg-slate-200 bg-opacity-90 dark:bg-base-100"
               />
             </div>
             <textarea
@@ -182,12 +182,12 @@ const ContactForm = () => {
               placeholder="Message"
               rows={5}
               required
-              className="w-full p-2 border rounded dark:text-gray-200 text-gray-900 bg-slate-200 dark:bg-slate-800"
+              className="textarea textarea-info textarea-bordered w-full p-2 bg-slate-200 dark:bg-base-100 bg-opacity-90"
             />
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full p-3 dark:text-gray-800 font-medium text-lg text-gray-200 dark:bg-blue-500 rounded dark:hover:bg-blue-600 bg-blue-700"
+              className="btn btn-soft btn-info w-full font-medium text-lg"
             >
               {isSubmitting ? <LoadingButton /> : t("contact.send")}
             </button>

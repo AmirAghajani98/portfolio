@@ -41,8 +41,8 @@ export default function Testimonial() {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-12 text-center justify-center sm:mb-28 my-20">
-      <h2 className="sm:text-4xl text-2xl sm:w-[50%] mx-auto sm:pb-10 pb-4 sm:mb-20 mb-10 font-bold border-b border-slate-500 dark:border-slate-600 dark:text-gray-200 text-gray-950 md:text-4xl font-sans">
+    <div className="container sm:11/12 w-[95%] mx-auto px-4 py-12 text-center justify-center sm:mb-28 my-20">
+      <h2 className="sm:text-4xl text-2xl text-center mx-auto my-8 p-4 font-mono text-gray-800 dark:text-gray-100 font-bold border-b border-gray-500 dark:border-gray-700 sm:w-[50%]">
         Why Clients Trust Me
       </h2>
 
@@ -75,7 +75,7 @@ export default function Testimonial() {
       >
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>
-            <div className="bg-slate-400 dark:bg-slate-800 h-[330px] sm:h-[380px] bg-opacity-40 dark:bg-opacity-30 sm:p-6 p-3 rounded-xl shadow-lg dark:shadow-slate-900 text-center">
+            <div className=" text-gray-800 dark:text-gray-100 bg-slate-300 bg-opacity-30 dark:bg-gray-800 rounded-xl shadow-lg dark:shadow-gray-900 h-[350px] sm:h-[380px] dark:bg-opacity-70 sm:p-6 p-3 text-center">
               <div className="flex justify-around w-full">
                 <Image
                   src={testimonial.image}

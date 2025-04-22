@@ -57,7 +57,7 @@ export default function FAQ() {
     <section className="py-10 sm:py-16 lg:py-24 w-full">
       <div className="px-2 mx-auto sm:px-6 lg:px-8">
         <div className=" mx-auto text-center">
-          <h2 className="sm:text-4xl text-2xl sm:w-[50%] mx-auto pb-4 sm:mb-20 mb-10 font-bold border-b border-slate-500 dark:border-slate-600 dark:text-gray-200 text-gray-950 md:text-4xl font-sans">
+          <h2 className="sm:text-4xl text-2xl text-center mx-auto sm:my-8 pb-4 font-mono text-gray-800 dark:text-gray-100 font-bold border-b border-gray-300 dark:border-gray-700 sm:w-[50%]">
             FAQ
           </h2>
         </div>
@@ -65,7 +65,7 @@ export default function FAQ() {
           {faqItems.map((item, index: number) => (
             <div
               key={index}
-              className="transition-all duration-200 bg-slate-400 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-60 border border-gray-200 dark:border-slate-600 shadow-lg cursor-pointer rounded-lg"
+              className="transition-all duration-200 bg-slate-300/40 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-60 border border-gray-600 dark:border-slate-400 shadow-lg cursor-pointer rounded-lg hover:outline outline-1 dark:outline-gray-400 outline-gray-700"
             >
               <button
                 type="button"
@@ -76,7 +76,7 @@ export default function FAQ() {
                   {item.question}
                 </span>
                 <svg
-                  className={`w-6 h-6 dark:text-gray-400 text-gray-900 transition-transform duration-200 ${
+                  className={`w-6 h-6 dark:text-gray-500 text-gray-900 transition-transform duration-200 ${
                     activeIndex === index ? "rotate-180" : ""
                   }`}
                   fill="none"
@@ -106,7 +106,7 @@ export default function FAQ() {
             Still have questions?
           </p>
           <Link
-            className="cursor-pointer font-medium text-tertiary text-gray-800 dark:text-gray-300 transition-all duration-200 hover:text-tertiary font-mono focus:text-tertiary hover:underline"
+            className="link link-info link-hover cursor-pointer font-medium text-tertiary hover:text-tertiary font-mono"
             href={"mailto:hi@aghatech.ir"}
           >
             Contact our support

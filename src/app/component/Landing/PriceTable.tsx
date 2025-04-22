@@ -25,14 +25,14 @@ export default function Pricetable() {
       <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div className="mb-12 ">
           <h2 className="sm:text-4xl text-2xl sm:w-[50%] text-center mx-auto pb-4 font-bold border-b border-slate-500 dark:border-slate-600 dark:text-gray-200 text-gray-950 md:text-4xl font-sans">
-            Plans That Work for You{" "}
+            Plans That Work for You
           </h2>
-          <p className="pt-6 sm:text-lg font-sans text-center text-gray-700 dark:text-gray-400">
+          <p className="pt-6 sm:text-lg font-sans text-center text-gray-700 dark:text-gray-300">
             Choose the perfect plan to grow your business and achieve your goals
           </p>
         </div>
         <div className="space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0 lg:items-center mx-auto sm:w-[90%]">
-          <div className="flex flex-col mx-auto sm:w-10/12 w-[95%] text-gray-900 dark:text-gray-200 rounded-2xl bg-slate-300 dark:bg-slate-800 p-4 xl:py-9 xl:px-8 transition-all duration-500 hover:bg-gray-100">
+          <div className="flex flex-col mx-auto sm:w-10/12 w-[95%] text-gray-900 dark:text-gray-200 rounded-2xl bg-slate-300 bg-opacity-80 dark:bg-slate-800 p-4 xl:py-9 xl:px-8 transition-all duration-500 hover:bg-gray-100">
             <h3 className="font-sans sm:text-3xl text-2xl font-bold mb-3 sm:text-left text-center border-b border-gray-700 sm:border-none">
               Personal or Small Business Website
             </h3>
@@ -83,7 +83,7 @@ export default function Pricetable() {
               Learn More
             </Link>
           </div>
-          <div className="flex flex-col mx-auto sm:w-11/12 w-[95%] text-gray-900 dark:text-gray-200 rounded-2xl bg-slate-300 dark:bg-slate-800 p-4 xl:py-9 xl:px-6 transition-all duration-500 hover:bg-gray-100">
+          <div className="flex flex-col mx-auto sm:w-11/12 w-[95%] text-gray-900 dark:text-gray-200 rounded-2xl bg-slate-300 bg-opacity-80 dark:bg-slate-800 p-4 xl:py-9 xl:px-6 transition-all duration-500 hover:bg-gray-100">
             <div className="uppercase bg-gradient-to-r from-indigo-600 via-violet-800 to-indigo-600 rounded-t-2xl p-3 mx-1 sm:mx-0 text-center text-white font-sans">
               MOST POPULAR
             </div>
@@ -143,7 +143,7 @@ export default function Pricetable() {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col mx-auto sm:w-10/12 w-[95%] text-gray-900 dark:text-gray-200 rounded-2xl bg-slate-300 dark:bg-slate-800 p-4 xl:py-9 xl:px-8 transition-all duration-500 hover:bg-gray-100">
+          <div className="flex flex-col mx-auto sm:w-10/12 w-[95%] text-gray-900 dark:text-gray-200 rounded-2xl bg-slate-300 bg-opacity-80 dark:bg-slate-800 p-4 xl:py-9 xl:px-8 transition-all duration-500 hover:bg-gray-100">
             <h3 className="font-sans sm:text-3xl text-2xl font-bold mb-3 sm:text-left text-center border-b border-gray-700 sm:border-none">
               E-Commerce & Large Business Website
             </h3>

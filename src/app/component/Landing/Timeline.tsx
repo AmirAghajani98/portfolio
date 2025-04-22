@@ -9,8 +9,9 @@ const Timeline = () => {
       icon: "1",
       items: ["Define purpose", "Identify audience", "Determine features"],
       color: {
-        bg: "bg-blue-100",
-        text: "text-blue-600",
+        bg: "bg-blue-300",
+        lighttext: "text-blue-900",
+        darktext: "text-blue-200",
         border: "border-blue-500",
       },
       image: "./img/pack10.png",
@@ -21,9 +22,10 @@ const Timeline = () => {
       icon: "2",
       items: ["Analyze competitors", "Define structure"],
       color: {
-        bg: "bg-green-100",
-        text: "text-green-600",
-        border: "border-green-500",
+        bg: "bg-gray-300",
+        lighttext: "text-gray-900",
+        darktext: "text-gray-400",
+        border: "border-gray-500",
       },
       image: "./img/pack7.png",
     },
@@ -33,9 +35,10 @@ const Timeline = () => {
       icon: "3",
       items: ["Create wireframes", "Design interface", "Choose branding"],
       color: {
-        bg: "bg-orange-100",
-        text: "text-orange-600",
-        border: "border-orange-500",
+        bg: "bg-slate-300",
+        lighttext: "text-slate-900",
+        darktext: "text-slate-200",
+        border: "border-slate-500",
       },
       image: "./img/pack9.png",
     },
@@ -45,9 +48,10 @@ const Timeline = () => {
       icon: "4",
       items: ["Design logo", "Create visuals"],
       color: {
-        bg: "bg-yellow-100",
-        text: "text-yellow-600",
-        border: "border-yellow-500",
+        bg: "bg-amber-300",
+        lighttext: "text-amber-900",
+        darktext: "text-amber-300",
+        border: "border-amber-500",
       },
       image: "./img/pack1.png",
     },
@@ -57,9 +61,10 @@ const Timeline = () => {
       icon: "5",
       items: ["Code/CMS setup", "Create pages", "Add features"],
       color: {
-        bg: "bg-purple-100",
-        text: "text-purple-600",
-        border: "border-purple-500",
+        bg: "bg-indigo-300",
+        lighttext: "text-indigo-900",
+        darktext: "text-indigo-300",
+        border: "border-indigo-500",
       },
       image: "./img/pack3.png",
     },
@@ -69,9 +74,10 @@ const Timeline = () => {
       icon: "6",
       items: ["Write content", "Optimize SEO", "Add visuals"],
       color: {
-        bg: "bg-pink-100",
-        text: "text-pink-600",
-        border: "border-pink-500",
+        bg: "bg-violet-300",
+        lighttext: "text-violet-900",
+        darktext: "text-violet-100",
+        border: "border-violet-500",
       },
       image: "./img/pack8.png",
     },
@@ -81,9 +87,10 @@ const Timeline = () => {
       icon: "7",
       items: ["Test functionality", "Check speed", "Test security"],
       color: {
-        bg: "bg-indigo-100",
-        text: "text-indigo-600",
-        border: "border-indigo-500",
+        bg: "bg-yellow-300",
+        lighttext: "text-yellow-900",
+        darktext: "text-yellow-400",
+        border: "border-yellow-500",
       },
       image: "./img/pack4.png",
     },
@@ -93,9 +100,10 @@ const Timeline = () => {
       icon: "8",
       items: ["Choose host/domain", "Go live"],
       color: {
-        bg: "bg-red-100",
-        text: "text-red-600",
-        border: "border-red-500",
+        bg: "bg-blue-300",
+        lighttext: "text-blue-900",
+        darktext: "text-blue-100",
+        border: "border-blue-500",
       },
       image: "./img/pack2.png",
     },
@@ -105,8 +113,9 @@ const Timeline = () => {
       icon: "9",
       items: ["SEO improvements", "Use analytics"],
       color: {
-        bg: "bg-teal-100",
-        text: "text-teal-600",
+        bg: "bg-teal-300",
+        lighttext: "text-teal-900",
+        darktext: "text-teal-100",
         border: "border-teal-500",
       },
       image: "./img/pack6.png",
@@ -117,8 +126,9 @@ const Timeline = () => {
       icon: "10",
       items: ["Update content", "Add features", "Regular backups"],
       color: {
-        bg: "bg-gray-100",
-        text: "text-gray-600",
+        bg: "bg-gray-300",
+        lighttext: "text-gray-800",
+        darktext: "text-gray-200",
         border: "border-gray-500",
       },
       image: "./img/pack5.png",
@@ -139,7 +149,9 @@ const Timeline = () => {
             const isLeft = index % 2 === 1;
             const boxAlignment = isLeft ? "mr-[50%]" : "ml-[50%]";
             const imageAlignment = isLeft ? "ml-[50%]" : "mr-[50%]";
-            const borderSide = isLeft ? "border-l-4" : "border-r-4";
+            const borderSide = isLeft
+              ? "border-l-4 border-b-2"
+              : "border-r-4 border-b-2";
 
             return (
               <div
@@ -147,19 +159,21 @@ const Timeline = () => {
                 className="relative justify-center flex items-center"
               >
                 <div
-                  className={`${boxAlignment} ${step.color.bg} bg-opacity-90 p-3 rounded-lg shadow-md ${borderSide} ${step.color.border} w-[55%]`}
+                  className={`${boxAlignment} bg-opacity-70 p-3 rounded-lg shadow-md ${borderSide} ${step.color.border} w-[55%]`}
                 >
                   <div className="flex items-center gap-1">
                     <div
-                      className={`px-2 rounded-full ${step.color.bg} ${step.color.text}`}
+                      className={`px-2 rounded-full text-black ${step.color.bg}`}
                     >
                       {step.icon}
                     </div>
-                    <p className={`font-bold ${step.color.text} font-sans`}>
+                    <p
+                      className={`font-bold dark:${step.color.darktext} ${step.color.lighttext} opacity-100 font-sans`}
+                    >
                       {step.title}
                     </p>
                   </div>
-                  <ul className="list-disc pl-5 mt-2 text-sm text-gray-600 space-y-1">
+                  <ul className="list-disc pl-5 mt-2 text-sm dark:text-gray-200 text-slate-900 space-y-1">
                     {step.items.map((item, i) => (
                       <li key={i}>{item}</li>
                     ))}

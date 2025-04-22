@@ -59,21 +59,21 @@ export default function Sidebar({
         id="drawer-navigation"
         className={`fixed top-0 left-0 z-40 w-64 h-screen p-4 transition-transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } bg-slate-400 dark:bg-gray-800 flex flex-col`}
+        } bg-gray-500 dark:bg-gray-800 shadow-lg flex flex-col`}
         tabIndex={-1}
         aria-labelledby="drawer-navigation-label"
       >
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mb-4">
           <h5
             id="drawer-navigation-label"
-            className="text-xl font-bold text-gray-500 uppercase dark:text-gray-400 font-mono"
+            className="text-xl font-bold text-gray-700 uppercase dark:text-gray-300 font-mono"
           >
             {t("sidebar.menu")}
           </h5>
           <button
             type="button"
             onClick={onClose}
-            className="text-gray-800 bg-transparent dark:text-slate-200 rounded-lg text-sm p-1.5 inline-flex items-center"
+            className="text-gray-800 bg-transparent dark:text-gray-300 rounded-lg text-sm p-1.5 inline-flex items-center hover:bg-gray-400 dark:hover:bg-gray-700"
           >
             <svg
               aria-hidden="true"
@@ -103,49 +103,49 @@ export default function Sidebar({
                 name: t("sidebar.home"),
                 href: "/",
                 icon: (
-                  <HomeIcon className="h-6 w-6 text-gray-700 dark:text-gray-400" />
+                  <HomeIcon className="h-6 w-6 text-gray-700 dark:text-gray-400 dark:group-hover:text-primary group-hover:text-indigo-900" />
                 ),
               },
               {
                 name: t("sidebar.projects"),
                 href: "/projects",
                 icon: (
-                  <SparklesIcon className="h-6 w-6 text-gray-700 dark:text-gray-400" />
+                  <SparklesIcon className="h-6 w-6 text-gray-700 dark:text-gray-400 dark:group-hover:text-primary group-hover:text-indigo-900" />
                 ),
               },
               {
                 name: t("sidebar.resume"),
                 href: "/resume",
                 icon: (
-                  <IdentificationIcon className="h-6 w-6 text-gray-700 dark:text-gray-400" />
+                  <IdentificationIcon className="h-6 w-6 text-gray-700 dark:text-gray-400 dark:group-hover:text-primary group-hover:text-indigo-900" />
                 ),
               },
               {
                 name: t("sidebar.services"),
                 href: "/landing",
                 icon: (
-                  <CodeBracketIcon className="h-6 w-6 text-gray-700 dark:text-gray-400" />
+                  <CodeBracketIcon className="h-6 w-6 text-gray-700 dark:text-gray-400 dark:group-hover:text-primary group-hover:text-indigo-900" />
                 ),
               },
               {
                 name: t("sidebar.about"),
                 href: "./#about",
                 icon: (
-                  <UserIcon className="h-6 w-6 text-gray-700 dark:text-gray-400" />
+                  <UserIcon className="h-6 w-6 text-gray-700 dark:text-gray-400 dark:group-hover:text-primary group-hover:text-indigo-900" />
                 ),
               },
               {
                 name: t("sidebar.contact"),
                 href: "./#contact",
                 icon: (
-                  <PhoneIcon className="h-6 w-6 text-gray-700 dark:text-gray-400" />
+                  <PhoneIcon className="h-6 w-6 text-gray-700 dark:text-gray-400 dark:group-hover:text-primary group-hover:text-indigo-900" />
                 ),
               },
             ].map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="flex justify-start items-center p-2 gap-x-4 text-gray-900 rounded-lg dark:text-white dark:hover:bg-gray-700 hover:bg-slate-300 hover:bg-opacity-30 group"
+                  className="flex justify-start items-center p-2 gap-x-4 text-gray-900 rounded-lg dark:text-gray-300 dark:hover:bg-gray-700 hover:bg-gray-400 group transition-all duration-200"
                   onClick={onClose}
                 >
                   {item.icon && (
@@ -153,27 +153,28 @@ export default function Sidebar({
                       {item.icon}
                     </span>
                   )}
-                  <span>{item.name}</span>
+                  <span className="dark:group-hover:text-primary group-hover:text-indigo-900">
+                    {item.name}
+                  </span>
                 </Link>
               </li>
             ))}
           </ul>
+
           <div className="flex items-center my-4">
-            <button
-              className="text-white w-full mx-auto bg-slate-600 dark:bg-slate-500 hover:bg-slate-700 dark:hover:bg-slate-600 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
-              onClick={onShowModal}
-            >
+            <button className="btn btn-primary w-full" onClick={onShowModal}>
               {t("sidebar.cv")}
             </button>
           </div>
-          <div className="pt-4 mt-auto flex justify-between items-center border-t border-1-gray-200 dark:border-gray-600">
-            <p className="text-lg dark:text-slate-200 text-slate-800">
+
+          <div className="pt-4 mt-auto flex justify-between items-center border-t border-gray-200 dark:border-gray-600">
+            <p className="text-lg dark:text-gray-300 text-gray-800">
               {t("sidebar.theme")}
             </p>
             <ThemeSwitcher />
           </div>
           <div className="bottom-0 pt-4 flex justify-between items-center sm:hidden">
-            <p className="text-lg dark:text-slate-200 text-slate-800">
+            <p className="text-lg dark:text-gray-300 text-gray-700">
               {t("sidebar.language")}
             </p>
             <LanguageSwitcher />

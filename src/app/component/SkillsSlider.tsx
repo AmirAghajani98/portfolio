@@ -31,14 +31,14 @@ const SkillsSection: React.FC = () => {
       lang={currentLocale}
       className="w-full opacity-95 bg-slate-400 projectback justify-center h-auto py-10 px-6 shadow-lg"
     >
-      <h1 className="sm:text-5xl text-4xl text-center mx-auto my-8 pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b-4 border-slate-500 dark:border-slate-600 w-[50%]">
+      <h1 className="sm:text-5xl text-4xl text-center mx-auto my-8 pb-10 font-mono text-gray-800 dark:text-gray-100 font-bold border-b-4 border-gray-300 dark:border-gray-700 w-[50%]">
         {t("skills.title")}
       </h1>
       <div className="sm:flex justify-center sm:gap-6">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center p-4 rounded-lg shadow-lg bg-opacity-90 dark:bg-opacity-80 hover:shadow-2xl"
+            className="flex flex-col items-center justify-center p-4 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300"
           >
             <ProgressBar value={skill.progress} logo={skill.logo} />
           </div>

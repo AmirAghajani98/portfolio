@@ -39,10 +39,10 @@ const LandingContact = () => {
       className="sm:w-full mx-auto opacity-95 bg-slate-400 projectback sm:mt-20 -mt-20"
     >
       <div className="text-center gap-16 my-10 sm:mt-20 p-4 mx-auto sm:w-full w-[95%] font-[sans-serif] rounded-md">
-        <h2 className="sm:text-4xl text-2xl sm:w-[50%] text-center mx-auto sm:my-4 pb-4 sm:pb-10 font-mono dark:text-slate-100 text-[#121a23] font-bold border-b border-slate-500 dark:border-slate-600">
+        <h2 className="sm:text-4xl text-3xl text-center mx-auto sm:my-8 pb-4 font-mono text-gray-800 dark:text-gray-100 font-bold border-b border-gray-500 dark:border-gray-700 sm:w-[50%]">
           Get in Touch
         </h2>
-        <p className="text-lg dark:text-gray-400 text-gray-900 sm:mt-2 mb-4 mt-6 sm:w-1/2 text-center mx-auto">
+        <p className="pt-6 sm:text-lg font-sans text-center text-gray-700 dark:text-gray-300">
           Do you have a personal or business idea or brand to develop and need
           help? Then reach out; I would love to hear about your project and
           help.
@@ -64,7 +64,7 @@ const LandingContact = () => {
               onSubmit={handleSubmit}
               className="flex text-left flex-col justify-center mx-auto"
             >
-              <div className="w-full flex justify-between sm:gap-0 gap-x-4">
+              <div className="w-full flex justify-between sm:gap-x-0 gap-x-4">
                 <div className="flex flex-col">
                   <label
                     htmlFor="Name"
@@ -78,7 +78,7 @@ const LandingContact = () => {
                     name="name"
                     placeholder="Your name"
                     required
-                    className="p-2 w-full sm:pr-16 border rounded dark:text-gray-200 text-gray-900 bg-slate-200 dark:bg-slate-800"
+                    className="input input-bordered w-full input-info bg-slate-200 bg-opacity-90 dark:bg-base-100 p-2 sm:pr-16 border rounded dark:text-gray-200 text-gray-900"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -94,7 +94,7 @@ const LandingContact = () => {
                     name="business"
                     placeholder="Your business"
                     required
-                    className="p-2 w-full sm:pr-16 border rounded dark:text-gray-200 text-gray-900 bg-slate-200 dark:bg-slate-800"
+                    className="input input-bordered w-full input-info bg-slate-200 bg-opacity-90 dark:bg-base-100 p-2 sm:pr-16 border rounded dark:text-gray-200 text-gray-900"
                   />
                 </div>
               </div>
@@ -111,7 +111,7 @@ const LandingContact = () => {
                 name="to_email"
                 placeholder="example@gmail.com"
                 required
-                className="sm:w-full p-2 border rounded dark:text-gray-200 text-gray-900 bg-slate-200 dark:bg-slate-800"
+                className="input input-bordered input-info bg-slate-200 bg-opacity-90 dark:bg-base-100 sm:w-full p-2 border rounded dark:text-gray-200 text-gray-900"
               />
               <br />
 
@@ -128,13 +128,13 @@ const LandingContact = () => {
                 placeholder="your message..."
                 rows={5}
                 required
-                className="sm:w-full p-2 border rounded dark:text-gray-200 text-gray-900 bg-slate-200 dark:bg-slate-800"
+                className="textarea textarea-info textarea-bordered w-full p-2 bg-slate-200 dark:bg-base-100 bg-opacity-90"
               />
               <div className="sm:w-full my-6">
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-1/3 p-3 dark:text-gray-800 font-medium text-lg text-gray-200 dark:bg-blue-500 rounded dark:hover:bg-blue-600 bg-blue-700"
+                  className="btn btn-soft btn-info font-medium text-lg w-1/3 dark:text-gray-800 text-gray-200 dark:bg-blue-500 rounded dark:hover:bg-blue-600 bg-blue-700"
                 >
                   {isSubmitting ? <LoadingButton /> : "Send"}
                 </button>
