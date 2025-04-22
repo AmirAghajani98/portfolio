@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import BusinessCategories from "../component/Landing/BusinessCategories";
 import FeaturesPlanet from "../component/Landing/FeaturesPlanet";
 import HeroLanding from "../component/Landing/HeroSection";
-import ContactForm from "../component/Landing/ContactForm";
+import ContactForm from "../component/Landing/LandingContact";
 import Footer from "../component/Landing/Footer";
 import LandingProjects from "../component/Landing/Projects";
 import Navbar from "../component/Navbar";

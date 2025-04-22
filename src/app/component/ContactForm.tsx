@@ -53,7 +53,7 @@ const ContactForm = () => {
         className="sm:flex items-start gap-16 my-10 p-4 mx-auto sm:w-10/12 w-11/12 font-[sans-serif] shadow-md rounded-md"
       >
         <div className="sm:w-1/2">
-          <h2 className="sm:text-5xl text-4xl text-center mx-auto sm:my-8 pb-8 font-mono text-gray-800 dark:text-gray-100 font-bold sm:border-none border-b border-gray-300 dark:border-gray-700">
+          <h2 className="sm:text-5xl text-4xl text-center mx-auto sm:my-8 pb-4 font-mono text-gray-800 dark:text-gray-100 font-bold sm:border-none border-b border-gray-300 dark:border-gray-700">
             {t("contact.title")}
           </h2>
           <p className="text-base text-gray-700 dark:text-gray-300 sm:mt-4 mt-6">
