@@ -59,7 +59,7 @@ export default function Sidebar({
       <div
         ref={sidebarRef}
         id="drawer-navigation"
-        className={`fixed top-0 left-0 z-40 w-64 h-screen p-4 transition-transform ${
+        className={`fixed top-0 left-0 z-40 w-64 sm:h-screen h-svh p-4 transition-transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } bg-gray-500 dark:bg-gray-800 shadow-lg flex flex-col`}
         tabIndex={-1}

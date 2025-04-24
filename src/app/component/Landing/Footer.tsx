@@ -9,17 +9,6 @@ export default function Footer() {
     <footer className="sm:footer-horizontal w-full footer-center text-base-content rounded pt-10 pb-6 dark:bg-slate-800 dark:bg-opacity-60 bg-slate-500 relative z-10">
       <div className="sm:flex justify-around w-full items-center z-50">
         <div className="sm:w-1/3">
-          {/* <nav className="hidden sm:grid grid-flow-col sm:gap-8 gap-4 border-b dark:border-slate-600 pb-4 border-slate-200 font-mono font-semibold sm:text-lg text-slate-200">
-            <Link href="#contact" className="link link-hover">
-              Contact
-            </Link>
-            <Link href="/projects" className="link link-hover">
-              Projects
-            </Link>
-            <Link href="/resume" className="link link-hover">
-              Resume
-            </Link>
-          </nav> */}
           <a href="/">
             {" "}
             <Image

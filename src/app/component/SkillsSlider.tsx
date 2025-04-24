@@ -6,7 +6,6 @@ import { ProgressBar } from "./ProgressBar";
 
 const SkillsSection: React.FC = () => {
   const { i18n, t } = useTranslation();
-  const isRTL = i18n.language === "fa";
   const currentLocale = i18n.language;
   const skills = [
     { logo: "./img/bootstrap.svg", progress: 80 },
