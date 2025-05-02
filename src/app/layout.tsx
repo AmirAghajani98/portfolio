@@ -13,7 +13,8 @@ const ClarityComponent = dynamic(() => import("./utils/Clarity"), {
 export const metadata: Metadata = {
   metadataBase: new URL("https://aghatech.ir/"),
   title: {
-    default: "Amir Aghajani - Web Developer | برنامه‌نویس تحت وب",
+    default:
+      "Amir Aghajani - Web Developer | امیر آقاجانی - برنامه‌نویس تحت وب",
     template: "%s | Amir Aghajani",
   },
   generator: "Next.js",
@@ -32,7 +33,8 @@ export const metadata: Metadata = {
     "Amir Aghajani is a skilled web developer specializing in modern web technologies, including React, Node.js, and full-stack development. Explore my portfolio for custom web solutions.",
   openGraph: {
     title: {
-      default: "Amir Aghajani - Web Developer | برنامه‌نویس تحت وب",
+      default:
+        "Amir Aghajani - Web Developer | امیر آقاجانی - برنامه‌نویس تحت وب",
       template: "%s | Amir Aghajani",
     },
     description:
@@ -54,7 +56,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: {
-      default: "Amir Aghajani - Web Developer | برنامه‌نویس تحت وب",
+      default:
+        "Amir Aghajani - Web Developer | امیر آقاجانی - برنامه‌نویس تحت وب",
       template: "%s | Amir Aghajani",
     },
     description:
