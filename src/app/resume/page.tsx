@@ -15,6 +15,24 @@ interface WorkExperience {
   description: string;
   skills: string[];
 }
+interface TeachingExperience {
+  title: string;
+  role: string;
+  organization: string;
+  duration: string;
+  location: string;
+  description: string;
+  key_achievements: string[];
+  skills: string[];
+  achievementsTitle: string;
+  additionalactivities: {
+    title: string;
+    workshops: string;
+    open_source: string;
+    materials: string;
+  };
+}
+
 interface Projects {
   title: string;
   description: string;
@@ -38,6 +56,9 @@ export default function resume() {
     return () => clearTimeout(timer);
   }, []);
 
+  const teachingExperience: TeachingExperience = t("TeachingExperience", {
+    returnObjects: true,
+  }) as TeachingExperience;
   const workExperiences: WorkExperience[] = t("workExperiences.list", {
     returnObjects: true,
   }) as WorkExperience[];
@@ -272,7 +293,7 @@ export default function resume() {
                     <ul className="mt-2 grid">
                       {workExperiences.map((experience, index) => (
                         <li key={index} className="py-4 grid justify-items-end">
-                          <p className="flex items-center text-sm sm:my-2 mt-1 sm:gap-x-2">
+                          <p className="flex items-center text-sm sm:my-2 mt-1 sm:gap-x-6">
                             <span className="sm:block hidden">
                               {experience.duration}
                             </span>
@@ -286,7 +307,7 @@ export default function resume() {
                             </p>
                             <p className="text-[15px]">{experience.location}</p>
                           </div>
-                          <p className="flex sm:text-lg text-base sm:gap-x-2 font-medium">
+                          <p className="flex sm:text-lg text-base sm:gap-x-6 font-medium">
                             <span className="font-light sm:block hidden">
                               {experience.location}
                             </span>
@@ -309,6 +330,102 @@ export default function resume() {
                         </li>
                       ))}
                     </ul>
+                  </div>
+                  <div>
+                    <h2 className="w-full text-2xl mt-6 font-sans pb-1 border-b border-slate-800 dark:border-slate-100 font-semibold grid justify-items-end">
+                      :{teachingExperience.title}
+                    </h2>
+                    <div className="py-4 grid justify-items-end">
+                      <div className="flex items-center text-sm sm:my-2 mt-1 sm:gap-x-2">
+                        <span className="sm:block hidden">
+                          {teachingExperience.duration}
+                        </span>
+                        <strong className="sm:text-xl text-[22px]">
+                          {teachingExperience.organization}
+                        </strong>
+                      </div>
+                      <div className="flex sm:hidden w-full gap-x-16 justify-end my-2">
+                        <p className="text-[15px] text-right">
+                          {teachingExperience.duration}
+                        </p>
+                        <p className="text-[15px]">
+                          {teachingExperience.location}
+                        </p>
+                      </div>
+
+                      <p className="flex sm:text-lg text-base sm:gap-x-6 font-medium">
+                        <span className="font-light sm:block hidden">
+                          {teachingExperience.location}
+                        </span>
+                        {teachingExperience.role}
+                      </p>
+
+                      <div className={isRTL ? "text-right" : "text-left"}>
+                        <p className="sm:text-base text-[15px] my-2">
+                          {teachingExperience.description}
+                        </p>
+                      </div>
+
+                      {teachingExperience.key_achievements?.length > 0 && (
+                        <div className="mb-3">
+                          <div className={isRTL ? "text-right" : "text-left"}>
+                            <strong>
+                              {teachingExperience.achievementsTitle}
+                            </strong>
+                            <ul className="mt-1">
+                              {teachingExperience.key_achievements.map(
+                                (achievement, i) => (
+                                  <li
+                                    key={i}
+                                    className="sm:text-[14px] text-[15px]"
+                                  >
+                                    {achievement}
+                                  </li>
+                                )
+                              )}
+                            </ul>
+                          </div>
+                        </div>
+                      )}
+
+                      <div className={isRTL ? "text-right" : "text-left"}>
+                        <div className="mb-4">
+                          <strong>
+                            {teachingExperience.additionalactivities.title}
+                          </strong>
+                          <ul className="">
+                            <li className="sm:text-[14px] text-[15px]">
+                              {
+                                teachingExperience.additionalactivities
+                                  .workshops
+                              }
+                            </li>
+                            <li className="sm:text-[14px] text-[15px]">
+                              {
+                                teachingExperience.additionalactivities
+                                  .open_source
+                              }
+                            </li>
+                            <li className="sm:text-[14px] text-[15px] mb-1">
+                              {
+                                teachingExperience.additionalactivities
+                                  .materials
+                              }
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      {/* <strong>{t("skills.title")}</strong>
+                      <div className="w-full mt-1 sm:text-[14px] text-[15px] grid sm:grid-cols-2 justify-items-end sm:w-[80%]">
+                        {teachingExperience.skills.map((skill, i) => (
+                          <span key={i}>
+                            {skill}
+                            {i !== teachingExperience.skills.length - 1 && ", "}
+                          </span>
+                        ))}
+                      </div> */}
+                    </div>
                   </div>
                 </div>
               </div>

@@ -3,12 +3,7 @@ import "./i18";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { GoogleTagManager } from "@next/third-parties/google";
-import dynamic from "next/dynamic";
 import ClientLayout from "./utils/ClientLayout";
-
-const ClarityComponent = dynamic(() => import("./utils/Clarity"), {
-  ssr: false,
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aghatech.ir/"),
@@ -90,6 +85,19 @@ export default function RootLayout({
 
   return (
     <html lang={lang} dir={isRtl ? "rtl" : "ltr"} className="scroll-smooth">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "qehzs1inz3");
+            `,
+          }}
+        />
+      </head>
       <body className="min-h-screen">
         <GoogleTagManager gtmId="GTM-WVH4VZ6K" />
         <noscript>
@@ -100,7 +108,6 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        <ClarityComponent />
         <Suspense
           fallback={
             <div className="flex items-center justify-center min-h-screen">

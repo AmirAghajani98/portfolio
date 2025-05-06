@@ -85,7 +85,10 @@
   },
   "header": {
     "name": "Amir Mohamad Aghajani",
-    "list": ["Coaching & Mentoring Web Development", "Software Engineer"]
+    "list": [
+      "Teaching & Mentoring Web Development",
+      "Senior Frontend Developer"
+    ]
   },
   "contactDetails": {
     "title": ":Contact Details",
@@ -115,7 +118,7 @@
   },
   "about": {
     "title": ":About",
-    "content": "Hi! I'm 26 years old, and I've been working as a web developer for about three years, with a focus on JavaScript. I earned my bachelor's degree from Islamic Azad University, Qazvin Branch, and currently, I live in Iran. I work at 'KarojoPlus Studio' as a web developer and training manager. Before diving into programming, I worked in content creation and spent some time in the automotive mechanics field. These experiences helped me strengthen my analytical and problem-solving skills, which are now highly beneficial in my software development work. In addition to JavaScript, I've worked with several frameworks and tools that help me deliver projects effectively. One of the things I value most in programming is sharing my knowledge with others and helping new developers grow. My soft skills—such as creative thinking, teamwork, leadership, and ideation—help me collaborate well with my team and create a positive, supportive environment. As an introvert, I feel comfortable working in groups and enjoy finding creative solutions to challenges. The combination of my technical and interpersonal skills has allowed me to succeed both in software development and in my training role."
+    "content": "I’m a 27-year-old web developer with 3 years of experience, currently working as a Training Manager & Senior Developer in Iran.  my background in content creation and automotive mechanics strengthened my analytical skills. Proficient in multiple languages/frameworks, I enjoy both development and mentoring new programmers. My soft skills (creative thinking, leadership, teamwork) help me thrive in collaborative environments while building innovative solutions"
   },
   "education": {
     "title": ":Education",
@@ -128,6 +131,38 @@
     "title": ":Further-Education",
     "firstname": "Freecodecamp",
     "secondname": "Rahkar-Education"
+  },
+  "TeachingExperience": {
+    "title": "Teaching & Mentoring Experience",
+
+    "role": "Web Development Instructor",
+    "organization": "Rehkar Education",
+    "duration": "Months 21",
+    "location": "Qazvin, Iran",
+    "description": "Led comprehensive web development training programs for +30 students, focusing on modern frontend technologies and practical project-based learning.",
+    "achievementsTitle": "Achievements",
+    "key_achievements": [
+      "Developed and implemented curriculum covering React, Next.js, and Tailwind CSS",
+      "Mentored students in building 15+ real-world projects with API integration",
+      "Improved students' coding efficiency by 40% through personalized coaching",
+      "Conducted weekly code reviews and debugging sessions"
+    ],
+    "skills": [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "RESTful APIs",
+      "Git/GitHub",
+      "Responsive Design"
+    ],
+
+    "additionalactivities": {
+      "title": "AdditionalActivities",
+      "workshops": "Conducted +5 workshops on advanced React patterns and performance optimization",
+      "open_source": "Contributed to educational open-source projects on GitHub",
+      "materials": "Developed 30+ code examples and learning resources"
+    }
   },
   "workExperiences": {
     "title": ":Work Experience",
@@ -147,20 +182,6 @@
           "Tailwind CSS",
           "React.js",
           "GraphQL"
-        ]
-      },
-      {
-        "company": "KARJOO+",
-        "role": "Software Mentor & Coach",
-        "duration": "27Months",
-        "location": "Qazvin, Iran",
-        "type": "Part-time (Hybrid)",
-        "description": "Guiding students in web development programs using React and Tailwind.",
-        "skills": [
-          "Coaching",
-          "Leadership",
-          "Leadership Development",
-          "Teamwork"
         ]
       },
       {
@@ -203,6 +224,15 @@
   "projects": {
     "title": ":Projects",
     "list": [
+      {
+        "title": "Light Karjoo Plus - Recruitment Management System",
+        "description": "A user-friendly platform simplifying hiring processes with job posting, candidate management, and real-time tracking features. Unveiled at 2nd Qazvin Job Exhibition.",
+        "link": "https://lite.karjoo.plus",
+        "skillA": "React",
+        "skillB": "graphQL api",
+        "skillC": "Tailwind CSS",
+        "skillD": "TypeScript"
+      },
       {
         "title": "Karjoo+ Landing",
         "description": "Karjoo.plus is a comprehensive platform for human resource management, featuring an exhibition calendar, a list of job fans, and detailed pages for each exhibition. Built with Astro and Tailwind CSS, it offers a seamless user experience and responsive design.",
