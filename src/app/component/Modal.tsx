@@ -52,7 +52,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           <div className="flex justify-around space-x-4 mt-8">
             <Link
               href="https://drive.google.com/uc?export=download&id=1BYRswZohFIZPjtWnZ7I6IBSzM_r-dUxS"
-              locale={false}
+              locale={false ? undefined : undefined}
               rel="noopener noreferrer"
               target="_blank"
               className="p-2.5 sm:mr-1 sm:mt-0 mt-1 border-b text-sm sm:text-base sm:border-none border-slate-500 dark:border-b dark:border-slate-700 font-mono cursor-pointer shadow bg-gray-800 hover:bg-gray-800 sm:rounded-lg rounded-t-lg"
@@ -61,7 +61,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
             </Link>
             <Link
               href="https://drive.google.com/uc?export=download&id=1hQS_Zrg3M0wwBeAlgnJclmoq0Q9gQQNn"
-              locale={false}
+              locale={false ? undefined : undefined}
               rel="noopener noreferrer"
               target="_blank"
               download="resume-en.pdf"

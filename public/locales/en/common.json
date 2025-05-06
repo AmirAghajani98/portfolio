@@ -129,6 +129,37 @@
     "firstname": "Freecodecamp",
     "secondname": "Rahkar-Education"
   },
+  "Teaching Experience": {
+    "title": "Teaching & Mentoring Experience",
+
+    "role": "Web Development Instructor",
+    "organization": "Karjoo Studio",
+    "duration": "27 Months (2022-Present)",
+    "location": "Qazvin, Iran",
+    "description": "Led comprehensive web development training programs for +30 students, focusing on modern frontend technologies and practical project-based learning.",
+    "key_achievements": [
+      "Developed and implemented curriculum covering React, Next.js, and Tailwind CSS",
+      "Mentored students in building 15+ real-world projects with API integration",
+      "Improved students' coding efficiency by 40% through personalized coaching",
+      "Conducted weekly code reviews and debugging sessions"
+    ],
+    "skills": [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "RESTful APIs",
+      "Git/GitHub",
+      "Responsive Design"
+    ],
+
+    "additional_activities": {
+      "title": "AdditionalActivities",
+      "workshops": "Conducted +5 workshops on advanced React patterns and performance optimization",
+      "open_source": "Contributed to educational open-source projects on GitHub",
+      "materials": "Developed 30+ code examples and learning resources"
+    }
+  },
   "workExperiences": {
     "title": ":Work Experience",
     "list": [
@@ -147,20 +178,6 @@
           "Tailwind CSS",
           "React.js",
           "GraphQL"
-        ]
-      },
-      {
-        "company": "KARJOO+",
-        "role": "Software Mentor & Coach",
-        "duration": "27Months",
-        "location": "Qazvin, Iran",
-        "type": "Part-time (Hybrid)",
-        "description": "Guiding students in web development programs using React and Tailwind.",
-        "skills": [
-          "Coaching",
-          "Leadership",
-          "Leadership Development",
-          "Teamwork"
         ]
       },
       {

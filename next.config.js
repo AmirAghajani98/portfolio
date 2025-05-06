@@ -9,8 +9,6 @@ const nextConfig = {
 
   reactStrictMode: true,
 
-  i18n,
-
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {
@@ -27,12 +25,7 @@ const nextConfig = {
   },
 
   devIndicators: {
-    buildActivity: true,
-    buildActivityPosition: "bottom-right",
-  },
-
-  experimental: {
-    appDir: true,
+    position: "bottom-right",
   },
 };
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
