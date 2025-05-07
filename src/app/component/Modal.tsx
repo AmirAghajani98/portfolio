@@ -51,21 +51,21 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           <p className="font-bold font-mono text-lg">{t("download.title")}</p>
           <div className="flex justify-around space-x-4 mt-8">
             <Link
-              href="https://drive.google.com/uc?export=download&id=1BYRswZohFIZPjtWnZ7I6IBSzM_r-dUxS"
+              href="https://drive.google.com/uc?export=download&id=1U755tNXURHwnQwcFMu6OCV1_mNLhoRFD"
               locale={false ? undefined : undefined}
               rel="noopener noreferrer"
               target="_blank"
-              className="p-2.5 sm:mr-1 sm:mt-0 mt-1 border-b text-sm sm:text-base sm:border-none border-slate-500 dark:border-b dark:border-slate-700 font-mono cursor-pointer shadow bg-gray-800 hover:bg-gray-800 sm:rounded-lg rounded-t-lg"
+              className="p-2.5 sm:mr-1 sm:mt-0 mt-1 border-b text-sm sm:text-base sm:border-none border-slate-500 dark:border-b dark:border-slate-700 font-mono cursor-pointer shadow bg-gray-700 hover:shadow-slate-500 hover:bg-opacity-50 sm:rounded-lg rounded-t-lg"
             >
               {t("download.en")}
             </Link>
             <Link
-              href="https://drive.google.com/uc?export=download&id=1hQS_Zrg3M0wwBeAlgnJclmoq0Q9gQQNn"
+              href="https://drive.google.com/uc?export=download&id=1hgNlWOuV1MJ54T9e6A9iBPXcnuRciIy6"
               locale={false ? undefined : undefined}
               rel="noopener noreferrer"
               target="_blank"
               download="resume-en.pdf"
-              className="p-2.5 sm:mr-1 sm:mt-0 mt-1 border-b text-sm sm:text-base sm:border-none border-slate-500 dark:border-b dark:border-slate-700 font-mono cursor-pointer shadow bg-gray-800 hover:bg-gray-800 sm:rounded-lg rounded-t-lg"
+              className="p-2.5 sm:mr-1 sm:mt-0 mt-1 border-b text-sm sm:text-base sm:border-none border-slate-500 dark:border-b dark:border-slate-700 font-mono cursor-pointer shadow bg-gray-700 hover:shadow-slate-500 hover:bg-opacity-50 sm:rounded-lg rounded-t-lg"
             >
               {t("download.fa")}
             </Link>
