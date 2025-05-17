@@ -176,7 +176,7 @@ export default function BusinessCategories() {
                     src={"./img/Atlassian.webp"}
                     width={140}
                     height={140}
-                    alt="Logo 01"
+                    alt="Atlassian"
                     loading="lazy"
                   />
                 </div>
@@ -192,7 +192,7 @@ export default function BusinessCategories() {
                         src={"./img/menulog.svg"}
                         width={100}
                         height={100}
-                        alt="Logo 02"
+                        alt="menulog"
                         loading="lazy"
                       />
                     </div>
@@ -206,7 +206,7 @@ export default function BusinessCategories() {
                         src={"./img/kogan.webp"}
                         width={90}
                         height={90}
-                        alt="Logo 03"
+                        alt="kogan"
                         loading="lazy"
                       />
                     </div>
@@ -220,7 +220,7 @@ export default function BusinessCategories() {
                         src={"./img/good-guys-logo.svg"}
                         width={100}
                         height={100}
-                        alt="Logo 04"
+                        alt="good-guys"
                         loading="lazy"
                       />
                     </div>
@@ -234,7 +234,7 @@ export default function BusinessCategories() {
                         src={"./img/Bennelong.svg"}
                         width={110}
                         height={110}
-                        alt="Logo 05"
+                        alt="Bennelong"
                         loading="lazy"
                       />
                     </div>
@@ -248,7 +248,7 @@ export default function BusinessCategories() {
                         src={"./img/canva.svg"}
                         width={100}
                         height={100}
-                        alt="Logo 06"
+                        alt="canva"
                         loading="lazy"
                       />
                     </div>
@@ -262,7 +262,7 @@ export default function BusinessCategories() {
                         src={"./img/mindroom.webp"}
                         width={100}
                         height={100}
-                        alt="Logo 07"
+                        alt="mindroom"
                         loading="lazy"
                       />
                     </div>
@@ -276,7 +276,7 @@ export default function BusinessCategories() {
                         src={"./img/uberEats.svg"}
                         width={100}
                         height={100}
-                        alt="Logo 08"
+                        alt="uberEats"
                         loading="lazy"
                       />
                     </div>
@@ -290,7 +290,7 @@ export default function BusinessCategories() {
                         src={"./img/asos.svg"}
                         width={80}
                         height={80}
-                        alt="Logo 09"
+                        alt="asos"
                         loading="lazy"
                       />
                     </div>

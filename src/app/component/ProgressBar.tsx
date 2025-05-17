@@ -31,7 +31,7 @@ export const ProgressBar: React.FC<ProgressProps> = ({ value, logo }) => {
         <div className="mt-2 text-center flex justify-center items-center">
           <Image
             src={logo}
-            alt="Skill logo"
+            alt="Skill-logo"
             width={42}
             height={42}
             loading="lazy"

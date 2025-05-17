@@ -40,7 +40,7 @@ const ScrollUpButton = () => {
       <Image
         loading="lazy"
         src={"./img/up.webp"}
-        alt={""}
+        alt={"up"}
         width={50}
         height={50}
         className="rounded-full mx-3"

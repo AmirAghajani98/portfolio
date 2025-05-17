@@ -67,12 +67,12 @@ export default function Home() {
           />
           <div className="w-full mt-14 sm:mt-0 text-justify">
             <h2 className="text-3xl font-semibold mb-3 font-mono text-gray-800 dark:text-gray-100">
-              <div className={isRTL ? "text-right" : "text-left"}>
+              <span className={isRTL ? "text-right" : "text-left"}>
                 {t("aboutme.title")}
-              </div>
+              </span>
             </h2>
             <p className="text-lg font-sans leading-7 indent-3 text-justify text-gray-800 dark:text-gray-300">
-              <div>{t("aboutme.description")}</div>
+              <span className="">{t("aboutme.description")}</span>
             </p>
           </div>
         </div>

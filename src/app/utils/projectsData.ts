@@ -35,7 +35,7 @@ export const projectsData = [
                   Register job advertisements and manage information on 
                   cooperation requests and submitted resumes in just 3 easy steps`,
     link: "https://lite.karjoo.plus/",
-    alt: "lite",
+    alt: "atslite",
   },
   {
     title: "Coffeeno Shop",
@@ -45,7 +45,7 @@ export const projectsData = [
                   quality standards in the coffee industry.
                   offering customers an unforgettable journey through the world of coffee.`,
     link: "https://coffeeno.shop/",
-    alt: "Exhibition Event Web App",
+    alt: "caffeeno",
   },
   {
     title: "Exhibition Web App",
@@ -56,7 +56,7 @@ export const projectsData = [
                   between job seekers and employers. The app can be modified to suit
                   each exhibition.`,
     link: "https://jobs.karjoo.plus/qazvin",
-    alt: "Exhibition Event Web App",
+    alt: "Exhibition-Event-App",
   },
   {
     title: "Resume Template",

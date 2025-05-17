@@ -113,7 +113,7 @@ export default function HeroSection() {
             <div className="relative sm:w-1/2 w-[90%] mx-auto sm:mt-0 mt-10">
               <Image
                 src="./img/web.webp"
-                alt="Amir Aghajani - Web Developer"
+                alt="web"
                 width={500}
                 height={500}
                 className="w-full"

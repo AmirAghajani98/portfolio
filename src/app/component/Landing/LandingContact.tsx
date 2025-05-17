@@ -54,7 +54,7 @@ const LandingContact = () => {
               src={"./img/develop.webp"}
               width={600}
               height={400}
-              alt="Logo 01"
+              alt="develop"
               loading="lazy"
             />
           </div>
