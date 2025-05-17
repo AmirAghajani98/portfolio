@@ -57,9 +57,9 @@ const ContactForm = () => {
             {t("contact.title")}
           </h2>
           <p className="text-base text-gray-700 dark:text-gray-300 sm:mt-4 mt-6">
-            <div className={isRTL ? "text-right" : "text-left"}>
+            <span className={isRTL ? "text-right" : "text-left"}>
               {t("contact.description")}
-            </div>
+            </span>
           </p>
           <div className="sm:flex gap-x-10">
             <div className="mt-10">
@@ -68,9 +68,9 @@ const ContactForm = () => {
               </h2>
               <ul className="mt-1">
                 <li className="flex items-center">
-                  <div className="h-10 w-10 dark:bg-slate-700 bg-slate-800 dark:bg-opacity-70 rounded-full border flex items-center justify-center shrink-0 hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-slate-400 dark:shadow-slate-500">
+                  <span className="h-10 w-10 dark:bg-slate-700 bg-slate-800 dark:bg-opacity-70 rounded-full border flex items-center justify-center shrink-0 hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-slate-400 dark:shadow-slate-500">
                     <EnvelopeIcon className="h-6 w-6 text-slate-100" />
-                  </div>
+                  </span>
                   <a
                     href="mailto:amir.aghajani1377@gmail.com"
                     className="dark:text-blue-500 text-blue-950 sm:text-base text-sm mx-1 sm:mx-4"
@@ -90,9 +90,9 @@ const ContactForm = () => {
               </h2>
               <ul className="mt-1">
                 <li className="flex items-center">
-                  <div className="h-10 w-10 dark:bg-slate-700 bg-slate-800 dark:bg-opacity-70 rounded-full border flex items-center justify-center shrink-0 hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-slate-400 dark:shadow-slate-500">
+                  <span className="h-10 w-10 dark:bg-slate-700 bg-slate-800 dark:bg-opacity-70 rounded-full border flex items-center justify-center shrink-0 hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-slate-400 dark:shadow-slate-500">
                     <PhoneArrowDownLeftIcon className="h-6 w-6 dark:text-slate-200" />
-                  </div>
+                  </span>
                   <a
                     href="tel:+989369477625"
                     className="dark:text-blue-500 text-blue-950 text-base mx-1 sm:mx-4"
@@ -119,7 +119,7 @@ const ContactForm = () => {
                   src="./img/github.webp"
                   width={50}
                   height={50}
-                  alt="Picture of the author"
+                  alt="github"
                   className="my-2 p-1.5 dark:bg-slate-700 bg-slate-800 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
                 />
               </Link>
@@ -129,7 +129,7 @@ const ContactForm = () => {
                   src="./img/icons8-telegram.webp"
                   width={50}
                   height={50}
-                  alt="Picture of the author"
+                  alt="telegram"
                   className="my-2 p-1.5 dark:bg-slate-700 bg-slate-800 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
                 />
               </Link>
@@ -143,7 +143,7 @@ const ContactForm = () => {
                   src="./img/icons8-linkedin-96.webp"
                   width={50}
                   height={50}
-                  alt="Picture of the author"
+                  alt="linkedin"
                   className="my-2 p-1.5 dark:bg-slate-700 bg-slate-800 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
                 />
               </Link>

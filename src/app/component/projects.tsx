@@ -78,14 +78,14 @@ const Projects: React.FC = () => {
                 </div>
 
                 <h3 className="font-mono mt-3 mb-4 sm:mx-4 text-left font-semibold text-xl text-gray-800 dark:text-gray-100">
-                  <div className={isRTL ? "text-right" : "text-left"}>
+                  <span className={isRTL ? "text-right" : "text-left"}>
                     {project.title}
-                  </div>
+                  </span>
                 </h3>
                 <p className="font-sans sm:overflow-hidden text-ellipsis whitespace-normal h-32 sm:mx-4 text-left sm:mb-6 mb-2 text-base leading-relaxed text-gray-600 dark:text-gray-300 sm:line-clamp-5 line-clamp-4">
-                  <div className={isRTL ? "text-right" : "text-left"}>
+                  <span className={isRTL ? "text-right" : "text-left"}>
                     {project.description}
-                  </div>
+                  </span>
                 </p>
                 <div className="text-right flex items-end justify-end">
                   <div className={isRTL ? "text-right" : "text-left"}>

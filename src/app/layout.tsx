@@ -76,16 +76,21 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  lang,
+  lang = "en",
 }: {
   children: React.ReactNode;
-  lang: "en" | "fa";
+  lang?: "en" | "fa";
 }) {
   const isRtl = lang === "fa";
 
   return (
     <html lang={lang} dir={isRtl ? "rtl" : "ltr"} className="scroll-smooth">
       <head>
+        <GoogleTagManager gtmId="GTM-WVH4VZ6K" />
+        <meta
+          name="google-site-verification"
+          content="uWA9Iob34fnN0h0HFlL7UBRAkfAfXSIMYkH3ie..."
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -99,7 +104,6 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen">
-        <GoogleTagManager gtmId="GTM-WVH4VZ6K" />
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-WVH4VZ6K"

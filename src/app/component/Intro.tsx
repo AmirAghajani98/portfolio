@@ -44,13 +44,14 @@ const Intro: React.FC = () => {
             <strong className="font-mono dark:text-slate-100 text-[#121a23]">
               <ReactTyped
                 strings={[
-                  "Technical Lead",
-                  "web Developer",
+                  "development instructor",
+                  "Frontend Developer",
                   "Software Engineer",
                 ]}
                 typeSpeed={80}
                 backDelay={1100}
                 backSpeed={30}
+                startWhenVisible
                 loop
               />
             </strong>
@@ -84,7 +85,7 @@ const Intro: React.FC = () => {
                 src="./img/2.webp"
                 width={50}
                 height={50}
-                alt="Picture of the author"
+                alt="mail"
                 className="mx-4 my-2 p-2 bg-slate-700 bg-opacity-30 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
               />
             </Link>
@@ -98,7 +99,7 @@ const Intro: React.FC = () => {
                 src="./img/7.webp"
                 width={50}
                 height={50}
-                alt="Picture of the author"
+                alt="github"
                 className="mx-4 my-2 p-2 bg-slate-700 bg-opacity-30 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
               />
             </Link>
@@ -112,7 +113,7 @@ const Intro: React.FC = () => {
                 src="./img/4.webp"
                 width={50}
                 height={50}
-                alt="Picture of the author"
+                alt="telegram"
                 className="mx-4 my-2 p-2 bg-slate-700 bg-opacity-30 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
               />
             </Link>
@@ -126,7 +127,7 @@ const Intro: React.FC = () => {
                 src="./img/5.webp"
                 width={50}
                 height={50}
-                alt="Picture of the author"
+                alt="linkedin"
                 className="mx-4 my-2 p-2 bg-slate-700 bg-opacity-30 dark:bg-slate-100 dark:bg-opacity-70 rounded-2xl hover:bg-opacity-40 dark:hover:bg-opacity-50 shadow-inner shadow-slate-500 border-y border-slate-400 dark:shadow-slate-500"
               />
             </Link>
