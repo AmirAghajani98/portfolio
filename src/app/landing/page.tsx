@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import BusinessCategories from "../component/Landing/BusinessCategories";
 import FeaturesPlanet from "../component/Landing/FeaturesPlanet";
 import HeroLanding from "../component/Landing/HeroSection";
 import ContactForm from "../component/Landing/LandingContact";
@@ -42,7 +41,6 @@ export default function Landing() {
         <Testimonial />
         <Pricetable />
         <Timeline />
-        <BusinessCategories />
         <ContactForm />
         <FAQ />
       </main>
