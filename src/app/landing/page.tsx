@@ -26,7 +26,7 @@ export default function Landing() {
 
   if (loading) {
     return (
-      <div className="fixed w-full inset-0 flex justify-center items-center bg-slate-700 bg-opacity-60 z-50">
+      <div className="reletive fixed w-full inset-0 flex justify-center items-center bg-slate-700 bg-opacity-60 z-50">
         <span className="sm:w-20 loading loading-bars loading-lg"></span>
       </div>
     );
