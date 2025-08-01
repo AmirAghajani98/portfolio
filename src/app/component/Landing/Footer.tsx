@@ -186,12 +186,12 @@ export default function Footer() {
           Aghajani
         </p>
       </aside>
-      <div className="sm:w-[70%] z-[-1] -translate-y-[90%] sm:-translate-y-[95%] sm:translate-x-[20%] absolute font-serif">
+      <div className="absolute top-1/2 opacity-40 -rotate-180 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full sm:w-full z-[-1] font-serif">
         <Image
-          className="opacity-10 dark:opacity-5 rotate-180 mx-auto w-full sm:h-[380px]"
-          src={"./img/strips2.webp"}
-          height={100}
-          width={100}
+          className="opacity-90 mx-auto w-full sm:h-[380px] object-cover"
+          src={"./img/abstract-dark.jpg"}
+          height={380}
+          width={1200}
           alt="Stripes"
           loading="lazy"
         />

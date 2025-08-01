@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Cobe from "./Cobe";
 
 export default function BusinessCategories() {
   return (
@@ -301,9 +300,7 @@ export default function BusinessCategories() {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center sm:mt-28 sm:-z-10">
-        <Cobe />
-      </div>
+      <div className="w-full flex justify-center sm:mt-28 sm:-z-10"></div>
     </section>
   );
 }
