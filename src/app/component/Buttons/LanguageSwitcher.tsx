@@ -32,7 +32,7 @@ const LanguageSwitcher = () => {
 
         <span
           className={`
-            absolute left-0 top-0 h-full w-1/2 bg-blue-600 rounded-full transition-transform duration-300
+            absolute left-0 top-0 h-full w-1/2 bg-blue-900 rounded-full transition-transform duration-300
             ${i18n.language === "fa" ? "translate-x-full" : "translate-x-0"}
           `}
         />

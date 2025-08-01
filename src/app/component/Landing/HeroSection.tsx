@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { ReactTyped } from "react-typed";
 
 export default function HeroSection() {
   return (
@@ -28,7 +29,8 @@ export default function HeroSection() {
                 data-aos="zoom-y-out"
                 data-aos-delay={150}
               >
-                Your Digital Storefront Starts Here!
+                Your Online Presence Starts Here <br /> In Farsi and English
+                🇮🇷🇦🇺
               </h1>
               <div className="mx-auto max-w-3xl sm:mt-20">
                 <p
@@ -36,12 +38,26 @@ export default function HeroSection() {
                   data-aos="zoom-y-out"
                   data-aos-delay={300}
                 >
-                  Build, Launch, and Grow Your Online Presence – Turn Your
-                  Vision into a Thriving and Profitable Digital Business!
+                  Design, Launch, and Grow Your Website with a Persian-Speaking
+                  Web Expert
+                  <br /> Built for Iranian Businesses in Australia.
                 </p>
-                <h2 className="mb-8 sm:mb-0 text-xl text-gray-900 dark:text-gray-300 font-sans font-semibold">
-                  Customize Your Solutions!
-                </h2>
+                <span className="mb-8 sm:mb-0 text-xl text-gray-900 dark:text-gray-300 font-sans font-semibold">
+                  <strong className="font-mono dark:text-slate-100 text-[#121a23]">
+                    <ReactTyped
+                      strings={[
+                        "Custom Design",
+                        "Fast Delivery",
+                        "Friendly Support in Your Language",
+                      ]}
+                      typeSpeed={80}
+                      backDelay={1100}
+                      backSpeed={30}
+                      startWhenVisible
+                      loop
+                    />
+                  </strong>
+                </span>
                 <div className="relative before:absolute before:inset-0 border-t sm:mt-20 py-2 dark:border-slate-600 ">
                   <div
                     className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center"
@@ -56,7 +72,7 @@ export default function HeroSection() {
                           className="link text-lg font-sans mx-auto w-full h-full py-2 px-3 font-semibold dark:hover:bg-opacity-40 hover:bg-opacity-75 text-slate-100 dark:text-slate-900 dark:bg-slate-500 bg-slate-700 dark:bg-opacity-20 bg-opacity-80 rounded-lg transition duration-200 border border-transparent bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end animate-gradientBorder"
                         >
                           <span className="relative inline-flex items-center">
-                            Free Consultation
+                            👉 Let's Build Your Website Today!
                             <span className="ml-1 tracking-normal dark:text-blue-900 text-blue-200 transition-transform group-hover:translate-x-0.5">
                               -&gt;
                             </span>
