@@ -87,9 +87,9 @@ export default function Projects() {
                 </div>
               </h3>
               <p className="font-sans whitespace-normal text-left mx-auto sm-mb-6 mb-2 text-base leading-relaxed dark:text-slate-100 text-[#121a23] line-clamp-4">
-                <div className={isRTL ? "text-right" : "text-left"}>
+                <span className={isRTL ? "text-right" : "text-left"}>
                   {project.description}
-                </div>
+                </span>
               </p>
               <div className="text-right flex items-end justify-end">
                 <div className={isRTL ? "text-right" : "text-left"}>
